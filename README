@@ -1,9 +1,52 @@
 Welcome to the SparkFun developer employment application.
 
-[JOB DESCRIPTION HERE]
+*******************************************
+  OFFICIAL JOB DESCRIPTION: PHP DEVELOPER
+*******************************************
+ *
+ * PHP Developer
+ * 
+ * SparkFun Electronics is hiring developers!  Check out our website,
+ * www.sparkfun.com, to get an idea of who we are / what we do.  More below...
+ * 
+ * About the company:
+ * - We're a small/medium company that's very young (only 7.7 years old) and
+ *   growing very fast.
+ * - Despite our growth we remain relaxed and fun.
+ * - We throw lots of parties, have dogs on staff, and our break room has a
+ *   tweeting keggerator.
+ * - This place is like an invention shop.  Curious new toys are being built all
+ *   the time.
+ * - We like to host unique events like our annual Autonomous Vehicle Competition
+ *   or this fall's Antimov: a competition for robots with extravagant self-destruct
+ *   mechanisms.
+ *
+ * About the position:
+ * - You'll assist an established core of developers to build new features for the
+ *   SparkFun website and our internal content management system, all of which is of
+ *   custom design.
+ * - You'll work closely with other SparkFun employees to build tools to make their
+ *   lives easier.  Grateful employees have been known to show gratitude with candy.
+ * - Skilled coders are encouraged to contribute ideas for architectural changes, not
+ *   just mindlessly crank out code.  You'll be proud of what you get to build here.
+ * - Work environment is definitely not soul-crushing, unlike many corporate shops that
+ *   pay the big bucks.
+ * - Benefits:
+ *   + HSA/FSA health plan
+ *   + 401k matching up to 4%
+ *   + Eco pass
+ *   + 2 weeks paid vacation to start, 3 weeks after 1 full year of employment
+ *   + Yearly continuing education/professional development fund
+ * 
+ * Skills you have that will make me want to hire you:
+ * - Proficiency with PHP/MySQL (specifically within an MVC framework)
+ * - Proficiency with HTML/CSS/JavaScript
+ * - Experience building AJAX-powered web applications
+ *
+***
 
-In order to apply for this position, you'll need to fork this repository, make
-your changes, and let us know where you've hosted your version.
+In order to apply for this position, you'll need to fork this repository, apply your
+contributions, and let us know where you've hosted your version.
 
 If you aren't comfortable applying in public, you're welcome to require
 authentication, host as a private repository on GitHub, or otherwise obscure
