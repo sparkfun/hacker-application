@@ -7,7 +7,8 @@ Welcome to the SparkFun developer employment application.
  * PHP Developer
  * 
  * SparkFun Electronics is hiring developers!  Check out our website,
- * www.sparkfun.com, to get an idea of who we are / what we do.  More below...
+ * www.sparkfun.com, to get an idea of who we are / what we do.  More
+ * below...
  * 
  * About the company:
  * - We're a small/medium company that's very young (only 7.7 years old) and
@@ -15,22 +16,24 @@ Welcome to the SparkFun developer employment application.
  * - Despite our growth we remain relaxed and fun.
  * - We throw lots of parties, have dogs on staff, and our break room has a
  *   tweeting keggerator.
- * - This place is like an invention shop.  Curious new toys are being built all
- *   the time.
- * - We like to host unique events like our annual Autonomous Vehicle Competition
- *   or this fall's Antimov: a competition for robots with extravagant self-destruct
- *   mechanisms.
+ * - This place is like an invention shop.  Curious new toys are being built
+ *   all the time.
+ * - We like to host unique events like our annual Autonomous Vehicle
+ *   Competition or this fall's Antimov: a competition for robots with
+ *   extravagant self-destruct mechanisms.
  *
  * About the position:
- * - You'll assist an established core of developers to build new features for the
- *   SparkFun website and our internal content management system, all of which is of
- *   custom design.
- * - You'll work closely with other SparkFun employees to build tools to make their
- *   lives easier.  Grateful employees have been known to show gratitude with candy.
- * - Skilled coders are encouraged to contribute ideas for architectural changes, not
- *   just mindlessly crank out code.  You'll be proud of what you get to build here.
- * - Work environment is definitely not soul-crushing, unlike many corporate shops that
- *   pay the big bucks.
+ * - You'll assist an established core of developers to build new features for
+ *   the SparkFun website and our internal content management system, all of
+ *   which is of custom design.
+ * - You'll work closely with other SparkFun employees to build tools to make
+ *   their lives easier.  Grateful employees have been known to show gratitude
+ *   with candy.
+ * - Skilled coders are encouraged to contribute ideas for architectural
+ *   changes, not just mindlessly crank out code.  You'll be proud of what you
+ *   get to build here.
+ * - Work environment is definitely not soul-crushing, unlike many corporate
+ *   shops that pay the big bucks.
  * - Benefits:
  *   + HSA/FSA health plan
  *   + 401k matching up to 4%
@@ -48,8 +51,11 @@ Welcome to the SparkFun developer employment application.
 HOW TO APPLY:
 
 1. Fork this repository.
+
 2. Look at the README in all four directories and follow the instructions.
-3. Send details on where to find your hosted repo to it_applications@sparkfun.com.
+
+3. Send details on where to find your hosted repo to
+   it_applications@sparkfun.com.
 
 If you aren't comfortable applying in public, you're welcome to require
 authentication, host as a private repository on GitHub, or otherwise obscure
