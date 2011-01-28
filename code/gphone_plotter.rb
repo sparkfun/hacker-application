@@ -209,6 +209,7 @@ class GnuplotScript
     quakes = ""
     @quake_file.each do |line|
       cols = line.split(",")
+      next if cols[0].length != "yyyy-mm-dd-hh:mm:ss".length
       if Date.parse(cols[0]) <= CONSTANTS['end_date'] && Date.parse(cols[0]) >= CONSTANTS['start_date']
         quakes << %Q/set arrow from '#{cols[0]}', graph 0 to '#{cols[0]}', graph 1 nohead lw 3\n/
         quakes << %Q/set label right "#{cols[1].chomp}\\n#{cols[0]}" at '#{cols[0]}', graph 0.98\n/
@@ -221,7 +222,7 @@ class GnuplotScript
   def loc_str
     locs = nil
     @locations.each do |location|
-      locs.nil? ? locs = location : locs << " and #{location}"
+      locs.nil? ? locs = location : locs += " and #{location}"
     end
     locs
   end
@@ -305,7 +306,7 @@ class FtpScript
   # Run script to ftp program.
   # NOTE: ftp must be in path
   def execute
-    `ftp -s:#{filename} #{CONSTANTS['www_ftp_server']}`
+    `ftp -s:#{@filename} #{CONSTANTS['www_ftp_server']}`
   end
 end
 
@@ -336,6 +337,7 @@ fout.close
 puts "Creating gnuplot script..."
 gnuplot_script = GnuplotScript.new(CONSTANTS['gnuplot_script_path'], data_sets)
 gnuplot_script.create
+
 puts "Running script to gnuplot..."
 gnuplot_script.execute
 

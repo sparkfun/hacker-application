@@ -1,10 +1,10 @@
-I am including two sets of PHP Code (applets I designed) as well as some
+  I am including two sets of PHP Code (applets I designed) as well as some
 Ruby code.  The PHP code was written before I knew Object Oriented programming,
 but the Ruby code is very OO.  The PHP code has samples of CSS, HTML, JavaScript,
 and a little AJAX.
 
 Note: I am including a quick "How I would convert to OO" if I worked on 
-	them again.
+	the PHP files again.
 
 docs.php, docs_sub.php:
     -Description-
