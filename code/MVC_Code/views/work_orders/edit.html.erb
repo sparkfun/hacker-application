@@ -1,0 +1,35 @@
+<% title "Edit Work Order "+h(@work_order.id) %>
+    <script type="text/javascript">
+      user = new Object;
+      user.id = "<%= current_user.id %>"
+      user.fullname = "<%=h current_user.fname %> <%=h current_user.lname %>"
+    </script>
+<% form_for(@work_order) do |f| %>
+  <%= f.error_messages %>
+    <%= render :partial => 'show_description', :locals => { :f => f } %>
+    <% if admin? %>
+      <%= render :partial => 'edit_pocs', :locals => { :f => f } %>
+    <% else %>
+      <%= render :partial => 'show_pocs', :locals => { :f => f } %>
+    <% end %>
+  
+  <p>
+    <h3>Parts:</h3>
+    <%= render :partial => 'parts_table' %>
+    
+    <div id='partSearchDiv'>&nbsp;</div>
+    <% if logged_in? %>
+      <%= add_part_link "Add Part" %>
+    <% end %> 
+  </p>
+
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+
+<% end %>
+<p>
+  <%= link_to 'Show', @work_order %> | 
+  <%= link_to 'Back', work_orders_path %> |
+  <%= link_to 'Home', url_for(:controller => 'home') %>
+</p>

@@ -1,0 +1,10 @@
+<tr class='<%= "audit" if (assignment.audit && assignment.audit_resolved.nil?)  %><%= "resolved" if (!assignment.audit_resolved.nil?) %>'>
+  <td><%=h assignment.work_order.id unless assignment.work_order.nil? %></td>
+  <td><%=h assignment.user.fname %> <%=h assignment.user.lname %></td>  
+  <td><%=h assignment.part.id unless assignment.part.nil? %></td>  
+  <td><%=h assignment.part.description unless assignment.part.nil? %></td>  
+  <td><%=h assignment.qty_in %></td>  
+  <td><%=h assignment.qty_out %></td>  
+  <td><%=h sql_to_local(assignment.created_at) %></td>  
+  <td id='resolved_<%= assignment.id %>'><%= (assignment.audit_resolved.nil? && assignment.audit) ? link_to_function('Resolve', 'resolveAudit(this,'+assignment.id.to_s+')') : sql_to_local(assignment.audit_resolved) %></td>      
+</tr>

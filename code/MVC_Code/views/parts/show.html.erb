@@ -1,0 +1,14 @@
+<p>
+  <b>Number:</b>
+  <%=h @part.id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @part.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_part_path(@part) %> |
+<%= link_to 'Back', parts_path %> |
+<%= link_to 'Home', url_for(:controller => 'home') %>

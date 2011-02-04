@@ -1,0 +1,40 @@
+<% title "Edit Assignment" %>
+
+<% form_for @assignment do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :part_id %><br />
+    <%= f.text_field :part_id %>
+  </p>
+  <p>
+    <%= f.label :work_order_id %><br />
+    <%= f.text_field :work_order_id %>
+  </p>
+  <p>
+    <%= f.label :qty_in %><br />
+    <%= f.text_field :qty_in %>
+  </p>
+  <p>
+    <%= f.label :qty_out %><br />
+    <%= f.text_field :qty_out %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :audit %><br />
+    <%= f.check_box :audit %>
+  </p>
+  <p>
+    <%= f.label :audit_resolved %><br />
+    <%= f.datetime_select :audit_resolved %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
+
+
+<p>
+  <%= link_to "Show", @assignment %> |
+  <%= link_to "View All", assignments_path %>
+</p>

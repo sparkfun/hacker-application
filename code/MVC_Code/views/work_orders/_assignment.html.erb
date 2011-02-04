@@ -1,0 +1,41 @@
+<% if assignment.new_record? %>
+  <% fields_for "work_order[new_assignment_attributes][]", assignment do |assignment_form| %>
+    <tr class='assignment_row'>
+      <td>
+        <%= assignment_form.hidden_field :part_id, :index => nil, :class => 'part_id' %>
+        <%= assignment_form.hidden_field :user_id, :index => nil %>
+        <%=h User.find(assignment.user_id).fname %> <%=h User.find(assignment.user_id).lname %>
+        <% if assignment.part_id.blank?
+            part_num = nil
+            part_des = ''
+          else
+            part_num = Part.find(assignment.part_id).id
+            part_des = Part.find(assignment.part_id).description 
+          end %></td>
+      <td><%= text_field_tag nil,part_num,:onKeyUp=>'getParts(this)', :onBlur=>'saveFocus(this);hidePSD();', :rows=>'1', :cols=>'14' %></td>
+      <td><%=h part_des %></td>
+      <td><%= assignment_form.text_field :qty_in, :size=>'3', :index => nil %></td>
+      <td><%= assignment_form.text_field :qty_out, :size => '3', :index => nil %></td>
+      <td>--Automatically Assigned--</td>
+      <td>Audit?<%= check_box_tag "work_order[new_assignment_attributes][][audit]" %></td>
+      <td><%= link_to_function "remove", "this.up('.assignment_row').remove();" %></td>
+    </tr>
+  <% end %>
+<% else %>
+  <% fields_for "work_order[existing_assignment_attributes][]", assignment do |assignment_form| %>
+    <tr class='assignment_row<%= " audit" if (assignment.audit && assignment.audit_resolved.nil?)  %><%= " resolved" if (!assignment.audit_resolved.nil?) %>'>
+      <td><%=h assignment.user.fname %> <%=h assignment.user.lname %></td>
+      <td><%=h assignment.part.id %></td>
+      <td><%=h assignment.part.description %></td>
+      <td><%=h assignment.qty_in %></td>
+      <td><%=h assignment.qty_out %></td>
+      <td><%=h assignment.created_at %></td>
+      <% if @show_protected && controller.action_name != 'show' %>
+        <td colspan="2"><%= link_to_function 'remove', 'markForDestroy(this)' %>
+          <%=h assignment_form.hidden_field :id, :index => nil %>
+          <%=h assignment_form.hidden_field :should_destroy, :index => nil, :class => 'should_destroy' %>
+        </td>
+      <% end %>
+    </tr>
+  <% end %>
+<% end %>

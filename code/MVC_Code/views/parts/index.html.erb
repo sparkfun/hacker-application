@@ -1,0 +1,14 @@
+<% title "Find Parts" %>
+
+<form  name="part_search_form" action="#" method="get" onSubmit="return retrieveData(this)">
+  <label>Part Number: </label><input type="text" name="number" onFocus="this.select(0)" />  
+  <label>Part Description: </label><input type="text" name="description" onFocus="this.select(0)" />
+  <input type='submit' onClick="retrieveData(this.form)" value="Search" /> 
+</form>
+
+<div id='parts_div'>
+      <%= render :partial => 'part_table_header' %>
+</div>
+<br />
+
+<%= link_to 'Home', url_for(:controller => 'home') %>

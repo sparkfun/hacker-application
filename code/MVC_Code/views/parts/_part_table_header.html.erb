@@ -1,0 +1,1 @@
+<table id="parts_table" border="0" cellspacing="0" cellpadding="0">  <tr>    <th>Number</th>    <th>Description</th>    <th>Extended Description</th>    <th>Quantity in Stock</th>  </tr>  <% if @parts.empty? %>    <td colspan='8'>No parts for the given criteria.</td>  <% else %>     <%= render :partial => 'part', :collection => @parts %>  <% end %> </table>

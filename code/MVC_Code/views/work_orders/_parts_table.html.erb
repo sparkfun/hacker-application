@@ -1,0 +1,17 @@
+    <table id = "parts_table">
+      <tbody id = "parts_table_body">
+        <tr>
+          <th>Name</th>
+          <th>Number</th>
+          <th>Description</th>
+          <th>Quantity In</th>
+          <th>Quantity Out</th>
+          <th>Date</th>
+        </tr>
+        <% if @work_order.parts.empty? %>
+          <tr><td colspan = '7'>No Parts Assigned</td></tr>
+        <% else %>
+          <%= render :partial => 'assignment', :collection => @work_order.assignments %>
+        <% end %>
+      </tbody>
+    </table>

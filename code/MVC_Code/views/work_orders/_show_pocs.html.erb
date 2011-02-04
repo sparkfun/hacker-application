@@ -1,0 +1,11 @@
+<h3>POCs:</h3>
+<% if !@work_order.users.empty? %>
+  <ul>
+  <a href="mailto:<% @work_order.users.each do |poc| %><%= poc.email+"," %> <% end %>">Email All</a>
+    <% @work_order.users.each do |poc| %>
+      <li><%=h poc.fname %> <%=h poc.lname %> &lt;<a href='mailto:<%=h poc.email %>' target="_blank"><%=h poc.email %></a>&gt;
+    <% end %>
+  </ul>
+<% else %>
+  No POCs have been assigned.
+<% end %>
