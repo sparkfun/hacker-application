@@ -1,0 +1,21 @@
+<% title "Listing Work Orders" %>
+
+<table>
+  <tr>
+    <th><%= sortable "id", "Number" %></th>
+    <th><%= sortable "description" %></th>
+    <th><%= sortable "status" %></th>
+  </tr>
+
+<% @work_orders.each do |work_order| %>
+  <tr class="wo_<%= full_wo_status(work_order.status).downcase %>">
+    <td><%=h work_order.id %></td>
+    <td><%= link_to h(work_order.description), edit_work_order_path(work_order) %></td>
+    <td><%= full_wo_status(work_order.status) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "Home", root_url %>

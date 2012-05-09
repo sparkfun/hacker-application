@@ -1,0 +1,20 @@
+<% title "New part" %>
+
+<% form_for(@part) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :number %><br />
+    <%= f.text_field :number %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', parts_path %> |
+<%= link_to 'Home', url_for(:controller => 'home') %>

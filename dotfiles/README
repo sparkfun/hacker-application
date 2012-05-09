@@ -6,6 +6,27 @@ In this directory, please include (at your option) either:
 
   a) A collection of dotfiles or other configuration from your working
      environment.
-
+    
+    Oops!  I've been working in Windows so I have no dotFiles!
+    
   b) A rationale for your lack of same.  Responses will be evaluated for
      both style and content.
+     
+       Until recently in TextPad using Firebug as my main html/javascript 
+     debugger. I always use a light on dark theme, so I would modify TextPad's
+     default colorations.
+       More recently, I've tossed TextPad out the window for major code
+     projects because I discovered Aptana Studio, which is based on Eclipse 
+     (Studio 3.0 beta to be exact). I exclusively use Aptana for Ruby and PHP.  
+     Aptana's default colors (white on black), syntax highlighting, code 
+     snippets, and git integration make it powerful enough that I haven't had
+     to make many changes.  However I have dug in and discovered that when I 
+     decide to add my own snippets and whatnot, adding them will be easy and 
+     fast.
+     
+       As far as that dreaded Windows comment above, sadly it is true.  I've 
+     spent most of my computer time in a Microsoft world.  Fortunately, I've
+     been converted to Fedora 14. I have been using it much more as my web
+     server and development platform (LAMP style), and I'm in the midst of
+     getting my windows partition running as a Virtual Machine on Fedora.
+     When coding in linux I use Vim and Eclipse.  

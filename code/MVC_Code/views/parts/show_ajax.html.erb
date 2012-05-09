@@ -1,0 +1,6 @@
+<% if @parts.empty? %>
+  <p>No Matches Found.</p>
+<% else @parts.each do |part| %>
+  <a class = 'link' onClick= "fillFields( '<%= part.id %>', '<%=h part.id %>', '<%=h part.description %>' )" ><%=h part.id %> -- <%=h part.description %></a><br \>
+  <% end %>
+<% end %>

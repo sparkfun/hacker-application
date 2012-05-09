@@ -1,0 +1,16 @@
+<% title "Work Order "+ h(@work_order.id) %>
+
+<%= render :partial => 'show_description' %>
+<%= render :partial => 'show_pocs' %>
+
+<h3>Parts:</h3>
+<%= render :partial => 'parts_table' %>
+
+<p>
+  <% if logged_in? %>
+    <%= link_to 'Edit', edit_work_order_path(@work_order) %> |
+  <% end %>
+  <%= link_to 'Back', work_orders_path %> |
+  <%= link_to 'Home', url_for(:controller => 'home') %>
+</p>
+

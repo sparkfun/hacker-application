@@ -1,0 +1,10 @@
+<p>
+  <h3><%= f.label("POCs") %>:</h3><br />
+  <% @pocs.each do |poc| %>
+    <% f.fields_for :poc_attributes, poc do |poc_form| %>
+      <%= check_box_tag "work_order[user_ids][]", poc.id, @work_order.users.exists?(poc.id) %> 
+      <%=h poc.fname %> <%=h poc.lname %> &lt;<%=h poc.email %>&gt;
+      <br />
+    <% end %>
+  <% end %>
+</p>

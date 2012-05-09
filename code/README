@@ -1,17 +1,61 @@
-The ideal candidate will be comfortable building web applications with PHP and
-MySQL on Linux, and have real-world experience with other languages and
-platforms.
+  I am including two sets of PHP Code (applets I designed) as well as some
+Ruby code.  The PHP code was written before I knew Object Oriented programming,
+but the Ruby code is very OO.  The PHP code has samples of CSS, HTML, JavaScript,
+and a little AJAX.
 
-We want to see your code, so please include a representative sample of your
-work in this directory.
+Note: I am including a quick "How I would convert to OO" if I worked on 
+	the PHP files again.
 
-All languages and paradigms are welcome, but we're most interested in
-submissions demonstrating one or more of the following:
+docs.php, docs_sub.php:
+    -Description-
+	    These two files are a little bit dirty, but it was designed as a 
+        document upload portal with version control (using a datetime field in 
+        MySQL). I would like to see a better algorithm for version control, but
+        this was not a priority.
 
-  - Clean, secure, object oriented PHP.
-  - Usable, modern, and reasonably standard HTML, CSS, and JavaScript.
-  - Clear, sensible, and consistently formatted code.
-  - Sympathy for the plight of future maintainers.
+    -How I would convert to OO-
+    	-UserInput class to parse $_GET and $_PUT and control flow
+        -Create a document class (this is essentially docs_sub.php)
+	        -method definitions:
+	          -version (list, retrieve, add)
+	          -add
+	          -delete
+          
+message_hub.php, message_recipients.php:
+   -Description-
+       These files compose a simple internal messaging system.  The idea here 
+       is that people could send something akin to e-mail to everyone working
+       on the system.  There was also a goal of being able to get a site-wide
+       message out to anyone logged in.  I focused a lot on a js based gmail 
+       style find-as-you-type recipient search, with highlighting, which is the
+       function of message_recipeints.php (done with AJAX).
 
-If you maintain or contribute to any open source projects, please supply links
-and a short description of your role in each project.
+   -How I would convert to OO-
+       -Message class for all message functions
+         -method definitions (similar to message_hub.php functions)
+	         -compose
+	         -inbox
+	         -reply
+	         -delete
+	         -view
+        -Recipient class for AJAX search (if full app was OO may have fit as 
+         method into User class)
+	        -method definitions
+	          -find
+	          -stylize
+	          -recipient-link
+
+gphone-plotter.rb:
+    -Description-
+        This script is designed to download and plot (using external tools) a 
+        week of data for a meter called a gPhone.  This script runs currently
+        and the output is updated daily. Output can be found at 
+        http://www.microglacoste.com/gPhoneComparisonPlot.htm
+        
+MVC_Code Folder:
+    -Description-
+        This is a Ruby on Rails application that I've designed to create a
+        web interface to our MAS inventory database. The goal of this
+        application is to create a quick reference and friendly search
+        interface for employees without having to purchase extra licenses
+        required to run the interface provided with MAS.

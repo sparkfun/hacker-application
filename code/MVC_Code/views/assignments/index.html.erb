@@ -1,0 +1,30 @@
+<% title "Assignments" %>
+
+<h3>Select dates:</h3>
+  <div id='form_div'>
+    <form id="date_form" name="date_form" action="#" onSubmit="return retrieveData(this)">
+      <%= hidden_field_tag :direction, 'asc' %>
+      <%= hidden_field_tag :sort, 'created_at' %>
+      &nbsp;&nbsp;<select>
+        <option>Select a Timeframe...</option>
+        <option onClick="getDates('all');retrieveData(document.date_form);" value='All'>All</option>        
+        <option onClick="getDates('today');retrieveData(document.date_form);" value='Today' />Today</option>        
+        <option onClick="getDates('yesterday');retrieveData(document.date_form);" value='Yesterday' />Yesterday</option>
+        <option onClick="getDates('lastMonth');retrieveData(document.date_form);" value='Last Month' />Last Month</option>
+      </select><br />
+      <span class="indent"><strong class="indent">-OR-</strong></span><br />
+      <div class="date_div">Start Date (<span class='italic'>mm/dd/yyyy</span>):<br/>
+        <input type="text" maxlength="2" name="start_month" id="start_month" /> / <input type="text" maxlength="2" name="start_day" id="start_day" /> / <input type="text" maxlength="4" name="start_year" id="start_year">
+      </div>
+      <div class="date_div">End Date (<span class='italic'>mm/dd/yyyy</span>):<br/>
+        <input type="text" maxlength="2" name="end_month" id="end_month" /> / <input type="text" maxlength="2" name="end_day" id="end_day" /> / <input type="text" maxlength="4" name="end_year" id="end_year">
+      </div>
+      <input type="submit" value="Search" onClick="retrieveData(this.form)" />
+    </form>
+  </div>
+  <div id='assignments_div'>
+      <%= render :partial => 'assignment_table_header' %>
+  </div>
+<br />
+<%= link_to 'Home', root_url %>
+
