@@ -8,9 +8,10 @@ Note: I am including a quick "How I would convert to OO" if I worked on
 
 docs.php, docs_sub.php:
     -Description-
-	    These two files are a little bit dirty, but it was designed as a document upload
-	    portal with version control (using a datetime field in MySQL). I would
-	    like to see a better algorithm for version control, but this was not a priority.
+	    These two files are a little bit dirty, but it was designed as a 
+        document upload portal with version control (using a datetime field in 
+        MySQL). I would like to see a better algorithm for version control, but
+        this was not a priority.
 
     -How I would convert to OO-
     	-UserInput class to parse $_GET and $_PUT and control flow
@@ -22,11 +23,12 @@ docs.php, docs_sub.php:
           
 message_hub.php, message_recipients.php:
    -Description-
-       These files compose a simple internal messaging system.  The idea here is that people
-       could send something akin to e-mail to everyone working on the system.  There was also
-       a goal of being able to get a site-wide message out to anyone logged in.  I focused a lot
-       on a js based gmail style find-as-you-type recipient search, with highlighting, which is the function
-       of message_recipeints.php (done with AJAX).
+       These files compose a simple internal messaging system.  The idea here 
+       is that people could send something akin to e-mail to everyone working
+       on the system.  There was also a goal of being able to get a site-wide
+       message out to anyone logged in.  I focused a lot on a js based gmail 
+       style find-as-you-type recipient search, with highlighting, which is the
+       function of message_recipeints.php (done with AJAX).
 
    -How I would convert to OO-
        -Message class for all message functions
@@ -36,7 +38,8 @@ message_hub.php, message_recipients.php:
 	         -reply
 	         -delete
 	         -view
-        -Recipient class for AJAX search (if full app was OO may have fit as method into User class)
+        -Recipient class for AJAX search (if full app was OO may have fit as 
+         method into User class)
 	        -method definitions
 	          -find
 	          -stylize
@@ -44,7 +47,15 @@ message_hub.php, message_recipients.php:
 
 gphone-plotter.rb:
     -Description-
-        This script is designed to download and plot (using external tools) a week of data for
-        a meter called a gPhone.  This script runs currently and the output is updated daily. Output can
-        be found at http://www.microglacoste.com/gPhoneComparisonPlot.htm
-   
+        This script is designed to download and plot (using external tools) a 
+        week of data for a meter called a gPhone.  This script runs currently
+        and the output is updated daily. Output can be found at 
+        http://www.microglacoste.com/gPhoneComparisonPlot.htm
+        
+MVC_Code Folder:
+    -Description-
+        This is a Ruby on Rails application that I've designed to create a
+        web interface to our MAS inventory database. The goal of this
+        application is to create a quick reference and friendly search
+        interface for employees without having to purchase extra licenses
+        required to run the interface provided with MAS.
