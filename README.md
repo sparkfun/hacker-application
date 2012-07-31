@@ -1,9 +1,9 @@
-Welcome to the SparkFun Developer employment application repository.
-
-OFFICIAL JOB DESCRIPTION: WEB APPLICATION DEVELOPER
-===================================================
+WEB APPLICATION DEVELOPER
+=========================
 
 SparkFun Electronics is looking for someone who loves to develop for a modern Unix-based web stack. Development projects vary wildly from pushing the boundaries of user experience for our forward-facing website to building sophisticated internal web-based applications for running the business.
+
+This repository is an additional step in the standard SparkFun application process. Full job description and instructions on how to complete **all** steps in the application process are detailed below.
 
 Duties and Responsibilities
 ---------------------------
