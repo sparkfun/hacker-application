@@ -1,8 +1,8 @@
-The ideal candidate will be comfortable building web applications with PHP and
+Ideal candidates will be comfortable building web applications with PHP and
 MySQL on Linux, and have real-world experience with other languages and
 platforms.
 
-We want to see your code, so please include a representative sample of your
+We want to see your code. Please include a representative sample of your
 work in this directory.
 
 All languages and paradigms are welcome, but we're most interested in

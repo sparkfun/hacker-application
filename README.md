@@ -1,9 +1,19 @@
-WEB APPLICATION DEVELOPER
-=========================
+SparkFun Electronics Hacker Application
+=======================================
 
-SparkFun Electronics is looking for someone who loves to develop for a modern Unix-based web stack. Development projects vary wildly from pushing the boundaries of user experience for our forward-facing website to building sophisticated internal web-based applications for running the business.
+[SparkFun Electronics](http://www.sparkfun.com) is *always* on the lookout for developers skilled in the a modern Unix-based web stack. Development projects vary wildly from pushing the boundaries of user experience for our forward-facing websites to building sophisticated internal web-based applications for running the business.
 
-This repository is an additional step in the standard SparkFun application process. Full job description and instructions on how to complete **all** steps in the application process are detailed below.
+Interested? Here's how to use this repository to get our attention:
+
+1. Clone this repository.
+2. Create a new branch named after you (e.g. *John-Doe*).
+3. On your branch: modify / add to the repository per the instruction in the README files for each of the four top-level directories.
+4. Issue a pull request back to the main repository for your branch.
+
+Your pull request is your application.
+
+Web Application Development at SparkFun Electronics: An Overview
+================================================================
 
 Duties and Responsibilities
 ---------------------------
@@ -43,21 +53,3 @@ Work Environment and Unofficial Benefits
 * Free beer on tap
 * Frequent parties and outings
 * Frequent special guest presentations and educational field trips
-
-How to Apply
-------------
-1. **Read all instructions thoroughly.**
-2. Complete the [online application](http://www.sparkfun.com/jobs/30).
-3. Fork this repository.
-4. Look at the README in all four directories and follow the instructions.
-5. Host your forked, updated repo on github and send us the link at it-hiring@sparkfun.com
-
-If you aren't comfortable with your repo being publicly accessible you're welcome to require authentication, host as a private repository on GitHub, or otherwise obscure your repo.
-
-Should you choose to keep you repo private you may add us as collaborators. Please add all of the following email addresses:
-
-  cclark@sparkfun.com
-  brennen@sparkfun.com
-  ben@sparkfun.com
-
-Either way, contact it-hiring@sparkfun.com to let us know that your repo is ready for us to see.

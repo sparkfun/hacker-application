@@ -7,5 +7,5 @@ In this directory, please include (at your option) either:
   a) A collection of dotfiles or other configuration from your working
      environment.
 
-  b) A rationale for your lack of same.  Responses will be evaluated for
-     both style and content.
+  b) A rationale for your lack of same (complete with some description
+     of your preferred working environment).
