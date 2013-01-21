@@ -12,6 +12,8 @@ Interested? Here's how to use this repository to get our attention:
 
 Your pull request is your application.
 
+Your pull request will never be merged (to keep this repository open for everyone who follows you). When you've either been hired or declined your pull request will simply be closed.
+
 Web Application Development at SparkFun Electronics: An Overview
 ================================================================
 
