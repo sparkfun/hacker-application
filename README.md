@@ -14,8 +14,17 @@ Your pull request is your application.
 
 Your pull request will never be merged (to keep this repository open for everyone who follows you). When you've either been hired or declined your pull request will simply be closed.
 
-Web Application Development at SparkFun Electronics: An Overview
-================================================================
+Internships
+===========
+
+We do offer paid internships to the right applicants. The process to apply is the same as for full time employment - follow the instructions above.
+
+Interns would primarily get their feet wet by assisting with quality assurance and code review as well as being assigned low-level bugs and tweaks to pull their weight right from the start. Ultimately, after cultivating trust by producing quality work, small-scale refactoring of existing submodules and the development of wholly new small-scale submodules would be assigned, providing interns with atomic projects that provide solid experience while directly benefiting SparkFun. Interns will learn modern collaborative web development, version control, and code review with professionals.
+
+Our internship program is flexible. Compensation and hours may vary greatly based on skills, experience, and availability.
+
+Overview: Web Application Development at SparkFun Electronics
+=============================================================
 
 Duties and Responsibilities
 ---------------------------
@@ -39,19 +48,23 @@ Desired Skills
 * Strong object oriented development knowledge with an emphasis on MVC architecture
 * Knowledge/experience working with modern version control systems (Git)
 
-Official Benefits
------------------
+Overview: Employment at SparkFun Electronics
+============================================
+
+Official Benefits for Full Time Employees
+-----------------------------------------
  * HSA/FSA health plan
  * 401k matching up to 6%
  * Eco pass
  * 2 weeks paid vacation to start, 3 weeks after 1 full year of employment
- * Yearly continuing education/professional development fund
+ * $1000 annual continuing education/professional development benefit
+ * $25 monthly health benefit (for gym membership, massage therapy, etc.)
 
 Work Environment and Unofficial Benefits
 ----------------------------------------
 * Generally relaxed. No dress code.
 * Broad access to tools, parts, and education to tinker with electronics and physical computing
 * Dogs are welcome at work (with some rules to keep the place clean and safe)
-* Free beer on tap
+* Free beer on tap (to employees 21 and over, of course)
 * Frequent parties and outings
 * Frequent special guest presentations and educational field trips
