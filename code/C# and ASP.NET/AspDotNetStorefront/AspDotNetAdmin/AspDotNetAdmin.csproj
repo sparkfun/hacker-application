@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCEDD587-71A6-4B33-B750-C1AA460061D7}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>AspDotNetAdmin</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AspDotNetAdmin</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="affiliates.aspx.cs" />
+    <Compile Include="appconfig.aspx.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="autofill.aspx.cs" />
+    <Compile Include="captureorder.aspx.cs" />
+    <Compile Include="categories.aspx.cs" />
+    <Compile Include="clearcookies.aspx.cs" />
+    <Compile Include="Copy of orders.aspx.cs" />
+    <Compile Include="countries.aspx.cs" />
+    <Compile Include="coupons.aspx.cs" />
+    <Compile Include="creditcards.aspx.cs" />
+    <Compile Include="cst_account.aspx.cs" />
+    <Compile Include="cst_account_process.aspx.cs" />
+    <Compile Include="cst_editaddress.aspx.cs" />
+    <Compile Include="cst_editaddress_process.aspx.cs" />
+    <Compile Include="cst_emails.aspx.cs" />
+    <Compile Include="cst_export.aspx.cs" />
+    <Compile Include="cst_history.aspx.cs" />
+    <Compile Include="cst_recurring.aspx.cs" />
+    <Compile Include="cst_selectaddress.aspx.cs" />
+    <Compile Include="cst_selectaddress_process.aspx.cs" />
+    <Compile Include="cst_signup.aspx.cs" />
+    <Compile Include="cst_signup_process.aspx.cs" />
+    <Compile Include="customerlevels.aspx.cs" />
+    <Compile Include="customerratings.aspx.cs" />
+    <Compile Include="customers.aspx.cs" />
+    <Compile Include="CustomerSession.cs" />
+    <Compile Include="default.aspx.cs" />
+    <Compile Include="deleteicon.aspx.cs" />
+    <Compile Include="displayorder.aspx.cs" />
+    <Compile Include="driver.aspx.cs" />
+    <Compile Include="dumpuser.aspx.cs" />
+    <Compile Include="editappconfig.aspx.cs" />
+    <Compile Include="editcategory.aspx.cs" />
+    <Compile Include="editcountry.aspx.cs" />
+    <Compile Include="editcoupon.aspx.cs" />
+    <Compile Include="editcreditcard.aspx.cs" />
+    <Compile Include="editcustomerlevel.aspx.cs" />
+    <Compile Include="editexpense.aspx.cs" />
+    <Compile Include="editexpensecategory.aspx.cs" />
+    <Compile Include="editextendedprices.aspx.cs" />
+    <Compile Include="editgallery.aspx.cs" />
+    <Compile Include="editinventory.aspx.cs" />
+    <Compile Include="editkit.aspx.cs" />
+    <Compile Include="editlocalesetting.aspx.cs" />
+    <Compile Include="editmanufacturer.aspx.cs" />
+    <Compile Include="editnews.aspx.cs" />
+    <Compile Include="editorderoption.aspx.cs" />
+    <Compile Include="editpartner.aspx.cs" />
+    <Compile Include="editpoll.aspx.cs" />
+    <Compile Include="editpollanswer.aspx.cs" />
+    <Compile Include="editproduct.aspx.cs" />
+    <Compile Include="editproducttype.aspx.cs" />
+    <Compile Include="editquantitydiscount.aspx.cs" />
+    <Compile Include="editquantitydiscounttable.aspx.cs" />
+    <Compile Include="editsalesprompt.aspx.cs" />
+    <Compile Include="editsection.aspx.cs" />
+    <Compile Include="editshippingmethod.aspx.cs" />
+    <Compile Include="editshippingzone.aspx.cs" />
+    <Compile Include="editstaff.aspx.cs" />
+    <Compile Include="editstate.aspx.cs" />
+    <Compile Include="edittopic.aspx.cs" />
+    <Compile Include="editvariant.aspx.cs" />
+    <Compile Include="expensecategories.aspx.cs" />
+    <Compile Include="expenses.aspx.cs" />
+    <Compile Include="fedexmeterrequest.aspx.cs" />
+    <Compile Include="froogle.aspx.cs" />
+    <Compile Include="galleries.aspx.cs" />
+    <Compile Include="galleryimages.aspx.cs" />
+    <Compile Include="Global.asax.cs" />
+    <Compile Include="images.aspx.cs" />
+    <Compile Include="lat_account.aspx.cs" />
+    <Compile Include="lat_account_process.aspx.cs" />
+    <Compile Include="lat_driver.aspx.cs" />
+    <Compile Include="lat_getlinking.aspx.cs" />
+    <Compile Include="lat_signup.aspx.cs" />
+    <Compile Include="lat_signup_process.aspx.cs" />
+    <Compile Include="localesettings.aspx.cs" />
+    <Compile Include="lostpassword.aspx.cs" />
+    <Compile Include="mailingmgr.aspx.cs" />
+    <Compile Include="managepoll.aspx.cs" />
+    <Compile Include="manageratings.aspx.cs" />
+    <Compile Include="manufacturers.aspx.cs" />
+    <Compile Include="movevariant.aspx.cs" />
+    <Compile Include="news.aspx.cs" />
+    <Compile Include="offlineorder.aspx.cs" />
+    <Compile Include="offlineorder_process.aspx.cs" />
+    <Compile Include="orderframe.aspx.cs" />
+    <Compile Include="orderoptions.aspx.cs" />
+    <Compile Include="orders.aspx.cs" />
+    <Compile Include="orderXML.aspx.cs" />
+    <Compile Include="partners.aspx.cs" />
+    <Compile Include="pollanswers.aspx.cs" />
+    <Compile Include="polls.aspx.cs" />
+    <Compile Include="popuprt.aspx.cs" />
+    <Compile Include="popuptx.aspx.cs" />
+    <Compile Include="pricegrabber.aspx.cs" />
+    <Compile Include="prices.aspx.cs" />
+    <Compile Include="productimagemgr.aspx.cs" />
+    <Compile Include="productratings.aspx.cs" />
+    <Compile Include="products.aspx.cs" />
+    <Compile Include="producttypes.aspx.cs" />
+    <Compile Include="qbProduct.aspx.cs" />
+    <Compile Include="quantitydiscounts.aspx.cs" />
+    <Compile Include="recurring.aspx.cs" />
+    <Compile Include="recurringshippinglist.aspx.cs" />
+    <Compile Include="refundorder.aspx.cs" />
+    <Compile Include="resetsqllog.aspx.cs" />
+    <Compile Include="rpt_customers.aspx.cs" />
+    <Compile Include="rpt_emails.aspx.cs" />
+    <Compile Include="rpt_expenses.aspx.cs" />
+    <Compile Include="rpt_orders.aspx.cs" />
+    <Compile Include="rpt_stats.aspx.cs" />
+    <Compile Include="runsql.aspx.cs" />
+    <Compile Include="saleprices.aspx.cs" />
+    <Compile Include="salesprompts.aspx.cs" />
+    <Compile Include="search.aspx.cs" />
+    <Compile Include="sections.aspx.cs" />
+    <Compile Include="setssl.aspx.cs" />
+    <Compile Include="shipping.aspx.cs" />
+    <Compile Include="shippingmethods.aspx.cs" />
+    <Compile Include="shippingzones.aspx.cs" />
+    <Compile Include="showcustomerlevel.aspx.cs" />
+    <Compile Include="signin.aspx.cs" />
+    <Compile Include="signout.aspx.cs" />
+    <Compile Include="SkinBase.cs" />
+    <Compile Include="splash.aspx.cs" />
+    <Compile Include="staff.aspx.cs" />
+    <Compile Include="states.aspx.cs" />
+    <Compile Include="storewide.aspx.cs" />
+    <Compile Include="taxrates.aspx.cs" />
+    <Compile Include="taxzips.aspx.cs" />
+    <Compile Include="TOC.aspx.cs" />
+    <Compile Include="topics.aspx.cs" />
+    <Compile Include="users.aspx.cs" />
+    <Compile Include="variants.aspx.cs" />
+    <Compile Include="voidorder.aspx.cs" />
+    <Compile Include="wizard.aspx.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

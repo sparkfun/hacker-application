@@ -1,0 +1,337 @@
+<?xml version="1.0"?>
+
+<ResidentialChoices>
+
+	<Style>
+		<StyleValue />
+  <StyleText>-- Select Style --</StyleText>
+ </Style>
+	<Style>
+		<StyleValue>1.5 Story</StyleValue>
+  <StyleText>1.5 Story</StyleText>
+ </Style>
+	<Style>
+		<StyleValue>2 Story</StyleValue>
+  <StyleText>2 Story</StyleText>
+ </Style>
+	<Style>
+		<StyleValue>Doublewide</StyleValue>
+  <StyleText>Doublewide</StyleText>
+ </Style>
+ <Style>
+		<StyleValue>Contemporary</StyleValue>
+  <StyleText>Contemporary</StyleText>
+ </Style>
+	<Style>
+		<StyleValue>Bungalow</StyleValue>
+  <StyleText>Bungalow</StyleText>
+ </Style>
+	<Style>
+		<StyleValue>Factory Built</StyleValue>
+  <StyleText>Factory Built</StyleText>
+ </Style>
+	<Style>
+		<StyleValue>Farmhouse</StyleValue>
+  <StyleText>Farmhouse</StyleText>
+ </Style>
+	<Style>
+		<StyleValue>Modular</StyleValue>
+  <StyleText>Modular</StyleText>
+ </Style>
+	<Style>
+		<StyleValue>Raised Ranch</StyleValue>
+  <StyleText>Raised Ranch</StyleText>
+ </Style>
+	<Style>
+		<StyleValue>Ranch</StyleValue>
+  <StyleText>Ranch</StyleText>
+ </Style>
+	<Style>
+		<StyleValue>Singlewide</StyleValue>
+  <StyleText>Singlewide</StyleText>
+ </Style>
+	<Style>
+		<StyleValue>Split-Level</StyleValue>
+  <StyleText>Split-Level</StyleText>
+ </Style>
+	<Style>
+		<StyleValue>Victorian</StyleValue>
+  <StyleText>Victorian</StyleText>
+ </Style>
+	<Style>
+		<StyleValue>Other</StyleValue>
+  <StyleText>Other</StyleText>
+ </Style>
+	
+	<Foundation>
+		<FoundationValue />
+  <FoundationText>-- Select Foundation --</FoundationText>
+	</Foundation>
+	<Foundation>
+		<FoundationValue>Block</FoundationValue>
+  <FoundationText>Block</FoundationText>
+ </Foundation>
+	<Foundation>
+		<FoundationValue>Cellar</FoundationValue>
+  <FoundationText>Cellar</FoundationText>
+ </Foundation>
+	<Foundation>
+		<FoundationValue>Concrete</FoundationValue>
+  <FoundationText>Concrete</FoundationText>
+ </Foundation>
+	<Foundation>
+		<FoundationValue>Crawlspace</FoundationValue>
+  <FoundationText>Crawlspace</FoundationText>
+ </Foundation>
+	<Foundation>
+		<FoundationValue>Full Basement</FoundationValue>
+  <FoundationText>Full Basement</FoundationText>
+ </Foundation>
+	<Foundation>
+		<FoundationValue>Partial</FoundationValue>
+  <FoundationText>Partial</FoundationText>
+ </Foundation>
+	<Foundation>
+		<FoundationValue>Rock and Mortar</FoundationValue>
+  <FoundationText>Rock and Mortar</FoundationText>
+ </Foundation>
+	<Foundation>
+		<FoundationValue>Slab</FoundationValue>
+  <FoundationText>Slab</FoundationText>
+ </Foundation>
+	<Foundation>
+		<FoundationValue>Unfinished</FoundationValue>
+  <FoundationText>Unfinished</FoundationText>
+ </Foundation>
+	<Foundation>
+		<FoundationValue>Walkout</FoundationValue>
+  <FoundationText>Walkout</FoundationText>
+ </Foundation>
+	<Foundation>
+		<FoundationValue>Other</FoundationValue>
+  <FoundationText>Other</FoundationText>
+ </Foundation>
+	<Foundation>
+		<FoundationValue>None</FoundationValue>
+  <FoundationText>None</FoundationText>
+ </Foundation>
+	
+	<Construction>
+		<ConstructionValue />
+  <ConstructionText>-- Select Construction --</ConstructionText>
+	</Construction>
+	<Construction>
+		<ConstructionValue>Brick</ConstructionValue>
+  <ConstructionText>Brick</ConstructionText>
+	</Construction>
+	<Construction>
+		<ConstructionValue>Concrete Block</ConstructionValue>
+  <ConstructionText>Concrete Block</ConstructionText>
+	</Construction>
+	<Construction>
+		<ConstructionValue>Log</ConstructionValue>
+  <ConstructionText>Log</ConstructionText>
+	</Construction>
+	<Construction>
+		<ConstructionValue>Manufactured</ConstructionValue>
+  <ConstructionText>Manufactured</ConstructionText>
+	</Construction>
+	<Construction>
+		<ConstructionValue>Masonite</ConstructionValue>
+  <ConstructionText>Masonite</ConstructionText>
+	</Construction>
+	<Construction>
+		<ConstructionValue>Steel Frame</ConstructionValue>
+  <ConstructionText>Steel Frame</ConstructionText>
+	</Construction>
+	<Construction>
+		<ConstructionValue>Stucco</ConstructionValue>
+  <ConstructionText>Stucco</ConstructionText>
+	</Construction>
+	<Construction>
+		<ConstructionValue>Wood Frame</ConstructionValue>
+  <ConstructionText>Wood Frame</ConstructionText>
+	</Construction>
+	<Construction>
+		<ConstructionValue>Other</ConstructionValue>
+  <ConstructionText>Other</ConstructionText>
+	</Construction>
+	
+	<Roof>
+		<RoofValue />
+  <RoofText>-- Select Roof --</RoofText>
+	</Roof>
+	<Roof>
+		<RoofValue>Asphalt Shingle</RoofValue>
+  <RoofText>Asphalt Shingle</RoofText>
+	</Roof>
+	<Roof>
+		<RoofValue>Composition Shingle</RoofValue>
+  <RoofText>Composition Shingle</RoofText>
+	</Roof>
+	<Roof>
+		<RoofValue>Metal</RoofValue>
+  <RoofText>Metal</RoofText>
+	</Roof>
+	<Roof>
+		<RoofValue>Shake Shingle</RoofValue>
+  <RoofText>Shake Shingle</RoofText>
+	</Roof>
+	<Roof>
+		<RoofValue>Steel &amp; Composition</RoofValue>
+  <RoofText>Steel &amp; Composition</RoofText>
+	</Roof>
+	<Roof>
+		<RoofValue>Tile-Slate</RoofValue>
+  <RoofText>Tile-Slate</RoofText>
+	</Roof>
+	<Roof>
+		<RoofValue>Other</RoofValue>
+  <RoofText>Other</RoofText>
+	</Roof>
+	
+	<Garage>
+		<GarageValue />
+  <GarageText>-- Select Garage --</GarageText>
+	</Garage>
+	<Garage>
+		<GarageValue>1 Car - Attached</GarageValue>
+  <GarageText>1 Car - Attached</GarageText>
+	</Garage>
+	<Garage>
+		<GarageValue>1 Car - Detached</GarageValue>
+  <GarageText>1 Car - Detached</GarageText>
+	</Garage>
+	<Garage>
+		<GarageValue>2 Car - Attached</GarageValue>
+  <GarageText>2 Car - Attached</GarageText>
+	</Garage>
+	<Garage>
+		<GarageValue>2 Car - Detached</GarageValue>
+  <GarageText>2 Car - Detached</GarageText>
+	</Garage>
+	<Garage>
+		<GarageValue>3 Car - Attached</GarageValue>
+  <GarageText>3 Car - Attached</GarageText>
+	</Garage>
+	<Garage>
+		<GarageValue>3 Car - Detached</GarageValue>
+  <GarageText>3 Car - Detached</GarageText>
+	</Garage>
+	<Garage>
+		<GarageValue>Carport</GarageValue>
+  <GarageText>Carport</GarageText>
+	</Garage>
+	<Garage>
+		<GarageValue>Other</GarageValue>
+  <GarageText>Other</GarageText>
+	</Garage>
+	<Garage>
+		<GarageValue>None</GarageValue>
+  <GarageText>None</GarageText>
+	</Garage>
+	
+	<Heating>
+		<HeatingValue />
+  <HeatingText>-- Select Heating --</HeatingText>
+	</Heating>
+	<Heating>
+		<HeatingValue>Coal Hot Water Baseboard</HeatingValue>
+  <HeatingText>Coal Hot Water Baseboard</HeatingText>
+	</Heating>
+	<Heating>
+		<HeatingValue>Electric Baseboard</HeatingValue>
+  <HeatingText>Electric Baseboard</HeatingText>
+	</Heating>
+	<Heating>
+		<HeatingValue>Electric Thermal</HeatingValue>
+  <HeatingText>Electric Thermal</HeatingText>
+	</Heating>
+	<Heating>
+		<HeatingValue>Geothermal</HeatingValue>
+  <HeatingText>Geothermal</HeatingText>
+	</Heating>
+	<Heating>
+		<HeatingValue>Hot Water Baseboard</HeatingValue>
+  <HeatingText>Hot Water Baseboard</HeatingText>
+	</Heating>
+	<Heating>
+		<HeatingValue>Natural Gas Forced Air</HeatingValue>
+  <HeatingText>Natural Gas Forced Air</HeatingText>
+	</Heating>
+	<Heating>
+		<HeatingValue>Natural Gas Hot Water</HeatingValue>
+  <HeatingText>Natural Gas Hot Water</HeatingText>
+	</Heating>
+	<Heating>
+		<HeatingValue>Propane Forced Air</HeatingValue>
+  <HeatingText>Propane Forced Air</HeatingText>
+	</Heating>
+	<Heating>
+		<HeatingValue>Propane Hot Water</HeatingValue>
+  <HeatingText>Propane Hot Water</HeatingText>
+	</Heating>
+	<Heating>
+		<HeatingValue>Radiant</HeatingValue>
+  <HeatingText>Radiant</HeatingText>
+	</Heating>
+	<Heating>
+		<HeatingValue>Solar</HeatingValue>
+  <HeatingText>Solar</HeatingText>
+	</Heating>
+	<Heating>
+		<HeatingValue>Other</HeatingValue>
+  <HeatingText>Other</HeatingText>
+	</Heating>
+	
+	<ElectricityProviders>
+		<ElectricityProviderValue />
+  <ElectricityProviderText>-- Select Electricity Provider --</ElectricityProviderText>
+	</ElectricityProviders>
+	<ElectricityProviders>
+		<ElectricityProviderValue>Progress Energy</ElectricityProviderValue>
+  <ElectricityProviderText>Progress Energy</ElectricityProviderText>
+	</ElectricityProviders>
+	<ElectricityProviders>
+		<ElectricityProviderValue>Other</ElectricityProviderValue>
+  <ElectricityProviderText>Other</ElectricityProviderText>
+	</ElectricityProviders>
+	
+	<Possession>
+		<PossessionValue />
+  <PossessionText>-- Select Possession --</PossessionText>
+	</Possession>
+	<Possession>
+		<PossessionValue>After Closing</PossessionValue>
+  <PossessionText>After Closing</PossessionText>
+	</Possession>
+	<Possession>
+		<PossessionValue>At Closing</PossessionValue>
+  <PossessionText>At Closing</PossessionText>
+	</Possession>
+	<Possession>
+		<PossessionValue>DOD</PossessionValue>
+  <PossessionText>DOD</PossessionText>
+	</Possession>
+	<Possession>
+		<PossessionValue>DOD+</PossessionValue>
+  <PossessionText>DOD+</PossessionText>
+	</Possession>
+	<Possession>
+		<PossessionValue>Negotiable</PossessionValue>
+  <PossessionText>Negotiable</PossessionText>
+	</Possession>
+	<Possession>
+		<PossessionValue>Subject to Lease</PossessionValue>
+  <PossessionText>Subject to Lease</PossessionText>
+	</Possession>
+	<Possession>
+		<PossessionValue>Subject to Tenancy</PossessionValue>
+  <PossessionText>Subject to Tenancy</PossessionText>
+	</Possession>
+	<Possession>
+		<PossessionValue>Other</PossessionValue>
+  <PossessionText>Other</PossessionText>
+	</Possession>
+	
+</ResidentialChoices>

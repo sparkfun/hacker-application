@@ -1,0 +1,80 @@
+<Configuration>
+  <RecentFilesTracker>
+    <RecentFilesTracker>
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\CRENConversion\CRENConversion\Conversion.cs" offset="2868" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\CRENConversion\CRENConversion\Checks.cs" offset="0" line="67" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\CRENConversion\CRENConversion\Class1.cs" offset="0" line="17" column="0" />
+    </RecentFilesTracker>
+  </RecentFilesTracker>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlConnection">
+      <Item value="Close" priority="0" />
+      <Item value="Open" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine" priority="3" />
+      <Item value="ReadLine" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:int">
+      <Item value="ToString" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileStream">
+      <Item value="Close" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CRENConversion.Checks">
+      <Item value="MLSExists" priority="0" />
+      <Item value="AltMLSExists" priority="0" />
+      <Item value="MLSAvailable" priority="0" />
+      <Item value="SQLConnString" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.OleDb.OleDbDataReader">
+      <Item value="Close" priority="0" />
+      <Item value="GetOrdinal" priority="0" />
+      <Item value="Read" priority="0" />
+      <Item value="GetInt32" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.OleDb.OleDbCommand">
+      <Item value="ExecuteReader" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.OleDb.OleDbConnection">
+      <Item value="Close" priority="0" />
+      <Item value="Dispose" priority="0" />
+      <Item value="Open" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:string">
+      <Item value="ToString" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@">
+      <Item value="MLSExists" priority="1" />
+      <Item value="ListingPath" priority="0" />
+      <Item value="TestPathMove" priority="0" />
+      <Item value="SQLConnString" priority="0" />
+      <Item value="Update" priority="0" />
+      <Item value="MLSAvailable" priority="1" />
+      <Item value="TestCommandText" priority="0" />
+      <Item value="AltMLSExists" priority="1" />
+      <Item value="ToString" priority="0" />
+      <Item value="AccessConnString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlCommand">
+      <Item value="ExecuteScalar" priority="0" />
+      <Item value="ExecuteNonQuery" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamWriter">
+      <Item value="Close" priority="0" />
+      <Item value="Flush" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="ToString" priority="1" />
+      <Item value="Append" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CRENConversion.Conversion">
+      <Item value="SQLConnString" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean />
+  </SettingsComponent>
+</Configuration>

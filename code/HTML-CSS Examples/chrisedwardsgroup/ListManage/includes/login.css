@@ -1,0 +1,59 @@
+div.errorsummary {
+	background-color: #F5F5DC;
+	border: 1px dotted #000000;
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	left: 155px;
+	margin: 3px 3px 10px 10px;
+	padding: 10px 5px 5px 10px;
+	position: relative;
+	top: 75px;
+	width: 55%;
+}
+
+h2.heading {
+	color: #5F7DA0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	position: relative;
+	text-align: center;
+	top: 55px;
+}
+
+input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+table.login {
+	background-color: #91A8BF;
+	border-collapse: collapse;
+	margin: 70px auto 10px auto;
+	top: 60px;
+	width: 50%;
+}
+
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+.center {
+	padding-left: 36%;
+}
+
+.errors {
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	left: 182px;
+	position: relative;
+	top: 75px;
+}
+
+.font12pt {
+	color: #5F9EA0;
+	font-size: 12pt;
+}

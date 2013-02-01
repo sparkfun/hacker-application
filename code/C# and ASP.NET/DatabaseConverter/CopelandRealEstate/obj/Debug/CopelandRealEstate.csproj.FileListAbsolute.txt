@@ -1,0 +1,2 @@
+C:\Users\Sean\Documents\Visual Studio Projects\DatabaseConverter\CopelandRealEstate\obj\Debug\CopelandRealEstate.exe
+C:\Users\Sean\Documents\Visual Studio Projects\DatabaseConverter\CopelandRealEstate\obj\Debug\CopelandRealEstate.pdb

@@ -1,0 +1,3 @@
+C:\Users\Sean\Documents\Visual Studio Projects\AccessDataUpgrader\bin\Debug\AccessDataUpgrader.exe.config
+C:\Users\Sean\Documents\Visual Studio Projects\AccessDataUpgrader\obj\Debug\AccessDataUpgrader.exe
+C:\Users\Sean\Documents\Visual Studio Projects\AccessDataUpgrader\obj\Debug\AccessDataUpgrader.pdb

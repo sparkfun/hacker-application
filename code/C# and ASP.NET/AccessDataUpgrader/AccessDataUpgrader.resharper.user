@@ -1,0 +1,110 @@
+<Configuration>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlException">
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="AppendFormat" priority="0" />
+      <Item value="ToString" priority="0" />
+      <Item value="Append" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine" priority="2" />
+      <Item value="ReadLine" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:int">
+      <Item value="ToString" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileStream">
+      <Item value="Close" priority="0" />
+      <Item value="CanWrite" priority="0" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AccessDataUpgrader.AccessRecord">
+      <Item value="CustID" priority="3" />
+      <Item value="ID" priority="1" />
+      <Item value="Photos" priority="1" />
+      <Item value="File" priority="6" />
+      <Item value="Title" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.OleDb.OleDbDataReader">
+      <Item value="GetInt32" priority="0" />
+      <Item value="GetInt16" priority="0" />
+      <Item value="GetString" priority="1" />
+      <Item value="IsDBNull" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlCommand">
+      <Item value="Parameters" priority="0" />
+      <Item value="ExecuteScalar" priority="0" />
+      <Item value="ExecuteReader" priority="0" />
+      <Item value="CommandText" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AccessDataUpgrader.SQLRecord">
+      <Item value="Headline" priority="1" />
+      <Item value="AdID" priority="3" />
+      <Item value="CustomerID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:string">
+      <Item value="Trim" priority="1" />
+      <Item value="Substring" priority="0" />
+      <Item value="ToString" priority="1" />
+      <Item value="Length" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlDataReader">
+      <Item value="Close" priority="0" />
+      <Item value="Read" priority="1" />
+      <Item value="GetString" priority="1" />
+      <Item value="GetInt32" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlParameter">
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlDataAdapter">
+      <Item value="SelectCommand" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.SqlClient.SqlParameterCollection">
+      <Item value="Add" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@">
+      <Item value="CustID" priority="1" />
+      <Item value="MatchingRecordExists" priority="0" />
+      <Item value="RecordExists" priority="0" />
+      <Item value="ToString" priority="0" />
+      <Item value="GetFileExtension" priority="0" />
+      <Item value="Title" priority="1" />
+      <Item value="ProcessRecords" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamWriter">
+      <Item value="WriteLine" priority="0" />
+      <Item value="Close" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <EditorManager>
+    <RecentFiles>
+      <File id="F46CF486-472A-408C-911A-B96DEB441D72/f:AccessRecord.cs" caret="0" visual-x="0" visual-y="0" />
+      <File id="F46CF486-472A-408C-911A-B96DEB441D72/f:SQLRecord.cs" caret="0" visual-x="0" visual-y="0" />
+      <File id="F46CF486-472A-408C-911A-B96DEB441D72/f:LogBuilder.cs" caret="1257" visual-x="0" visual-y="0" />
+      <File id="F46CF486-472A-408C-911A-B96DEB441D72/f:MainEntry.cs" caret="802" visual-x="0" visual-y="102" />
+      <File id="F46CF486-472A-408C-911A-B96DEB441D72/f:Upgrader.cs" caret="10615" visual-x="0" visual-y="6273" />
+    </RecentFiles>
+  </EditorManager>
+  <FileStructureView>
+    <AutoScrollToSource>False</AutoScrollToSource>
+    <TrackCaretLocation>False</TrackCaretLocation>
+  </FileStructureView>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <ReFormatCode>
+    <OptimizeUsings>False</OptimizeUsings>
+    <RemoveRedundantThis>False</RemoveRedundantThis>
+    <ShortenReferences>False</ShortenReferences>
+    <DecorateModifiers>False</DecorateModifiers>
+  </ReFormatCode>
+  <SharedSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </SharedSolutionDisabledTemplatesManager>
+  <UserSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </UserSolutionDisabledTemplatesManager>
+</Configuration>

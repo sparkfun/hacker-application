@@ -1,0 +1,81 @@
+.VAMErrorText
+{
+   color: Red;
+}
+
+.VAMBlinkText
+{
+   color: White;
+}
+
+.VAMFieldWithError
+{
+   background-color: lightpink;
+}
+
+.VAMValSummary
+{
+   color: red;
+}
+
+.VAMValSummaryHeader
+{
+   color: red;
+}
+.VAMValSummaryHeader TR
+{
+   color: red;
+}
+.VAMValSummaryErrors
+{
+   color: red;
+   margin-top:6px;
+}
+.VAMValSummaryFooter
+{
+   color: red;
+}
+.VAMValSummaryFooter TR
+{
+   color: red;
+}
+.VAMRequiredFieldMarker
+{
+}
+
+.VAMRequiredFieldsDescription
+{
+   font-size: 8pt;
+   font-style: italic;
+}
+
+.VAMTextHiliteFields
+{
+}
+
+.VAMNonTextHiliteFields
+{
+}
+.VAMValSummaryAltRows
+{
+   color: red;
+   background-color: lightblue;
+}
+.VAMMultiSegContainer
+{
+   border-left: lightgrey thin inset;
+   border-top: lightgrey thin inset;
+   border-right: lightgrey thin inset;
+   border-bottom: lightgrey thin inset;
+   padding-left: 2px;
+   padding-top: 2px;
+   padding-right: 2px;
+   padding-bottom: 2px;
+}
+.VAMMultiSegTextBox
+{
+   border-left: whitesmoke thin solid;
+   border-top: whitesmoke thin solid;
+   border-right: whitesmoke thin solid;
+   border-bottom: whitesmoke thin solid;
+}

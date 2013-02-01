@@ -1,0 +1,16 @@
+CALENDAR TODO LIST  -*- text -*-
+---------------------------------
+
+
+** For 0.9.6
+
+
+  1. Automatic positioning of the calendar if it's out-of-window
+
+  2. The NaN Bug (occurs when there's a space after the date and no time)
+
+  3. Configure years step (in year combo)
+
+  4. Configure calendar absolute position
+
+  5. Any weekday can be "the first day of week"

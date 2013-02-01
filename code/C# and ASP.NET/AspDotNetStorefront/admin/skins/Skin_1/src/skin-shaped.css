@@ -1,0 +1,24 @@
+/* Copyright Dynarch.com, 2003-2005.  All Rights Reserved. */
+
+@import url("hmenu.css");
+
+div.dynarch-horiz-menu { background-color: #7092ff; color: #fff; border-color: #000; }
+div.dynarch-horiz-menu table tr td { color: #fff; }
+div.dynarch-horiz-menu table tr td.hover { background-color: #a0b2ff; color: #000; }
+div.dynarch-horiz-menu table tr td.active { background-color: #000; color: #ff8; }
+div.dynarch-horiz-menu table tr td.separator div { border-right-color: #a0b2ff; border-left: none; margin-right: 3px; }
+
+div.dynarch-popup-menu { padding: 0; border: 0; }
+div.dynarch-popup-menu div.a { background: transparent url("img/shaped/popup-tl.png") no-repeat 0 0; }
+div.dynarch-popup-menu div.b { background: transparent url("img/shaped/popup-tr.png") no-repeat 100% 0; }
+div.dynarch-popup-menu div.c { background: transparent url("img/shaped/popup-br.png") no-repeat 100% 100%; }
+div.dynarch-popup-menu div.d { background: transparent url("img/shaped/popup-bl.png") no-repeat 0 100%; }
+
+div.dynarch-popup-menu table { background: #7092ff; margin: 9px 12px; }
+div.dynarch-popup-menu tr.item.hover { background-color: #a0c2ff; color: #000; }
+div.dynarch-popup-menu tr.item.active { background-color: #000; color: #fff; }
+div.dynarch-popup-menu tr.separator td div { background: #a0b2ff; }
+
+/* no shadows here */
+div.dynarch-menu-shadow, img.dynarch-menu-shadow, div.div.dynarch-IE6-shadow,
+div.dynarch-menu-shadow { display: none; }

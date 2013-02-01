@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspDotNetStorefront", "AspDotNetStorefront.csproj", "{BFC8B0C0-0E60-48C9-A078-341BD3B391EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspDotNetStorefrontCommon", "ASPDNSFCommon\AspDotNetStorefrontCommon.csproj", "{65E8266F-BD0A-4C2A-B7DE-13AEE9DF0FAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspDotNetStorefrontEncrypt", "ASPDNSFEncrypt\AspDotNetStorefrontEncrypt.csproj", "{91E5D442-330D-4225-A086-54BA71A14B3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspDotNetStorefrontQuickBooks", "ASPDNSFQuickBooks\AspDotNetStorefrontQuickBooks.csproj", "{6C390845-07F3-48B3-BC7B-7ABECC1364F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspDotNetStorefrontGateways", "ASPDNSFGateways\AspDotNetStorefrontGateways.csproj", "{63E62D25-0D49-4414-836E-85481A039C06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspDotNetAdmin", "AspDotNetAdmin\AspDotNetAdmin.csproj", "{FCEDD587-71A6-4B33-B750-C1AA460061D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFC8B0C0-0E60-48C9-A078-341BD3B391EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC8B0C0-0E60-48C9-A078-341BD3B391EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC8B0C0-0E60-48C9-A078-341BD3B391EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC8B0C0-0E60-48C9-A078-341BD3B391EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65E8266F-BD0A-4C2A-B7DE-13AEE9DF0FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65E8266F-BD0A-4C2A-B7DE-13AEE9DF0FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65E8266F-BD0A-4C2A-B7DE-13AEE9DF0FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65E8266F-BD0A-4C2A-B7DE-13AEE9DF0FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91E5D442-330D-4225-A086-54BA71A14B3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E5D442-330D-4225-A086-54BA71A14B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E5D442-330D-4225-A086-54BA71A14B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E5D442-330D-4225-A086-54BA71A14B3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C390845-07F3-48B3-BC7B-7ABECC1364F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C390845-07F3-48B3-BC7B-7ABECC1364F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C390845-07F3-48B3-BC7B-7ABECC1364F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C390845-07F3-48B3-BC7B-7ABECC1364F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63E62D25-0D49-4414-836E-85481A039C06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E62D25-0D49-4414-836E-85481A039C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E62D25-0D49-4414-836E-85481A039C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E62D25-0D49-4414-836E-85481A039C06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCEDD587-71A6-4B33-B750-C1AA460061D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCEDD587-71A6-4B33-B750-C1AA460061D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCEDD587-71A6-4B33-B750-C1AA460061D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCEDD587-71A6-4B33-B750-C1AA460061D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

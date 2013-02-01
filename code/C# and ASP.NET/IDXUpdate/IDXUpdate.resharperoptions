@@ -1,0 +1,62 @@
+<Configuration>
+  <RecentFilesTracker>
+    <RecentFilesTracker>
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\IDXUpdate\Class1.cs" offset="2563" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\IDXUpdate\Fnis.cs" offset="0" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\IDXUpdate\Sei.cs" offset="2135" line="0" column="0" />
+    </RecentFilesTracker>
+  </RecentFilesTracker>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:@nsoftware.IPWorksZip">
+      <Item value="Zip" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:nsoftware.IPWorksZip.Gzip">
+      <Item value="Extract" priority="0" />
+      <Item value="ExtractAll" priority="0" />
+      <Item value="ArchiveFile" priority="0" />
+      <Item value="EnableStreaming" priority="0" />
+      <Item value="ExtractToPath" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:nsoftware.IPWorksZip.Tar">
+      <Item value="UseGzipCompression" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileInfo">
+      <Item value="Name" priority="1" />
+      <Item value="FullName" priority="1" />
+      <Item value="Extension" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@nsoftware">
+      <Item value="IPWorksZip" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@IDXUpdate.Class1.zip">
+      <Item value="ExtractAll" priority="0" />
+      <Item value="ArchiveFile" priority="0" />
+      <Item value="ExtractToPath" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@">
+      <Item value="OverwriteFiles" priority="0" />
+      <Item value="DataPath" priority="2" />
+      <Item value="ExtractFiles" priority="0" />
+      <Item value="ExtractGraphicFiles" priority="0" />
+      <Item value="ExtractGraphicsFiles" priority="1" />
+      <Item value="ListGraphicFiles" priority="0" />
+      <Item value="MlsName" priority="2" />
+      <Item value="ExtractDataFiles" priority="3" />
+      <Item value="CompressedPath" priority="3" />
+      <Item value="Reset" priority="0" />
+      <Item value="GraphicsPath" priority="2" />
+      <Item value="ListDataFiles" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.DirectoryInfo">
+      <Item value="GetFiles" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean />
+  </SettingsComponent>
+</Configuration>

@@ -1,0 +1,46 @@
+/* Copyright Dynarch.com, 2003-2005.  All Rights Reserved. */
+
+@import url("hmenu.css");
+
+/* horizontal parts */
+
+div.dynarch-horiz-menu { padding: 0px; }
+div.dynarch-horiz-menu div.a { padding: 0px 10px; background: url("img/rain/popup-bottom-right.gif") no-repeat 100% 100%; }
+div.dynarch-horiz-menu div.b { background: url("img/rain/popup-top-left.gif") no-repeat 0% 0%; }
+div.dynarch-horiz-menu table,
+div.dynarch-popup-menu table {
+  font-family: tahoma,verdana,sans-serif;
+  color: #000;
+}
+div.dynarch-horiz-menu { background: url("img/rain/popup-normal-bg.png"); border-color: #4d627f; }
+div.dynarch-horiz-menu table tr td.hover { background: url("img/rain/item-hover-bg.png") 50% 50%; }
+div.dynarch-horiz-menu table tr td.active { background: url("img/rain/item-active-bg.png") 50% 50%;
+  border-left: 1px solid #4d627f; border-right: 1px solid #4d627f; padding: 4px 8px 2px 10px; }
+div.dynarch-horiz-menu table tr td.separator div { border-left-color: #9d98bf; border-right-color: #fff; }
+
+/* vertical parts */
+
+div.dynarch-popup-menu div.a { padding: 10px 0px; background: url("img/rain/popup-bottom-right.gif") no-repeat 100% 100%; }
+div.dynarch-popup-menu div.b { background: url("img/rain/popup-bottom-left.gif") no-repeat 0% 100%; }
+div.dynarch-popup-menu div.c { background: url("img/rain/popup-top-left.gif") no-repeat 0% 0%; }
+div.dynarch-popup-menu div.d { background: url("img/rain/popup-top-right.gif") no-repeat 100% 0%; }
+div.dynarch-popup-menu { padding: 0px; border: 1px solid #4d627f; background: url("img/rain/popup-normal-bg.png") 50% 50%; }
+div.dynarch-popup-menu tr.separator td div { margin: 6px 5px 6px 5px; background-color: #adb2cf; }
+div.dynarch-popup-menu tr.item td.icon { padding-left: 5px; }
+div.dynarch-popup-menu tr.item td.end { padding-right: 5px; }
+
+div.dynarch-popup-menu tr.item.hover td.icon { background: url("img/rain/item-hover-left-bg.png") no-repeat 0% 0%; }
+div.dynarch-popup-menu tr.item.hover td.label { background: url("img/rain/item-hover-bg.png") repeat-x 0% 0%; }
+div.dynarch-popup-menu tr.item.hover td.end { background: url("img/rain/item-hover-right-bg.png") no-repeat 100% 0%; }
+
+div.dynarch-popup-menu tr.item.active td.icon { background: url("img/rain/item-active-left-bg.png") no-repeat 0% 0%; }
+div.dynarch-popup-menu tr.item.active td.label { background: url("img/rain/item-active-bg.png") repeat-x 0% 0%; }
+div.dynarch-popup-menu tr.item.active td.end { background: url("img/rain/item-active-right-bg.png") no-repeat 100% 0%; }
+
+div.dynarch-popup-menu tr.disabled td.label { color: #a2a2af; }
+div.dynarch-popup-menu tr.item.disabled.hover td.icon { background: url("img/rain/item-disabled-left-bg.png") no-repeat 0% 0%; }
+div.dynarch-popup-menu tr.item.disabled.hover td.label { background: url("img/rain/item-disabled-bg.png") repeat-x 0% 0%; }
+div.dynarch-popup-menu tr.item.disabled.hover td.end { background: url("img/rain/item-disabled-right-bg.png") no-repeat 100% 0%; }
+
+div.dynarch-popup-menu tr.item td.arrow div { background: transparent url("img/rarrow.gif") no-repeat 0% 50%; }
+div.dynarch-popup-menu tr.active td.arrow div { background: transparent url("img/rarrow.gif") no-repeat 0% 50%; }

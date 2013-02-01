@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assemblies Version="620756995">
+  <Assembly Name="SMTP.Net, Version=2.1.0.8, Culture=neutral, PublicKeyToken=986a9aa31056680b" Cache="a8eccaa6-5de5-4da1-bc8d-dae5be807211.ReflectionCache" Timestamp="632128328920000000" />
+  <Assembly Name="PeterBlum.VAM, Version=3.0.4.5000, Culture=neutral, PublicKeyToken=76d6c019e89ec3c9" Cache="5fc37f96-74e1-4482-9a67-4b47f75573b6.ReflectionCache" Timestamp="632782095560000000" />
+  <Assembly Name="REMS.Configuration, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" Cache="ac4d3f66-fb92-4152-a5c9-fa5a140470af.ReflectionCache" Timestamp="632816719537343750" />
+  <Assembly Name="SAImageGen_Interop, Version=1.0.0.0, Culture=neutral" Cache="5193c633-12f0-480b-8455-f5870b4e43bb.ReflectionCache" Timestamp="632497853600000000" />
+</Assemblies>

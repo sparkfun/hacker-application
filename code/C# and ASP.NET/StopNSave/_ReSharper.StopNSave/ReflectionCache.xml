@@ -1,0 +1,9 @@
+<Assemblies Version="14">
+  <Assembly Name="SMTP.Net, Version=2.1.0.8, Culture=neutral, PublicKeyToken=986a9aa31056680b" Cache="f8b35d88-74cd-4597-bd22-2b58d4883fbf.ReflectionCache" Timestamp="632128076920000000" />
+  <Assembly Name="System.Xml, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Cache="1d9437e5-2f2e-45e5-812f-f1bd295ec087.ReflectionCache" Timestamp="632255021400000000" />
+  <Assembly Name="System.Data, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Cache="854befa4-84e2-4b74-9b3a-da7ff8632b38.ReflectionCache" Timestamp="632255023200000000" />
+  <Assembly Name="PeterBlum.VAM, Version=3.0.4.5000, Culture=neutral, PublicKeyToken=76d6c019e89ec3c9" Cache="c623a975-fc21-4921-bebc-fd97f607dfd0.ReflectionCache" Timestamp="632781843560000000" />
+  <Assembly Name="mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Cache="b9870eb8-96fd-4920-bfa8-1ba6bdb13733.ReflectionCache" Timestamp="633120942460000000" />
+  <Assembly Name="System.Web, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Cache="f296e3ff-a26f-49ed-bf21-40ad7080e99f.ReflectionCache" Timestamp="633120969460000000" />
+  <Assembly Name="System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Cache="b2608b28-0b55-4f9b-ad63-1167c6eaaacc.ReflectionCache" Timestamp="633120969380000000" />
+</Assemblies>

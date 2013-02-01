@@ -1,0 +1,34 @@
+/* Copyright Dynarch.com, 2003-2005.  All Rights Reserved. */
+/* DynarchMenu layout file */
+
+@import url("hmenu.css");
+
+/* Additional styles for a "3D" look&feel similar to the menus in
+Windows 98/2000 or Mozilla Modern theme. */
+
+/* horizontal parts */
+
+div.dynarch-horiz-menu { border-width: 2px; border-style: groove; }
+div.dynarch-horiz-menu { padding: 1px; }
+div.dynarch-horiz-menu table tr td.hover { padding: 2px 9px; border: 1px solid; }
+div.dynarch-horiz-menu table tr td.active,
+div.dynarch-horiz-menu table tr td.pressed { padding: 3px 8px 1px 10px; border: 1px solid; }
+
+/* vertical parts */
+
+div.dynarch-popup-menu { padding: 0px; }
+div.dynarch-popup-menu div.d { border: 1px solid; }
+div.dynarch-popup-menu tr.separator td div { border-top: 1px solid; margin-bottom: 1px; }
+
+/* toolbars */
+
+div.dynarch-menu-toolbar table tr td.item {
+  padding: 2px 3px;
+}
+div.dynarch-menu-toolbar table tr td.hover {
+  padding: 1px 2px;
+}
+div.dynarch-menu-toolbar table tr td.active,
+div.dynarch-menu-toolbar table tr td.pressed {
+  padding: 2px 1px 0px 3px;
+}

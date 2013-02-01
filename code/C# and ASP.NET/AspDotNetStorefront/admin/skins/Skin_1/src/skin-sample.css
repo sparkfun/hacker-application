@@ -1,0 +1,126 @@
+/* Copyright Dynarch.com, 2003-2005.  All Rights Reserved. */
+
+/*
+   Note, this file wants to be a sample showing you how to create custom skins.
+   Feel free to use it as a starting point. */
+
+/* Import the main layout file.  Several layouts are predefined:
+
+   - hmenu.css          -- standard 2D layout
+   - hmenu-extended.css -- facilitates skins like "Office XP" menus
+   - hmenu-3d.css       -- facilitates 3D skins suitable for Win98-like menus
+
+   Please note that the URL that you specify in the @import clause is relative
+   to the path of this file itself.  Since skin-sample.css is located in the same
+   directory as hmenu.css, we can include it directly as "hmenu.css".  If you plan
+   to put your custom skins in another directory, then you would need to include
+   for instance: "/hmenu/hmenu.css", assuming that "/hmenu/" is the path to your
+   DynarchMenu installation, accessible from your server's document root.
+*/
+
+@import url("hmenu.css");
+
+/****************************************************
+   (1) THE MAIN MENU BAR
+*****************************************************/
+
+div.dynarch-horiz-menu {
+  /* This is a DIV, container of the horizontal menu bar.
+     Please note that if you customize fonts here, the setting will most likely
+     be lost in Internet Explorer because tables don't inherit fonts.  Therefore,
+     we would better customize fonts in the "table" children. */
+
+  background-color: #ff0;       /* assign a yellow background to the main menu bar */
+  border: 3px solid #f00;       /* give it a thick, red border */
+}
+
+div.dynarch-horiz-menu table {
+  /* A table is used to layout elements in the main menu bar.
+     Here is safe to specify fonts. */
+
+  font: 14px Georgia,"Times New Roman",serif; /* set a custom font */
+  color: #00f;                  /* and a custom color */
+}
+
+div.dynarch-horiz-menu table tr td.hover {
+  /* Styles for hover items in the main menu bar */
+  background-color: #000;
+  color: yellow;
+}
+
+div.dynarch-horiz-menu table tr td.active {
+  /* Styles for active (pressed) items in the main menu bar */
+  background-color: #00f;
+  color: #fff;
+  /* Note that setting the font weight to bold will increase the item
+     width when it's pressed.  This is normally not desirable. */
+  font-weight: bold;
+}
+
+div.dynarch-horiz-menu table tr td.separator div {
+  /* The vertical separator that can be present in the main menu bar.
+     This is normally a small DIV, having certain padding and margin set, so that it can look like a separator.
+     It is normally comprised of 2 lines (border-left and border-right), so if we want it to be a single-line
+     separator then we need to set one of them to "none". */
+  border-left: none;            /* no border on the left side */
+  border-right-color: red;      /* red separator line. */
+}
+
+/****************************************************
+   (2) THE POPUP MENUS
+*****************************************************/
+
+div.dynarch-popup-menu {
+  /* This is the element containing a single popup menu.  Many other elements are inside it,
+     but you normally only need to mess with this one and with <table> and <td> elements. */
+
+  background-color: #ff8;       /* light yellow background */
+  padding: 10px;                /* An ugly, 10 pixels, padding. */
+  border: 3px solid red;        /* a thick red border. */
+}
+
+div.dynarch-popup-menu table td {
+  /* This table contains popup menu items.  It's a good place to configure fonts. */
+
+  font: 13px Impact,"Arial Black",sans-serif; /* customize popup menu fonts */
+  color: #800;                        /* make sure they are initially dark red */
+}
+
+div.dynarch-popup-menu tr.item.hover td {
+  /* Set the style for hovered items. */
+  background-color: #555;
+  color: yellow;
+}
+
+div.dynarch-popup-menu tr.item.active td {
+  /* Set the style for active (pressed) items. */
+  background-color: #000;
+  color: white;
+}
+
+div.dynarch-popup-menu tr.separator td div {
+  /* Here we can configure the horizontal separator style. */
+  background-color: red;        /* give it a red background in order to have a red line as separator. */
+
+  /* Let's space it "properly" ;-) */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.dynarch-popup-menu tr.disabled td.label {
+  /* Special case: DISABLED menu items */
+  color: #fff;                  /* Let's make them hard to see ;-) */
+}
+
+/***
+
+   Well, that's what you need to know..  I hope this helps.  Our menu
+   can be styled very heavily and nicely, but it's out of the scope of our
+   documentation to write a full guide to CSS.
+
+   If you need more than this, please (1) read and understand the CSS
+   specification which can be found at www.w3.org, (2) look through our
+   default skins and (3) experiment, experiment, test, experiment :-).
+   It's not easy to make good looking skins.
+
+***/

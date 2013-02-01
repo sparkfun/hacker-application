@@ -1,0 +1,11 @@
+<Assemblies Version="14">
+  <Assembly Name="nsoftware.IPWorksZip, Version=6.0.1578.0, Culture=neutral, PublicKeyToken=cdc168f89cffe9cf" Cache="44f9656c-eb84-4571-b8eb-c761078e4b1d.ReflectionCache" Timestamp="632186684860000000" />
+  <Assembly Name="System.Xml, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Cache="478d5ee4-dd08-4353-a8bb-adafb069d55c.ReflectionCache" Timestamp="632255021400000000" />
+  <Assembly Name="System.Data, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Cache="c13d83a5-e33a-4377-a719-ebcf1f80525f.ReflectionCache" Timestamp="632255023200000000" />
+  <Assembly Name="Xceed.Tar, Version=3.2.6319.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" Cache="8a3a4075-83ad-48a9-9993-174624154d68.ReflectionCache" Timestamp="632863131800000000" />
+  <Assembly Name="Xceed.FileSystem, Version=3.2.6319.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" Cache="ae2929b0-8fb2-4c06-a80d-ce64f88d1f46.ReflectionCache" Timestamp="632863131760000000" />
+  <Assembly Name="Xceed.Zip, Version=3.2.6319.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" Cache="21a44a42-4345-48c8-9b72-e5d5bfbd6bb3.ReflectionCache" Timestamp="632863131800000000" />
+  <Assembly Name="Xceed.GZip, Version=3.2.6319.0, Culture=neutral, PublicKeyToken=ba83ff368b7563c6" Cache="f8e83002-13ad-43d8-8c14-6e097fd0a292.ReflectionCache" Timestamp="632863131780000000" />
+  <Assembly Name="mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Cache="9562b6e9-072e-4a45-9788-d7742b2d8bf4.ReflectionCache" Timestamp="633120942460000000" />
+  <Assembly Name="System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Cache="f695c055-b793-4339-9b35-b4d947f8aadf.ReflectionCache" Timestamp="633120969380000000" />
+</Assemblies>

@@ -1,0 +1,156 @@
+p.privacystatement {
+	font-size: .9em;
+	padding: 10px 0px 10px 0px;
+}
+
+table.forms {
+	background-color: #F5F5F5;
+	margin: 10px 0px 10px 15px;
+	padding: 0px 0px 0px 0px;
+	width: 90%;
+}
+
+table.forms input {
+	font-size: .95em;
+}
+
+table.forms table {
+	background-color: #F5F5F5;
+	border-collapse: collapse;
+}
+
+table.forms td {
+	background-color: #F5F5F5;
+	font-size: .82em;
+	padding: 5px 10px 5px 10px;
+}
+
+table.forms th {
+	font-size: .75em;
+	font-weight: bold;
+	padding: 5px 10px 5px 10px;
+	text-align: left;
+}
+
+table.mortgagecalc {
+	font-size: .75em;
+	margin: 0px 0px 0px 30px;
+	width: 520px;
+}
+
+td.mortgagecalcdata {
+	padding: 3px 0px 3px 10px;
+}
+
+td.mortgagecalcdata2 {
+	padding: 3px 10px 3px 10px;
+	text-align: right;
+	width: 100px;
+}
+
+th.formhead {
+	background-color: #283E89;
+	color: #FFFFFF;
+	font-size: .8em;
+	font-weight: bold;
+}
+
+th.mortgagecalchead {
+	background-color: #CA1D1D;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.buttons {
+	font-size: .9em;
+}
+
+.dropdownlists {
+	font-size: .9em;
+}
+
+.required {
+	font-size: smaller;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.VAMErrorText {
+	color: #FF0000;
+	font-size: .75em;
+}
+
+.VAMFieldWithError {
+	background-color: #800080;
+}
+
+.VAMRequiredFieldsDescription {
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .75em;
+	font-style: italic;
+}
+
+.VAMValSummary {
+	background-color: #F5F5F5;
+	border: 2px solid #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px 5px 0px 15px;
+	padding: 5px 0px 5px 5px;
+	width: 90%;
+}
+
+.VAMValSummaryErrors {
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	margin: 5px 5px 5px 40px;
+}
+
+.VAMValSummaryErrors li {
+	padding: 6px;
+}
+
+.VAMValSummaryFooter {
+	color: #FF0000;
+}
+
+.VAMValSummaryFooter tr {
+	color: #FF0000;
+}
+
+.VAMValSummaryHeader {
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 120%;
+	font-weight: bold;
+	margin-top: 20px;
+	padding: 10px 0px 10px 10px;
+}
+
+.VAMValSummaryHeader tr {
+	color: #FF0000;
+}
+
+#glossary {
+	margin: 10px 0px 10px 15px;
+	padding: 0px 0px 0px 0px;
+	width: 95%;
+}
+
+#glossary dd {
+	font-size: .75em;
+}
+
+#glossary dt {
+	font-size: .75em;
+	font-weight: bold;
+}
+
+#glossary h1 {
+	font-size: 1em;
+}
+
+#glossary h2 {
+	font-size: .7em;
+}

@@ -1,0 +1,4 @@
+Add License Files for VAM: Data Entry Controls into this folder.
+DO NOT add license files for any other product into this folder. Each product has its own Licenses folder.
+
+Also assign the License Key in Application_Start or Page_Load as documented in the Installation Guide.

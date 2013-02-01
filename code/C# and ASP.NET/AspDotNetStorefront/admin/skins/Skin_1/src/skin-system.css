@@ -1,0 +1,22 @@
+/* Copyright Dynarch.com, 2003-2005.  All Rights Reserved. */
+
+@import url("hmenu-3d.css");
+
+/* horizontal parts */
+
+div.dynarch-horiz-menu { background-color: ButtonFace; color: ButtonText; border-color: ButtonFace; }
+div.dynarch-horiz-menu table { color: ButtonText; }
+div.dynarch-horiz-menu table tr td.hover { border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight; }
+div.dynarch-horiz-menu table tr td.active,
+div.dynarch-horiz-menu table tr td.pressed { border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow; }
+div.dynarch-horiz-menu table tr td.pressed { background-color: ButtonHighlight; }
+div.dynarch-horiz-menu table tr td.separator div { border-left-color: ButtonShadow; border-right-color: ButtonHighlight; }
+
+/* vertical parts */
+
+div.dynarch-popup-menu { border-color: ButtonShadow #000 #000 ButtonShadow; background-color: ButtonFace; color: ButtonText; }
+div.dynarch-popup-menu div.d { border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight; }
+div.dynarch-popup-menu tr.separator td div { border-color: ButtonShadow; background-color: ButtonHighlight; }
+div.dynarch-popup-menu tr.item.hover, div.dynarch-popup-menu tr.item.active { background-color: Highlight; color: HighlightText; }
+div.dynarch-popup-menu tr.item.hover td.icon, div.dynarch-popup-menu tr.item.active td.icon { background-color: Highlight; }
+div.dynarch-popup-menu tr.disabled td.label { color: GrayText; }

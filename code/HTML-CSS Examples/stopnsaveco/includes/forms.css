@@ -1,0 +1,125 @@
+p.privacystatement {
+	font-size: 90%;
+	padding: 0px;
+}
+
+table.forms {
+	margin: 10px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	width: 100%;
+}
+
+table.forms input {
+	font-size: 95%;
+}
+
+table.forms table {
+	background-color: #DCDCDC;
+	border-collapse: collapse;
+}
+
+table.forms td {
+	font-size: 85%;
+	padding: 5px 10px 5px 10px;
+}
+
+table.forms th {
+	font-size: 95%;
+	font-weight: bold;
+	padding: 5px 10px 5px 10px;
+}
+
+th.formhead {
+	background-color: #474C20;
+	color: #FFFFFF;
+	font-size: 100%;
+	font-weight: bold;
+	text-align: center;
+}
+
+.buttons {
+	font-size: 110%;
+}
+
+.dropdownlists {
+	font-size: 90%;
+}
+
+.required {
+	font-size: smaller;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.VAMBlinkText {
+	color: #FFFFFF;
+}
+
+.VAMErrorText {
+	color: #FF0000;
+	font-size: 90%;
+}
+
+.VAMFieldWithError {
+	background-color: #800080;
+}
+
+.VAMNonTextHiliteFields {
+}
+
+.VAMRequiredFieldMarker {
+}
+
+.VAMRequiredFieldsDescription {
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	font-style: italic;
+}
+
+.VAMTextHiliteFields {
+}
+
+.VAMValSummary {
+	background-color: #FAFAD2;
+	margin: 0px 5px 0px 5px;
+	padding: 5px 0px 5px 5px;
+	width: 90%;
+}
+
+.VAMValSummaryErrors {
+	color: #FF0000;
+	font-size: 90%;
+	font-style: italic;
+	margin: 5px 5px 5px 40px;
+}
+
+.VAMValSummaryFooter {
+	color: #FF0000;
+}
+
+.VAMValSummaryFooter TR {
+	color: #FF0000;
+}
+
+.VAMValSummaryHeader {
+	color: #FF0000;
+	font-size: 110%;
+	font-weight: bold;
+	padding: 10px 0px 10px 10px;
+}
+
+.VAMValSummaryHeader TR {
+	color: #FF0000;
+}
+
+#companyContact {
+	background-color: #E0E8F5;
+	display: block;
+	float: right;
+	height: 100px;
+	margin-left: 15px;
+	padding: 12px;
+	width: 50%;
+}

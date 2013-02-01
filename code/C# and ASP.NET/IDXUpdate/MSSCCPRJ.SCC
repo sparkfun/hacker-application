@@ -1,0 +1,9 @@
+SCC = This is a source code control file
+
+[IDXUpdate.sln]
+SCC_Aux_Path = http://192.168.1.10/VaultService|Main:1
+SCC_Project_Name = $/IDXUpdate
+
+[IDXUpdate.csproj]
+SCC_Aux_Path = http://192.168.1.10/VaultService|Main:1
+SCC_Project_Name = $/IDXUpdate

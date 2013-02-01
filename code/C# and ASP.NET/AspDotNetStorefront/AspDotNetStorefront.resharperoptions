@@ -1,0 +1,17 @@
+<Configuration>
+  <CompletionStatisticsManager />
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean />
+  </SettingsComponent>
+  <RecentFilesTracker>
+    <RecentFilesTracker>
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\AspDotNetStorefront\ASPDNSFCommon\Common.cs" offset="32142" line="821" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\AspDotNetStorefront\SkinBase.cs" offset="0" line="470" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\AspDotNetStorefront\default.aspx.cs" offset="0" line="-1" column="-1" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\AspDotNetStorefront\engine.aspx.cs" offset="0" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\AspDotNetStorefront\account.aspx.cs" offset="491" line="0" column="0" />
+    </RecentFilesTracker>
+  </RecentFilesTracker>
+</Configuration>

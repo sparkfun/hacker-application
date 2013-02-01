@@ -1,0 +1,3 @@
+\\Homestar\websites\chrisedwardsgroup\bin\ChrisEdwardsGroup.Website.dll
+C:\Users\Sean\Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Sean\Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\obj\Release\ChrisEdwardsGroup.Website.dll

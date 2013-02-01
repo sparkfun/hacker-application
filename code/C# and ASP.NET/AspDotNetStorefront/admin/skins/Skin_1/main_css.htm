@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD//HTML 4.01 Transitional//EN"> 
+<head>
+<base target="content">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="en">
+<title>AspDotNetStorefront - Admin Header</title>
+<link rel="stylesheet" href="skins/skin_%SKINID%/style.css" type="text/css">
+<script type="text/javascript">
+     _dynarch_menu_url = "skins/skin_%SKINID%/";
+</script>
+<style type="text/css"> @import url("skins/skin_%SKINID%/src/skin-aqua.css"); </style>
+<script type="text/javascript" src="skins/skin_%SKINID%/src/hmenu.js"></script>
+<style type="text/css">
+#header {
+	background-color: #FFFFFF;
+	text-align: center;
+	margin: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 68px;
+}
+#footer {
+	background-color: #FFFFFF;
+	text-align: center;
+	margin: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 24px;
+	visibility: visible;
+}
+#content {
+	background-color: #FFFFFF;
+	margin: 0;
+	margin-left: 75px;
+	margin-right: auto;
+}
+#left {
+	background-color: #FF9999;
+	position: absolute;
+	top: 68px;
+	width: 150px;
+	left: 0;
+}
+#right {
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 68px;
+	width: 1px;
+	right: 0;
+}
+body {
+	font: medium verdana, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right 0;
+}
+</style>
+
+<script type="text/javascript" src="x.js"></script>
+<script type="text/javascript">
+function adjustLayout()
+{
+  // Get natural heights
+  var cHeight = xHeight("contentcontent");
+  var lHeight = xHeight("leftcontent");
+  var rHeight = xHeight("rightcontent");
+
+  // Find the maximum height
+  var maxHeight =
+    Math.max(cHeight, Math.max(lHeight, rHeight));
+
+  // Assign maximum height to all columns
+  xHeight("content", maxHeight);
+  xHeight("left", maxHeight);
+  xHeight("right", maxHeight);
+
+  // Show the footer
+  xShow("footer");
+}
+window.onload = function()
+{
+  xAddEventListener(window, "resize", adjustLayout, false);
+  adjustLayout();
+  DynarchMenu.setup('menu', { electric: 10 });
+}
+</script>
+</head>
+<!-- PAGE INVOCATION: '%INVOCATION%' -->
+<body >
+<body>
+<div id="header">
+<!-- header -->
+<table width="100%" height="68" cellpadding="0" cellspacing="0" border="0" background="skins/skin_1/images/gradient.jpg">
+	<tr><td colspan="2" height="5"></td></tr>
+	<tr>
+		<td align="left" valign="middle">&nbsp;<font class="SiteTitle"><b><a target="_top" href="default.aspx">AspDotNetStorefront Admin For</a>: <a href="../" target="_blank">%SITE_NAME%</a></b></font></td>
+		<td align="right" valign="middle"></td>
+	</tr>
+	<tr><td height="25" align="left" valign="middle">
+		<img src="images/spacer.gif" width="6" height="1"><span class="username">%USERNAME%&nbsp;&nbsp;<a class="username" target="content" href="%SIGNINOUT_LINK%">%SIGNINOUT_TEXT%</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_top" href="default.aspx">Refresh Menu</a>
+	</td>
+<td align="right">
+<form style="margin: 0px;" name="SearchFormTop" action="search.aspx" method="GET">Search: <input name="SearchTerm" size="20">&nbsp;<INPUT type="submit" name="submit" value="GO">&nbsp;&nbsp;</form>
+	</td>
+	</tr>
+	<tr height="23">
+		<td colspan="2"><table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+		<td style="border-width: 1px; border-style: none;" align="left" valign="middle" colspan="2"  width="100%" height="23" bgcolor="#FFFFFF"><ul id="menu" style="visibility: block; display:none;">
+      <li><a target="content" href="splash.aspx">Home</a></li>
+	  %MANUFACTURER_MENU%
+	  %CATEGORY_MENU%
+	  %SECTION_MENU%
+	  <li>
+	  	<a target="content" href="products.aspx">Products</a>
+		<ul>
+			<li><a target="content" href="products.aspx">Edit Products</a></li>
+			<li><a target="content" href="producttypes.aspx">Add/Edit Product Types</a></li>
+			<li><a target="content" href="prices.aspx">Edit/Update Prices</a></li>
+			<li><a target="content" href="saleprices.aspx">Show Products On Sale</a></li>
+		</ul>
+	  </li>
+	  <li>
+	  	<a target="content" href="appconfig.aspx">Misc</a>
+		<ul>
+			<li><a target="content" href="customers.aspx">Manage Customers</a></li>
+			<li><a target="content" href="staff.aspx">Edit Staff</a></li>
+			<li><a target="content" href="polls.aspx">Manage Polls</a></li>
+			<li><a target="content" href="froogle.aspx">Froogle Feed</a></li>
+			<li><a target="content" href="pricegrabber.aspx">PriceGrabber Feed</a></li>
+			<li><a target="content" href="manageratings.aspx">Manage Ratings</a></li>
+			<li><a target="content" href="partners.aspx">Edit Partners</a></li>
+			<li><a target="content" href="creditcards.aspx">Credit Card Types</a></li>
+			<li><a target="content" href="affiliates.aspx">Affiliates</a></li>
+			<li><a target="content" href="coupons.aspx">Coupons</a></li>
+			<li><a target="content" href="quantitydiscounts.aspx">Quantity Discounts</a></li>
+			<li><a target="content" href="topics.aspx">Topics</a></li>
+			<li><a target="content" href="galleries.aspx">Galleries</a></li>
+			<li><a target="content" href="images.aspx">Upload Images</a></li>
+			<li><a target="content" href="appconfig.aspx">AppConfig Parameters</a></li>
+			<li><a target="content" href="salesprompts.aspx">Sales Prompts</a></li>
+			<li><a target="content" href="mailingmgr.aspx">Mailing Mgr</a></li>
+			<li><a target="content" href="resetsqllog.aspx">Reset SQL Log</a></li>
+			<li><a target="content" href="wizard.aspx">Run Config Wizard</a></li>
+			<li>Track Expenses
+				<ul>
+				<li><a target="content" href="expensecategories.aspx">Expense Categories</a></li>
+				<li><a target="content" href="expenses.aspx">Expenses</a></li>
+				</ul>
+			</li>
+		</ul>
+	  </li>
+	  <li><a target="content" href="storewide.aspx">Storewide</a></li>
+	  <li><a target="content" href="orders.aspx?IsNew=1">Orders</a>
+		<ul>
+			<li><a target="content" href="orders.aspx?IsNew=1">View/Manage Orders</a></li>
+			<li><a target="content" href="offlineorder.aspx">Enter Offline Order</a></li>
+			<li>Reports
+				<ul>
+				  <li><a target="content" href="rpt_customers.aspx">Customer Reports</a></li>
+				  <li><a target="content" href="rpt_orders.aspx">Order Reports</a></li>											   
+				  <li><a target="content" href="rpt_expenses.aspx">Expense Reports</a></li>
+				  <li><a target="content" href="rpt_stats.aspx">Summary Stats</a></li>
+				</ul>
+			</li>
+		</ul>
+		</li>
+	  <li>Taxes
+		<ul>
+			<li><a target="content" href="taxrates.aspx">Tax Rates By State</a></li>
+			<li><a target="content" href="taxzips.aspx">Tax Rates By Zipcode</a></li>
+			<li><a target="content" href="states.aspx">Edit States</a></li>
+			<li><a target="content" href="countries.aspx">Edit Countries</a></li>
+		</ul>
+		</li>
+	  <li>
+	  	<a target="content" href="shipping.aspx">Shipping</a>
+		<ul>
+			<li><a target="content" href="shippingmethods.aspx">Shipping Methods</a></li>
+			<li><a target="content" href="shippingzones.aspx">Shipping Zones</a></li>
+			<li><a target="content" href="shipping.aspx">Shipping Rate Tables</a></li>
+		</ul>
+	  </li>
+	  <li><a target="content" href="news.aspx">News</a></li>
+	  %USERADMIN_MENU%
+	  </ul>
+		</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+<!-- end header -->
+</div>
+<div id="left">
+	<div id="leftcontent">
+The TOC will go here...
+	</div>
+</div>
+<div id="content">
+	<div id="contentcontent">
+	<iframe id="content" name="content" style="border-width: 1px; border-style: inset;" scrolling="auto" src="splash.aspx" frameborder="0" height="100%" width="100%"></iframe>
+	</div>
+</div>
+<div id="right">
+	<div id="rightcontent">
+	</div>
+</div>
+<div id="footer">
+<!-- footer -->
+<table width="100%" height="24" cellpadding="0" cellspacing="0" border="0" background="skins/skin_%SKINID%/images/gradient.jpg">
+<tr valign="middle">
+<td height="24" align="left" valign="middle">&nbsp;&#169;1995-2004 AspDotNetStorefront.com. All rights reserved.&nbsp;</td>
+<td width="128" align="left" valign="middle" height="24"><a href="http://www.aspdotnetstorefront.com" target="_blank"><i><font color="white"><b>AspDotNetStorefront</b></font></i></a>&nbsp;&nbsp;</td>
+</tr>
+</table>
+<!-- end footer -->
+</div>
+</body>
+</html>

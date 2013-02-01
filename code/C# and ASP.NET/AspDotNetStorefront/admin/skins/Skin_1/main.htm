@@ -1,0 +1,215 @@
+<!--DOCTYPE HTML PUBLIC "-//W3C//DTD//HTML 4.01 Transitional//EN"-->
+<DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+<html>
+  <head>
+    <base target="content">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en">
+    <title>AspDotNetStorefront Admin For Store: %SITE_NAME%</title>
+    <link rel="stylesheet" href="skins/skin_%SKINID%/style.css" type="text/css">
+    <script type="text/javascript">
+     _dynarch_menu_url = "skins/skin_%SKINID%/";
+    </script>
+    <style type="text/css"> @import url("skins/skin_%SKINID%/src/skin-aspdnsf.css"); </style>
+    <script type="text/javascript" src="skins/skin_%SKINID%/src/hmenu.js"></script>
+    <script type="text/javascript">
+ 
+    function canvasHeight()
+    {
+      if (window.innerHeight != null)
+        return window.innerHeight;
+      if (document.body.clientHeight != null)
+        return document.body.clientHeight;
+      return null;     
+    }  
+    
+    function canvasWidth()
+    {
+      if (window.innerWidth != null)
+        return window.innerWidth;
+      if (document.body.clientWidth != null)
+        return document.body.clientWidth;
+      return null;     
+    }  
+    
+     function ashow()
+     {
+      if ((document.body != null) && (canvasHeight() != null))
+         {document.all.canvas.style.height = (canvasHeight()-94) +'px';}
+     }
+    </script>
+  </head>
+  <body scroll="no" rightmargin="0" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"
+    bgcolor="#FFFFFF" onload="DynarchMenu.setup('menu', { electric: 10 });ashow();" onresize="ashow()">
+    <!-- PAGE INVOCATION: '%INVOCATION%' -->
+    <!-- header -->
+      <div align="left">
+        <table width="100%" height="68" cellpadding="0" cellspacing="0" border="0" background="skins/skin_1/images/gradient.jpg"
+          ID="Table1">
+          <tr>
+            <td colspan="2" height="5"></td>
+          </tr>
+          <tr>
+            <td align="left" valign="middle">&nbsp;<font class="SiteTitle"><b><a target="_top" href="default.aspx">AspDotNetStorefront Admin For</a>: <a href="../" target="_blank">%SITE_NAME%</a></b></font></td>
+            <td align="right" valign="middle"></td>
+          </tr>
+          <tr>
+            <td height="25" valign="middle">
+              <img src="images/spacer.gif" width="6" height="1"><span class="username">%USERNAME%&nbsp;&nbsp;<a class="username" target="_top" href="%SIGNINOUT_LINK%">%SIGNINOUT_TEXT%</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_top" href="default.aspx">Refresh 
+                Menu</a>
+            </td>
+            <td align="right">
+              <form style="margin: 0px;" name="SearchFormTop" action="search.aspx" method="GET" ID="Form1">
+                Search: <input name="SearchTerm" size="20" ID="Text1">&nbsp;<INPUT type="submit" name="submit" value="GO" ID="Submit1">&nbsp;&nbsp;</form>
+            </td>
+          </tr>
+          <tr height="23">
+            <td colspan="2"><table width="100%" cellpadding="0" cellspacing="0" border="0" ID="Table2">
+                <tr>
+                  <td style="border-width: 1px; border-style: none;" align="left" valign="middle" colspan="2"
+                    width="100%" height="23" bgcolor="#FFFFFF"><ul id="menu" style="visibility: block; display:none;">
+                      <li>
+                        <a target="_top" href="default.aspx">Home</a></li>
+                      %MANUFACTURER_MENU% %CATEGORY_MENU% %SECTION_MENU%
+                      <li>
+                        <a target="content" href="products.aspx">Products</a>
+                        <ul>
+                          <li><a target="content" href="products.aspx">Edit Products</a></li>
+                          <li><a target="content" href="producttypes.aspx">Add/Edit Product Types</a></li>
+                          <li><a target="content" href="prices.aspx">Edit/Update Prices</a></li>
+                          <li><a target="content" href="saleprices.aspx">Show Products On Sale</a></li>
+                          <li><a target="content" href="qbproduct.aspx">QuickBooks Product Export</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a target="content" href="affiliates.aspx">Affiliates</a>
+                        <ul>
+                          <li><a target="content" href="affiliates.aspx">Search</a></li>
+                          <li><a target="content" href="lat_signup.aspx">Add New</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a target="content" href="appconfig.aspx">Misc</a>
+                        <ul>
+                          <li><a target="content" href="wizard.aspx">Run Config Wizard</a></li>
+                          <li><a target="content" href="appconfig.aspx">AppConfig Parameters</a></li>
+                          <li><a target="content" href="topics.aspx">Topics</a></li>
+                          <li><a target="content" href="customers.aspx">Manage Customers</a></li>
+                          <li><a target="content" href="affiliates.aspx">Affiliates</a></li>
+                          <li><a target="content" href="orderoptions.aspx">Order Options</a></li>
+                          <li><a target="content" href="coupons.aspx">Coupons</a></li>
+                          <li><a target="content" href="quantitydiscounts.aspx">Quantity Discounts</a></li>
+                          <li><a target="content" href="salesprompts.aspx">Sales Prompts</a></li>
+                          <li>
+                            Images
+                            <ul>
+                              <li><a target="content" href="images.aspx">Upload Images</a></li>
+                              <li><a target="content" href="galleries.aspx">Galleries</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            Feeds
+                            <ul>
+                              <li><a target="content" href="froogle.aspx">Froogle Feed</a></li>
+                              <li><a target="content" href="pricegrabber.aspx">PriceGrabber Feed</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            More
+                            <ul>
+                              <li><a target="content" href="polls.aspx">Manage Polls</a></li>
+                              <li><a target="content" href="manageratings.aspx">Manage Ratings</a></li>
+                              <li><a target="content" href="staff.aspx">Edit Staff</a></li>
+                              <li><a target="content" href="mailingmgr.aspx">Mailing Mgr</a></li>
+                              <li><a target="content" href="partners.aspx">Edit Partners</a></li>
+                              <li><a target="content" href="creditcards.aspx">Credit Card Types</a></li>
+                              <li><a target="content" href="resetsqllog.aspx">Reset SQL Log</a></li>
+                              <li><a target="content" href="storewide.aspx">Storewide</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            Track Expenses
+                            <ul>
+                              <li><a target="content" href="expensecategories.aspx">Expense Categories</a></li>
+                              <li><a target="content" href="expenses.aspx">Expenses</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a target="content" href="orders.aspx?IsNew=1">Orders</a>
+                        <ul>
+                          <li><a target="content" href="orders.aspx?IsNew=1">View/Manage Orders</a></li>
+                          <li><a target="content" href="recurring.aspx">Recurring Shipments - Due Today</a></li>
+                          <li><a target="content" href="recurring.aspx?show=all">Recurring Shipments - All Pending</a></li>
+                          <li><a target="content" href="offlineorder.aspx">Enter Offline Order</a></li>
+                          <li>
+                            Reports
+                            <ul>
+                              <li><a target="content" href="rpt_customers.aspx">Customer Reports</a></li>
+                              <li><a target="content" href="rpt_orders.aspx">Order Reports</a></li>
+                              <li><a target="content" href="rpt_expenses.aspx">Expense Reports</a></li>
+                              <li><a target="content" href="rpt_stats.aspx">Summary Stats</a></li>
+                              <li><a target="content" href="rpt_emails.aspx">Customer EMails</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        Taxes
+                        <ul>
+                          <li><a target="content" href="taxrates.aspx">Tax Rates By State</a></li>
+                          <li><a target="content" href="taxzips.aspx">Tax Rates By Zipcode</a></li>
+                          <li><a target="content" href="states.aspx">Edit States</a></li>
+                          <li><a target="content" href="countries.aspx">Edit Countries</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a target="content" href="shipping.aspx">Shipping</a>
+                        <ul>
+                          <li><a target="content" href="shippingmethods.aspx">Shipping Methods</a></li>
+                          <li><a target="content" href="shippingzones.aspx">Shipping Zones</a></li>
+                          <li><a target="content" href="shipping.aspx">Shipping Rate Tables</a></li>
+                          <li><a target="content" href="fedexmeterrequest.aspx">Get FedEx Meter</a></li>
+                        </ul>
+                      </li>
+                      <li><a target="content" href="news.aspx">News</a></li>
+                      <li><a target="content" href="customers.aspx">Users</a>
+                        <ul>
+                          <li><a target="content" href="customers.aspx">View/Edit Users In Database</a></li>
+                          <li><a target="content" href="cst_signup.aspx">Add User</a></li>
+                          <li><a target="content" href="users.aspx">View/Edit Admin Users</a></li>
+                          <li><a target="content" href="customerlevels.aspx">Define Customer Levels</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- end header -->
+    <div id="canvas">
+      <!-- content -->
+      <div>
+        <iframe id="content" name="content" src="splash.aspx" scrolling="yes" marginwidth="0" marginheight="0"
+          frameborder="0" vspace="0" hspace="0" style="overflow:visible; width:100%;height:100%">
+        </iframe>
+      </div>
+      <!-- end content -->
+      <!-- footer -->
+      <div align="left" style="">
+        <table width="100%" height="24" cellpadding="0" cellspacing="0" border="0" background="skins/skin_%SKINID%/images/gradient.jpg">
+          <tr valign="middle">
+            <td height="24">&nbsp;&#169;1995-2005 AspDotNetStorefront.com. All rights 
+              reserved.&nbsp;</td>
+            <td width="128" height="24"><a href="http://www.aspdotnetstorefront.com" target="_blank"><i><font color="white"><b>AspDotNetStorefront</b></font></i></a>&nbsp;&nbsp;</td>
+          </tr>
+        </table>
+      </div>
+      <!-- end footer -->
+    </div>
+  </body>
+</html>

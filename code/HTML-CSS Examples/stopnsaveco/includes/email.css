@@ -1,0 +1,73 @@
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0px 0px 0px 15px;
+}
+
+li {
+	font-size: 10px;
+	padding: 1px 0px 1px 0px;
+}
+
+li.link1 {
+	font-size: 12px;
+	list-style-type: disc;
+	margin: 14px 20px 14px 30px;
+	padding: 1px 0px 1px 0px;
+}
+
+p {
+	font-size: 10px;
+	margin: 14px 40px 14px 20px;
+}
+
+table {
+	margin: 10px 10px 18px 10px;
+	width: 85%;
+}
+
+table.emailcontact {
+	margin: 20px 10px 18px 10px;
+	width: 85%;
+}
+
+td {
+	font-size: 10px;
+	padding: 8px 8px 8px 8px;
+	vertical-align: top;
+}
+
+td.footer {
+	font-size: 10px;
+	padding: 1px 8px 1px 12px;
+	vertical-align: top;
+}
+
+th {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 6px 6px 6px 6px;
+	text-align: left;
+}
+
+th.formheading {
+	background-color: #99330C;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px 5px 5px 5px;
+	text-align: left;
+}
+
+ul {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+ul.links {
+	margin: 5px 20px 5px 20px;
+}
