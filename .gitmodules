@@ -1,0 +1,9 @@
+[submodule "code/POCASA"]
+	path = code/POCASA
+	url = https://github.com/tophathacker/POCASA
+[submodule "dotfiles/solarized"]
+	path = dotfiles/solarized
+	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule "code/MonoGame"]
+	path = code/MonoGame
+	url = https://github.com/mono/MonoGame

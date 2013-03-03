@@ -1,0 +1,5 @@
+Sadly my employer has said that I am not allowed to change my code from any projects I'm working on. I will however include some code from my most recent project in Python. Two weeks ago I had never written any python code before, and not much C code. I mostly used C for embedded micro controller projects. I'll add the other project as a submodule. It saddens me that I don't have much to show for examples, but I am determined to submit an application anyways.
+
+At work I use C# and mono for Android to create applications, so I have used MonoGame for my own stuff (check out minotmakers.com for an XNA tutorial That i'm trying to teach my hackerspace
+
+I updated some of the keyboard mappings in monogame as well as fixed touchscreen bugs with the develop3d branch. I included the submodule, but you won't want to dig through there to see my few commits. I might suggest removing that from the submodules before you init/update. It's a larger download. 
