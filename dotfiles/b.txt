@@ -1,0 +1,10 @@
+b) A rationale for your lack of same (complete with some description
+     of your preferred working environment).
+
+My experience with dot files has been with Dropbox only, and a little bit with Perl, and customizing VI.
+
+I currently work remote on a live server with Coda2, Linux (Fedora), SSH via terminal, VIM for updating my server.
+
+My preferred working environment has been solely based on my previous experience. I have never worked in a large developing environment, but that said, I am very adaptable to change and learning new things.
+
+
