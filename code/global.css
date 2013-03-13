@@ -1,0 +1,273 @@
+/********************************************
+ *  * **************************************** *
+ *  				GLOBAL CORE
+ *
+ *  				 created by Brad McLaughlin - clevercouch.com
+ *
+ *  				            brad@clevercouch.com
+ *
+ *  				             * **************************************** *
+ *  				             ********************************************/
+
+/***********************
+ *  *   imports
+ *  ***********************/
+@import url('http://clevercouch.com/files/cssReset/reset.css');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,600');
+
+/***********************
+ *  *   html
+ *  ***********************/
+body {
+	font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
+	font-size: small;
+	line-height: 1.4em;
+	color: #333;
+	background: #ccc;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+p {
+	margin: 0 0 3px;
+}
+ul.has_bullets li {
+	list-style: disc inside;
+	margin: 3px 0 0 18px;
+}
+
+#article_name h1 {
+	width: auto;
+	padding: 1% 0;
+	font-size: 21pt;
+	color: #000;
+	font-weight: 600;
+	line-height: 1;
+	text-align: left;
+	text-transform: capitalize;
+}
+.front_tile img , #items .item img , #view_item img {
+	width: 100%;
+	max-width: 100%;
+}
+
+	/* appended */
+	strong {
+		font-weight: 600;
+	}
+	.small {
+		font-size: 90%;
+	}
+
+/***********************
+ *  *   containers
+ *  ***********************/
+.constrained {
+	width: 85%;
+	max-width: 1024px;
+	margin: 0 auto;
+	position: relative;
+}
+#container {
+	background: #fff;
+	padding: 1% 2% 2%;
+/*
+ * 	border: 1px solid #eee;
+ * 		border-top: 0;
+ * 		*/
+	margin-bottom: 12px;
+	box-shadow: 0 0 12px rgba(0,0,0,0.25);
+}
+.content {
+	width: 100%;
+	clear: both;
+	padding: 0 0 24px;	
+}
+
+#top_header {
+	
+}
+#footer_content {
+	margin-bottom: 12px;
+	font-size: 9pt;
+	font-weight: 300;
+	line-height: 2;
+	text-align: right;
+	color: #555;
+}
+#tag {
+	float: left;
+	width: 44%;
+}
+#user_top {
+	margin: 12px 0 0 0;
+	float: left;
+	width: 38%;
+	font-size: 9pt;
+	text-align: center;
+	font-weight: 600;
+}
+#search {
+	margin: 0;
+	float: right;
+	text-align: right;
+	width: 18%;
+}	
+	#search input {
+		border: 1px solid #000;
+		padding: 1%;
+		font-family: inherit;
+	}
+	#search input.search_go {
+		border: 0 none;
+		background: #000;
+		color: #fff;
+		margin: 0 0 0 -5px;
+	}
+
+#front {
+	clear: both;
+}
+.front_tile {
+	width: 14%;
+	margin: 3%;
+	float: left;
+}
+.front_tile div {
+	float: right;
+}
+
+#sort {
+	display: none;
+	width: 15%;
+	float: right;
+	padding: 1%;
+	background: #f6f6f6;
+	text-align: right;
+	margin: -39px 0 39px 0;
+}
+#items {
+	float: left;
+	width: 83.5%;
+	margin: -18px 0 0 0;
+}
+	#items .item {
+		text-align: center;
+		min-height: 262px;
+		width: 22%;
+		margin: 0 0 1.5%;
+		padding: 0 1.5% 1.5%;
+		float: left;
+		border-bottom: 1px solid #ddd;
+	}
+	#items .item:nth-child(4n+1) {
+		clear: both;
+	}
+
+#view {
+	float: left;
+	width: 84%;
+}
+
+	#view_item {
+		width: 38%;
+		border: 3px solid #fff;
+		float: left;
+		text-align: center;
+		margin: 0 1% 0 5%;
+	}
+	#view_item:hover {
+		border: 3px solid #ccc;
+	}
+	#item_description {
+		float: left;
+		width: 55%;
+		line-height: 1.5;
+	}
+/***********************
+ *  *   nav
+ *  ***********************/
+#main_nav {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin: 12px 0 0 0;
+	background: #000;
+}
+#main_nav ul {
+	
+}
+#main_nav ul li {
+	width: 13.28%;
+	padding: 0.5%;
+	text-align: center;
+	float: left;
+}
+#main_nav ul li ul {
+	display: none;
+}
+#main_nav ul li a {
+	display: block;
+	color: #fff;
+	font-weight: 300;
+	font-size: 10pt;
+	text-decoration: none;
+}
+#main_nav ul li:hover {
+	background: #333;
+}
+
+#side_nav {
+	float: left;
+	width: 15%;
+	padding: 0;
+	margin: 0 1% 0 0;
+}
+#side_nav ul li {
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #f6f6f6;
+}
+#side_nav ul li a {
+	display: block;
+	padding: 1% 0 1% 3%;
+}
+#side_nav ul li a:hover {
+	background: #f6f6f6 url(../img/side_nav_bg.png) center right no-repeat;
+}
+
+/***********************
+ *  *   links & hovers
+ *  ***********************/
+a {
+	color: #000;
+	text-decoration: none;
+	outline: none !important;
+}
+a#email_updates {
+	font-size: 9pt;
+	margin: 0 0 3px;
+	float: right;
+	text-transform: uppercase;
+}
+#items .item a {
+	font-size: 9pt;
+	color: #555;
+}
+#items .item a:hover {
+	color: #000;
+}
+
+/***********************
+ *  *   transitions
+ *  ***********************/
+#items .item a , #items .item a:hover {
+	transition: all 0.75s;
+}
