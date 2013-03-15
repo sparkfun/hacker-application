@@ -7,3 +7,6 @@
 [submodule "code/MonoGame"]
 	path = code/MonoGame
 	url = https://github.com/mono/MonoGame
+[submodule "code/safeswap"]
+	path = code/safeswap
+	url = git@github.com:tophathacker/safeswap.git
