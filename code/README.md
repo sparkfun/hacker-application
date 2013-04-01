@@ -15,3 +15,16 @@ submissions demonstrating one or more of the following:
 
 If you maintain or contribute to any open source projects, please supply links
 and a short description of your role in each project.
+
+**Things to avoid:**
+
+  - Excessive amounts of code. Your samples will be *read*, not *executed*. More
+    than 1000 lines of code and you're doing it wrong.
+  - Irrelevant dependencies. The large XML library that your class relies upon
+    is neither interesting nor helpful.
+  - Binaries. Just don't.
+  - Third party libraries. If you didn't write it, don't include it. If you only
+    edited the configuration file for it, don't include it.
+
+Select samples that are brief and show off different characteristics of your skill set.
+A brief, well-written class, a neat little algorithm, stuff like that. Less is more.
