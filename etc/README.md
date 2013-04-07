@@ -26,8 +26,8 @@ A fair amount of the time I hear about new developments through my other program
 
 7. The sane developer does things besides write code. What occupies your time?
 
-As you could probably guess from my various degrees, I compose and perform music. That quite often (but not always) involved writing code as well. Other less professionally oriented activities I enjoy are home brewing, pretending that I'm a gourmet chef, hiking, and gaming.
+As you could probably guess from my various degrees, I compose and perform music. That quite often (but not always) involves writing code as well. Other less professionally oriented activities I enjoy are home brewing, pretending that I'm a gourmet chef, hiking, and gaming.
 
 8. The worldy developer is in touch with some form of culture (books, movies, music, what have you). How do you go about feeding this part of your brain?
 
-I would like to think I'm pretty familliar with music (to the point where it doesn't really count for this question). I enjoy watching comedy (Portlandia is a current favorite of mine) and smart dramas. Can't wait for the next Hobbit and Star Trek movie!
+I would like to think I'm pretty familliar with music (to the point where it doesn't really count for this question). I enjoy watching comedy (Portlandia is a current favorite of mine) and smart dramas. Can't wait for the next Hobbit and Star Trek movie! I do like reading but I'm it takes me longer than I would like to get through anything substantial so it's not particularly high on my list of activities. Theater and dance performances are two things that I enjoy but unfortunately rarely get to.
