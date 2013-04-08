@@ -1,0 +1,77 @@
+IDE:
+  editor:
+    blinkDuration: 600
+    colors:
+      evaluatedCode: !textFormat
+        color: "#000000"
+        background: "#f8a200"
+      lineNumbers: !textFormat
+        {}
+      matchingBrackets: !textFormat
+        color: "#ff0000"
+        bold: true
+      mismatchedBrackets: !textFormat
+        color: "#ffffff"
+        background: "#960000"
+      searchResult: !textFormat
+        color: "#000000"
+        background: "#5a6a7f"
+      selection: !textFormat
+        {}
+      text: !textFormat
+        {}
+    font:
+      antialias: 2
+      family: Monaco
+      size: 10
+    highlighting:
+      built-in: !textFormat
+        color: "#3333bf"
+      char: !textFormat
+        color: "#007300"
+      class: !textFormat
+        color: "#0000d2"
+      comment: !textFormat
+        color: "#bf0000"
+      env-var: !textFormat
+        color: "#8c4614"
+      keyword: !textFormat
+        color: "#0000e6"
+        bold: true
+      number: !textFormat
+        color: "#980099"
+      primitive: !textFormat
+        color: "#3333bf"
+      string: !textFormat
+        color: "#5f5f5f"
+      symbol: !textFormat
+        color: "#007300"
+    indentWidth: 4
+    lineWrap: true
+    spaceIndent: false
+    stepForwardEvaluation: false
+  interpreter:
+    autoStart: true
+    runtimeDir: ""
+  mainWindow:
+    detached: !QVariantMap
+      documents-dock: ""
+      help-dock: ""
+      post-dock: ""
+    geometry: AdnQywABAAAAAAE/AAAAeAAABj4AAAN9AAAAAAAAACwAAAT/AAADGwAAAAACAA==
+    state: AAAA/wAAAAD9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAcAGQAbwBjAHUAbQBlAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAGYA////AAAAAQAAAnoAAALY/AIAAAAC+wAAABIAaABlAGwAcAAtAGQAbwBjAGsBAAAAAAAAAcsAAABMAP////sAAAASAHAAbwBzAHQALQBkAG8AYwBrAQAAAcwAAAEMAAAATAD///8AAAKFAAAC2AAAAAEAAAACAAAAAQAAAAL8AAAAAA==
+  postWindow:
+    lineWrap: false
+    scrollback: 1000
+  recentDocuments: !QVariantList
+    - /Users/coledingraham/Sources/lagutils/SC/utils/Manticore.sc
+    - /Users/coledingraham/Electronic Music/(1) SC/DelayDrones.scd
+    - /Users/coledingraham/Electronic Music/(1) SC/RingerCode.scd
+    - /Users/coledingraham/Sources/lagutils/SC/utils/OSCthulhu.sc
+    - /Users/coledingraham/Electronic Music/(1) SC/OSCthulhu Tests.scd
+    - /Users/coledingraham/Electronic Music/(1) SC/OSCthulhu Tests.rtf.scd
+    - /Users/coledingraham/Sources/lagutils/SC/utils/ManticorePieceTemplate.txt
+    - /Users/coledingraham/Electronic Music/(1) SC/OvertoneSketch.scd
+    - /Users/coledingraham/Sources/lagutils/SC/pieces/Tarasque.sc
+    - /Users/coledingraham/Sources/lagutils/SC/pieces/Homunculus.sc
+  startWithSession: last
