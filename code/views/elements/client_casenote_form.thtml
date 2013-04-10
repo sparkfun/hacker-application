@@ -1,0 +1,93 @@
+<? 
+$body_display = isset($show_body) ? ' style="display:block"' : '';
+$edit_note = isset($note);
+
+$default = array(
+	'date'=>date('Y-m-d'),
+	'type'=>'In Person',
+	'contactor'=>$worker['name'],
+	'contactee'=>'',
+	'subject'=>'',
+	'comment'=>'',
+);
+
+?>
+<h3>New Note</h3>
+<div class="body"<?=$body_display?>>
+	<table cellspacing=3>
+		<?
+		if (!$edit_note)
+		{
+			echo $form->post("client/casenotes/{$client['key']}/add");
+		}else{
+			echo $form->post("client/casenotes/{$client['key']}/edit/{$note['key']}");
+			$default = $note;
+		}
+		?>
+		<tr>
+			<td>Date:</td>
+			<td><?=$form->input('date',$default['date'],array('id'=>'SelectedDate'))?></td>
+			<td colspan=2><?=$form->error('date','Must be in YYYY-MM-DD format')?></td>
+		</tr>
+		
+		<tr>
+			<td>Type:</td>
+			<td><?=$form->select('type',array('In Person'=>'In Person','Phone'=>'Phone','Email'=>'Email','Fax'=>'Fax','Text'=>'Text'),$default['type'])?></td>
+			<td colspan=2><?=$form->error('type','Must be one of the available options')?></td>
+		</tr>
+		
+		<tr>
+			<td>Person Contacting:</td>
+			<td><?=$form->input('contactor',$default['contactor'],array('maxlength'=>'128'))?></td>
+			<td rowspan=2>
+				<a href="#" onclick="a = document.CaseNote.Contactor.value; document.CaseNote.Contactor.value = document.CaseNote.Contactee.value; document.CaseNote.Contactee.value = a;"><img src="/img/flip.gif"/></a></td><td><?=$form->error('contactor','Cannot be empty, Must be no more than 128 chars')?>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Person Contacted:</td>
+			<td><?=$form->input('contactee',$default['contactee'],array('maxlength'=>'128'))?></td>
+			<td><?=$form->error('contactee','Cannot be empty, Must be no more than 128 chars')?>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Subject:</td>
+			<td><?=$form->input('subject',$default['subject'],array('maxlength'=>'256'))?></td>
+			<td colspan=2><?=$form->error('subject','Cannot be empty, Must be no more than 256 chars')?></td>
+		</tr>
+		
+		<tr>
+			<td valign=top>Comment:</td>
+			<td colspan=2><?=$form->textarea('comment',$default['comment'],array('rows'=>8,'cols'=>25,'style'=>'max-width: 335px;'))?></td>
+		</tr>
+		
+		<tr>
+			<td></td>
+			<td align=right ><?=$form->submit('Submit', array('id'=>'casenote_submit'))?></td>
+			<td></td>
+		</tr>
+		<?=$form->close()?>
+	</table>
+</div>
+<?//Script needs to go here because the form is reloaded via ajax ... I cant just use an on because entire pages are also reloaded via ajax... So, this </firstWorldProblems> ?>
+<script>	
+	$('#casenote_form h3').click(function(){
+		$(this).siblings('.body').slideToggle();
+	});
+	
+	$('#casenote_submit').click(function(e){
+		e.preventDefault();
+		var form = $(this).parents('table').find('form');
+		var href = form.attr('action').split('/');
+		
+		$.post('/ajax/' + href.slice(3).join('/'), form.serialize(), function(data){
+			data = JSON.parse(data);
+			$('#casenote_form').html(data.form);
+			if (data.note)
+			{
+				$('#content').find('table').prepend('<tr class="datarow"><td><a href="/client/casenote_form/'+data.note.key+'" onClick="window.open(this,\'Case_Notes\',\'width=385,height=425,scrollbars=no,location=no\'); return false;">'+data.note.date+'</a></td><td>'+data.note.contactor+'</td><td>'+data.note.contactor+' '+data.note.type_verb+' '+data.note.contactee+'</td><td>'+data.note.subject+'</td></tr>');
+			}
+		});
+	});
+</script>

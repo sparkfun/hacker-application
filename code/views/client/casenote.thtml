@@ -1,0 +1,1 @@
+<?=$this->renderElement('client_casenote_form',array('client'=>$client,'worker'=>$worker,'note'=>$note))

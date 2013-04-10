@@ -1,11 +1,7 @@
-We observe that the experienced nerd often prefers tools which afford a measure
-of customization, and that most hackers accrue some amount of configuration for
-editors, shells, IRC clients, and the like.
+Unfortunately I don't have any dotfiles. :(
 
-In this directory, please include (at your option) either:
+I do have a dirty little [php script](http://jameskiefer.com/devtools.php) that
+I use frequently.
 
-  a) A collection of dotfiles or other configuration from your working
-     environment.
-
-  b) A rationale for your lack of same (complete with some description
-     of your preferred working environment).
+I am used to using a Windows workstation. Some of my favorite development applications
+are Notepad++, WinSCP, Putty, Fiddler, RegexBuddy, BeyondCompare and AgentRansack.

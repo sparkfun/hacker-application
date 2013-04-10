@@ -1,0 +1,3 @@
+<?
+$form = $this->renderElement('client_casenote_form', array('client'=>$client,'worker'=>$worker,'show_body'=>true));
+echo json_encode(array('form'=>$form,'note'=>$note));

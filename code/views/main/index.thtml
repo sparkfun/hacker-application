@@ -1,0 +1,17 @@
+<div id="content" style="margin-right:0;border-right:none"> 
+	<h2>Case Load</h2>
+	<table>
+		<?=isset($remove_error) ? $remove_error : ''?>
+		<?foreach($caseload as $row){?>
+		<tr><td>hide</td><td><a href="/client/view/<?=$row['key']?>"><?=$row['first_name']?> <?=$row['last_name']?></a></td></tr>
+		<?}?>
+	</table>
+	
+	<br/><br/>
+	
+	<h2>Add Client to Caseload</h2>
+	<?=isset($add_error) ? $add_error : ''?>
+	<form action="/client/search/" method="post"> 
+		<input type="text" maxlength="64" name="search" value=""><input type="submit" value="Search">
+	</form>
+</div>
