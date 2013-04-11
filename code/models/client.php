@@ -34,6 +34,8 @@ class Client extends AppModel
 		$names = explode(" ", $name); //BOOOOOM
 		if (count($names) == 2)
 		{
+			$names[0] = $this->escape($names[0]);
+			$names[1] = $this->escape($names[1]);
 			$rows = $this->query("SELECT `Key` as `key`, `First Name` as first_name, `Last Name` as last_name, `File Location` as file_location, `Mug Date` as mug_date, `DOB` as birth_date FROM `clients` WHERE `First Name` = '{$names[0]}' AND `Last Name` = '{$names[1]}' LIMIT 1");
 			if (!empty($rows))
 			{
