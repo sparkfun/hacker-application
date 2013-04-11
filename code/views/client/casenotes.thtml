@@ -1,0 +1,20 @@
+<?=$this->renderElement('client_right_panel',$client);?>
+
+<div id="content">
+	<table width=100% cellspacing=0 style="border-spacing: 3px 0;">
+		<thead>
+			<tr><th>Date</th><th>Added By</th><th>Person Contacted/Type of Contact</th><th width=50%>Subject</th></tr>
+		</thead>
+		<tbody>
+		<?php
+			foreach($casenotes as $row)
+			{				
+				echo '<tr class="datarow"><td><a class="note_link" href="/client/casenote/'.$row['key'].'" onClick="window.open(this,\'Case_Notes\',\'width=385,height=425,scrollbars=no,location=no\'); return false;">'.$row['date'].'</a></td><td>'. $row['name'] .'</td><td>'.$row['contactor'].' '.$row['type_verb'].' '.$row['contactee'].'</td><td>'.$row['subject'].'</td>';
+			}
+		?>
+		</tbody>
+	</table>
+</div>
+<div id="casenote_form">
+	<?=$this->renderElement('client_casenote_form',array('client'=>$client,'worker'=>$worker))?>
+</div>

@@ -1,0 +1,25 @@
+<div style="width:300px;">
+	
+	<? if(isset($error)) { ?>
+	
+		<div class="error"><?=$error?></div>
+	
+	<?}?>
+
+	<form action="/main/login" method="post">
+	<h1>Login</h1>
+	<table>
+		<tr>
+			<td>Username:</td>
+			<td><input type="text" name="user" /></td>
+		</tr>
+		<tr>	
+			<td>Password:</td>
+			<td><input type="password" name="pass" /></td>
+		</tr>
+		<tr>
+			<td colspan=2 align=right><input type="submit" value="Submit" /></td>
+		</tr>
+	</table>
+	</form>
+</div>

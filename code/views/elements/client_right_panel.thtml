@@ -1,0 +1,10 @@
+<div id="right"> 
+	<h2 class="navHead">Current Client</h2>
+	<ul>
+		<li class="listHead"><?=$first_name?> <?=$last_name?></li>
+		<li><img name="mug" class="mugImage" src="http://realsil.net/admin/clientfiles/<?=$file_location?>/mug.jpg"/></li>
+		<!--<li><strong>Reminder:</strong> John Doe's picture is outdated or missing!</li>-->
+		<li style="font-size:x-small;text-align:center">Birthday: <?=$birth_date?></li>
+	</ul>
+	<a href="/main" style="float:right; padding-right:10px;">Close</a>
+</div> 

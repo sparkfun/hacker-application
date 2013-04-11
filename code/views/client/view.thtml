@@ -1,0 +1,7 @@
+<?=$this->renderElement('client_right_panel',$client);?>
+		
+<div id="content">
+	<h2><?=$client['first_name']?> <?=$client['last_name']?></h2>
+	<a href="/client/casenotes/<?=$client['key']?>">Case Notes</a><br/>
+	<a href="/client/mugupload">Upload New Picture</a>
+</div>   

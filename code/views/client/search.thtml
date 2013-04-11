@@ -1,0 +1,17 @@
+<div id="content" style="margin-right:0;border-right:none"> 
+	
+	<? if (isset($error)) {?>
+		No results ... <a href="/main/">[Go Back]</a>
+	<?}else{?>
+	
+		<img class="mugImage" src="http://realsil.net/admin/clientfiles/<?=$client['file_location']?>/mug.jpg" ALIGN=LEFT>
+		<h2><?=$client['first_name']. ' ' .$client['last_name']?></h2>
+		<p>DOB: <?=$client['birth_date']?></p>
+		<form action="/main/add/" method="post"> 
+			<input type="hidden" name="client_key" value="<?=$client['key']?>"/>
+			<br/><br/><br/>
+			<input type="submit" value="Add to case load" />
+		</form>
+		
+	<?}?>
+</div>
