@@ -8,8 +8,7 @@
 
 5. I grew a beard for zombie Abe Lincoln one year for halloween :)
 
-6. Python usergroups, google+, forums, irc (mostly freenode, #python,
-#django, #php, etc)
+6. Python usergroups, google+, forums, irc (mostly freenode, #python, #django, #php, etc)
 
 7. Cars have been my main hobby for a long time, particularly drifting.  I also have a moped from
 the '70s that I restored and use for transportation occasionally, when I'm not tinkering with it.
