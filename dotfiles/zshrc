@@ -1,0 +1,65 @@
+# This is the zshrc file I use on my university terminal account
+autoload -U compinit
+compinit
+
+
+# do architecture specific stuff
+if [ $MYSYS = "sun-console" ] ; then
+  # set a plain term with no colors
+  RPROMPT="<- %t"
+  PROMPT="%n:%m %~> "
+else 
+  alias ls="ls  --color=auto -F" # color ls is cool
+  source ~/.zsh_files/.zsh.prompt  # set the prompt
+fi
+
+unset MAIL         # don't have the shell check for mail
+
+source ~/.zsh_files/.zsh.path     # setup the PATH
+source ~/.zsh_files/.zsh.manpath  # setup the MANPATH
+
+
+# set up printing
+if [[ "`/bin/uname -n`" == cetus* ]]; then
+    export PRINTER="cetus"
+elif [[ "`/bin/uname -n`" == hydra* ]]; then
+      export PRINTER="hydra"
+fi  
+
+
+# uncomment the line below to set a default printer
+# export PRINTER="clxxx"
+
+
+# sometimes I like to keep a history
+export SAVEHIST=2000
+export HISTFILE="$HOME/.zsh_files/.zsh.history"
+export SHELL=/usr/local/bin/zsh
+export EDITOR=vim
+export VISUAL=vim
+export CVS_RSH=ssh
+umask 077
+
+export PATH="$PATH:/usr/local/gnuarm/bin"
+# hey, this is like csh!
+export OS="`/usr/local/bin/os-type -major`"
+export ARCH="`arch`"
+export KARCH="`arch -k`"
+export PLATFORM="${ARCH}-${OS}"
+
+
+# source my alises
+if [ -f $HOME/.zsh_files/.zsh.aliases ] ; then
+  source $HOME/.zsh_files/.zsh.aliases
+fi
+
+limit coredumpsize 0    # Turn off core dumps
+
+export LESS='-ifqm'     # set up the parameters for 'less'
+export PAGER=less       # use less for stuff (such as man)
+
+
+# set some usefull options
+setopt NO_HUP           # make jobs not die when terminal is closed
+setopt NO_CHECK_JOBS    # don't check for the jobs on exit
+setopt NO_BEEP          # don't beep at me all the time
