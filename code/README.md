@@ -1,3 +1,9 @@
+I have included two pages and the artist class from the lib.php file that they both reference. If you go to http://exigentrecords.com/artists.php you'll see the live page, artists.php, as it fetches MySQL db info to populate the page with artist information. Once a user is logged in as an admin, they can add, edit, or delete artists. I have included the edit_artist.php page as well.
+
+-Joseph Mecham
+
+---------------------------------------------------------------------------
+
 Ideal candidates will be comfortable building web applications with PHP and
 MySQL on Linux, and have real-world experience with other languages and
 platforms.
