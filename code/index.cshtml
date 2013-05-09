@@ -1,0 +1,51 @@
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>SullysStraps Admin</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        @Styles.Render("~/Content/css", "~/Content/less")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+        <div id="busyindicator"></div>
+      <header>
+          <h1>SullysStraps - Admin</h1>
+          <nav id="shellTop-view" class ="main-nav" >
+              <ul data-bind="with: menuHashes">
+                  <li class="route-top"><a data-bind="attr: {href: customers}">Customers</a></li>
+                  <li class="route-top"><a data-bind="attr: {href: items}">Items</a></li>
+                  <li class="route-top"><a data-bind="attr: {href: sales}">Sales</a></li>
+              </ul>
+          </nav>
+      </header>
+      <section class="main">
+          @RenderPage("Views/Customers.cshtml")
+          @RenderPage("Views/Customer.cshtml")
+          @RenderPage("Views/Item.cshtml")
+          @RenderPage("Views/Items.cshtml")
+          @RenderPage("Views/Sales.cshtml")
+      </section>
+
+       @Scripts.Render(
+        "~/bundles/jquery",
+        "~/bundles/jsextlibs",
+        "~/Scripts/Lib/require.js",
+        "~/bundles/jsapplibs",
+        "~/Scripts/main.js"
+        )
+    </body>
+</html>
