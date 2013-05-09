@@ -1,0 +1,41 @@
+            <div id="person-list">
+                <table class="table table-striped" data-bind="with: displayPerson">
+                    <thead>
+                        <tr>
+                            <th><button type="button" class="btn btn-link" data-bind="click: function () { $root.setSort(1); }">Person ID</button></th>
+                            <th><button type="button" class="btn btn-link" data-bind="click: function () { $root.setSort(2); }">Name</button></th>
+                            <th><button type="button" class="btn btn-link" data-bind="click: function () { $root.setSort(3); }">Person Path</button></th>
+                            <th><button type="button" class="btn btn-link" data-bind="click: function () { $root.setSort(4); }">Status</button></th>
+                            <th><button type="button" class="btn btn-link" data-bind="click: function () { $root.setSort(5); }">Last Published</button></th>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach: page">
+                        <tr>
+                            <td data-bind="text: personId"></td>
+                            <td data-bind="text: name"></td>
+                            <td data-bind="text: serverPath"></td>
+                            <td data-bind="personStatus: personStatus"></td>
+                            <td data-bind="dateTimeView: lastPublishedDate"></td>
+                            <td><a href="javascript: void(0);" data-bind="click: function () { $root.choosePerson($data); }">Details</a></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                       <tr>
+                           <td colspan="6">
+                                <div class="pagination pagination-centered">
+                                    <ul data-bind="if: pageCount() > 1">
+                                        <li><a href="javascript: void(0);" data-bind="click: firstPage">First</a></li>
+                                        <li ><a href="javascript: void(0);" data-bind="click: previousPage">Prev</a></li>
+                                        <!-- ko foreach: pageTabs() -->
+                                                <li  class="active" data-bind="if: active"><a href="javascript: void(0);"><span data-bind="text: index"></span></a></li>
+                                                <li data-bind="ifnot: active"><a href="javascript: void(0);" data-bind="click: function() { $parent.goToPage(index()); }"><span data-bind="text: index"></span></a></li>
+                                        <!-- /ko -->
+                                        <li><a href="javascript: void(0);" data-bind="click: nextPage">Next</a></li>
+                                        <li><a href="javascript: void(0);" data-bind="click: lastPage">Last</a></li>
+                                    </ul>
+                                </div>
+                           </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
