@@ -34,7 +34,7 @@ Positions and Levels of Employment
 Full Time Web Application Developer
 -----------------------------------
 
-**Status: <span color="#990000">not currently hiring</span>**
+**Status:** *not currently hiring*
 
 Full time **web application developer** positions at SparkFun are 40 hours a week and are salaried, not hourly positions.
 
@@ -43,7 +43,7 @@ All developer positions, presently, require physical presence at our office in B
 Full Time Web App Test Developer
 --------------------------------
 
-**Status: <span color="#009900">NOW HIRING!</span>**
+**Status:** **NOW HIRING!**
 
 Full time **test developer** positions at SparkFun are 40 hours a week and are salaried, not hourly positions.
 
@@ -55,7 +55,7 @@ All developer positions, presently, require physical presence at our office in B
 Web Application Developer Internship
 ------------------------------------
 
-**Status: <span color="#990000">not currently hiring</span>**
+**Status:** *not currently hiring*
 
 We do offer paid internships to the right applicants. The process to apply is the same as for full time employment - follow the instructions above.
 
