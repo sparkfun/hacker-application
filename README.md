@@ -28,28 +28,34 @@ We won't rip off your code. You retain copyright on any pull request you submit.
 
 However, by submitting a pull request, you affirm that the content within is solely your original work. Content generated collaboratively with other individuals must be identified as such and content generated entirely by other individuals should not be included. Failure to meet these guidelines may result in disqualification as an applicant.
 
-Levels of Employment
-====================
+Positions and Levels of Employment
+==================================
 
-Full Time Web Application Developer *(not currently hiring)*
-------------------------------------------------------------
+Full Time Web Application Developer
+-----------------------------------
 
-Full time web application developer positions at SparkFun are 40 hours a week and are salaried, not hourly positions.
+**Status: <span color="#990000">not currently hiring</span>**
+
+Full time **web application developer** positions at SparkFun are 40 hours a week and are salaried, not hourly positions.
 
 All developer positions, presently, require physical presence at our office in Boulder, CO. Working off-site is afforded as a benefit to established developers and only on an ad hoc basis (a few days a month, for example). If you wish to apply and live elsewhere, be prepared to relocate.
 
-Full Time Testing Developer *(NOW HIRING)*
-------------------------------------------
+Full Time Web App Test Developer
+--------------------------------
 
-Full time testing developer positions at SparkFun are 40 hours a week and are salaried, not hourly positions.
+**Status: <span color="#009900">NOW HIRING!</span>**
+
+Full time **test developer** positions at SparkFun are 40 hours a week and are salaried, not hourly positions.
 
 Test developers focus on building a comprehensive suite of automated tests for everything the developer group creates. Test developers *are* developers in that they work in the same group and participate in code review and collaborative development much the same as the developers. The only difference is *what* they are building all day.
 
 All developer positions, presently, require physical presence at our office in Boulder, CO. Working off-site is afforded as a benefit to established developers and only on an ad hoc basis (a few days a month, for example). If you wish to apply and live elsewhere, be prepared to relocate.
 
 
-Web Application Developer Internship *(not currently hiring)*
--------------------------------------------------------------
+Web Application Developer Internship
+------------------------------------
+
+**Status: <span color="#990000">not currently hiring</span>**
 
 We do offer paid internships to the right applicants. The process to apply is the same as for full time employment - follow the instructions above.
 
