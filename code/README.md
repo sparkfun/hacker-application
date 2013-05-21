@@ -1,6 +1,8 @@
-Ideal candidates will be comfortable building web applications with PHP and
-MySQL on Linux, and have real-world experience with other languages and
-platforms.
+Ideal Web Application Developer candidates will be comfortable building web
+applications with PHP and MySQL on Linux. Ideal Test Developer candidates will
+be comfortable building automated tests for such applications.
+
+All will have real-world experience with other languages and platforms.
 
 We want to see your code. Please include a representative sample of your
 work in this directory.

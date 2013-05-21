@@ -1,7 +1,7 @@
 SparkFun Electronics Hacker Application
 =======================================
 
-[SparkFun Electronics](http://www.sparkfun.com) is *always* on the lookout for developers skilled in the a modern Unix-based web stack. Development projects vary wildly from pushing the boundaries of user experience for our forward-facing websites to building sophisticated internal web-based applications for running the business.
+[SparkFun Electronics](http://www.sparkfun.com) is *always* on the lookout for developers skilled in the a modern Unix-based web stack. Development projects vary wildly from pushing the boundaries of user experience for our forward-facing websites to building sophisticated internal web-based applications for running the business to crafting a massive suite of automated testing for our continuous integration environment.
 
 How to Apply
 ------------
@@ -31,15 +31,25 @@ However, by submitting a pull request, you affirm that the content within is sol
 Levels of Employment
 ====================
 
-Full Time Web Application Developer
------------------------------------
+Full Time Web Application Developer *(not currently hiring)*
+------------------------------------------------------------
 
 Full time web application developer positions at SparkFun are 40 hours a week and are salaried, not hourly positions.
 
-All developer positions, presently, require physical presence at our office in Boulder, CO. Working remotely is afforded as a benefit to established developers and is generally not extended to new hires immediately. If you wish to apply and live elsewhere, be prepared to relocate.
+All developer positions, presently, require physical presence at our office in Boulder, CO. Working off-site is afforded as a benefit to established developers and only on an ad hoc basis (a few days a month, for example). If you wish to apply and live elsewhere, be prepared to relocate.
 
-Web Application Developer Internship
-------------------------------------
+Full Time Testing Developer *(NOW HIRING)*
+------------------------------------------
+
+Full time testing developer positions at SparkFun are 40 hours a week and are salaried, not hourly positions.
+
+Test developers focus on building a comprehensive suite of automated tests for everything the developer group creates. Test developers *are* developers in that they work in the same group and participate in code review and collaborative development much the same as the developers. The only difference is *what* they are building all day.
+
+All developer positions, presently, require physical presence at our office in Boulder, CO. Working off-site is afforded as a benefit to established developers and only on an ad hoc basis (a few days a month, for example). If you wish to apply and live elsewhere, be prepared to relocate.
+
+
+Web Application Developer Internship *(not currently hiring)*
+-------------------------------------------------------------
 
 We do offer paid internships to the right applicants. The process to apply is the same as for full time employment - follow the instructions above.
 
@@ -70,7 +80,30 @@ Desired Skills
 * Designing/maintaining relational databases (MySQL 5.x / MariaDB 5.x)
 * Knowledge of caching systems and noSQL stores (Varnish / Memcached / Redis / MongoDB)
 * Strong object oriented development knowledge with an emphasis on MVC architecture
-* Knowledge/experience working with modern version control systems (Git)
+* Experience working with modern version control systems (Git)
+
+Overview: Test Development at SparkFun Electronics
+==================================================
+
+Duties and Responsibilities
+---------------------------
+
+* Engage actively in code review with developers on specific development projects and act as a sign-off for deployment
+* Work with end users (employees) to establish specifications for development projects
+* Establish a deep understanding of various units of the company to anticipate and emulate their behavior in automated testing
+* Manage the ticketing system to keep issues current, well-documented, and correctly associated to people and other issues
+* Manage beta testing efforts for newly developed features including facilitating the set-up and tear-down of test deployments and liaising with stakeholders
+* Build and maintain a suite of automated integration tests for all applications produced by the developers
+* Evolve test development efforts to scale up and keep in pace with new software quality assurance strategies and technologies
+
+Desired Skills
+--------------
+* General experience working with PHP 5.x, MySQL/PostGreSQL, and modern JavaScript (including jQuery)
+* Experience with object-oriented programming (any language)
+* Experience with web-based user interface testing (using applications like Selenium, ZombieJS, PhantomJS, etc.)
+* Experience building and maintaining application-wide regression tests
+* Experience working with modern version control systems (Git)
+* Creativity to imagine and emulate all manner of use cases and user stories
 
 Overview: Employment at SparkFun Electronics
 ============================================
