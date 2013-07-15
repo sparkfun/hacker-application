@@ -8,3 +8,23 @@ resume here. It won't be read.
 
 If you would like to attach an ascii art of your favorite animal, however,
 this would be a good place to do it.
+
+  |    |                  
+  |    |            (__)  
+  |    |            (oo)  
+  |    |     /-------\/   
+  |    |    / |     ||    
+  |    |   *  ||----||    
+  |    \______^^____^^___ 
+  |     _________________ 
+  |    /                  
+  |    |                  
+  |    |                  
+  |    |                  
+  |    |                  
+  |    |                  
+  |    |                  
+  |    |                  
+ /      \                 
+ 
+ Cow perched on a tree.
