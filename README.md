@@ -31,28 +31,6 @@ However, by submitting a pull request, you affirm that the content within is sol
 Positions and Levels of Employment
 ==================================
 
-Full Time Web Application Developer
------------------------------------
-
-**Status:** *not currently hiring*
-
-Full time **web application developer** positions at SparkFun are 40 hours a week and are salaried, not hourly positions.
-
-All developer positions, presently, require physical presence at our office in Boulder, CO. Working off-site is afforded as a benefit to established developers and only on an ad hoc basis (a few days a month, for example). If you wish to apply and live elsewhere, be prepared to relocate.
-
-Full Time Web App Test Developer
---------------------------------
-
-**Status:** **NOW HIRING!**
-
-Full time **test developer** positions at SparkFun are 40 hours a week and are salaried, not hourly positions.
-
-Test developers focus on building a comprehensive suite of automated tests for everything the developer group creates. Test developers *are* developers in that they work in the same group and participate in code review and collaborative development much the same as the developers. The only difference is *what* they are building all day.
-
-All developer positions, presently, require physical presence at our office in Boulder, CO. Working off-site is afforded as a benefit to established developers and only on an ad hoc basis (a few days a month, for example). If you wish to apply and live elsewhere, be prepared to relocate.
-
-
-Web Application Developer Internship
 ------------------------------------
 
 **Status:** *not currently hiring*
