@@ -1,32 +1,10 @@
-Ideal Web Application Developer candidates will be comfortable building web
-applications with PHP and MySQL on Linux. Ideal Test Developer candidates will
-be comfortable building automated tests for such applications.
+Internship:
 
-All will have real-world experience with other languages and platforms.
-
-We want to see your code. Please include a representative sample of your
-work in this directory.
-
-All languages and paradigms are welcome, but we're most interested in
-submissions demonstrating one or more of the following:
-
-  - Clean, secure, object oriented PHP.
-  - Usable, modern, and reasonably standard HTML, CSS, and JavaScript.
-  - Clear, sensible, and consistently formatted code.
-  - Sympathy for the plight of future maintainers.
-
-If you maintain or contribute to any open source projects, please supply links
-and a short description of your role in each project.
-
-**Things to avoid:**
-
-  - Excessive amounts of code. Your samples will be *read*, not *executed*. More
-    than 1000 lines of code and you're doing it wrong.
-  - Irrelevant dependencies. The large XML library that your class relies upon
-    is neither interesting nor helpful.
-  - Binaries. Just don't.
-  - Third party libraries. If you didn't write it, don't include it. If you only
-    edited the configuration file for it, don't include it.
-
-Select samples that are brief and show off different characteristics of your skill set.
-A brief, well-written class, a neat little algorithm, stuff like that. Less is more.
+My name is Andy Nguyen, I am a Data Analyst looking to become a Web Developer. Unfortunately, I am unable to produce my own code so I have written an
+explanation of current coding adventures. It was not until the last year did I realize how much I enjoyed coding, but also the community of coders. I am reaching out
+to Sparkfun specifically because the company seems to hit home in three areas:  growth, culture, and fun. Currently, I am in the sixth week of a Ruby on Rails 11
+week program and we have covered Ruby, Github, Pivotal Tracker, and Rspec. This week we will be implementing our first Ruby Rails framework. We will be
+covering the MVC model and some handy generators you can use for testing on Rails. To find more details about our course itinerary please follow;
+http://davincicoders.com/building-the-toolbelt-of-a-junior-ruby-on-rails-developer/. Although I am a novice, I enjoy the challenges of programming and I hope to
+further my career at Sparkfun as an intern. Thank you for reading this letter, please contact me at (720) 935-9330 or nhi.atn@gmail.com .
+You can also find my work at https://github.com/nhic0tine.
