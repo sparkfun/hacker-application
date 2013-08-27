@@ -1,9 +1,3 @@
-Ideal Web Application Developer candidates will be comfortable building web
-applications with PHP and MySQL on Linux. Ideal Test Developer candidates will
-be comfortable building automated tests for such applications.
-
-All will have real-world experience with other languages and platforms.
-
 We want to see your code. Please include a representative sample of your
 work in this directory.
 
@@ -18,15 +12,10 @@ submissions demonstrating one or more of the following:
 If you maintain or contribute to any open source projects, please supply links
 and a short description of your role in each project.
 
-**Things to avoid:**
+**Tips:**
 
-  - Excessive amounts of code. Your samples will be *read*, not *executed*. More
-    than 1000 lines of code and you're doing it wrong.
-  - Irrelevant dependencies. The large XML library that your class relies upon
-    is neither interesting nor helpful.
-  - Binaries. Just don't.
-  - Third party libraries. If you didn't write it, don't include it. If you only
-    edited the configuration file for it, don't include it.
-
-Select samples that are brief and show off different characteristics of your skill set.
-A brief, well-written class, a neat little algorithm, stuff like that. Less is more.
+ * Avoid excessive amounts of code.
+ * Exclude third party utilities and other dependencies like XML libraries or binaries.
+ * Your samples will be *read*, not *executed*.
+ * Less is more.
+ * Select samples that are brief and show off different characteristics of your skill set.
