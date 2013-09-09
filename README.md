@@ -1,21 +1,43 @@
-SparkFun Electronics Hacker Application
-=======================================
+Apply to be a Web Developer at SparkFun Electronics
+===================================================
 
-[SparkFun Electronics](http://www.sparkfun.com) is *always* on the lookout for developers skilled in the a modern Unix-based web stack. Development projects vary wildly from pushing the boundaries of user experience for our forward-facing websites to building sophisticated internal web-based applications for running the business to crafting a massive suite of automated testing for our continuous integration environment.
+### Collaborate with a team of web developers in an open source company to build cool stuff that matters!
 
-How to Apply
-------------
+This repository is part of the application process for becoming a Web Developer for SparkFun Electronics. It is the means by which applicants demonstrate their ability to work with a version control system and submit code samples.
+
+If you are an existing applicant who was directed here, skip down to **How To Use This Repository** for instructions on what to do. Otherwise, read on to understand what we look for in Web Developer applicants. We hire both full timers and student interns.
+
+About the Company
+-----------------
+
+[SparkFun Electronics](https://www.sparkfun.com) is an online shop for the do-it-yourself electronics enthusiast. Our customers include inventors, artists, students, hobbyists, and just plain curious individuals looking for some fun tinkering with electronics.
+
+SparkFun is also very committed to bringing electronics education into the mainstream by curating free educational materials and working with schools and institutions around the country to bring electronics into the classroom. Lastly, SparkFun is a staunch advocate of the open source movement, most recently being a leader in Open Source Hardware.
+
+About the Department
+--------------------
+
+SparkFun's Information Technology department is responsible for the continuous development of all SparkFun web properties. This includes the primary ecommerce website ([sparkfun.com](https://www.sparkfun.com)) and the primary educational resources website ([learn.sparkfun.com](https://learn.sparkfun.com)). Also included is Sparkle, SparkFun's custom-built ERP system which is used to manage all content on the aforementioned web properties as well as order processing, customer management, shipping, inventory controls, manufacturing, etc.
+
+Where possible (which is most everywhere) open source languages and tools are used and where possible code developed by SparkFun IT is given back to the community as open sourced libraries.
+
+How To Use This Repository
+==========================
+
+First, [check our Jobs page](https://www.sparkfun.com/jobs/) to see if we're actively hiring developers. If we are then apply there first. That's where you can submit the usual stuff (e.g. résumé and references).
+
+If we're not actively hiring but you're actively looking then by all means complete the steps below. We're always on the lookout for new talent to mix things up, and maybe we need you more than we realize.
+
+Now then, if you're ready to submit code samples and such, please follow these instructions:
 
 1. Fork this repository.
 2. On your fork, modify / add to the repository per the instruction in the README files for each of the four top-level directories.
 3. Issue a pull request for your changes back to [sparkfun/hacker-application](https://github.com/sparkfun/hacker-application).
 
-Your pull request is your application.
-
 What Happens to Your Pull Request
 ---------------------------------
 
-Your pull request will *never* be merged (to keep this repository open for everyone who follows you). When you've either been hired or declined your pull request will simply be closed.
+Your pull request will *never* be merged (to keep this repository open for the applicants that use it after you). When you've either been hired or declined your pull request will simply be closed.
 
 During the review process you may find comments applied to your pull request - asking questions, seeking clarification, a rogue compliment, etc.
 
@@ -31,106 +53,104 @@ However, by submitting a pull request, you affirm that the content within is sol
 Positions and Levels of Employment
 ==================================
 
-Full Time Web Application Developer
------------------------------------
+Full Time Web Developer
+-----------------------
 
-**Status:** *not currently hiring*
+#### Collaborate with a team of web developers in an open source company to build cool stuff that matters!
 
-Full time **web application developer** positions at SparkFun are 40 hours a week and are salaried, not hourly positions.
+### The Daily Workflow
 
-All developer positions, presently, require physical presence at our office in Boulder, CO. Working off-site is afforded as a benefit to established developers and only on an ad hoc basis (a few days a month, for example). If you wish to apply and live elsewhere, be prepared to relocate.
+Development at SparkFun reflects the exploratory do-it-yourself culture of the entire company. All developers take part in fixing small bugs and developing larger projects, as well as reviewing one another's code. Continuous improvement of the tool set provided to all users is emphasized as well as continuous improvement to the development process itself. Developers are encouraged to explore parts of the code base and discuss what projects inspire them.
 
-Full Time Web App Test Developer
---------------------------------
+Assuming developers work best when genuinely inspired both developer inspiration and relative priority are used to determine what gets worked on and when. Collaborative development is highly encouraged and all developers have ample opportunities to work together on on small, informal dev teams focusing on one project, feature, or subsystem.
 
-**Status:** **NOW HIRING!**
+### Required Qualifications
 
-Full time **test developer** positions at SparkFun are 40 hours a week and are salaried, not hourly positions.
+* Experience developing object-oriented PHP
+* Experience working with modern HTML, CSS, and JavaScript
+* Experience working with relational databases such as MySQL or PostgreSQL
+* General understanding of the MVC software architecture
+* Experience working with modern version control systems such as Git
+* Competence working in a Unix-based environment
 
-Test developers focus on building a comprehensive suite of automated tests for everything the developer group creates. Test developers *are* developers in that they work in the same group and participate in code review and collaborative development much the same as the developers. The only difference is *what* they are building all day.
+### Preferred Qualifications
 
-All developer positions, presently, require physical presence at our office in Boulder, CO. Working off-site is afforded as a benefit to established developers and only on an ad hoc basis (a few days a month, for example). If you wish to apply and live elsewhere, be prepared to relocate.
+* Working knowledge of jQuery and Bootstrap
+* Working knowledge of caching systems such as Memcache or Redis
+* Working knowledge of NoSQL databases such as MongoDB
+* A visible public track record of contributions to open source
+* An eye for designing intuitive user interfaces
 
+### Workplace Benefits
 
-Web Application Developer Internship
-------------------------------------
+*Note: all benefits are awarded in full after an initial on-boarding period of six weeks.*
 
-**Status:** *not currently hiring*
+* Health, dental, and disability insurance (with FSA and HSA options)
+* 401k matching up to 5%
+* Eco pass
+* 2 weeks paid vacation to start, 3 weeks after one full year of employment
+* $1000/year continuing education/professional development fund
+* $25/month gym/massage benefit
 
-We do offer paid internships to the right applicants. The process to apply is the same as for full time employment - follow the instructions above.
+### Perks
 
-Interns would primarily get their feet wet by assisting with quality assurance and code review as well as being assigned low-level bugs and tweaks to pull their weight right from the start. Ultimately, after cultivating trust by producing quality work, small-scale refactoring of existing submodules and the development of wholly new small-scale submodules would be assigned, providing interns with atomic projects that provide solid experience while directly benefiting SparkFun. Interns will learn modern collaborative web development, version control, and code review with professionals.
+*Note: some perks are only awarded in full after an initial on-boarding period of six weeks.*
 
-Our internship program is flexible. Compensation and hours may vary greatly based on skills, experience, and availability. In general we look for interns that can work at least 20 hours a week with the ability to work a full 40 hour week for parts of the year (e.g. when not in school).
+* Flex time – specific days/hours in the office can be a flexible compromise between work life and home life
+* Occasionally work from home or work remotely (permanent remote work, however, is not an option)
+* Free and/or deeply discounted access to tools, parts, and education to tinker with electronics and physical computing
+* Frequent "Lunch and Learns" - presentations by other employees and special guests on all manner of topics (often catered)
+* Occasional opportunities for travel – including as a trained workshop instructor and/or as a developer to attend technical conferences with other team members
+* A $1500 allowance to build and customize your workstation
+* SparkFun is a dog-friendly work environment
 
-Overview: Web Application Development at SparkFun Electronics
-=============================================================
+Part-Time Web Developer Intern
+------------------------------
 
-Duties and Responsibilities
----------------------------
+#### Learn the craft of modern web development by collaborating with a team in an open source company building build cool stuff that matters!
 
-* Work with an existing core of developers to prioritize projects and develop deliverable code in a timely manner
-* Work with end users (employees) to establish specifications for development projects
-* Participate in code reviews along with the entire dev team
-* Work with Ops to ensure that developed applications are utilizing all appropriate web stack resources efficiently
-* Work with QA and end users to thoroughly test new features
-* Manage multiple simultaneous dev projects by using version control and branching
-* Manage a personal unix-based development environment consisting of a clone of the production web stack
-* Cultivate a niche within the code base geared toward your interests and seek out dev projects within that niche (in other words: while you'll be assigned some projects you are expected to develop a feel for what you like to do and what needs to be done and then find projects within that space)
+### The Daily Workflow
 
-Desired Skills
---------------
-* PHP 5.x
-* HTML5 + CSS3 (knowledge of CSS libraries like Bootstrap is a plus)
-* Modern JavaScript with an emphasis on open source libraries such as jQuery
-* Designing/maintaining relational databases (MySQL 5.x / MariaDB 5.x)
-* Knowledge of caching systems and noSQL stores (Varnish / Memcached / Redis / MongoDB)
-* Strong object oriented development knowledge with an emphasis on MVC architecture
-* Experience working with modern version control systems (Git)
+Development at SparkFun reflects the exploratory do-it-yourself culture of the entire company. All developers (including interns) take part in fixing small bugs and developing larger projects, as well as reviewing one another's code. Continuous improvement of the tool set provided to all users is emphasized as well as continuous improvement to the development process itself.
 
-Overview: Test Development at SparkFun Electronics
-==================================================
+Collaborative development is highly encouraged and all developers have ample opportunities to work together on on small, informal dev teams focusing on one project, feature, or subsystem. Developer interns are placed on a variety of dev teams based on personal interest and skill set. The day-to-day work of interns very closely mirrors that of full-time developers to provide an environment that encourages learning modern enterprise web development in the real world.
 
-Duties and Responsibilities
----------------------------
+**Web Developer Interns are expected to be able to work a minimum of 20 hours a week on-site at SparkFun Electronics headquarters in Boulder, CO.**
 
-* Engage actively in code review with developers on specific development projects and act as a sign-off for deployment
-* Work with end users (employees) to establish specifications for development projects
-* Establish a deep understanding of various units of the company to anticipate and emulate their behavior in automated testing
-* Manage the ticketing system to keep issues current, well-documented, and correctly associated to people and other issues
-* Manage beta testing efforts for newly developed features including facilitating the set-up and tear-down of test deployments and liaising with stakeholders
-* Build and maintain a suite of automated integration tests for all applications produced by the developers
-* Evolve test development efforts to scale up and keep in pace with new software quality assurance strategies and technologies
+### Required Qualifications
 
-Desired Skills
---------------
-* General experience working with PHP 5.x, MySQL/PostGreSQL, and modern JavaScript (including jQuery)
-* Experience with object-oriented programming (any language)
-* Experience with web-based user interface testing (using applications like Selenium, ZombieJS, PhantomJS, etc.)
-* Experience building and maintaining application-wide regression tests
-* Experience working with modern version control systems (Git)
-* Creativity to imagine and emulate all manner of use cases and user stories
+* Must be an active full-time student
+* Experience developing object-oriented PHP
+* Experience working with modern HTML, CSS, and JavaScript
+* Experience working with relational databases such as MySQL or PostgreSQL
+* General understanding of the MVC software architecture
+* Experience working with modern version control systems such as Git
+* Competence working in a Unix-based environment
 
-Overview: Employment at SparkFun Electronics
-============================================
+### Preferred Qualifications
 
-Official Benefits for Full Time Employees
------------------------------------------
- * HSA/FSA health plan
- * 401k matching up to 6%
- * Eco pass
- * 2 weeks paid vacation to start, 3 weeks after 1 full year of employment
- * $1000 annual continuing education/professional development benefit
- * $25 monthly health benefit (for gym membership, massage therapy, etc.)
+* Working knowledge of jQuery and Bootstrap
+* Working knowledge of caching systems such as Memcache or Redis
+* Working knowledge of NoSQL databases such as MongoDB
+* A visible public track record of contributions to open source
+* An eye for designing intuitive user interfaces
 
-Work Environment and Unofficial Benefits
-----------------------------------------
-* Generally relaxed. No dress code.
-* Broad access to tools, parts, and education to tinker with electronics and physical computing
-* Dogs are welcome at work (with some rules to keep the place clean and safe)
-* Free beer on tap (to employees 21 and over, of course)
-* Frequent parties and outings
-* Frequent special guest presentations and educational field trips
+### Workplace Benefits
+
+*Note: all benefits are awarded in full after an initial on-boarding period of six weeks.*
+
+* 401k matching up to 5%
+* $500/semester tuition reimbursement (not to exceed $1000/yr)
+* $25/month gym/massage benefit
+
+### Perks
+
+*Note: some perks are only awarded in full after an initial on-boarding period of six weeks.*
+
+* Flex time – specific days/hours in the office can be a flexible compromise between work life and home/school life
+* Occasionally work from home or work remotely (permanent remote work, however, is not an option)
+* Free and/or deeply discounted access to tools, parts, and education to tinker with electronics and physical computing
+* Frequent "Lunch and Learns" - presentations by other employees and special guests on all manner of topics (often catered)
 
 Legal Junk
 ==========
