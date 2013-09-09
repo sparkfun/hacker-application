@@ -5,7 +5,7 @@ Apply to be a Web Developer at SparkFun Electronics
 
 This repository is part of the application process for becoming a Web Developer for SparkFun Electronics. It is the means by which applicants demonstrate their ability to work with a version control system and submit code samples.
 
-If you are an existing applicant who was directed here, skip down to **How To Use This Repository** for instructions on what to do. Otherwise, read on to understand what we look for in Web Developer applicants. We hire both full timers and student interns.
+If you are an existing applicant who was directed here, skip down to **[How To Use This Repository](https://github.com/sparkfun/hacker-application/#how-to-use-this-repository)** for instructions on what to do. Otherwise, read on to understand what we look for in Web Developer applicants. We hire both full timers and student interns.
 
 About the Company
 -----------------
