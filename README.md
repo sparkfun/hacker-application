@@ -10,17 +10,17 @@ If you are an existing applicant who was directed here, skip down to **[How To U
 Contents of this README
 -----------------------
 
-**[Apply to be a Web Developer at SparkFun Electronics](https://github.com/sparkfun/hacker-application/#apply-to-be-a-web-developer-at-sparkfun-electronics)**
-· [Contents of this README](https://github.com/sparkfun/hacker-application/#contents-of-this-readme)
-· [About The Company](https://github.com/sparkfun/hacker-application/#about-the-company)
-· [About The Department](https://github.com/sparkfun/hacker-application/#about-the-company)
-**[How To Use This Repository](https://github.com/sparkfun/hacker-application/#how-to-use-this-repository)**
-· [What Happens To Your Pull Request](https://github.com/sparkfun/hacker-application/#what-happens-to-your-pull-request)
-· [Legal Stuff Regarding Your Pull Request](https://github.com/sparkfun/hacker-application/#legal-stuff-regarding-your-pull-request)
-**[Positions and Levels of Employment](https://github.com/sparkfun/hacker-application/#positions-and-levels-of-employment)**
-· [Full Time Web Developer](https://github.com/sparkfun/hacker-application/#full-time-web-developer)
-· [Part Time Web Developer Intern](https://github.com/sparkfun/hacker-application/#part-time-web-developer-intern)
-**[Legal Junk](https://github.com/sparkfun/hacker-application/#legal-junk)**
+**[Apply to be a Web Developer at SparkFun Electronics](https://github.com/sparkfun/hacker-application/#apply-to-be-a-web-developer-at-sparkfun-electronics)**  
+· [Contents of this README](https://github.com/sparkfun/hacker-application/#contents-of-this-readme)  
+· [About The Company](https://github.com/sparkfun/hacker-application/#about-the-company)  
+· [About The Department](https://github.com/sparkfun/hacker-application/#about-the-company)  
+**[How To Use This Repository](https://github.com/sparkfun/hacker-application/#how-to-use-this-repository)**  
+· [What Happens To Your Pull Request](https://github.com/sparkfun/hacker-application/#what-happens-to-your-pull-request)  
+· [Legal Stuff Regarding Your Pull Request](https://github.com/sparkfun/hacker-application/#legal-stuff-regarding-your-pull-request)  
+**[Positions and Levels of Employment](https://github.com/sparkfun/hacker-application/#positions-and-levels-of-employment)**  
+· [Full Time Web Developer](https://github.com/sparkfun/hacker-application/#full-time-web-developer)  
+· [Part Time Web Developer Intern](https://github.com/sparkfun/hacker-application/#part-time-web-developer-intern)  
+**[Legal Junk](https://github.com/sparkfun/hacker-application/#legal-junk)**  
 
 About The Company
 -----------------
