@@ -7,14 +7,29 @@ This repository is part of the application process for becoming a Web Developer 
 
 If you are an existing applicant who was directed here, skip down to **[How To Use This Repository](https://github.com/sparkfun/hacker-application/#how-to-use-this-repository)** for instructions on what to do. Otherwise, read on to understand what we look for in Web Developer applicants. We hire both full timers and student interns.
 
-About the Company
+Contents of this README
+-----------------------
+
+**[Apply to be a Web Developer at SparkFun Electronics](https://github.com/sparkfun/hacker-application/#apply-to-be-a-web-developer-at-sparkfun-electronics)**  
++ [Contents of this README](https://github.com/sparkfun/hacker-application/#contents-of-this-readme)  
++ [About The Company](https://github.com/sparkfun/hacker-application/#about-the-company)  
++ [About The Department](https://github.com/sparkfun/hacker-application/#about-the-company)  
+**[How To Use This Repository](https://github.com/sparkfun/hacker-application/#how-to-use-this-repository)**  
++ [What Happens To Your Pull Request](https://github.com/sparkfun/hacker-application/#what-happens-to-your-pull-request)  
++ [Legal Stuff Regarding Your Pull Request](https://github.com/sparkfun/hacker-application/#legal-stuff-regarding-your-pull-request)  
+**[Positions and Levels of Employment](https://github.com/sparkfun/hacker-application/#positions-and-levels-of-employment)**  
++ [Full Time Web Developer](https://github.com/sparkfun/hacker-application/#full-time-web-developer)  
++ [Part Time Web Developer Intern](https://github.com/sparkfun/hacker-application/#part-time-web-developer-intern)  
+**[Legal Junk](https://github.com/sparkfun/hacker-application/#legal-junk)**  
+
+About The Company
 -----------------
 
 [SparkFun Electronics](https://www.sparkfun.com) is an online shop for the do-it-yourself electronics enthusiast. Our customers include inventors, artists, students, hobbyists, and just plain curious individuals looking for some fun tinkering with electronics.
 
 SparkFun is also very committed to bringing electronics education into the mainstream by curating free educational materials and working with schools and institutions around the country to bring electronics into the classroom. Lastly, SparkFun is a staunch advocate of the open source movement, most recently being a leader in Open Source Hardware.
 
-About the Department
+About The Department
 --------------------
 
 SparkFun's Information Technology department is responsible for the continuous development of all SparkFun web properties. This includes the primary ecommerce website ([sparkfun.com](https://www.sparkfun.com)) and the primary educational resources website ([learn.sparkfun.com](https://learn.sparkfun.com)). Also included is Sparkle, SparkFun's custom-built ERP system which is used to manage all content on the aforementioned web properties as well as order processing, customer management, shipping, inventory controls, manufacturing, etc.
@@ -34,7 +49,7 @@ Now then, if you're ready to submit code samples and such, please follow these i
 2. On your fork, modify / add to the repository per the instruction in the README files for each of the four top-level directories.
 3. Issue a pull request for your changes back to [sparkfun/hacker-application](https://github.com/sparkfun/hacker-application).
 
-What Happens to Your Pull Request
+What Happens To Your Pull Request
 ---------------------------------
 
 Your pull request will *never* be merged (to keep this repository open for the applicants that use it after you). When you've either been hired or declined your pull request will simply be closed.
@@ -103,7 +118,7 @@ Assuming developers work best when genuinely inspired both developer inspiration
 * Occasional opportunities for travel – including as a trained workshop instructor and/or as a developer to attend technical conferences with other team members
 * A $1500 allowance to build and customize your workstation
 
-Part-Time Web Developer Intern
+Part Time Web Developer Intern
 ------------------------------
 
 #### Learn the craft of modern web development by collaborating with a team in an open source company building build cool stuff that matters!
