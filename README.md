@@ -133,7 +133,7 @@ Collaborative development is highly encouraged and all developers have ample opp
 
 ### Required Qualifications
 
-* Must be an active full-time student
+* **Must be an active full-time student**
 * Experience developing object-oriented PHP
 * Experience working with modern HTML, CSS, and JavaScript
 * Experience working with relational databases such as MySQL or PostgreSQL
