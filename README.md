@@ -62,7 +62,7 @@ Full Time Web Developer
 
 Development at SparkFun reflects the exploratory do-it-yourself culture of the entire company. All developers take part in fixing small bugs and developing larger projects, as well as reviewing one another's code. Continuous improvement of the tool set provided to all users is emphasized as well as continuous improvement to the development process itself. Developers are encouraged to explore parts of the code base and discuss what projects inspire them.
 
-Assuming developers work best when genuinely inspired both developer inspiration and relative priority are used to determine what gets worked on and when. Collaborative development is highly encouraged and all developers have ample opportunities to work together on on small, informal dev teams focusing on one project, feature, or subsystem.
+Assuming developers work best when genuinely inspired both developer inspiration and relative priority are used to determine what gets worked on and when. Collaborative development is highly encouraged and all developers have ample opportunities to work together on small, informal dev teams focusing on one project, feature, or subsystem.
 
 ### Required Qualifications
 
@@ -83,7 +83,7 @@ Assuming developers work best when genuinely inspired both developer inspiration
 
 ### Workplace Benefits
 
-*Note: all benefits are awarded in full after an initial on-boarding period of six weeks.*
+*Note: all benefits only become available after an initial on-boarding period of six weeks.*
 
 * Health, dental, and disability insurance (with FSA and HSA options)
 * 401k matching up to 5%
@@ -94,15 +94,14 @@ Assuming developers work best when genuinely inspired both developer inspiration
 
 ### Perks
 
-*Note: some perks are only awarded in full after an initial on-boarding period of six weeks.*
+*Note: some perks only become available after an initial on-boarding period of six weeks.*
 
-* Flex time – specific days/hours in the office can be a flexible compromise between work life and home life
-* Occasionally work from home or work remotely (permanent remote work, however, is not an option)
+* Flex time – days/hours in the office can be a compromise between work life and home life
+* Occasionally work from home or work remotely (no permanent remote work)
 * Free and/or deeply discounted access to tools, parts, and education to tinker with electronics and physical computing
-* Frequent "Lunch and Learns" - presentations by other employees and special guests on all manner of topics (often catered)
+* Frequent *Lunch and Learns* - presentations by other employees and special guests on all manner of topics (often catered)
 * Occasional opportunities for travel – including as a trained workshop instructor and/or as a developer to attend technical conferences with other team members
 * A $1500 allowance to build and customize your workstation
-* SparkFun is a dog-friendly work environment
 
 Part-Time Web Developer Intern
 ------------------------------
@@ -113,7 +112,7 @@ Part-Time Web Developer Intern
 
 Development at SparkFun reflects the exploratory do-it-yourself culture of the entire company. All developers (including interns) take part in fixing small bugs and developing larger projects, as well as reviewing one another's code. Continuous improvement of the tool set provided to all users is emphasized as well as continuous improvement to the development process itself.
 
-Collaborative development is highly encouraged and all developers have ample opportunities to work together on on small, informal dev teams focusing on one project, feature, or subsystem. Developer interns are placed on a variety of dev teams based on personal interest and skill set. The day-to-day work of interns very closely mirrors that of full-time developers to provide an environment that encourages learning modern enterprise web development in the real world.
+Collaborative development is highly encouraged and all developers have ample opportunities to work together on small, informal dev teams focusing on one project, feature, or subsystem. Developer interns are placed on a variety of dev teams based on personal interest and skill set. The day-to-day work of interns very closely mirrors that of full-time developers to provide an environment that encourages learning modern enterprise web development in the real world.
 
 **Web Developer Interns are expected to be able to work a minimum of 20 hours a week on-site at SparkFun Electronics headquarters in Boulder, CO.**
 
@@ -137,7 +136,7 @@ Collaborative development is highly encouraged and all developers have ample opp
 
 ### Workplace Benefits
 
-*Note: all benefits are awarded in full after an initial on-boarding period of six weeks.*
+*Note: all benefits only become available after an initial on-boarding period of six weeks.*
 
 * 401k matching up to 5%
 * $500/semester tuition reimbursement (not to exceed $1000/yr)
@@ -145,12 +144,12 @@ Collaborative development is highly encouraged and all developers have ample opp
 
 ### Perks
 
-*Note: some perks are only awarded in full after an initial on-boarding period of six weeks.*
+*Note: some perks only become available after an initial on-boarding period of six weeks.*
 
-* Flex time – specific days/hours in the office can be a flexible compromise between work life and home/school life
-* Occasionally work from home or work remotely (permanent remote work, however, is not an option)
+* Flex time – days/hours in the office can be a compromise between work life and home/school life
+* Occasionally work from home or work remotely (no permanent remote work)
 * Free and/or deeply discounted access to tools, parts, and education to tinker with electronics and physical computing
-* Frequent "Lunch and Learns" - presentations by other employees and special guests on all manner of topics (often catered)
+* Frequent *Lunch and Learns* – presentations by other employees and special guests on all manner of topics (often catered)
 
 Legal Junk
 ==========
