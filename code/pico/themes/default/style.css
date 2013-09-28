@@ -39,6 +39,7 @@ table {
 caption, th, td {
 	text-align: left;
 	font-weight: normal;
+    padding: 2px 10px;
 }
 
 blockquote:before, blockquote:after,
@@ -130,6 +131,7 @@ h1 {
 
 h2 {
 	font-size: 1.7em;
+    margin-top: 1em;
 }
 
 h3 {
@@ -207,8 +209,8 @@ blockquote {
 
 #header {
 	background: #2EAE9B;
-	padding: 60px 0;
-	margin-bottom: 80px;
+	padding: 25px 0;
+	margin-bottom: 20px;
 	color: #afe1da;
 }
 #header a { color: #afe1da; }
@@ -233,8 +235,8 @@ blockquote {
 
 #footer {
 	background: #707070;
-	padding: 60px 0;
-	margin-top: 80px;
+	padding: 5px 0;
+	margin-top: 20px;
 	color: #C0C0C0;
 }
 #footer a { color: #ddd; }
