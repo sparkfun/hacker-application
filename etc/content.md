@@ -29,12 +29,13 @@
 
 ###### The worldly developer is in touch with some form of culture...
 > Even though sometimes it seems like my culture is a computer screen (hahaha).
-> I love military and political history especially with an emphasis and middle
-> & far-east relations. I try to make a point to get on my favorite news sights
+> I love military and political history especially with an emphasis on middle
+> & far-east relations. I try to make a point to get on my favorite news sites
 > and read about what's going in some of the most important yet underwritten
-> parts of the world. My other endless pursuit is philosophy. Starting with
-> the Tractatus Logico Philosophicus in highschool I love to read (listen too 
-> even more) books about wisdom & purely abstract systems of thought.
-> Many times I see computer as a way to apply philosophy in some of its most
-> abstract forms. Audible, Amazon, & my old neighborhood bookstore have a lot 
+> parts of the world (I'm currently following Yemen pretty closely). 
+> My other endless pursuit is philosophy. Starting with the Tractatus 
+> Logico Philosophicus in highschool I love to read (listen even more) 
+> books about wisdom & purely abstract systems of thought.
+> Many times I see computing as a way to apply philosophy in some of its most
+> abstract forms. Audible, Amazon & my old neighborhood bookstore have a lot 
 > of my money to put it simply.
