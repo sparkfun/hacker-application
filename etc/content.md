@@ -1,5 +1,8 @@
-###### What is your desired compensation range?
+##### Q&A in etc
+
 ----
+
+###### What is your desired compensation range?
 > I feel comfortable earning anywhere from $15+
 
 ###### When can you start?
@@ -17,12 +20,12 @@
 ###### Where do you get your news?
 > `https://news.ycombinator.com/`, `http://www.washingtonpost.com/business/technology`
 > `http://www.reddit.com/r/technology`, `http://techcrunch.com/`
-> I'm sure you don't want all my bookmarks/pulse list.
+> I'm pretty sure you don't want all my bookmarks/pulse list.
 
 ###### What else occupies your time?
 > `http://www.reddit.com/r/worldnews` && `aljazeera.com` (not the new american subdomain)
 > && The audible history section. I love audio-books and can't get enough info about
-> Historical military assessments and planning.
+> historical military assessments and planning.
 
 ###### The worldly developer is in touch with some form of culture...
 > Even though sometimes it seems like my culture is a computer screen (hahaha).
