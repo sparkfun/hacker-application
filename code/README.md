@@ -1,5 +1,5 @@
-audition* for some good Mysql/PHP
-yayabe-pics for JS/CSS
+audition* for some good Mysql/PHP  
+yayabe-pics for JS/CSS/HTML
 
 Don't feel obliged to read it all if it's too much.
 Just wanted to provide a complete-ish picture of what I know.
