@@ -20,12 +20,12 @@ Dogs = :) I may be getting one next year. He could come to work if he was very g
 
 A few that are consistently good:
 
-http://alistapart.com/ 
-http://css-tricks.com/ 
-http://www.smashingmagazine.com/ 
-http://net.tutsplus.com/ 
-http://www.codinghorror.com/blog/ 
-http://bradfrostweb.com/ 
+* http://alistapart.com/ 
+* http://css-tricks.com/ 
+* http://www.smashingmagazine.com/ 
+* http://net.tutsplus.com/ 
+* http://www.codinghorror.com/blog/ 
+* http://bradfrostweb.com/ 
 
 6. The sane developer does things other than writing code. What else occupies your time?
 
