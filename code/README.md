@@ -1,3 +1,11 @@
+audition* for some good Mysql/PHP
+yayabe-pics for JS/CSS
+
+Don't feel obliged to read it all if it's too much.
+Just wanted to provide a complete-ish picture of what I know.
+
+-----------------------------------------
+
 We want to see your code. Please include a representative sample of your
 work in this directory.
 
