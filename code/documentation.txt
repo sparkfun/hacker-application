@@ -1,0 +1,23 @@
+The code I have included is a conversion of an old Ruby web application designed to be an event finder that complied data from multiple APIs into one central location. However, upon review of that code, I found the MVC work I had done previously to be below what I consider to be my present standards. With that in mind I converted the application to PHP, with a few changes.
+For the sake of simplicity, and because I consider it to be a more representative example, the API calls have been swapped out for a simple, one-table database (defined below).
+Each of the fields are of type CHAR, with the exception of time (DATETIME) and the description fields (TEXT).
+The Cakephp framework code and any other similar files that the application depends on (LESS, jQuery) have not been included.
+
+Event Finder Database Schema
+mySQL
+
+Events Table
+Fields:
+name
+time
+status
+description
+short_description
+address
+city
+state
+zip
+venue_name
+group_name
+photo_url
+phone
