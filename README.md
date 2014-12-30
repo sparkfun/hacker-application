@@ -50,6 +50,8 @@ Where possible (which is most everywhere) open source languages, tools, and tech
 
 Not all positions have openings at any given time. See the [SparkFun job page](https://www.sparkfun.com/jobs) for current listings.
 
+<hr>
+
 ### Full Stack Developer (Full Time)
 
 #### The Daily Workflow
@@ -75,13 +77,14 @@ Assuming developers work best when genuinely inspired both developer inspiration
 * A visible public track record of contributions to open source
 * An eye for designing intuitive user interfaces
 
-### Workplace Benefits
+#### Workplace Benefits
 
-*Note: all benefits only become available after an initial on-boarding period of six weeks.*
+*Note: all benefits become available after an initial on-boarding period of six weeks.*
 
 * Health, dental, and disability insurance (with FSA and HSA options)
 * 401k matching up to 5%
-* Eco pass
+* Eco pass (regional bus pass)
+* Full on-site gym
 * 2 weeks paid vacation to start, 3 weeks after one full year of employment
 * $1000/year continuing education/professional development fund
 * $25/month gym/massage benefit
@@ -91,15 +94,15 @@ Assuming developers work best when genuinely inspired both developer inspiration
 *Note: some perks only become available after an initial on-boarding period of six weeks.*
 
 * Flex time – days/hours in the office can be a compromise between work life and home life
-* Occasionally work from home or work remotely (no permanent remote work)
+* Liberal work from home / work remote policy (note: not interested in permanent remote employees for this position)
 * Free and/or deeply discounted access to tools, parts, and education to tinker with electronics and physical computing
-* Frequent *Lunch and Learns* - presentations by other employees and special guests on all manner of topics (often catered)
-* Occasional opportunities for travel – including as a trained workshop instructor and/or as a developer to attend technical conferences with other team members
-* A $1500 allowance to build and customize your workstation
-
-### Development Project Manager
+* Frequent Lunch and Learns – presentations by other employees and special guests on all manner of topics (often catered)
+* Occasional opportunities for travel to technical conferences and other professional development opportunities
+* A generous stipend to build a custom workstation upon hire
 
 <hr>
+
+### Development Project Manager (Full Time)
 
 #### The Daily Workflow
 
