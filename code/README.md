@@ -19,3 +19,7 @@ and a short description of your role in each project.
  * Your samples will be *read*, not *executed*.
  * Less is more.
  * Select samples that are brief and show off different characteristics of your skill set.
+
+In lieu of or in addition to code samples please also consider providing writing samples.
+When applying for a more managerial position this is of particular importance as
+clear written communication is critical.

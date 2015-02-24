@@ -13,3 +13,5 @@ Please answer the following general questions:
 6. The sane developer does things other than writing code. What else occupies your time?
 
 7. The worldy developer is in touch with some form of culture (books, music, film, etc.). How do you go about feeding this part of your brain?
+
+8. Please critique any of the SparkFun websites. With influence over the SparkFun dev team what would *you* focus on improving?
