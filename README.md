@@ -4,7 +4,7 @@
 
 ## About this repository
 
-This repository is a mechanism by which applicants for all flavors Developer roles [SparkFun Electronics](https://www.sparkfun.com) (including Front End Developer, Full Stack Developer, Developer Student Intern and Development Project Manager) can demonstrate basic distributed version control skills and provide code samples.
+This repository is intended for applicants to positions in the IT Department of [SparkFun Electronics](https://www.sparkfun.com), including Full Stack Developer, Web Developer Student Intern, Development Project Manager, and Director of Information Technology. This repository is a standard way by which candidates demonstrate basic distributed version control skills, provide code samples, and answer more in-depth questions.
 
 Typically an applicant will come in by a job post on one of many job boards with little more than a resume and cover letter. Applicants who look viable on paper will be invited to a brief phone screen that includes an initial technical assessment. Well-qualified applicants will then be invited to fork and complete this repository in advance of an in-person interview.
 
@@ -49,6 +49,13 @@ Where possible (which is most everywhere) open source languages, tools, and tech
 ## Development Team Positions
 
 Not all positions have openings at any given time. See the [SparkFun job page](https://www.sparkfun.com/jobs) for current listings.
+
+Various position descriptions are available as markdown files in the top of this repository:
+
+* [Full Stack Developer (Full Time)](Full Stack Developer.md)
+* [Web Developer Student Intern (Part Time)](Web Developer Student Intern.md)
+* [Development Project Manager (Full Time)](Development Project Manager.md)
+* [Director of Information Technology (Full Time)](Director of Information Technology.md)
 
 ## Legal Stuff
 
