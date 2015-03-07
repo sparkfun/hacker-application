@@ -12,17 +12,17 @@ import random
 # each action is either an strike out (so), which increments the out counter
 # or is a homerun (HR) and will add a run
 # For simplicity, I loaded a sample hitter
-H1 = ['HR','so','so','so','so','so','so','so','so','so','HR',]
-H2 = ['HR','HR','so','HR','so','so','so','so','so','so','HR',]
-H3 = ['HR','so','so','so','so','so','so','so','so','so','HR',]
+H1 = ['HR','so','so','so','so','so','so','so','so','so','HR','HR']
+H2 = ['HR','HR','so','HR','so','so','so','so','so','so','HR','HR']
+H3 = ['HR','so','so','so','so','so','so','so','so','so','HR','HR']
 Hitter1 = [H1,H2,H3,]
 
 #The follow is a data structure for a pitcher
 # it follows the same format as a hitter
 # again for simplicity, a sample pitcher
-P4 = ['so','HR','so','so','so','so','so','so','so','HR','so',]
-P5 = ['so','HR','so','so','so','so','so','so','so','HR','so',]
-P6 = ['so','HR','so','so','so','so','so','so','so','HR','so',]
+P4 = ['so','HR','so','so','so','so','so','so','so','HR','so','HR']
+P5 = ['so','HR','so','so','so','so','so','so','so','HR','so','HR']
+P6 = ['so','HR','so','so','so','so','so','so','so','HR','so','HR']
 Pitcher1 = [P4,P5,P6,]
 
 
@@ -35,8 +35,9 @@ Pitcher1 = [P4,P5,P6,]
 # This adjusts for Zero's based in index arrays and will give the AB result
 
 def getABResult(stats, row, coln) :
-	#Optional print line
-	print("Dice results are: "); print(row); print(coln)
+	#Optional print line - you can turn on and see the dice roll for each AtBat
+	#print("Dice results are: "); print(row); print(coln)
+	
 	# Update the fact that dice rolls don't have zero's but indexed arrays dp
 	r_index = row-1
 	c_index = coln-1
@@ -67,11 +68,14 @@ def getRC27 (hitter, pitcher) :
 		# Strat uses 3 dice to determine the outcome
 		# The first dice define which activity row to use
 		# It will be one of six batter or pitcher rows
-		selectRow = random.choice=([1,2,3,4,5,6])
+		#selectRow = random.choice=([1,2,3,4,5,6])
+		selectRow = random.randint(1,6)
 
 		# The next two dice defines the action from the activity line
-		d6First = random.choice=([1,2,3,4,5,6])
-		d6Sec = random.choice=([1,2,3,4,5,6])
+		#d6First = random.choice=([1,2,3,4,5,6])
+		#d6Sec = random.choice=([1,2,3,4,5,6])
+		d6First = random.randint(1,6)
+		d6Sec = random.randint(1,6)
 		# the two dice are added together
 		action = d6First + d6Sec
 
@@ -87,7 +91,7 @@ def getRC27 (hitter, pitcher) :
 
 
 	#After breaking out of while loop, the game ends 
-	print("Game is over! The your scored: "); print(score); print(" runs! Good game")
+	print("Game is over! You scored: "); print(score); print(" runs! Good game")
 
 #Start the game
 #this functions uses the default hitter and pitcher define at the top  
