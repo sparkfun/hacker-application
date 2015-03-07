@@ -35,3 +35,7 @@ Since there are no base runners I eliminated the logic that checks to see if the
 Not needing innings, I updated the out count to just run until we have 27 outs.  
 
 The game can now run and output a score directly. 
+
+Seeing dice rolls:
+Currently  line 39 is commented out, if you uncomment that it will print out the dice rolls for each at bat
+todo: make this optional from the command line. 
