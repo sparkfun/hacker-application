@@ -1,0 +1,37 @@
+Please answer the following general questions:
+
+1. What is your desired compensation range? (Range meaning the least you're comfortable with to the most you think you're worth.)
+	My current compensation is 115k per year.  I am comfortable with a range of 115k - 125k. 
+
+2. When can you start?
+	I can start within 2 weeks or would prefer as early as April 1st.
+
+3. Do you have any planned vacations/absences in the next six months that we should know about?
+	I have one wedding on memorial day weekend and I am in a wedding in mid - June so my family and I are planning to drive back to Minnesota and stay for a few days during the week.
+
+4. SparkFun is a dog-friendly environment. Are comfortable working aroung dogs? If you are a dog-owner, would you see yourself bringing dogs to work?
+	We also have a dog friendly environment at my existing workplace.  I am a dog owner but prefer not to bring my dogs into work. They are a little anxious and tend to bark a lot.
+
+5. The active developer keeps up on happenings in the world of development and technology. Where do you you get your news?
+	I have a chrome plugin called Panda that brings me hacker news feeds in.  I also frequent the verge blogs, cult of mac, reddit, meetup groups, codepen, attend conferences and lurk around coffee shops talking to hipsters.  I am naturally curious about new technology so reading up on what's new is exciting to me.
+
+6. The sane developer does things other than writing code. What else occupies your time?
+	My wife and 3 little boys occupies a lot of my time.  While not spending time with my family I fail at aspiring to be a pro-cyclist.
+
+7. The worldy developer is in touch with some form of culture (books, music, film, etc.). How do you go about feeding this part of your brain?
+	Art and technology is my passion.  When I'm not working with technology I nuture my artistic side and sometimes paint, cook, play volleyball, basketball, tinker with electronics, working on cars, and ride my bike.  Most of my friends would consider me the jack of all trades because I always try to be the best at everything I attempt.  4 out of 5 people would highly recommend my cooking to other friends.  The last person was probably not my friend or just a picky eater.
+
+8. Please critique any of the SparkFun websites. With influence over the SparkFun dev team what would *you* focus on improving?
+	Are you sure you want this?  My specialty is in UX.  The UX process includes contextual analysis (user research), setting design goals, design interface, create prototypes, test prototypes, and analyzing test results.  
+	Since I am not sure of what the business goals and user base is I will be an advocate for the regular user.
+	
+	First impressions of the sparkfun website. http://www.sparkfun.com
+	
+	-The site looks like it's designed by a developer.  The design is very safe with the left hand navigation and no design risks are taken.
+	-There is too much text on the homepage.  Especially on the responsive mobile site.
+	-Could use better typography for it to be unique but it works.
+	-iconography and line weights for the site are inconsistent.  To achieve a more polished look; buttons, icons and divider lines should be the same weight.  You can use different weights to emphasis call to actions or to add styling to typography.
+	-site information architecture could be improved with more user research.
+	-Lacks interesting interactions for when user's click on things.  It's more interesting and fun when site's move or animate in response to user interactions.
+	
+	These are design critiques and usually are subjective to one's taste and experience.  On an e-commerce site, conversion is key so I would rather utilize A&B testing and analytics to determine enhancements.
