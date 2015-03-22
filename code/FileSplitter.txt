@@ -1,0 +1,487 @@
+################################################################################################################
+################################################################################################################
+#
+# FileSplitter.pl
+#
+# NOTE!! Ensure $installed_path variable and other values are set below.
+#
+# AUTHOR:	Michael Harlan
+# CREATED:	07/29/2014
+#
+# Set the Build Version
+my $buildversion = "1.04";
+
+
+################################################################################################################
+################################################################################################################
+# PERL include/require declarations
+#
+# use strict;	globals in package
+# use warnings;	uninitialized variables assumed undef
+package PerlSvc;
+require Win32::Mutex;
+use File::stat;
+use File::Basename;
+use Time::localtime;
+use Date::Simple qw();
+use Date::Calc qw(Delta_Days);
+use Fcntl ':seek';
+use Cwd;
+$|=1;	# autoflush buffers
+#
+# END OF PERL INCLUDES SECTION
+################################################################################################################
+
+
+
+################################################################################################################
+################################################################################################################
+# Configuration settings - edit as needed
+#
+
+# Service Control Variables - see service routines near end of this file
+my $service = 'FileSplitter';
+my $installed_path = '';
+my $run_service = 1;
+my $debug_mode = 1;
+
+# Config Variables
+$ini_file = 'FileSplitter.ini';
+$logfile = 'FileSplitter.log';
+$log_file_max_size = 8192000;
+$loglevel = 0;
+$file_path = '';
+$file_max_size = 5000000;
+$file_max_age = 1;
+
+#
+# END OF CONFIGURATION SECTION
+################################################################################################################
+
+
+
+
+################################################################################################################
+# MAIN ROUTINES
+#
+################################################################################################################
+
+#######################################################################
+sub main() {
+
+    # Create a MUTEX to lock this service to one instance
+    $mutexname = 'FileSplitter_LOCK';
+    $mutex = Win32::Mutex->open( $mutexname );
+    if ( $mutex eq undef ) {
+        # try create instead
+        $mutex = Win32::Mutex->new( 0, $mutexname );
+        if ( $mutex eq undef ) {
+            Log(0, "Unable to make mutex $mutexname\n");
+        } else {
+            Log(0, "Created mutex $mutexname\n");
+        }
+    } else {
+        Log(1, "Opened existing mutex $mutexname\n");
+    }
+
+    # Get current working directory
+    my $cwd = Cwd::getcwd();
+    Log(0, "Running in \"$cwd\"\n");
+    
+    # Read the config file
+    read_config_ini();
+
+    if ( $ini_settings{'SLEEPTIME'} ) {
+	$sleeptime = 0+$ini_settings{'SLEEPTIME'};
+    } else {
+	$sleeptime = 300;	# 5 minutes
+    }
+    if ( $run_service ) {
+	Log(0, "SLEEPTIME=$sleeptime\n\n");
+    }
+    if ( ! $run_service ) {
+	run_splitter();
+	# Get out of here
+	exit(0);
+    } else {
+	# Run our checker in a service loop    
+	while ( $run_service ) {
+	    Log(3, "Acquiring mutex $mutexname ...");
+	    $mutex->wait();
+	    Log(3, " Acquired!\n");
+	    
+	    run_splitter();
+            
+	    Log(3, "Releasing mutex $mutexname\n");
+	    $mutex->release();
+	    
+	    Log(0, "\n... sleeping $sleeptime seconds before next cycle ... " . ctime() . "\n\n");
+	    my $sleeping = $sleeptime;
+	    while ( $run_service == 1 && $sleeping > 0 ) {
+		$sleeping -= 2;
+		sleep 1;
+		if ( ! ContinueRun(1) ) { $run_service = 0; }
+	    }
+	} # End main loop - $run_service
+    }
+} # main()
+
+
+#######################################################################
+sub run_splitter () {
+
+    Log(2, "\n============= RUNNING SPLITTER ===============\n");
+    Log(0,"---> " . ctime() . "\n");
+
+    my $file_type = 'txt',
+    my $file_contents = '';
+    my $file_size_total = 0;
+    my $new_file = '';
+    
+    # Open our working directory and look for files to parse
+    opendir(DIR, $file_path);
+    while (defined($file = readdir(DIR))) {
+	if ( $file eq '.' or $file eq '..' ) { next; }
+
+	# Make sure this file complies with the extensions defined for this DIR
+	my $current_file = "$file_path\\$file";
+	my ($parse_name, $parse_path, $parse_extn) = fileparse($current_file,qr"\..*");
+	$parse_extn =~ s/\.//g;
+
+        # Did we find a file to parse
+	my $underscore_count = ($parse_name =~ tr/_//);
+	if ($underscore_count == 1) {
+	    if ( index(uc($file_type), uc($parse_extn) )>-1 ) {
+
+                # Build our parsed file names using date and counter
+		my @stats = stat($current_file);
+		my $file_size = scalar $stats[0][7];
+		my $time_file = scalar localtime($stats[0][10]);
+		my $d1 = $time_file->[3];
+		my $m1 = $time_file->[4];
+		my $y1 = $time_file->[5];
+		$y1 += 1900;
+		$m1++;
+		my $time_today = scalar localtime(time);
+		my $d2 = $time_today->[3];
+		my $m2 = $time_today->[4];
+		my $y2 = $time_today->[5];
+		$y2 += 1900;
+		$m2++;
+		my $file_age = Delta_Days($y1,$m1,$d1,$y2,$m2,$d2);
+
+		#print "$current_file is $file_age days old\n";
+		if ($file_age >= $file_max_age) {
+
+                    # Parse the file
+		    Log(2, "Processing File: $current_file\n");
+		    my $counter = "0" x 2; # if you ++ a string, it keeps the padding
+		    my $current_size = 0;
+		    my $current_content = '';
+		    if ($file_size > $file_max_size) {
+			if ( open( TXTFILE, $current_file ) eq undef ) {
+			    next;
+			}
+			my $data = do { local $/; <TXTFILE> };
+			close( TXTFILE );
+			my @lines = split(/\n/, $data);
+			foreach $line (@lines) {
+			    $file_size_total += length($line);
+			    $current_size += length($line);
+			    $current_content .= "$line\n";
+			    if ( ($current_size > $file_max_size) ) {
+				# Write the new file
+				$counter++;
+				$new_file = "$parse_path\\$parse_name" . '_' . "$counter.txt";
+				open( NEWFILE, '>' . $new_file );
+				print NEWFILE $current_content;
+				close( NEWFILE );
+				# Reset our values
+				$current_size = 0;
+				$current_content = '';
+			    }
+			}
+
+			# See if we're at the last file
+			if ( ($current_size > 0) ) {
+			    # Write the new file
+			    $counter++;
+			    $new_file = "$parse_path\\$parse_name" . '_' . "$counter.txt";
+			    open( NEWFILE, '>' . $new_file );
+			    print NEWFILE $current_content;
+			    close( NEWFILE );
+			}
+			# Delete the original file
+			unlink $current_file;
+
+		    } else {
+			# Rename the original file so the naming convention matches all older files (at some point this won't matter)
+			$new_file = "$parse_path\\$parse_name" . '_01.txt';
+			rename($current_file, $new_file);
+		    }
+		}
+	    }
+	}
+    }
+    closedir(DIR);
+
+} # run_splitter()
+
+
+#######################################################################
+sub read_config_ini {
+    # External INI File Handling Routine
+    if ( open( INIFILE, $ini_file ) eq undef ) {
+        Log(2, "Unable to open INI config file $ini_file - aborting\n");
+        die;
+    }
+    my $DirList = '';
+    my $delim = '';
+    my $ini_data = do { local $/; <INIFILE> };
+    close( INIFILE );
+
+    # INI file stores key/value pairs
+    @pairs = split(/\n/, $ini_data);
+    foreach $pair (@pairs) {
+        my ($ini_key, $ini_value) = split (/=/, $pair);
+        Log(3, "read: $ini_key = $ini_value\n");
+	if ( index($ini_key, '--COMMENT')>-1 ) {
+	    # Do Not add in Comments
+	} else {
+	    $ini_settings{$ini_key} = $ini_value;
+	    # Copy INI values to variables
+	    # Only update the global vars if they exist in the INI file
+	    if ( $ini_key eq 'LOG_FILE' )
+		{ $logfile = $ini_value; }
+	    if ( $ini_key eq 'LOG_LEVEL' )
+		{ $loglevel = 0+ $ini_value; }
+	    if ( $ini_key eq 'LOG_FILE_MAX_SIZE' )
+		{ $log_file_max_size = 0+ $ini_value; }
+	    if ( $ini_key eq 'DIR' ){
+		{ $file_path = $ini_value; }
+	    }
+	    if ( $ini_key eq 'MAX_FILE_SIZE' ){
+		{ $file_max_size = 0 + $ini_value; }
+	    }
+	    if ( $ini_key eq 'MAX_FILE_AGE' ){
+		{ $file_max_age = 0 + $ini_value; }
+	    }
+	    if ( $ini_key eq 'DEBUG' )
+		{ $debug_mode = 0+ $ini_value; }
+	}
+    }
+}
+
+#
+# END OF MAIN ROUTINES
+################################################################################################################
+
+
+
+
+################################################################################################################
+################################################################################################################
+#
+# PERL SERVICE ROUTINES
+#
+################################################################################################################
+
+#######################################################################
+(my $progname = $0) =~ s/.*?([^\\]+?)(\.\w+)$/$1/;
+our(%Config,$Verbose);
+
+# These assignments will allow us to run the script with 'perl filename.pl'
+
+#######################################################################
+# ContinueRun() is define by PDK when compiled as Windows Service
+#
+unless (defined &ContinueRun) {
+    # Don't delay the very first time ContinueRun() is called
+    my $sleep;
+    *ContinueRun = sub {
+	Win32::Sleep(1000*shift) if $sleep && @_;
+	$sleep = 1;
+	return 1
+    };
+    *RunningAsService = sub {return 0};
+
+    # Interactive() would be called automatically if we were running
+    # the compiled SomeScriptNameSvc.exe
+    Interactive();
+}
+
+#######################################################################
+sub get_options {
+    require Getopt::Long;
+    my @options = @_;
+    my $usage = pop @options;
+    $SIG{__WARN__} = sub { print "$usage\n$_[0]"; exit 1 };
+    Getopt::Long::GetOptions("dir=s" => \$installed_path, @options);
+    $SIG{__WARN__} = 'DEFAULT';
+    chdir $installed_path;
+    read_config_ini();
+}
+
+#######################################################################
+# The --install and --remove options are implemented by PerlSvc and
+# cannot be simulated when running via 'perl SomeScriptNameSvc.pl'
+sub unsupported {
+    my $option = shift;
+    die "The '--$option' option is only supported in the compiled script.\n";
+}
+
+#######################################################################
+sub configure {
+    my $cwd = getcwd();
+    %Config = (ServiceName => $service,
+    DisplayName => "FileSplitter v" + $buildversion,
+    Description => "Cleans Files with log $logfile",
+    Parameters => "-dir \"$cwd\"");
+}
+
+#######################################################################
+# Interactive() is called whenever we are run from the commandline
+# and none of the --install, --remove or --help options were used
+
+my $fConsoleMode = 0;
+sub Interactive {
+    # These entries are only used when the program is run with
+    # 'perl PingSvc.pl' and is not compiled into a service yet.
+    push(@options,
+        'help'    => \&Help,
+        'install' => \&unsupported,
+        'remove'  => \&unsupported);
+    
+    # Setup the %Config hash based on our configuration parameter
+    $fConsoleMode = 1;
+    configure();
+    Startup();
+}
+
+#######################################################################
+# The Startup() function is called automatically when the service starts
+sub Startup {
+    get_options(@options, <<__USAGE__);
+Try '$progname --help' to get a list of valid options.
+__USAGE__
+	
+    if ( $fConsoleMode == 1 ) { print "\nPress Ctrl-C to stop...\n"; }
+
+    Log(0, "\n$Config{DisplayName} starting: " . ctime() . "\n");
+
+    # ContinueRun() will return early
+    # if the service receives a STOP, PAUSE or SHUTDOWN command.
+    # ContinueRun checks every 1 second...
+    while (ContinueRun(1)) {
+        # main app loop
+        unless (RunningAsService()) {
+            Log(0, "Log file = $logfile redirected to stdout in console mode\n");
+        }
+        main();
+    }
+    Log(0, "$Config{DisplayName} stopped: " . ctime() . "\n\n");
+}
+
+#######################################################################
+sub Log {
+    # Write to our log file
+    my ($level, $msg) = @_;
+    unless (RunningAsService()) {
+        if ( $loglevel >= $level ) { print "$msg"; }
+	return;
+    }
+    if ( $loglevel >= $level and $logfile ) {
+        my $logSize = -s $logfile;
+        open(my $f, ">>$logfile");
+        if ( $log_file_max_size and $logSize > $log_file_max_size ) {
+            truncate $f, 0;
+        }
+	print $f "$msg";
+	close $f;
+    }
+}
+
+#######################################################################
+sub Install {
+    get_options('name=s' => \$service, @options, <<__USAGE__);
+Valid --install suboptions are:
+
+  auto       automatically start service
+  --name     service name                     [$service]
+  --log      log file name                    [$logfile]
+
+For example:
+
+  $progname --install auto --name APPNAME_GEN  --log AppNameSvc.log
+
+__USAGE__
+
+    configure();
+}
+
+#######################################################################
+sub Remove {
+    get_options('name=s' => \$service, <<__USAGE__);
+Valid --remove suboptions are:
+
+  --name     service name                     [$service]
+
+For example:
+
+  $progname --remove --name PingFoo
+__USAGE__
+
+    # Let's be generous and support 'myService.exe --remove name' too:
+    $service = shift @ARGV if @ARGV;
+
+    $Config{ServiceName} = $service;
+}
+
+#######################################################################
+sub Help {
+    print <<__HELP__;
+FileSplitter v1.0 -- Cleans Files from specified directories (logfile = $logfile)
+
+Run it interactivly with configurable HOSTNAME:
+
+    $progname
+
+or install it as a service:
+
+    $progname --install auto
+    net start $service
+
+You can pause and resume the service with:
+
+    net pause $service
+    net continue $service
+
+To remove the service from your system, stop und uninstall it:
+
+    net stop $service
+    $progname --remove
+__HELP__
+
+    # Don't display standard PerlSvc help text
+    $Verbose = 0;
+}
+
+#######################################################################
+sub Pause {
+    Log(0, "$Config{ServiceName} is about to pause at ". ctime());
+}
+
+#######################################################################
+sub Continue {
+    Log(0, "$Config{ServiceName} is continuing at ". ctime());
+}
+#
+# END OF PERL SERVICE ROUTINES
+################################################################################################################
+
+
+################################################################################################################
+################################################################################################################
+# EOF
+
+
