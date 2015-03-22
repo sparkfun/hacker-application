@@ -1,0 +1,5 @@
+I have not done much in hte way of UNIX-based programming so I do not use Dot files. I do understand what they are and how they are used in a system. 
+
+Using Visual Studio however you can set up your environment using built in files and specify any number of startup parameters, etc.
+
+
