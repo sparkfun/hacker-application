@@ -1,0 +1,50 @@
+Enter file contents herePlease answer the following general questions:
+
+1. What is your desired compensation range? (Range meaning the least you're comfortable with to the most you think you're worth.)
+Compensation, from a monetary perspective, is very important as one needs to be able to survive and live a certain lifestyle. But it's not the most important thing when I look at how I "get paid" in a given job. When I consider compensation I look not only at the money value but things that are important to me, like work-life balance, the ability to continue educating myself in areas that help support the business as well as me personally. 
+
+So with respect to what my compensation range would be, I would have to defer to what the industry is paying for a like role in the local area. In researching this on Salary.com, I would be comfortable with the average amount as reported for a Director of Information Technology in the Boulder area.
+
+
+
+2. When can you start?
+As you know I'm located in California but WILL be moving to the greater Denver area very soon. In that I am an executive and have been at my current employ for over 8 years, it is likely customary to give a 30-day notice. However, I would think I could be safe to say a two-week notice would suffice. and be ready to hit the ground running by May 4, 2015.
+
+
+
+3. Do you have any planned vacations/absences in the next six months that we should know about?
+No. Since my goal is to get to the Denver area, all my vacations are there! I will be at Copper Mountain on 4/15/15 and will depart on 4/22/15. While this does not give me much time to relocate to the area after I get back I would have to make my transtion in phases - which I take no issue in doing.  
+
+
+
+4. SparkFun is a dog-friendly environment. Are you comfortable working aroung dogs? If you are a dog-owner, would you see yourself bringing dogs to work?
+We have three dogs and are watching our sons dog - and an 11-month Siberian Husky is a real handful. As a dog owner I would likely choose not to bring my dog(s) into work and have no problem with others in doing so. 
+
+
+
+5. The active developer keeps up on happenings in the world of development and technology. Where do you you get your news?
+I look at a number of sites for news and happenings. Some that I visit more often would include: TechCrunch, SlashDot, GizModo, Mashable, BaseLineMag, and WSJ.
+
+
+
+6. The sane developer does things other than writing code. What else occupies your time?
+During the winter months I try to get to the slopes as often as possible - but living in San Diego makes that a bit tricky. During the non-winter months, which are very few here, I enjoy playing tennis, the occasional round of golf, surfing, hiking, and basically anything outdoors.
+
+
+
+7. The worldy developer is in touch with some form of culture (books, music, film, etc.). How do you go about feeding this part of your brain?
+While I do like a good book, a great movie, an awesome concert (can't get enough music), I would say I find my cultural side takes me to guitar playing and gourmet cooking. And since I will never be a "rock star" in the musical sense, I very much enjoy learning new songs. On the "chef" front I have a huge passion for great food. In fact, I have gotten so good at preparing a few dishes that I truly enjoy, my wife and I have an ever more difficult time going out to a restaurant - since I can oftentimes make it better than they do - like my mushroom risotto. Mmmmmmmm - yum! 
+
+
+
+8. Please critique any of the SparkFun websites. With influence over the SparkFun dev team what would *you* focus on improving?
+- I like the fact that you have built a nice responsive site. With the Interent dramatically moving to mobile this is a MUST for companies today. The site looks great on my mobile device - but I am using a iPhone 6 plus so I get a lot of screen space. Could be a bit more challenging on smaller screens.
+- The content is well laid out and easy to find. In my own development efforts I have tried to shy away from the left-side menu theme. And while this is a great way to show a lot of navigation "options" I would try to ogranize the information such that the top menu takes care of all navigation. I personally like the menus  that "drop down" large content areas and can show sub-nav items organized appropriately.
+- The home page is a bit busy with what appears to be random products displayed throughout. The sliding navigator at the top is nice and allows the user to see new products.  But viewing this on a mobile device was a bit more difficult with a lot of top-to-bottom scrolling. Could help to have a few random placed "Back To Top" links.
+- The home page banner area at the top could be more dynamic. The user can change the banner with a click, but to make the site "move" would add a bit more flair to it.
+- I like the hover option over the products as it allows me to quickly navigate to an area in the site to get more info on the product or immediately add it to my cart. The cart is well laid out and easy to use.
+- The footer is nice and looks good on both PC and mobile devices. Lots of information and well designed.
+- When I navigate to the Forum the whole top nav disappears. It stays there for Shop, Learn and AVC.
+- The "Data" site does not look anything like the main site. No navigation at all and the logo is gone. You have a great logo - display it everywhere!
+
+
