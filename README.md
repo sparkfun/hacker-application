@@ -54,8 +54,6 @@ Various position descriptions are available as markdown files in the top of this
 
 * [Full Stack Developer (Full Time)](Full Stack Developer.md)
 * [Web Developer Student Intern (Part Time)](Web Developer Student Intern.md)
-* [Development Project Manager (Full Time)](Development Project Manager.md)
-* [Director of Information Technology (Full Time)](Director of Information Technology.md)
 
 ## Legal Stuff
 
