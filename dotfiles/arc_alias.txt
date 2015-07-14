@@ -1,0 +1,52 @@
+I am currently using Arcanist and Phabricator as a method of managing code review and branching. The below
+aliases have simplified a lot of the common tasks; "arc composer" for example runs a composer install, while 
+"arc diffpush" creates a new differential for code review, and updates the Git branches on remote. "arc eagle",
+humorously, lands the current branch (merging the changes back into development) and displays the ASCII image
+of an eagle, shown below, as "the eagle has landed".
+
+"eagle": ["!arc land --delete-remote $@ && cat .arceagleascii"],
+"pushdiff": ["!arc diff $@ && git push origin `git rev-parse --abbrev-ref HEAD`"],
+"qacreate": ["!php ./scripts/qabuild.php --create $@"],
+"qaremove": ["!php ./scripts/qabuild.php --remove $@"],
+"unitall": ["!php vendor/bin/phpunit tests/"],
+"composer": ["!php -d \"apc.enable_cli=0\" composer.phar $@"],
+"swag":["!git stash && git checkout development && git pull && git checkout - && git rebase development && git stash pop && arc composer install"]
+
+
+
+The "eagle" mentioned above:
+
+                               /T /I
+                              / |/ | .-~/
+                          T\ Y  I  |/  /  _
+         /T               | \I  |  I  Y.-~/
+        I l   /I       T\ |  |  l  |  T  /
+     T\ |  \ Y l  /T   | \I  l   \ `  l Y
+ __  | \l   \l  \I l __l  l   \   `  _. |
+ \ ~-l  `\   `\  \  \\ ~\  \   `. .-~   |
+  \   ~-. "-.  `  \  ^._ ^. "-.  /  \   |
+.--~-._  ~-  `  _  ~-_.-"-." ._ /._ ." ./
+ >--.  ~-.   ._  ~>-"    "\\   7   7   ]
+^.___~"--._    ~-{  .-~ .  `\ Y . /    |
+ <__ ~"-.  ~       /_/   \   \I  Y   : |
+   ^-.__           ~(_/   \   >._:   | l______
+       ^--.,___.-~"  /_/   !  `-.~"--l_ /     ~"-.
+              (_/ .  ~(   /'     "~"--,Y   -=b-. _)
+               (_/ .  \  :           / l      c"~o \
+                \ /    `.    .     .^   \_.-~"~--.  )
+                 (_/ .   `  /     /       !       )/
+                  / / _.   '.   .':      /        '
+                  ~(_/ .   /    _  `  .-<_
+                    /_/ . ' .-~" `.  / \  \          ,z=.
+                    ~( /   '  :   | K   "-.~-.______//
+                      "-,.    l   I/ \_    __{--->._(==.
+                       //(     \  <    ~"~"     //
+                      /' /\     \  \     ,v=.  ((
+                    .^. / /\     "  }__ //===-  `
+                   / / ' '  "-.,__ {---(==-
+                 .^ '       :  T  ~"   ll
+                / .  .  . : | :!        \\
+               (_/  /   | | j-"          ~^
+                 ~-<_(_.^-~"
+		
+		***THE EAGLE HAS LANDED***
