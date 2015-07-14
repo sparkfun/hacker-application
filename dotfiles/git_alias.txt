@@ -1,0 +1,6 @@
+This command has been the single most used git alias I've found, by calling "git b <branch_name>", git will
+checkout the requested branch, do a composer install, and clear the local caching files. This simplifies the 
+workflow by not spending a lot of time checking if a problem is with caching, or actually with a database change.
+It also ensures that the composer autoloader is aware of any new classes added as part of the branch.
+
+b = "!f() { git checkout $1; arc composer install; rm -rf data/cache/*; }; f"
