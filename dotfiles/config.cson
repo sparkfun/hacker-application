@@ -1,0 +1,53 @@
+"*":
+  editor:
+    invisibles:
+      tab: "‹"
+      space: "•"
+    showInvisibles: true
+    tabLength: 3
+    fontFamily: "bpMono"
+    preferredLineLength: 150
+    softWrapAtPreferredLineLength: true
+    softWrapHangingIndent: 3
+    fontSize: 10
+    softTabs: false
+  core:
+    themes: [
+      "one-outlander-ui"
+      "outlander-syntax"
+    ]
+    disabledPackages: [
+      "highlight-css-color"
+      "remote-sync"
+      "language-vbscript"
+      "markdown-pdf"
+      "linter-php"
+      "aligner-php"
+      "css-color-underline"
+      "php-getters-setters"
+      "php-twig"
+      "php-class-tree"
+      "php-cs-fixer"
+      "linter-phpcs"
+      "php-debug"
+    ]
+    audioBeep: false
+  linter: {}
+  "grunt-runner": {}
+  "exception-reporting":
+    userId: "cb7db365-eb61-db08-8e31-bb50837e27ac"
+  welcome:
+    showOnStartup: false
+  minimap: {}
+  "atom-beautify":
+    _analyticsUserId: "e1d1c4c3-d6ba-40d8-aa78-bb6c9f52cb15"
+  "Remote-FTP": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "remote-sync": {}
+  "atom-typescript": {}
+  "css-comb":
+    config: "csscomb"
+  "bracket-matcher":
+    autocompleteSmartQuotes: false
+  "linter-php": {}

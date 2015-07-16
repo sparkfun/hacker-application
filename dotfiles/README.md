@@ -9,3 +9,10 @@ In this directory, please include (at your option) either:
 
   b) A rationale for your lack of same (complete with some description of your
      preferred working environment).
+
+My preferred working environment these days is the Atom editor.
+Before I found Atom, I used Brackets, and before that Notepad++ on Windows and TextWrangler on Mac.
+
+I would like to create my own custom syntax theme, maybe even my own custom monospaced font-
+but as the existing themes are tolerable, doing that is such a low priority compared to other things that
+I should be doing whenever the text editor is open that I have to file it under 'procrastination projects.'
