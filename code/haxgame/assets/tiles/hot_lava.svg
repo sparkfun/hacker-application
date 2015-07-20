@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg4244" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="32" width="32" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32.000001" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs id="defs4246">
+  <linearGradient id="linearGradient4828" y2="1052" gradientUnits="userSpaceOnUse" x2="20" y1="1020" x1="20">
+   <stop id="stop4824" stop-color="#ff9000" offset="0"/>
+   <stop id="stop4826" stop-color="#ffd800" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g id="layer1" transform="translate(4.919e-8 -1020)">
+  <rect id="rect4806" opacity="0.99" height="32" width="32" y="1020" x="0" fill="url(#linearGradient4828)"/>
+  <g fill-rule="evenodd">
+   <path id="path4808" d="m18.96 8.42c2.33-0.293 4.68-0.477 7.04-0.42h6v3c-3.146 0.078-6.319-0.8997-9.438-0.1641-3.671 1.236-7.603 1.187-11.43 1.139-3.199-0.15-6.33-1.11-9.55-0.97h-1.58v-3c6.216 1.417 12.67 1.165 18.96 0.4199z" transform="translate(0 1020)" fill="#ffaf00"/>
+   <path id="path4810" d="m0 1036s6.874-0.3097 15.31 0.1325c8.57 1 5.69 1 11.69 1h5v2s-9.965-2.233-14.96-2.233c-5 0-9.891-0.408-12.36 0.3809-2.68 1-4.68 1-4.68 1v-2h-4.919e-8" fill="#ff912a"/>
+   <path id="path4812" d="m0 1040s10-1 13 0 11 1 13 1h6v1s-11 2-16 1-9-1-11-1h-5z" fill="#ffa700"/>
+  </g>
+  <circle id="path4830" opacity="0.99" cx="5.908" cy="1033" r="1" fill="#ffb400"/>
+  <circle id="path4832" opacity="0.99" cx="20.87" transform="scale(1,-1)" cy="-1040" fill="#ffc942"/>
+  <circle id="path4836" opacity="0.99" cx="9.279" cy="1029" r="2" fill="#ffa82a"/>
+  <circle id="path4838" opacity="0.99" cx="22.74" cy="1046" r="1" fill="#ffbd2a"/>
+  <circle id="path4840" opacity="0.99" cx="30" cy="1032" r="1" fill="#ffb92a"/>
+  <g fill-rule="evenodd">
+   <path id="path4869" d="m0 1034s5-1 9-1h9s-3-1-5-1-7-1-7-1z" fill="#ec5d0f"/>
+   <path id="path4871" d="m13 1030h10c3 0 4-1 2-1h-9c-2 0-3 1-3 1" fill="#d81907"/>
+   <path id="path4873" d="m15 1025c-11 0-16 0-13 1s8 1 8 1l5-1z" fill="#9e1508"/>
+   <path id="path4875" d="m30 1025s-6 1-9 1-5-3-5-3h6l9 1z" fill="#9e1508"/>
+   <path id="path4877" d="m32 1026s-4 0-3 2 3 2 3 2" fill="#b82c1f"/>
+   <path id="path4879" d="m0 1031s5-2 3-2-3-1-3-1" fill="#b82c1f"/>
+   <path id="path4881" d="m0 1022h4 4c-1 0 4-2 4-2h-12z" fill="#9e1508"/>
+   <path id="path4883" d="m32 1021h-7c-2 0-5-1-5-1h12v1" fill="#9e1508"/>
+  </g>
+ </g>
+</svg>
