@@ -16,11 +16,11 @@ Ambitious applicants can set themselves apart by taking the initiative to comple
 2. Follow the instructions in the `README` files contained within each top level directory.
 3. Send a pull request back to SparkFun.
 
-Note that pull requests can either be sent back to the main repository or you can create a branch on your fork and create a pull request into master on your fork. The latter method requires that you contact your contacts in the hiring process (or, if you're submitting a pull req uninvited,the management of the SparkFun IT department) with a link to your pull reques. Use the latter method if you prefer some degree of anonymity.
+Note that pull requests can either be sent back to the main repository or you can create a branch on your fork and create a pull request into master on your fork. The latter method requires that you contact your contacts in the hiring process (or, if you're submitting a pull request uninvited, the management of the SparkFun IT department) with a link to your pull request. Use the latter method if you prefer some degree of anonymity.
 
 ### What Happens To Your Pull Request
 
-Your pull request will *never* be merged (to keep this repository open for the applicants that use it after you). When you've either been hired or declined your pull request will simply be closed.
+Your pull request will *never* be merged (this is to keep this repository open for the applicants that use it after you). When you've either been hired or declined your pull request will simply be closed.
 
 During the review process you may find comments applied to your pull request - asking questions, seeking clarification, a rogue compliment, etc.
 
