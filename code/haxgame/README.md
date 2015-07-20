@@ -1,5 +1,7 @@
 # haxgame
-(Coding challenge) Tile based, turn based game in pure PHP with Firebase backend and Markdown frontend.
+Tile based, turn based game in pure PHP with Firebase backend and Markdown frontend.
+
+( continuing to work on this in its own repo. )
 
 
 [![](http://lexiglom.com/hax/view/0_0.svg)](http://lexiglom.com/hax/game.php?x=0&y=0)[![](http://lexiglom.com/hax/view/1_0.svg)](http://lexiglom.com/hax/game.php?x=1&y=0)[![](http://lexiglom.com/hax/view/2_0.svg)](http://lexiglom.com/hax/game.php?x=2&y=0)[![](http://lexiglom.com/hax/view/3_0.svg)](http://lexiglom.com/hax/game.php?x=3&y=0)[![](http://lexiglom.com/hax/view/4_0.svg)](http://lexiglom.com/hax/game.php?x=4&y=0)[![](http://lexiglom.com/hax/view/5_0.svg)](http://lexiglom.com/hax/game.php?x=5&y=0)[![](http://lexiglom.com/hax/view/6_0.svg)](http://lexiglom.com/hax/game.php?x=6&y=0)[![](http://lexiglom.com/hax/view/7_0.svg)](http://lexiglom.com/hax/game.php?x=7&y=0)[![](http://lexiglom.com/hax/view/8_0.svg)](http://lexiglom.com/hax/game.php?x=8&y=0)[![](http://lexiglom.com/hax/view/9_0.svg)](http://lexiglom.com/hax/game.php?x=9&y=0)[![](http://lexiglom.com/hax/view/10_0.svg)](http://lexiglom.com/hax/game.php?x=10&y=0)[![](http://lexiglom.com/hax/view/11_0.svg)](http://lexiglom.com/hax/game.php?x=11&y=0)[![](http://lexiglom.com/hax/view/12_0.svg)](http://lexiglom.com/hax/game.php?x=12&y=0)[![](http://lexiglom.com/hax/view/13_0.svg)](http://lexiglom.com/hax/game.php?x=13&y=0)[![](http://lexiglom.com/hax/view/14_0.svg)](http://lexiglom.com/hax/game.php?x=14&y=0)[![](http://lexiglom.com/hax/view/15_0.svg)](http://lexiglom.com/hax/game.php?x=15&y=0)  
