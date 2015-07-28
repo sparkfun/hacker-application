@@ -1,6 +1,6 @@
 Please answer the following general questions:
 
-1. What is your desired compensation range? (Range meaning the least you're comfortable with to the most you think you're worth.)\n
+1. What is your desired compensation range? (Range meaning the least you're comfortable with to the most you think you're worth.)/n
 --$55-65K annually
 
 2. When can you start?
