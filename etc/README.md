@@ -36,6 +36,7 @@ Please answer the following general questions:
 * Graphic novels
 
 8. Please critique any of the SparkFun websites. With influence over the SparkFun dev team what would *you* focus on improving?
+
 * Changes in the data.sparkfun.com (Data) space to make it look and feel as polished and inviting as the main site (i.e., Why is there no link back to the main site? Why is the 'Manage' button to the far right in a dark color? Couldn't this be a bit more descriptive? Shouldn't it be more prominent?)
 * Redesign the feed buttons on the stream pages of data.sparkfun.com/streams/ such that the unitiated do not start neverending downloads unnecessarily. Further explanation\instruction of this feature on the page is needed, perhaps a popup explaining to the user what is about to happen, providing a 'Cancel' button and 'Don't ask again' checkbox.
 * Style\skin the forum (phpBB) to look and feel more like the rest of the site
