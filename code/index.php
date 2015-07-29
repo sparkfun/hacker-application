@@ -8,6 +8,12 @@ class Colorado {
 	var $dancing = true; //:)
 }
 
+/**
+ * Dummy marijuana dispensary finder program
+ * run in command line with php installed
+ * type 'php index.php' and press enter to run
+ **/
+
 class DispensaryFinder EXTENDS Colorado {
 	
 	private $dispensaries = null;
@@ -58,8 +64,8 @@ class DispensaryFinder EXTENDS Colorado {
 	/**
 	 * Simulate loading. Travel websites do this sh*t on purpose too "The more you know!"
 	 *
-	 * @param $seconds (int) how many seconds do you want to delay?
-	 * @param $loader (string) loading text to repeat
+	 * @param int $seconds how many seconds do you want to delay?
+	 * @param string $loader loading text to repeat
 	 * @return void
 	 **/
 
@@ -74,7 +80,7 @@ class DispensaryFinder EXTENDS Colorado {
 	/**
 	 * Check prompt answer
 	 * 
-	 * @return void
+	 * @return bool
 	 **/
 
 	private function answer()
@@ -107,7 +113,6 @@ class DispensaryFinder EXTENDS Colorado {
 		if($this->answer()){
 			$this->medPsa();
 		} else {
-			// get a load of that recursion
 			$this->recommend();
 		}
 
@@ -167,13 +172,12 @@ class DispensaryFinder EXTENDS Colorado {
 
 		$file = file_get_contents($this->path.$file);
 		$this->dispensaries = json_decode($file);
-
 	}
 
 	/**
 	 * Does the user have a medical card?
 	 *
-	 * @return boolean
+	 * @return bool
 	 **/
 
 	public function hasMedicalCard()
@@ -184,7 +188,7 @@ class DispensaryFinder EXTENDS Colorado {
 	/**
 	 * Is the user 21 or older?
 	 * 
-	 * @return boolean
+	 * @return bool
 	 **/
 
 	public function is21orOlder()
