@@ -10,15 +10,15 @@ class Colorado {
 
 class DispensaryFinder EXTENDS Colorado {
 	
-	private $dispensaries = array('Solace','Sparkfun','Native Roots');
+	private $dispensaries = null;
 	private $hasMedicalCard = null;
 	private $is21orOlder = null;
-	private $apiUrl = '';
+	private $path = './';
 	var $simulateLoading = null;
 
 	function __construct($simulateLoading = true)
 	{
-		$this->simulateLoading = true;
+		$this->simulateLoading = $simulateLoading;
 		$msg = "Welcome to Colorado\n";
 		$msg .= "'Come for the weed! Stay for the weed!'\n";
 		$msg .= '_\|/_ _\|/_ _\|/_ _\|/_ _\|/_ _\|/_ _\|/_';
@@ -46,7 +46,7 @@ class DispensaryFinder EXTENDS Colorado {
 			if(!$this->is21orOlder = $this->answer()) {
 				echo 'Do you have a sibling or cousin who is 21 or older? [Y/N]:';
 				if($this->answer()) {
-					echo 'Please sit him/her in front of the screen then presss enter to continue:';
+					echo 'Please sit him/her in front of the screen then press enter to continue:';
 					$this->answer();
 				} else {
 					die("It's black market for you buddy. Sorry :(\n");
@@ -102,7 +102,7 @@ class DispensaryFinder EXTENDS Colorado {
 
 		$dispensary = array_pop($this->dispensaries);
 		$msg = 'How about this dispensary? '."\n\n";
-		$msg.= $dispensary."\n\n[Y/N]:";
+		$msg.= $dispensary->name."\n".$dispensary->address."\n\n[Y/N]:";
 		echo $msg;
 		if($this->answer()){
 			$this->medPsa();
@@ -158,14 +158,15 @@ class DispensaryFinder EXTENDS Colorado {
 		echo 'Fetching Dispensaries...';
 		if($this->simulateLoading) $this->simulateLoading();
 		echo "\n";
+		
 		if($this->hasMedicalCard()){
-
+			$file = 'medical.json';
 		} else {
-
+			$file = 'recreational.json';
 		}
 
-		/*$file = file_get_contents('');
-		$this->dispensaries = json_decode($file);*/
+		$file = file_get_contents($this->path.$file);
+		$this->dispensaries = json_decode($file);
 
 	}
 
