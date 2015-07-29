@@ -45,12 +45,12 @@ class DispensaryFinder EXTENDS Colorado {
 
 	private function prompt()
 	{
-		echo 'Do you have a medical card? [Y/N]:';
+		echo 'Do you have a medical card? [Y/[N]]:';
 		//if y skip next 1
 		if(!$this->hasMedicalCard = $this->answer()) {
-			echo 'Are you 21 or older? [Y/N]:';		
+			echo 'Are you 21 or older? [Y/[N]]:';		
 			if(!$this->is21orOlder = $this->answer()) {
-				echo 'Do you have a sibling or cousin who is 21 or older? [Y/N]:';
+				echo 'Do you have a sibling or cousin who is 21 or older? [Y/[N]]:';
 				if($this->answer()) {
 					echo 'Please sit him/her in front of the screen then press enter to continue:';
 					$this->answer();
@@ -88,10 +88,11 @@ class DispensaryFinder EXTENDS Colorado {
 		$handle = fopen ("php://stdin","r");
 		$line = fgets($handle);
 		fclose($handle);
-		if(strtolower(trim($line)) != 'y'){
-			return false;
+		$answer = strtolower(trim($line));
+		if($answer === 'y' || $answer === 'yes'){
+			return true;
 		}
-		return true;
+		return false;
 	}
 
 	/**
@@ -108,7 +109,7 @@ class DispensaryFinder EXTENDS Colorado {
 
 		$dispensary = array_pop($this->dispensaries);
 		$msg = 'How about this dispensary? '."\n\n";
-		$msg.= $dispensary->name."\n".$dispensary->address."\n\n[Y/N]:";
+		$msg.= $dispensary->name."\n".$dispensary->address."\n\n[Y/[N]]:";
 		echo $msg;
 		if($this->answer()){
 			$this->medPsa();
