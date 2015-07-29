@@ -25,7 +25,7 @@ Please answer the following general questions:
 * Raising my son
 * Art & Design
 * Stagecraft
-* Traveling
+* Travelling
 * Carpentry
 * World of Warcraft (Muradin server)
 
