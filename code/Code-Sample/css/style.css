@@ -1,0 +1,303 @@
+/*
+    RESET
+*/
+* { 
+	margin: 0; 
+	padding: 0; 
+}
+
+body { 
+	font: 14px/1.1 Helvetica, Sans-Serif;
+}
+
+img, 
+a img { 
+	border: none; 
+}
+
+input { 
+	outline: none; 
+}
+
+.clear { 
+	clear: both; 
+}
+
+.image-replace {
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9999px;
+	top: 0;
+	z-index: 2; 
+}
+
+/*
+	STRUCTURE
+*/
+
+.main-container {
+	margin: 6px auto 50px; 
+	position: relative; 
+	width: 960px; 
+}
+
+hr { 
+	background: #ccc;
+	border: none;
+	clear: both;
+	display: block;
+	margin: 20px 0;
+}
+
+/*
+    TEXT
+*/
+a  { 
+	text-decoration: none; 
+	color: #900; 
+	border-bottom: 1px dotted #900; 
+	outline: none; 
+}
+
+h1 { 
+	font: bold 36px Helvetica, Sans-Serif; 
+	margin: 0 0 8px 0; 
+}
+
+h2 { 
+	margin: 0 0 10px 0; 
+}
+
+p { 
+	margin: 0 0 6px 0; 
+}
+
+.button { 
+	background: #f00;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	font: bold 16px Helvetica;
+	padding: 6px 12px; 
+	text-shadow: 0 1px 1px #666;
+	-webkit-border-radius: 5px; 
+	-webkit-box-shadow: 0 1px 3px #999; 
+	-moz-box-shadow: 0 1px 3px #999; 
+	-moz-border-radius: 5px; 
+}
+
+.button:hover { 
+	background-position: bottom left; 
+}
+
+.red { 
+	background: red; 
+	color: white; 
+	font-size: 12px; 
+	padding: 3px; 
+}
+
+/*
+    HEADER
+*/
+
+.header { 
+	height: 68px; 
+	position: relative; 
+}
+
+.header--heading {
+	float: left;
+}
+
+.header--nav {
+	float: right;
+	padding: 10px 237px 0 0;
+	text-align: right;
+	width: 500px;
+}
+
+/*
+    LISTS
+*/
+ul { 
+	list-style: none; 
+}
+
+#list li {
+	margin: 0 0 8px 0;
+	padding: 0 0 0 70px;
+	position: relative;
+	width: 607px;
+}
+
+#list li span {
+	display: block;
+	padding: 8px;
+	position: relative;
+	width: 589px;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.color-blue span {
+	background: rgb(115, 184, 191);
+}
+
+.color-yellow span {
+	background: rgb(255, 255, 255);
+}
+
+.color-red span {
+	background: rgb(187, 49, 47);
+	color: white;
+}
+
+.color-green span {
+	background: rgb(145, 191, 75);
+}
+
+.tab {
+	background: url(images/minibuttons.png) no-repeat;
+	height: 21px;
+	top: 4px;
+}
+
+.draggertab {
+	cursor: move;
+	left: 0px;
+	position: absolute;
+	width: 31px;
+}
+
+.draggertab:hover {
+	background-position: 0 -21px;
+}
+
+.colortab {
+	background-position: -31px 0;
+	cursor: pointer;
+	left: 34px;
+	position: absolute;
+	width: 34px;
+}
+
+.colortab:hover {
+	background-position: -31px -21px;
+}
+
+.deletetab {
+	background-position: -82px 0;
+	cursor: pointer;
+	position: absolute;
+	right: -35px;
+	width: 15px;
+}
+
+.deletetab:hover {
+	background-position: -82px -21px;
+}
+
+.donetab {
+	background-position: -65px 0;
+	cursor: pointer;
+	position: absolute;
+	right: -17px;
+	width: 16px;
+}
+
+.donetab:hover {
+	background-position: -65px -21px;
+}
+
+.crossout {
+	height: 1px;
+	left: 0;
+	position: absolute;
+	top: 50%;
+}
+
+.share-area {
+	margin: 20px 0 0 69px;
+	width: 600px;
+}
+
+/*
+    FORM STUFF
+*/
+
+label {
+	background: #999;
+	color: white;
+	padding: 3px; 
+}
+
+input[type="text"],
+input[type="password"] {
+	border: 3px solid #999;
+	display: block;
+	font-size: 18px;
+	padding: 7px;
+	width: 324px;
+}                   
+
+.add-new-form input[type="text"] { 
+	float: left;
+	margin: 0 10px 0 69px;
+	width: 532px;
+}
+
+.add-new-form input[type="text"]:focus {
+	border-color: #73B8BF;
+}
+
+.add-new-form input[type="submit"] {
+	padding: 10px 12px;
+}
+
+ul.list li span input[style] {
+	width: 90% !important;
+}
+/*
+    MESSAGING
+*/
+.message {
+	padding: 10px;
+	margin: 0 0 10px 0;
+	width: 607px;
+}
+
+.good {
+	background: #9ff5b6;
+}
+
+.bad {
+	color: #ef0040;
+}
+
+/*
+    SIDEBAR
+*/
+.sidebar {
+	background: #ccc;
+	height: 756px; top: -6px;
+	padding: 60px 30px 0 47px;
+	position: absolute;
+	right: 0;
+	width: 125px;
+}
+
+.sidebar ul {
+	list-style: none;
+}
+
+.sidebar ul li {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	font-size: 12px;
+	margin: 0 0 5px 0;
+	padding: 5px;
+}
