@@ -1,5 +1,5 @@
 Rationale
 
-Most of my preferences for working environment were established the first day of my internship at CP+B, when everything was more or less set up for me before I had any idea what any of it did. It worked well enough for me and I had no conception of what parts could be changed, so I adapted to it. I honestly had to google what dotfiles were. I'm so down to learn about this though, because I bet coding would be a lot easier if I could make conscious decisions about the process.
+I initially learned to develop on a Mac environment using zsh. Most of th customization I used was Oh My Zsh. I recently switched to using a bash shell on my Windows laptop. I am still new to dotfiles, so I opted to research existing .bashrc files to get an idea of what other people were using and I selected the example provided because on the command line it provides information about branch, changes whether staged or unstaged and tracked or untracked, and changes color depending on how I've logged in. 
 
-I learned to develop using zsh on a Mac while at CP+B, but am currently working with a Bash shell on Windows. I use Sublime on both. I prefer to use Macs if I can.
+The aliases at the bottom of the files were my own addition to cut down on typing time.
