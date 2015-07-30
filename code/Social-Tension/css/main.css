@@ -1,0 +1,355 @@
+html,
+body {
+	background-color: #000;
+	color: #bac;
+	font-family: monospace;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+/*MAIN CONTAINER*/
+
+.main-container {
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+.sketch-container {
+	height: 100%;
+	margin: auto;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+/*SIDEBAR*/
+
+.side-bar {
+	background: transparent;
+	display: block;
+	overflow: auto;
+	position: fixed;
+	width: 325px;
+	z-index: 2;
+
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.side-bar-header {
+	background: transparent;
+	opacity: 0.5;
+
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.header {
+	display: block;
+	font-size: 2em;
+	font-weight: 700;
+	line-height: 60px;
+	margin: 0;
+	padding: 0 15px;
+	position: relative;
+	text-align: center;
+
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.menu-label {
+	background-image: url('../img/gear.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 30px;
+	padding: 15px;
+	width: 30px;
+
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.side-bar:hover .side-bar-header{
+	background: #324;
+	opacity: 1;
+}
+
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+/*TIER 1 MENU*/
+
+.control-panel {
+	background: transparent;
+	clear: both;
+	display: block;
+	overflow: auto;
+	position: relative;
+	width: 100%;
+	z-index: 2;
+
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.control-panel ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.tier-1-menu-item {
+	background: #435;
+	display: block;
+	height: 0;
+	opacity: 0.6;
+	overflow: hidden;
+
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.side-bar:hover .tier-1-menu-item {
+	height: auto;
+}
+
+.side-bar:hover .tier-1-menu-item:hover {
+	opacity: 0.85;
+}
+
+.tier-1-label {
+	cursor: pointer;
+	display: block;
+	font-size: 1.5em;
+	font-weight: 400;
+	height: 0;
+	line-height: 1.8em;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+
+	-webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.side-bar:hover .tier-1-label {
+	height: 1.8em;
+}
+
+/*TIER 2 MENU*/
+
+.tier-2-control-panel {
+	background: #546;
+	display: block;
+	height: auto;
+	overflow: hidden;
+	visibility: hidden;
+
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.tier-2-control {
+	display: block;
+	height: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.tier-2-control.tip {
+	background: #879;
+	font-size: 0.75em;
+	height: 0;
+	padding: 0;
+	text-align: center;
+	z-index: 3;
+
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.control-header {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.side-bar:hover #space-menu-toggle:checked ~ .tier-2-control-panel,
+.side-bar:hover #social-menu-toggle:checked ~ .tier-2-control-panel,
+.side-bar:hover #self-menu-toggle:checked ~ .tier-2-control-panel {
+	visibility: visible;
+}
+
+.side-bar:hover #space-menu-toggle:checked ~ .tier-2-control-panel .tier-2-control.item,
+.side-bar:hover #social-menu-toggle:checked ~ .tier-2-control-panel .tier-2-control.item,
+.side-bar:hover #self-menu-toggle:checked ~ .tier-2-control-panel .tier-2-control.item {
+	height: 70px;
+	visibility: visible;
+}
+
+.control-tip-copy {
+	display: block;
+	margin: 0;
+}
+
+.side-bar:hover #self-menu-toggle:checked ~ .tier-2-control-panel .tier-2-control.active-bob.on ~ .tier-2-control.tip.active-bob {
+	height: 30px;
+	padding: 10px;
+}
+
+.control-input {
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+.label-image {
+	display: block;
+	margin: 0 auto;
+	opacity: 1;
+	width: 40px;
+}
+
+.button-input {
+	background: #c00;
+	border: none;
+	color: #fff;
+	display: block;
+    position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 80%;
+}
+
+.button-input.on {
+	background: #0c0;
+}
+
+.control-label {
+	color: #fff;
+	display: inline-block;
+	float: left;
+	font-size: 1em;
+	height: 50px;
+	position: relative;
+	text-align: center;
+	width: 30%;
+}
+
+.button-label {
+	color: #fff;
+	display: inline-block;
+	float: left;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	width: 60%;
+}
+
+.slider-container {
+	display: inline-block;
+	float: left;
+	height: 50px;
+	position: relative;
+	width: 40%;
+}
+
+.switch-container {
+	display: inline-block;
+	float: left;
+	height: 50px;
+	position: relative;
+	width: 20%;
+}
+
+.switch-label {
+	color: #fff;
+	display: inline-block;
+	float: left;
+	font-size: 1em;
+	height: 50px;
+    margin:auto; 
+    position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 40%;
+}
+
+.button-container {
+	display: inline-block;
+	float: left;
+	height: 100%;
+	position: relative;
+	width: 40%;
+}
+
+.label-contents {
+	display: block;
+    margin:auto; 
+    position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+/* NEW STUFF */
+
+input[type=range] {
+    -webkit-appearance: none;
+    border-radius: 8px;
+    bottom: 0;
+    display: block;
+    height: 7px;
+    margin:auto; 
+    position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+    border: 1px solid #bdc3c7;
+    background-color: #fff; 
+    width: 100%;
+}
+
+input[type=range].switch {
+    background-color: #fff;
+    border: 1px solid #bdc3c7;
+    border-radius: 15px;
+    height: 30px;
+    width: 60px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	background-color: #ecf0f1;
+	border: 1px solid #bdc3c7;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+input[type='range'].switch::-webkit-slider-thumb {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	cursor: pointer;
+}

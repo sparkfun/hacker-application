@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script language="javascript" type="text/javascript" src="js/lib/jquery-2.1.3.min.js"></script>
+		<script language="javascript" type="text/javascript" src="js/lib/p5.min.js"></script>
+		<script language="javascript" type="text/javascript" src="js/lib/p5.dom.js"></script>
+		<script language="javascript" type="text/javascript" src="js/sketch/equations.js"></script>
+		<script language="javascript" type="text/javascript" src="js/sketch/Bob.js"></script>
+		<script language="javascript" type="text/javascript" src="js/sketch/BobSystem.js"></script>
+		<script language="javascript" type="text/javascript" src="js/sketch/sketch.js"></script>
+	</head>
+	<body>
+		<div class="side-bar">
+			<div class="side-bar-header">
+				<h1 class="header">Social Tension</h1>
+			</div>
+			<div id="control-panel" class="control-panel">
+				<ul>
+					<li class="tier-1-menu-item">
+						<label for="space-menu-toggle" class="tier-1-label">Space</label>
+						<input id="space-menu-toggle" name="space-menu-toggle" type="checkbox" class="">
+						<div class="tier-2-control-panel space">
+							<ul>
+								<li class="tier-2-control switch item">
+									<h3 class="control-header">Boundaries</h3>
+									<div class="switch-label">
+										<span class="label-contents"><img class="label-image" src="img/bounce-icon.png" /></span>
+									</div>
+									<div id="bounce-slider" class="switch-container"></div>
+									<div class="switch-label">
+										<span class="label-contents"><img class="label-image" src="img/portal-icon.png" /></span>
+									</div>
+								</li>
+								<li class="tier-2-control item">
+									<h3 class="control-header">Background</h3>
+									<div class="control-label">
+										<span class="label-contents">Dark</span>
+									</div>
+									<div id="background-slider" class="slider-container"></div>
+									<div class="control-label">
+										<span class="label-contents">Light</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="tier-1-menu-item">
+						<label for="social-menu-toggle" class="tier-1-label">Social</label>
+						<input id="social-menu-toggle" name="social-menu-toggle" type="checkbox" class="">
+						<div class="tier-2-control-panel social">
+							<ul>
+								<li class="tier-2-control item">
+									<h3 class="control-header">Crowded</h3>
+									<div class="control-label">
+										<span class="label-contents">Sparse</span>
+									</div>
+									<div id="bob-slider" class="slider-container"></div>
+									<div class="control-label">
+										<span class="label-contents">Dense</span>
+									</div>
+								</li>
+								<li class="tier-2-control switch item">
+									<h3 class="control-header">Social Behavior</h3>
+									<div class="switch-label">
+										<span class="label-contents">Grouping</span>
+									</div>
+									<div id="pair-slider" class="switch-container"></div>
+									<div class="switch-label">
+										<span class="label-contents">Pairing</span>
+									</div>
+								</li>
+								<li class="tier-2-control item">
+									<h3 class="control-header">Personality</h3>
+									<div class="control-label">
+										<span class="label-contents">Conform</span>
+									</div>
+									<div id="diversity-slider" class="slider-container"></div>
+									<div class="control-label">
+										<span class="label-contents">Express</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="tier-1-menu-item">
+						<label for="self-menu-toggle" class="tier-1-label">Self</label>
+						<input id="self-menu-toggle" name="self-menu-toggle" type="checkbox" class="">
+						<div class="tier-2-control-panel self">
+							<ul>
+								<li id="active-bob-container" class="tier-2-control item active-bob">
+									<div class="button-label">
+										<span class="label-contents">Protagonist Mode is</span>
+									</div>
+									<div id="active-bob-button" class="button-container"></div>
+								</li>
+								<li class="active-bob tier-2-control tip">
+									<p class="control-tip-copy"><em>Click one to designate a protagonist.<br/>Use arrow keys to steer.</em></p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-container">
+			<div id="sketch-container" class="sketch-container"></div>
+		</div>
+	</body>
+</html>
