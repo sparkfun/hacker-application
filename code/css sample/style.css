@@ -1,5 +1,8 @@
+/*This styling is similar to my epeharda.com page.
+I am using it for a project I am working on to develop
+a webpage for a local 5k.*/
+
 body{
-    /*background-color:#e7e7e7;*/
     background-color:black;
     color:white;
 }
@@ -69,9 +72,7 @@ body{
   font-family: 'Asap', sans-serif;
   font-weight:bold;
   position: absolute;
-  /*color: black;*/
   z-index:10;
-  /*text-shadow: 2px black;*/
   -webkit-text-fill-color: white;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 2.00px; 
@@ -184,10 +185,6 @@ body{
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     cursor: pointer;
- 
-    /*-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);*/
 }
 .centered{
   margin-left:auto;
