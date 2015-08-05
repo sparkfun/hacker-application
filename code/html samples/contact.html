@@ -1,0 +1,46 @@
+<div class="container">
+ <div class="vertical-middle">
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Contact Form</h2>
+                </div>
+                <div class="panel-body">
+
+                    <form  name="myForm" novalidate>
+
+                        <p style="color:black;">From:<br>
+                        <input type="text" name="fullname" ng-model="fullname" required>
+                            <span style="color:red" ng-show="myForm.fullname.$dirty && myForm.fullname.$invalid">
+                                <span ng-show="myForm.fullname.$error.required">Username is required.</span>
+                            </span>
+                        </p>
+
+                        <p style="color:black;">Your Email:<br>
+                            <input type="email" name="email" ng-model="email" required>
+                            <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                                <span ng-show="myForm.email.$error.required">Email is required.</span>
+                                <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+                            </span>
+                        </p>
+
+                        <p style="color:black;">Message:<br>
+                        <textarea name="message" ng-model="message" required></textarea>
+                            <span style="color:red" ng-show="myForm.message.$dirty && myForm.message.$invalid">
+                                <span ng-show="myForm.message.$error.required">Message is required.</span>
+                            </span>
+                        </p>
+
+                        <p style="color:black;">
+                        <input type="submit" ng-click="sendEmail()"
+                        ng-disabled="myForm.$invalid">
+                        </p>
+
+                    </form>
+
+                    <p ng-class="result" style="color:black;padding: 15px; margin: 0;">{{ resultMessage }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

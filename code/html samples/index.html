@@ -1,0 +1,85 @@
+<!--I included this file to show my use of HTML and Bootstrap.  I also have some CSS files that pair up with this page.-->
+<!DOCTYPE html>
+<html data-ng-app="MainApp">
+	<head >
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="img/computer.ico" />
+		<title>Erica Peharda</title>
+		<!--angular uses this base element which path to use when it gets any front end resource- this is the root b/c of "/"-->
+		<base href='/'>
+	</head>
+
+	<body>
+		<div class='container1'>
+			<div class='page-header'>
+			<nav class="navbar navbar-default">
+	            <div class="container">
+	                <div class="navbar-header">
+	                    <a class="navbar-brand" href="/">Welcome to EP Web Developing!</a>
+	                </div>
+
+	                <!--default menu bar below-->
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+	                    <li><a href="/about"><i class="fa fa-shield"></i>About Me</a></li>
+	                    <li><a href="/contact"><i class="fa fa-comment"></i>Contact for a Quote</a></li>
+	                    <li><a href="/projects"><i class="fa fa-comment"></i>Projects</a></li>
+	                </ul>
+	            </div>
+            </nav>
+
+
+				<h1 class="titleText pull-left">Erica Peharda</h1>
+				<!--got code below from mycountdown.org-->
+				<div class="countdownContainer pull-right">
+					<noscript>
+						<div align="center" class="noCountdown">
+						</div>
+					</noscript>
+					<script type="text/javascript" src="http://mycalendar.org/calendar.php?cp3_Hex=2D00F9&cp2_Hex=F4EAF9&cp1_Hex=0E0E0F&ham=0&img=&hbg=0&hfg=1&sid=0&fwdt=150&text1=Halloween is on 31st October 2015&group=Holiday&calendar=International&widget_number=3">
+					</script>
+				</div>
+				<div class="photobanner">
+					<img class="first" src="img/pic1.jpg"/>
+					<img src="img/pic2.jpg"/>
+					<img src="img/pic3.jpg"/>
+					<img src="img/pic4.jpg"/>
+					<img src="img/pic1.jpg"/>
+					<img src="img/pic2.jpg"/>
+					<img src="img/pic3.jpg"/>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="https://twitter.com/epeharda"><img class="twitter" src="img/twitter.png"/></a>	<a href="https://www.facebook.com/epeharda"><img class="twitter" src="img/facebook.png"/></a>
+					</div>
+
+					
+				</div>
+				
+			</div>
+					<!--the place holder to render our view dependent on the route-->
+			<div class="row">
+				<div class="col-sm-12" ng-view>
+					
+
+				</div>
+			</div>
+		</div>
+
+		<script type='text/javascript' src="lib/jquery/dist/jquery.min.js"></script>
+				<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+		<script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+		<script type="text/javascript" src="lib/angular-route/angular-route.min.js"></script>
+		<script type="text/javascript" src="lib/angular-resource/angular-resource.min.js"></script>
+		<script type="text/javascript" src="src/app.js"></script>
+		<script type="text/javascript" src="src/controller.js"></script>
+		<script type="text/javascript" src="src/factories.js"></script>
+		<script type="text/javascript" src="src/filter.js"></script>
+		<script type="text/javascript" src="src/style.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Asap' rel='stylesheet' type='text/css'>
+
+	</body>
+</html>

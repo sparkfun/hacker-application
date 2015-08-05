@@ -1,0 +1,215 @@
+body{
+    /*background-color:#e7e7e7;*/
+    background-color:black;
+    color:white;
+}
+
+
+/*configuring below for mobile screens*/
+@media(max-width: 800px){
+
+  .countdownContainer{
+    display:none;
+  }
+
+  .titleText{
+    display:none;
+  }
+
+}
+
+/*header styles*/
+.navbar-default{
+  background-color:#282828;
+  border-color:#282828;
+}
+.page-header {
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    background: black;
+    padding-bottom:0px;
+    border-bottom:0px;
+}
+.photobanner {
+	height:400px;
+	/*each image end to end totals to 3984px and I 50px to account for the page border*/
+	width:6000px;
+  margin-top:50px;
+}
+
+.photobanner img {
+	height:400px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+ 
+.photobanner img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+ 
+    -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+.container1{
+  padding-left:0px;
+  padding-right:0px;
+  width:100%;
+}
+.titleText{
+  font-size: 56px;
+  font-family: 'Asap', sans-serif;
+  font-weight:bold;
+  position: absolute;
+  /*color: black;*/
+  z-index:10;
+  /*text-shadow: 2px black;*/
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2.00px; 
+  background-color:rgba(211, 211, 211, 0.8);
+  border-radius:10px;
+  margin-left:25px;
+  padding:10px;
+
+
+}
+
+.countdownContainer{
+  margin:300px 0px 0px;
+  position:absolute;
+  right:10px;
+  z-index:10;
+
+}
+.noCountdown{
+  width: 140px; 
+  border: 1px solid rgb(204, 204, 204); 
+  text-align: center; 
+  color: rgb(249, 249, 255); 
+  font-weight: bold; 
+  font-size: 12px; 
+  background-color: rgb(25, 24, 31);
+}
+/*header scrolling animation*/
+/*keyframe animations*/
+.first {
+    -webkit-animation: bannermove 80s linear infinite;
+       -moz-animation: bannermove 80s linear infinite;
+        -ms-animation: bannermove 80s linear infinite;
+         -o-animation: bannermove 80s linear infinite;
+            animation: bannermove 80s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+ 	/*adjusted the demo of 2125 to 3460 which is the cumulative widths of all non-repeatign images plus 50px for the margin for smooth transition*/
+    margin-left: -3460px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -3460px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -3460px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -3460px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -3460px;
+ }
+ 
+}
+/*styling for twitter and facebook connect*/
+.twitter{
+  height:40px;
+  width:40px;
+  opacity:0.5;
+}
+
+/*styling for the home page content*/
+.mainButton{
+  margin:5px;
+}
+.sponsors{
+  width:100%;
+  height:100px;
+  margin:30px;
+  background-color:white;
+}
+
+.sponsorHover img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+ 
+    /*-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);*/
+}
+.centered{
+  margin-left:auto;
+  margin-right:auto;
+}
+/*styling for results page*/
+.results{
+  overflow:auto;
+  border:5px ridge gray;
+}
+/*styling for parking map page*/
+.map{
+  width:100%;
+  height:800px;
+
+}
+/*styling for course description page*/
+.courseMap img{
+  width:100%;
+}
+.elevation img{
+  width:100%;
+}
+
+
