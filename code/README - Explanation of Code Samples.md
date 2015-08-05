@@ -27,6 +27,12 @@ I have included a couple of things to show my skill sets.
 	I found this problem in the "Cracking the Coding Interview" book a while ago.  I love puzzles and brain teasers.  I included
 	the runtime complexity as well at the bottom of the code sample.
 
+5)  java sample/RockPaperScissors.java
+	Technologies Used: Java
+
+	I included this code sample to demonstrate my object oriented programming capabilities.  While I do not have extensive experience in 
+	object oriented php, I am confident I can extened my object oriented java skills to learn it quickly!
+
 LASTLY
 
 Please see my current project (from work) at https://github.com/iLegislate
