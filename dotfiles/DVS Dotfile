@@ -1,0 +1,17 @@
+Sparkfun Github Dotfile Example
+Doug Van Scoy
+Tuesday, April 5, 2016
+
+Since I am no longer a developer, I am using the following instructions from your Github Readme doc:
+Experienced developers, particularly those working in a Unix environment, tend to prefer tools which afford a measure of 
+customization. The standard Unix approach of dotfiles to customize editors, shells, IRC clients, and the like to the developers liking
+is something we're interested in.
+
+In this directory, please include (at your option) either:
+a) A sampling of dotfiles or other configuration from your working environment.
+b) A rationale for your lack of same (complete with some description of your preferred working environment).
+
+Rationale for lack of same:  
+	I am no longer a developer so this does not apply to me.  However, in my roles in IT management and project management, 
+	I utilize tools that allow me a measure of customization.   For example, I use MS Word Templates, Confluence categorization, 
+	Excel, Jira, and other tools that allow me to do some customization in what I do.
