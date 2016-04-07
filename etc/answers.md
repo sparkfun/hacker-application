@@ -14,7 +14,9 @@ Please answer the following general questions:
 
 4. SparkFun is a dog-friendly environment. Are comfortable working aroung dogs? If you are a dog-owner, would you see yourself bringing dogs to work?
 
-> Yes, I have a 10 year old Shepard Mix. I usually don't bring him to work as he demands too much of my attention.
+> Yes, I have a 10 year old Shepherd Mix named Tucker. I usually don't bring him to work as he demands too much of my attention. Here he is doing his best to blend in during a remodel.
+
+![Tucker Blends In](http://i.imgur.com/JGmyweW.jpg)
 
 5. The active developer keeps up on happenings in the world of development and technology. Where do you you get your news?
 
