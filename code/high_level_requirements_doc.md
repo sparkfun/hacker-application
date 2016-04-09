@@ -1,4 +1,4 @@
-`Below is a writing sample of what came out of a 15 minute requirements gathering meeting. The task was to figure out if we could update our internal Liquid Planner account with our clients' JIRA accounts and visa versa. From this doc we created more granular requirements and functional documents.`
+`Below is a writing sample of what came out of a 15 minute requirements gathering meeting. The task was to figure out if we could update our internal Liquid Planner account with our clients' JIRA accounts and vice versa. From this doc we created more granular requirements and functional documents.`
 
 #JIRA/Liquid Planner Integration by [Jason Schertz](https://github.com/jschertz)
 
