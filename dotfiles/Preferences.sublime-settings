@@ -1,0 +1,101 @@
+{
+	"added_words":
+	[
+		"jquery",
+		"Yubikey",
+		"Kairos",
+		"workflow",
+		"Kanban",
+		"Zend",
+		"Silex",
+		"bskrtich",
+		"github",
+		"linkedin",
+		"gmail",
+		"js",
+		"admin",
+		"online",
+		"javascript",
+		"ajax"
+	],
+	"always_show_minimap_viewport": true,
+	"auto_match_enabled": false,
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
+	"bold_folder_labels": true,
+	"draw_minimap_border": true,
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.swp",
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS"
+	],
+	"font_face": "Source Code Pro",
+	"font_size": 14,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage",
+		"SublimeCodeIntel"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal"
+	],
+	"overlay_scroll_bars": "disabled",
+	"rulers":
+	[
+		50,
+		80,
+		120
+	],
+	"show_encoding": true,
+	"show_line_endings": true,
+	"spell_check": true,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": true,
+	"wrap_width": 120
+}
