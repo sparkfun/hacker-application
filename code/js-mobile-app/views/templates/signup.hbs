@@ -1,0 +1,71 @@
+<div id="signup-modal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="Join Jipper!" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3>Join!</h3>
+  </div>
+  <div class="modal-body">
+    <br />
+    <form id="form-signup" class="form-horizontal">
+      <div class="control-group">
+        <label class="control-label" for="signup-first-name">First Name</label>
+        <div class="controls">
+          <input id="signup-first-name" type="text" name="firstname" data-trigger="focus" placeholder="First Name">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="signup-last-name">Last Name</label>
+        <div class="controls">
+          <input type="text" id="signup-last-name" name="lastname" data-trigger="focus" placeholder="Last Name">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="signup-email">Email</label>
+        <div class="controls">
+          <input type="email" id="signup-email" name="email" data-trigger="focus" placeholder="Email">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="signup-password">Password</label>
+        <div class="controls">
+          <input type="password" id="signup-password" name="password" data-trigger="focus" placeholder="Password">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="signup-password-verify">Verify Password</label>
+        <div class="controls">
+          <input type="password" id="signup-password-verify" name="passwordverify" data-trigger="focus" placeholder="Verify Password">
+        </div>
+      </div>
+{{#if mobile}}
+      <div class="control-group">
+        <label class="control-label" for="signup-birthdate">Birth Date</label>
+        <div class="controls">
+          <input type="date" id="signup-birthdate" name="birthdate" data-trigger="focus" placeholder="Birth Date">
+        </div>
+      </div>
+{{else}}
+      <div class="control-group">
+        <label class="control-label" for="signup-birthdate">Birth Date</label>
+        <div class="controls">
+          <div class="input-append date" id="signup-birthdate">
+            <input id="signup-birthdate-value" name="birthdate" data-trigger="focus" class="input-medium" size="16" type="text" placeholder="Birth Date" readonly><span class="add-on"><i class="icon-th"></i></span>
+          </div>
+        </div>
+      </div>
+{{/if}}
+      <div class="control-group">
+        <div class="controls">
+          <label class="radio inline">
+            <input type="radio" name="gender" id="signup-male" value="Male"> Male
+          </label>
+          <label class="radio inline">
+            <input type="radio" name="gender" id="signup-female" value="Female"> Female
+          </label>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button id="submit-signup" class="btn btn-primary" type="button">Signup</button>
+  </div>
+</div>

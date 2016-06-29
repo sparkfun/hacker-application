@@ -1,0 +1,9 @@
+[user]
+	name = Justin Penka
+	email = jpenka@gmail.com
+[push]
+	default = simple
+[color]
+	ui = true
+[core]
+	excludesfile = ~/.gitignore

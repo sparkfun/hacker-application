@@ -1,0 +1,139 @@
+/* ===========================================================================
+   Custom Styles and Bootstrap Overrides
+ =========================================================================== */
+
+.header-item {
+    border: 1px solid red;
+}
+
+/* modal dialogs need to have scrolling on mobile */
+.modal-body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* web based tabbar and topbar navigation */
+.navbar .nav > li > a {
+  padding: 12px 0px 12px 0px;
+}
+
+/* override and set to absolute, fill the entire height of the window */
+.content, #spinner {
+  position: absolute;
+  top: 0px; bottom: 0px;
+  left: 0px; right: 0px;
+}
+
+/* leaving button padding on navbar makes header change sizes */
+.navbar .btn,
+.navbar .btn-group {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* force navbar links to fill the entire space of the .navbar */
+.navbar .navbar-inner {
+  padding: 0;
+}
+.navbar .nav {
+  padding: 0;
+  margin: 0;
+  display: table;
+  width: 100%;
+}
+.navbar .nav  li {
+  display: table-cell;
+  width: 1%;
+  float: none;
+}
+.navbar .nav li a {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* left and right alignment */
+.align-left {
+  float: left;
+  width: 50%;
+}
+.align-right {
+  float: right;
+  width: 50%;
+}
+
+/* display row item styles */
+.row-header,
+.row-header-event,
+.row-item,
+.row-item-event {
+  height: 6.429em; // 90px; /* prevent iscroll rubberband effect */
+  overflow: hidden;
+}
+/* center images within this element */
+.row-header-event,
+.row-item-event {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.row-item-selected
+{
+  height: 6.429em; // 90px; /* prevent iscroll rubberband effect */
+  overflow: hidden;
+  background-color: lightslategrey;
+}
+
+/* center-wrapper to set 50% left position */
+#center-wrapper {
+  position: fixed; z-index: 2;
+  left: 50%;
+  height: 100%; /* prevent iscroll rubberband effect */
+}
+/* offset center-wrapper-push by 50% (centered) inside center-wrapper */
+#content-view-scroller-center,
+#center-wrapper-push {
+  position: relative; z-index: 2;
+  left: -50%;
+  height: 100%; /* prevent iscroll rubberband effect */
+}
+
+/* scroller for all events & peeps pages */
+.peeps-scroller {
+  position: absolute; z-index: 1;
+  top: 0px; bottom: 0px; right: 0px;
+  width: 100%;
+}
+
+/* place a small margin between buttons */
+.left-button-buffer {
+  margin-left: 0.714em; // 10px;
+}
+.right-button-buffer {
+  margin-right: 0.714em; // 10px;
+}
+
+.row-caps {
+  padding-top: 0.600em;
+  text-align: center;
+  font-weight: bold;
+  font-size: -webkit-xxx-large;
+}
+
+.row-caps-right {
+  padding-top: 0.600em;
+  text-align: center;
+  font-weight: bold;
+  font-size: -webkit-xxx-large;
+}
+
+.row-name {
+  float: left;
+  margin-top: 2.857em; // 40px;
+}
+
+.row-name-right {
+  float: right;
+  margin-top: 2.857em; // 40px;
+}
