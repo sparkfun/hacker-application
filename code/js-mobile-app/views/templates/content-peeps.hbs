@@ -1,0 +1,16 @@
+<div id="{{class_name}}-scroller" class="peeps-scroller">
+  <div id="scroller-peeps">
+    {{#peeps}}
+    <div class="row-item" id={{id}}>
+      <div id={{id}}>
+        <div class="row-photo">
+          <div class="row-caps">
+            {{cap_letter}}
+          </div>
+        </div>
+        <div class="row-name">{{display_name}}</div>
+      </div>
+    </div>
+    {{/peeps}}
+  </div>
+</div>
