@@ -1,0 +1,117 @@
+
+Peter Mcelroy
+
+1600 Sumner Street
+Longmont, CO 80501
+Phone: 720.878.6253
+E-Mail: peterjmcelroy@gmail.com
+
+Summary
+
+I have 20 years experience in web development and technology systems spanning nearly all aspects of design,
+development and operations. I am a diverse talented resource who can work across various internal and external
+business units and IT systems in a variety of industries including: eCommerce, real estate, and resort-property
+management.
+
+Skills
+
+• eCommerce / SaaS platform technology
+• Agile and waterfall development methodologies
+• Programming with HTML, CSS, Java, C#, PHP MVC, JQuery, JavaScript,SQL, XML, XSD
+• Database design and administration
+• Git / SVN
+
+
+Experience
+
+August 2015 to Present
+WellcomeMat, LLC Boulder, CO
+Lead Engineer of Development and Operations
+
+Currently I am the lead engineer that manages all engineering aspects of the Wellcomemat video marketing SaaS system.
+The platform is a PHP MVC based framework for video marketing in the real estate industry. I also Mentor and manage the
+front end development team.
+Recent successes:
+* Completed and launched a fully featured custom HTML5 video player to replace the flash based player
+* New custom data integrations into the Zillow and Realogy Real Estate Platforms via web services and SFTP flat file exchange.
+* Facebook re-implementation to the new v5 SDK
+* Redesign of the channel video page into a grid view / responsive page
+
+-------------------------------------------
+
+January 2013 to March 2015
+Crocs, Inc Niwot, CO
+Director of Global eCommerce Development and Operations
+
+* Managed 3 dev teams (2 in-house teams and 1 offshore team) 
+* Developed in DemandWare (EMCA scripting), HTML JavaScript PHP, ASP.NET and custom .NET middle-ware windows services.
+* Managed all technical aspects of Crocs' 30+ eCommerce sites, content sites and middle-ware systems.
+* Responsible for release management and 24/7 operational support for all eCommerce related systems.
+* Worked with senior executives to manage the overall department including technical mentoring and developed process improvements,
+* Managed resource planning, annual reviews and career development for my direct reports.
+* Had dotted line direct reports to other Crocs global offices (US, Japan, Singapore, and Netherlands)
+
+-------------------------------------------
+
+April 2012 to January 2013
+Crocs, Inc Niwot, CO
+Senior Manager of Global eCommerce Systems
+
+* Managed all development and operations teams (front-end and back-end) across all global eCommerce systems (35+ websites).
+* Oversaw all aspects of the software development process including, specifications, solution designs, and release management.
+* Had dotted line direct reports in other Crocs global offices (US, Japan, Singapore, and Netherlands)
+
+-------------------------------------------
+
+August 2010 to April 2012
+Crocs, Inc Niwot, CO
+Manager of Global eCommerce Systems and Operations
+
+* Was the DevOps lead for all the Crocs eCommerce systems.
+* Drafted business and technical requirements
+* Designed and developed front-end and back-end system solutions
+* Hired and managed a small team of .NET developers.
+
+-------------------------------------------
+
+January 2007 to August 2010
+Crocs, Inc Niwot, CO
+eCommerce Web Developer
+
+* Was the primary web developer and lead mentor to a small team that managed the growing Crocs e-commerce
+properties (5+).
+* Started developing with ASP.NET storefront and participated in the re-platform to Demandware.
+* Lead the rewrite of the middle-ware application as a system / business analyst.
+* Managed all the US based marketing websites (word press).
+
+-------------------------------------------
+
+October 2005 to July 2007
+Self Employed Boulder, CO
+Owner, Technology Consultant, Hand Picked Technology
+
+Provided various technology consulting services to a variety of clients:
+* Custom CMS / marketing websites
+* Database reporting systems
+* eCommerce websites
+
+-------------------------------------------
+
+October 2000 to October 2005
+East West Partners Vail, CO
+Senior Web Software Developer
+
+* Managed a small team and developed cold fusion, ASP.NET and Java based real estate, property management
+and resorts applications
+
+-------------------------------------------
+
+Education
+
+January 1998 UMASS Lowell Lowell, MA
+online web certificate HTML, JavaScript, and Photoshop
+
+Worked toward my web technology certificate in HTML, JavaScript, and Photoshop 1997 - 1998
+
+January 1994 Lyndon State College Lyndon, VT
+Bachelor's Mathematics and Meteorology
