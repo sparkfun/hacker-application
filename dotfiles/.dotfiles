@@ -1,0 +1,7 @@
+DotFiles
+
+Honestly, I'll use dot files when necessary... like for git and .ssh. However, I use ZSH in my terminal app and could see myself modifying the .zshrc file as needed or to give it that special touch.
+
+As a asp.net developer using Windows/IIS (gasp!) for the first half of my career, dot files were not in my world.
+
+I typically use Vagrant for local development that reflects the live environment, but might spark up the built-in PHP webserver or use MAMP. My preferred IDE is PhpStorm.
