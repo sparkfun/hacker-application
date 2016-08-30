@@ -1,0 +1,48 @@
+[user]
+	name = <name>
+	email = <email removed>
+[merge]
+;	tool = kdiff3
+[giggle]
+	main-window-maximized = false
+	main-window-geometry = 802x586+596+25
+	file-view-vpane-position = 517
+	history-view-vpane-position = 280
+	main-window-view = HistoryView
+[diff]
+;	tool = kdiff3
+[alias]
+	br = branch
+	ci = commit
+	co = checkout
+	st = status
+	merg = merge
+;	lol = log --graph --decorate --oneline
+	lol = log --graph --decorate
+	los = log --stat --no-diff
+	log-patch = log -p
+	fl = log --graph --pretty=format:'%C(yellow)%h%C(reset) -%C(bold red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	status = always
+[core]
+	excludesfile = ~/.gitglobal_ignore
+[credential]
+	helper = cache --timeout=36000
+[pack]
+	depth = 10
+	packSizeLimit = 20m
+	threads = 2
+	window = 2
+	windowMemory = 256m
+[push]
+;	default = matching
+;	default = simple
+	default = current
+[difftool "kdiff3"]
+	cmd = git-diff-kdiff3.sh \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false

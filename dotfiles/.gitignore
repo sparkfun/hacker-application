@@ -1,0 +1,16 @@
+.ssh/id_*
+.ssh/known_hosts*
+.ssh/openvpn/
+.subversion/auth/
+.subversion/servers
+.svn
+tmp.txt
+
+bin/composerr
+bin/cpr
+bin/dfr
+bin/lnr
+bin/lsr
+bin/mvr
+bin/rmr
+bin/ssh-keygenr

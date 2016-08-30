@@ -1,0 +1,2 @@
+#PEAR_Config 0.9
+a:3:{s:10:"__channels";a:11:{s:15:"pear.phpunit.de";a:0:{}s:12:"pecl.php.net";a:0:{}s:5:"__uri";a:0:{}s:24:"pear.symfony-project.com";a:0:{}s:11:"doc.php.net";a:0:{}s:16:"components.ez.no";a:0:{}s:15:"pear.phing.info";a:0:{}s:24:"pear.docblox-project.org";a:0:{}s:16:"pear.pdepend.org";a:0:{}s:15:"pear.phpdoc.org";a:0:{}s:14:"pear.phpmd.org";a:0:{}}s:15:"preferred_state";s:6:"stable";s:13:"auto_discover";i:1;}

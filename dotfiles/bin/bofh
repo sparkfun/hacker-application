@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cowsay=$( which cowsay );
+lolcat=$( which lolcat );
+
+if [ -n "${cowsay}" -a -n "${lolcat}" ]; then
+	fortune bofh-excuses | ${cowsay} | ${lolcat} --spread 1 --force;
+elif [ -n "${cowsay}" ]; then
+	fortune bofh-excuses | ${cowsay};
+elif [ -n "${lolcat}" ]; then
+	fortune bofh-excuses | ${lolcat} --spread 1 --force;
+else
+	fortune bofh-excuses
+fi;
