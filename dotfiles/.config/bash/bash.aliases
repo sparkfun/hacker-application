@@ -1,0 +1,90 @@
+
+if [ -z "${BASH_CONFIG_DIR}" ]; then
+	if [ -d ~/.config/bash ]; then
+		BASH_CONFIG_DIR=~/.config/bash;
+	elif [ -d ~/.home/home-core/.config/bash ]; then
+		BASH_CONFIG_DIR=~/.home/home-core/.config/bash;
+	elif [ -d ~/.patrick-home/home-core/.config/bash ]; then
+		BASH_CONFIG_DIR=~/.patrick-home/home-core/.config/bash;
+	else
+		BASH_CONFIG_DIR=${HOME};
+	fi;
+fi;
+
+
+##########################################################
+ls=$( which ls );
+if [ -z "${ls}" ]; then
+	ls=/bin/ls;
+fi;
+dir=$( which dir );
+if [ -z "${dir}" ]; then
+	# ls gets an alias so don't need absolute path
+	dir="ls";
+fi;
+vdir=$( which vdir );
+if [ -z "${vdir}" ]; then
+	vdir=${dir};
+fi;
+
+##########################################################
+# enable color support of ls and also add handy aliases
+if [ "$TERM" != "dumb" ]; then
+	dircolors=$( which dircolors );
+	if [[ -n "${dircolors}" && -x "${dircolors}" ]]; then
+		if [ -f ${BASH_CONFIG_DIR}/dircolorrc ]; then
+			dircolorsrc=${BASH_CONFIG_DIR}/dircolorrc;
+		elif [ -f ${BASH_CONFIG_DIR}/colorrc ]; then
+			dircolorsrc=${BASH_CONFIG_DIR}/colorrc;
+		elif [ -f ${BASH_CONFIG_DIR}/.dircolorrc ]; then
+			dircolorsrc=${BASH_CONFIG_DIR}/.dircolorrc;
+		elif [ -f ${BASH_CONFIG_DIR}/.colorrc ]; then
+			dircolorsrc=${BASH_CONFIG_DIR}/.colorrc;
+		fi;
+		test -r ${dircolorsrc} \
+			&& eval "$( ${dircolors} -b ${dircolorsrc} )" \
+			|| eval "$( ${dircolors} -b )" \
+		;
+	fi;
+	alias   ls="${ls}   --color=auto -F --time-style=long-iso"
+	alias  dir="${dir}  --color=auto -F --format=vertical --time-style=long-iso"
+	alias vdir="${vdir} --color=auto -F --format=long --time-style=long-iso"
+	alias  grep='/bin/grep --color=always'
+	alias egrep='/bin/egrep --color=always'
+else
+	alias   ls="${ls}   -F --time-style=long-iso"
+	alias  dir="${dir}  -F --format=vertical"
+	alias vdir="${vdir} -F --format=long"
+fi
+
+
+## some more ls aliases
+alias    ll='ls -l'
+alias    la='ls -a'
+alias   lla='ls -la'
+#alias     l='ls -C'
+#alias     l='ls -F'
+alias     l='ls -d .[a-zA-Z0-9]* *'
+alias    l.='ls -d .[a-zA-Z0-9]*'
+alias    ld='du -kx | egrep "\./.+/" | sort -n'
+alias large='ls -lF --time-style=long-iso | sort -k 5n'
+alias lsnew='ls -alF --time-style=+%D | grep `date +%D`'
+
+alias cd..='cd ..'
+alias ..='cd ..'
+
+#alias dos2unix='recode dos/CR-LF..l1'
+#alias unix2win='recode l1..windows-1250'
+#alias unix2dos='recode l1..dos/CR-LF'
+
+alias cp='/bin/cp -i'
+alias mv='/bin/mv -i'
+alias rm='/bin/rm -i'
+
+alias diff="$( which diff ) -u";
+alias colordiff="$( which colordiff )";
+alias less='less -r'				# raw control characters
+#alias less='less -R'				# raw ASCII control characters
+alias whence='type -a'				# where, of a sort
+
+
