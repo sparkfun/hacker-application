@@ -19,7 +19,7 @@ So:
 	./create-links.sh
 ```
 
-#################################
+---------------------------------
 
 everything below this has been added as an extra explanation for the
 hacker-application fork.
