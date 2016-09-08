@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html ng-app="alphaGame">
+<head>
+	<title>AlphaGame Angular</title>
+	<!-- <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
+</head>
+<body ng-controller="alphaGameCtrl">
+	<div class="main ns">
+		<div class="graphicsContainer">
+			<div class="uiTopBar">
+				GS: {{gameState}} Vowels: {{vowels}} Consonants: {{consonants}} ivw {{isValidWord}} aUet {{activeUiEntityType}} - {{activeUiEntity.name}}
+			</div>
+			<div style="clear:both;"></div>
+			
+			<div class="centerUiContainer rnd">
+				<div class="centerEncounterContainer" ng-show="gameState == 'encounter'">
+					CenterUI shiz here
+					E: {{encounter.enemies.length}}
+					{{encounter.currentTurn}}
+					T: {{encounter.currentEntityAction}}<br><br>
+					T2 {{encounter.currentEntityTarget.name}}
+				</div>
+				<div class="centerUiGameMapContainer" ng-show="gameState == 'map'">
+					<div class="gameMap">
+						<!-- <div class="gameMapTile" ng-repeat="mapTile in map.currentMap.tiles track by $index">
+							<div>
+								<div style="width:100%;height:100%;">
+									{{$index}}
+								</div>
+							</div>
+							<div ng-if="$index % map.perRow === 0" style="clear:both;width:auto;height:5px;border-top:1px blue solid;">
+							
+							</div>
+						</div> -->
+						<div class="gameMapRow" ng-repeat="tileRow in map.currentMap.tileRows track by $index">
+							<div class="gameMapTile" ng-repeat="mapTile in tileRow track by $index" ng-style="mapTile.style">
+								<i ng-show="mapTile.fa" ng-class="mapTile.fa" style="z-index:2;"></i>
+								<span ng-if="$parent.$index == map.currentMap.partyMapX && $index == map.currentMap.partyMapY" style="z-index:3;">X</span>
+								
+							</div>
+						</div>
+					</div>
+					<div class="gameMapEnd" style="clear:both;">
+						<hr>
+					</div>
+					<div class="gameMapBottom">
+						<div>Bottom map stuff</div><div>And more</div>
+					</div>
+				</div>
+			</div>
+			<div class="rightUiContainer rnd">
+				<div class="enemiesInfo" ng-show="gameState == 'encounter'">
+					<div class="enemyInfo" ng-repeat="enemy in encounter.enemies track by $index">
+						{{enemy.name}} HP: {{enemy.stats.hp}} MP: {{enemy.stats.mp}}
+					</div>
+					<div class="encounterInitiative">
+						<div ng-repeat="player in encounter.players track by $index">
+							<span ng-show="encounter.currentTurn == 'player' && encounter.currentPlayerTurn == $index">--></span>P: {{player.name}}
+						</div>
+						<div ng-repeat="enemy in encounter.enemies track by $index">
+							<span ng-show="encounter.currentTurn == 'enemy' && encounter.currentEnemyTurn == $index">--></span>I: {{enemy.name}}
+						</div>
+					</div>
+					<button ng-click="nextEncounterTurn()">next</button>
+				</div>
+			</div>
+			<div class="leftUiContainer rnd">
+				<div class="playerPartyContainer">
+					<div class="playerInfo" ng-repeat="player in players track by $index">
+						<div>
+							<table class="playerStatTable">
+								<tbody>
+								<tr><td><span class="playerStat">{{player.name}}</span></td>
+									<td><span class="playerStat">Lvl: {{player.stats.level}}</span></td>
+								</tr>
+								<tr><td><i class="fa fa-heart"></i>&nbsp;<span class="playerStat">{{player.stats.hp}} / {{player.stats.maxHp}}</span></td>
+									<td><i class="fa fa-magic"></i>&nbsp;<span class="playerStat">{{player.stats.mp}} / {{player.stats.maxMp}}</span></td>
+								</tr>
+								<tr><td><span class="playerStat">ATK: {{player.stats.atk}}</span></td>
+									<td><i class="fa fa-shield"></i>&nbsp;<span class="playerStat">{{player.stats.def}}</span></td>
+								</tr>
+								<tr><td><span class="playerStat">LCK: {{player.stats.lck}}</span></td>
+									<td><span class="playerStat">CON: {{player.stats.con}}</span></td>
+								</tr>
+								<tr><td colspan="2"><span class="playerStat">XP: {{player.stats.xp}} / {{player.stats.xpToLevel}}</span></td>
+								</tr>
+								<tr><td colspan="2">Concentration ({{player.concentrationWord.length}}): <br><span ng-repeat="tile in player.concentrationWord track by $index">{{tile.alpha}}</span></td></tr>
+								<tr><td colspan="2"><span style="cursor:pointer;text-decoration:underline;" ng-click="showEntityInfo(player, 'player')">?</span>
+								</tbody>
+							</table>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="currentTurnContainer" ng-show="gameState == 'encounter'">
+				Your Turn: {{encounter.currentEntity.name}}
+				<div ng-show="encounter.currentTurn == 'player'">
+					<div ng-show="encounter.currentEntityAction != 'bank'">
+						<div>
+							<!-- Do: <select ng-model="selectedPlayerCategory" ng-options="combatOption.name for combatOption in encounter.currentEntity.combatOptions"></select> -->
+							Do: <select ng-model="encounter.currentEntityActionCategory" ng-options="combatOption.name for combatOption in encounter.currentEntity.combatOptions"></select>
+						</div>
+						<div ng-show="encounter.currentEntityActionCategory !== false && encounter.currentEntityActionCategory.name == 'Attack'">
+							Attack: <select ng-model="encounter.currentEntityAction" ng-options="ability.ability.name for ability in encounter.currentEntity.abilities"></select>
+							<div style="clear:both;"></div>
+							<div ng-show="encounter.currentEntityAction.ability.target == 'enemy'">
+								Target: <select ng-model="encounter.currentEntityTarget" ng-options="enemy.name for enemy in encounter.enemies"></select>
+								<button ng-click="attackSingleTarget(encounter.currentEntityTarget, encounter.currentEntityAction)">Attack</button>
+							</div>
+							<div ng-show="encounter.currentEntityAction !== false && encounter.currentEntityAction.ability.target == 'enemies'">
+								Attack {{encounter.enemies.length}} Enemies
+								<button ng-click="attackMultipleTargets(encounter.enemies, encounter.currentEntityAction)">Attack</button>
+							</div>
+						</div>
+
+						
+						
+						<!-- <div ng-show="selectedPlayerCategory !== false && selectedPlayerCategory.name == 'Spell'">
+							Spell: <select ng-model="selectedPlayerAbility" ng-options="spell.name for spell in encounter.currentEntity.spells"></select>
+						</div>
+						<div ng-show="selectedPlayerCategory !== false && selectedPlayerCategory.name == 'Defend'">
+							Defend: <select ng-model="selectedPlayerAbility" ng-options="player.name for player in encounter.players"></select>
+						</div>
+						<div ng-show="selectedPlayerCategory !== false && selectedPlayerCategory.name == 'Concentrate'">
+							<button ng-click="playerConcentrate(encounter.currentEntity)">Concentrate</button>
+						</div> -->
+						<div ng-show="encounter.currentEntityActionCategory !== false && encounter.currentEntityActionCategory.name == 'Spell'">
+							Spell: <select ng-model="encounter.currentEntityAction" ng-options="spell.name for spell in encounter.currentEntity.spells"></select>
+						</div>
+						<div ng-show="encounter.currentEntityActionCategory !== false && encounter.currentEntityActionCategory.name == 'Defend'">
+							Defend: <select ng-model="encounter.currentEntityAction" ng-options="player.name for player in encounter.players"></select>
+						</div>
+						<div ng-show="encounter.currentEntityActionCategory !== false && encounter.currentEntityActionCategory.name == 'Concentrate'">
+							<div ng-show="encounter.currentEntity.concentrationWord.length > 0">
+								Hold Concentration: <input type="radio" ng-model="encounter.currentEntity.holdConcentrationWord" name="hold" value="1" checked> Discard: <input type="radio" name="hold" ng-model="encounter.currentEntity.holdConcentrationWord" value="0">
+							</div>
+							Chain Concentrate: <select ng-model="encounter.chainActionFromEntity" ng-options="player.name disable when !player.concentrationWord.length for player in encounter.players"></select>
+							<div style="clear:both;" ng-show="encounter.chainActionFromEntity">
+								<div style="float:left;border:1px red solid;">
+									<div style="float:right;cursor:pointer;" ng-click="moveSiblingUp($event)">&gt;</div>
+									<div style="float:middle;cursor:pointer;display:inline-block;">
+										<div style="float:left" ng-repeat="alpha in encounter.chainActionFromEntity.concentrationWord track by $index">
+											{{alpha.alpha}}
+										</div>
+									</div>
+									<div style="float:left;cursor:pointer;" ng-click="moveSiblingDown($event)">&lt;</div>
+								</div>
+								<div ng-show="encounter.currentEntity.concentrationWord.length && encounter.currentEntity.holdConcentrationWord" style="float:left;border:1px blue solid;">
+									<div style="float:right;cursor:pointer;" ng-click="moveSiblingUp($event)">&gt;</div>
+									<div style="float:middle;cursor:pointer;display:inline-block;">
+										<div style="float:left" ng-repeat="alpha in encounter.currentEntity.concentrationWord track by $index">
+											{{alpha.alpha}}
+										</div>
+									</div>
+									<div style="float:left;cursor:pointer;" ng-click="moveSiblingDown($event)">&lt;</div>
+								</div>
+								<div style="float:left;border:1px black solid;">
+									<div style="float:right;cursor:pointer;" ng-click="moveSiblingUp($event)">&gt;</div>
+									<div style="float:middle;cursor:pointer;display:inline-block;">
+										<div style="float:left" ng-repeat="alpha in spellWord track by $index">
+											{{alpha.alpha}}
+										</div>
+									</div>
+									<div style="float:left;cursor:pointer;" ng-click="moveSiblingDown($event)">&lt;</div>
+								</div>
+								
+							</div>
+							<br><button ng-click="playerConcentrate(encounter.currentEntity)">Concentrate</button>
+						</div>
+						<div ng-show="encounter.currentEntityActionCategory !== false && encounter.currentEntityActionCategory.name == 'Flee'">
+							<button ng-click="fleeEncounter()">Bravely Run Away</button>
+						</div>
+					</div>
+					<div ng-show="encounter.currentEntityAction == 'bank'">
+						Bank ...<br>
+						<button ng-click="playerBankFinished()">Done</button>
+					</div>
+				</div>
+				<div ng-show="encounter.currentTurn == 'enemy'">
+					Do: <select ng-model="encounter.currentEntityActionCategory" ng-options="combatOption.name for combatOption in encounter.currentEntity.combatOptions"></select>
+					<button ng-click="randomEnemyAction(encounter.currentEntity)">Random</button>
+				</div>
+			</div>
+			<div class="partyMovementContainer" ng-show="gameState == 'map'">
+				<div style="width:100%;height:100%;position:relative;background:#EEE;">
+					<div class="partyMovementButton" style="position:absolute;top:2px;left:38px;" ng-click="moveParty('u')"><span class="fa fa-arrow-up fa-2x"></span></div>
+					<div class="partyMovementButton" style="position:absolute;bottom:2px;left:38px;"><span class="fa fa-arrow-down fa-2x" ng-click="moveParty('d')"></div>
+					<div class="partyMovementButton" style="position:absolute;top:25px;left:2px;"><span class="fa fa-arrow-left fa-2x" ng-click="moveParty('l')"></div>
+					<div class="partyMovementButton" style="position:absolute;top:25px;right:2px;"><span class="fa fa-arrow-right fa-2x" ng-click="moveParty('r')"></div>
+				</div>
+			</div>
+			<div class="entityInfoContainer" ng-show="activeUiEntityType !== false">
+				<div ng-show="activeUiEntityType == 'player'">
+					{{activeUiEntity.name}}
+					<div style="position:absolute;top:2px;right:2px;cursor:pointer;border:1px blue solid;" ng-click="hideEntityInfo()">X</div>
+					<div class="playerUiTab">
+						<!-- ng-show="player.fullDisplay" -->
+						<div class="playerUiTabButton" ng-click="selectUiTab('main', activeUiEntity)">
+							Main
+						</div>
+						<div class="playerUiTabButton" ng-click="selectUiTab('equip', activeUiEntity)">
+							Equip
+						</div>
+						<div class="playerUiTabButton" ng-click="selectUiTab('inv', activeUiEntity)">
+							Inv
+						</div>
+						<div style="clear:both;"><hr></div>
+						<div ng-show="activeUiEntity.showTab == 'main'">
+							<div class="playerAbility" ng-repeat="ability in activeUiEntity.abilities track by $index" >
+								<span style="float:left;">{{ability.ability.name}} - Cost:&nbsp;</span>
+								<div style="float:left;" ng-show="ability.ability.hasOwnProperty('cost')"ng-repeat="(cost, resource) in ability.ability.cost">
+									{{resource}} {{cost.toUpperCase()}}<span ng-show="!$last">,&nbsp;</span>
+								</div>
+							</div>
+							<div class="playerSpell" ng-repeat="spell in activeUiEntity.spells track by $index" ng-show="activeUiEntity.showTab == 'main'">
+								<span style="float:left;">{{spell.name}} - Cost:&nbsp;</span>
+
+								<div class="playerSpellCost" ng-show="spell.hasOwnProperty('cost')" ng-repeat="(cost, resource) in spell.cost">
+									{{resource}} {{cost.toUpperCase()}}<span ng-show="!$last">,&nbsp;</span>
+								</div>
+							</div>
+						</div>
+						<div ng-show="activeUiEntity.showTab == 'equip'">
+							<div class="playerEquipment" style="border:1px green solid; margin: 3px auto; padding: 3px 3px;" ng-repeat="(slot, item) in activeUiEntity.items">
+								E: {{slot}} - {{item.name}} - <span ng-click="unequipItem(activeUiEntity, item)" style="cursor:pointer;">X</span>
+							</div>
+						</div>
+						<div ng-show="activeUiEntity.showTab == 'inv'">
+							<div class-"playerInventory" style="border:1px green solid; margin: 3px auto; padding: 3px 3px;" ng-repeat="item in activeUiEntity.inventory track by $index">
+								I: {{item.name}} <span ng-show="item.hasOwnProperty('slot')" ng-click="equipItem(activeUiEntity, item)" style="cursor:pointer;">E</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div ng-show="activeUiEntityType == 'monster'">
+					<div style="position:absolute;top:2px;right:2px;cursor:pointer;border:1px blue solid;" ng-click="hideEntityInfo()">X</div>
+					Monster info here
+				</div>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
+		<div class="spellWordContainer">
+			<div class="playerConcentrationContainer">
+				<div ng-show="player.concentrationWord.length > 0" ng-repeat="player in encounter.players">
+					<div style="float:left;">
+						{{player.name}} ({{player.concentrationWord.length}}):
+					</div>
+					<div class="playerConcentrationWordSelect">
+						<div class="spellWordAlphaSquare" ng-repeat="alpha in player.concentrationWord">
+							{{alpha.alpha}}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="spellWord">
+				<div class="spellWordAlphaSquare" ng-repeat="alpha in spellWord track by $index" ng-click="deselectAlpha($index)">
+					{{alpha.alpha}}
+				</div>
+			</div>
+			<!-- <div ng-click="submitWord()" ng-show="isValidWord"><button>Submit</button></div> -->
+		</div>
+		<div style="clear:both;"></div>
+		<div class="alphaGridContainer rnd">
+			<div class="futureTilesContainer rnd">
+				<div style="float:left;margin-left:12px;">Future Tiles</div><br>
+				<div class="alphaSquare rnd" style="float:right;" ng-repeat="tile in futureTiles track by $index">
+					<div style="position:relative;">
+						<div style="margin:0px auto;">
+							{{tile.alpha}}
+						</div>
+						<div class="alphaSquarePoints">
+							{{alpha.baseValue}}
+						</div>
+						<div class="alphaSquareTopLeft">
+							{{($index+1)}}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="alphaGrid rnd">
+				<div class="alphaSquare rnd" ng-class="{ alphaSelected: alpha.selected }" ng-repeat="alpha in grid track by $index" ng-click="selectAlpha($index)">
+					<div style="position:relative;">
+						<div style="margin:0px auto;">
+							{{alpha.alpha}}
+						</div>	
+						<div class="alphaSquarePoints rnd">
+							{{alpha.baseValue}}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="partyTileBankContainer rnd">
+				<div style="float:right;margin-right:12px;">Party Tile Bank</div><br>
+				<div class="alphaSquare rnd" ng-repeat="alpha in partyTileBank track by $index">
+					<div ng-show="alpha.code" style="float:left;">
+						{{alpha.alpha}}
+					</div>
+					<div ng-show="!alpha" style="float:left;">
+						?
+					</div>
+				</div>
+			</div>
+			<div class="partyTileTrashContainer rnd" ng-show="encounter.currentEntityAction == 'bank'">
+				<div class="alphaSquare rnd" ng-repeat="alpha in partyTileTrash track by $index">
+					<div ng-show="alpha.code" style="float:left;">
+						{{alpha.alpha}}
+					</div>
+					<div ng-show="!alpha" style="float:left;">
+						_
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<button ng-click="generateGridAlphas()">Generate</button> | <button ng-click="saveGame()">Save Game</button>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="lib/jquery/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+	<!-- <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script> -->
+	<script type="text/javascript" src="alphaGame.js"></script>
+	<script type="text/javascript" src="app/appStorage.js"></script>
+</body>
+</html>

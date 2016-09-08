@@ -1,0 +1,57 @@
+Project Outline: Shameless homage to "Bookworm Adventures" - a simple language-based RPG using a Boggle-like grid of letters to build words to use as attacks against enemies.
+
+Future Features:
+	-- Elder Futhark runic language support with a simple dictionary and groups of pre-selected words to aid in learning the language
+
+==TODOS==
+
+-+ PlayerTileBank (alphagrid post-turn save slots)
+	-- After turn, save/discard from bank
+-- DBG: on 3rd or 4th successive Concentrate. futureTiles do not go to alphaGrid - concentradeWord concatenate issue?
+-- Enemy Encounter turn logic
+	-- Attack / Spell / Defend / Flee
+		-- Chance to 
+-- Enemies :::
+	-- Elite versions
+	-- Loot/XP tables
+-- World Grid/Movement
+	-- Generic Grid
+	-+ Movement functions
+		
+		
+-- Additional Game Modes :::
+	-- Active Battle Timer system (scalable via difficulty/slider)
+	
+-- MiniGames :::
+	-- "Word Salad" - build words from a larger word.  Focus on archaic, long words and include definitions, usage, etc
+	--	"Game of Word" - GameOfLife style tile propagation
+	
+	
+	
+	
+	
+	
+	
+	
+-- 20150916
+	-- Fix tileset map push - pushing as [ele] instead of ele
+	
+-- 20160226
+	-- SaveGame
+		++ players
+		++ encounter if
+		++ map.name
+		++ partyMapX/Y
+		++ alphaGrid
+		++ partyTileBank
+		++ futureTiles
+		++ gameConfig
+		
+-- 20160305
+	++ Add IDs to:
+		++ Items
+		++ Monsters
+		++ Players
+		++ Gear
+		++ Spells/Abilities
+	-- Fix loading, selecting, etc based off IDs

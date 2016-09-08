@@ -1,0 +1,40 @@
+{"name":"Elder Futhark","notes":"Old Norse Runic alphabet, circa 200 CE to 800 CE",
+"references":[
+{"name":"English",
+"translation":{
+	"direct":[
+		{"ascii":70,"unicode":"16A0","meaning":"wealth, cattle"},
+		{"ascii":85,"unicode":"16A3","meaning":"aurochs (or uram \"water/slag\"?)"},
+		{"ascii":[84,72],"unicode":"16A6","meaning":"the god Thor, giant"},
+		{"ascii":65,"unicode":"16A8","meaning":"one of the Æsir (gods)"},
+		{"ascii":82,"unicode":"16B1","meaning":"ride, journey"},
+		{"ascii":75,"unicode":"16B2","meaning":"\"ulcer\"? (or *kenaz \"torch\"?)"},
+		{"ascii":71,"unicode":"16B7","meaning":"gift"},
+		{"ascii":87,"unicode":"16B9","meaning":"joy"},
+		{"ascii":72,"unicode":[["16BA"],["16BB"]],"meaning":"hail (precipitation)"},
+		{"ascii":78,"unicode":"16BE","meaning":"need"},
+		{"ascii":73,"unicode":"16C1","meaning":"ice"},
+		{"ascii":74,"unicode":"16C3","meaning":"year, good year, harvest"},
+		{"ascii":198,"unicode":"16C7","meaning":"yew-tree"},
+		{"ascii":80,"unicode":"16C8","meaning":"unclear, perhaps \"pear-tree\""},
+		{"ascii":90,"unicode":"16C9","meaning":"unclear, possibly \"elk\""},
+		{"ascii":83,"unicode":[["16CA"],["16CB"]],"meaning":"Sun"},
+		{"ascii":84,"unicode":"16CF","meaning":"the god Tiwaz"},
+		{"ascii":66,"unicode":"16D2","meaning":"birch"},
+		{"ascii":69,"unicode":"16D6","meaning":"horse"},
+		{"ascii":77,"unicode":"16D7","meaning":"man"},
+		{"ascii":76,"unicode":"16DA","meaning":"water, lake (or possibly *laukaz \"leek\")"},
+		{"ascii":[78,71],"unicode":[["16DC"],["16DD"]],"meaning":"the god Ingwaz"},
+		{"ascii":71,"unicode":"16DF","meaning":"heritage, estate, possession"},
+		{"ascii":68,"unicode":"16DE","meaning":"day"}
+	],
+	"combinations":[
+	
+	],
+	"miscellaneous":[
+	
+	]
+}
+}
+]
+}

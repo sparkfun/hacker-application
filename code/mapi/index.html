@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="mutableApi">
+<head>
+	<title>MAPI Mutable API</title>
+	<style type="text/css">
+		#main {
+			width:99%;
+			height:100%;
+			border:1px black solid;
+			margin:3px auto;
+			padding:3px 3px;
+		}
+		.labCnt {
+			width:48%;
+			float:left;
+			margin:3px 3px;
+			padding:3px 3px;
+			border:1px blue solid;
+		}
+		.cb {
+			clear:both;
+		}
+		.cw {
+			width:100%;
+		}
+	</style>
+</head>
+<body ng-controller="mApiController">
+	<div id="main">
+		<div style="width:98%;border:2px black dashed;margin:3px auto;padding:2px 2px;" ng-show="debug === true">
+			<div >
+				<div ng-repeat="api in apis">
+					{{api.name}} <br> {{api.cfg}}
+				</div>
+			</div>
+			<div style="cb cw"></div>
+		</div>
+		<div class="cb cw">Labs: ({{labs.length}} found) <button ng-click="addLab()">+ Lab</button></div>
+		<div ng-repeat="lab in labs" class="labCnt">
+			<div style="float:right;">
+				<button ng-click="removeLab(lab)">- Lab</button>
+			</div>
+			<h4>{{lab.name}} {{(lab.selectedApi.name)}}</h4>
+			<select ng-model="lab.selectedApi" ng-options="api as api.name for api in apis"></select>
+			<div ng-show="lab.selectedApi">
+				N:{{lab.selectedApi.name}}
+				baseUrl: {{lab.selectedApi.cfg.baseUrl}}
+				<div>
+					Root-level QueryParameters:<br>
+					<div ng-repeat="(paramName, paramCfg) in lab.selectedApi.cfg.queryParameters">
+						{{paramName}} - {{(paramCfg.description || 'No description')}}
+						<input type="text" ng-model="lab.queryParameters[paramName]['value']" />
+					</div>
+				</div>
+				<div ng-show="lab.selectedApi.cfg.callable">
+					<button ng-click="fetchWebPage(lab, false, false)">Base URL: Call {{lab.selectedApi.cfg.baseUrl}}</button>
+				</div>
+				<br>
+				Methods: ({{lab.selectedApi.cfg.methods.length}} found)<br>
+				<div ng-repeat="(methodName, methodCfg) in lab.selectedApi.cfg.methods"  style="border:1px red dashed;margin:3px 3px;padding:3px 3px;">
+					{{methodName}} - {{methodCfg.queryParameters.length}} queryParameters<br>
+					<div ng-repeat="(paramName, paramCfg) in methodCfg.queryParameters">
+						{{paramName}} - {{(paramCfg.description || 'No description')}}
+						<input type="text" ng-model="lab.queryParameters[paramName]['value']" />
+					</div>
+					<div class="cb cw" ng-show="methodCfg.callable">
+						<button ng-click="makeApiCall(lab, methodName, methodCfg)">Go {{lab.selectedApi.name}}:{{methodName}}</button>
+					</div>
+				</div>
+				<div ng-show="lab.lastCall.response.length">
+					Last Response: <br>
+					<textarea rows="3" cols="50">{{lab.lastCall.response}}</textarea>
+				</div>
+			</div>
+		</div>
+		<div class="cb cw"></div>
+	</div>
+	<script src="lib/angular.min.js"></script>
+	<script src="src/mapi_ng.js" type="text/javascript"></script>
+</body>
+</html>
