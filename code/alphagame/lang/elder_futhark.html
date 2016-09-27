@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="elderFuthark">
+<head>
+	<meta charset="UTF-8">
+	<title>AlphaGame Angular</title>
+	<!-- <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.min.css">
+</head>
+<body ng-controller="futharkModule">
+	&#x16CA;&#x16CB;<hr>
+	<div id="lang">
+		<div ng-repeat="rune in language.references[0].translation.direct track by $index" style="border:1px blue solid; margin:5px 5px; padding:5px 5px;">
+			{{$index}}|| {{rune.meaning}} || {{rune.ascii}} || <br>
+			<div ng-show="rune.ascii.hasOwnProperty('length') === true">
+				<div style="width:auto;float:left" ng-repeat="code in rune.ascii track by $index">
+					<span style="font-size:60px;" ng-bind-html="'&#'+code+';'"></span>
+				</div>
+			</div>
+			<div ng-show="rune.ascii.hasOwnProperty('length') === false">
+				<span style="font-size:60px;" ng-bind-html="'&#'+rune.ascii+';'"></span>
+			</div>
+			<div ng-show="rune.unicode.hasOwnProperty('push') === true">
+				<div style="width:auto;float:left" ng-repeat="code in rune.unicode track by $index">
+					<span style="font-size:60px;" ng-bind-html="'&#x'+code+';'"></span>
+				</div>
+			</div>
+			<div ng-show="rune.unicode.hasOwnProperty('push') === false">
+				<span style="font-size:60px;" ng-bind-html="'&#x'+rune.unicode+';'"></span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../lib/angular/angular.min.js"></script>
+	<script type="text/javascript" src="../lib/angular/angular-sanitize.js"></script>
+	<script type="text/javascript">
+		var module, controller, cs;
+		
+		var elderFuthark = {"name":"Elder Futhark","notes":"Old Norse Runic alphabet, circa 200 CE to 800 CE","references":[{"name":"English","translation":{"direct":[{"ascii":70,"unicode":"16A0","meaning":"wealth, cattle"},{"ascii":85,"unicode":"16A2","meaning":"aurochs (or uram \"water/slag\"?)"},{"ascii":[84,72],"unicode":"16A6","meaning":"the god Thor, giant"},{"ascii":65,"unicode":"16A8","meaning":"one of the Ã†sir (gods)"},{"ascii":82,"unicode":"16B1","meaning":"ride, journey"},{"ascii":75,"unicode":"16B2","meaning":"\"ulcer\"? (or *kenaz \"torch\"?)"},{"ascii":71,"unicode":"16B7","meaning":"gift"},{"ascii":87,"unicode":"16B9","meaning":"joy"},{"ascii":72,"unicode":[["16BA"],["16BB"]],"meaning":"hail (precipitation)"},{"ascii":78,"unicode":"16BE","meaning":"need"},{"ascii":73,"unicode":"16C1","meaning":"ice"},{"ascii":74,"unicode":"16C3","meaning":"year, good year, harvest"},{"ascii":198,"unicode":"16C7","meaning":"yew-tree"},{"ascii":80,"unicode":"16C8","meaning":"unclear, perhaps \"pear-tree\""},{"ascii":90,"unicode":"16C9","meaning":"unclear, possibly \"elk\""},{"ascii":83,"unicode":[["16CA"],["16CB"]],"meaning":"Sun"},{"ascii":84,"unicode":"16CF","meaning":"the god Tiwaz"},{"ascii":66,"unicode":"16D2","meaning":"birch"},{"ascii":69,"unicode":"16D6","meaning":"horse"},{"ascii":77,"unicode":"16D7","meaning":"man"},{"ascii":76,"unicode":"16DA","meaning":"water, lake (or possibly *laukaz \"leek\")"},{"ascii":[78,71],"unicode":[["16DC"],["16DD"]],"meaning":"the god Ingwaz"},{"ascii":71,"unicode":"16DF","meaning":"heritage, estate, possession"},{"ascii":68,"unicode":"16DE","meaning":"day"}],"combinations":[],"miscellaneous":[]}}]};
+		
+		module = angular.module('elderFuthark', ['ngSanitize']);
+
+		module.controller('futharkModule',['$scope', function($scope) {
+			cs = $scope;
+			
+			$scope.language = elderFuthark;
+			
+			$scope.init = function() {
+				console.log('init');
+			};
+			
+			$scope.init();
+			
+		}]);
+	</script>
+</body>
+</html>
