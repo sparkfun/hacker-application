@@ -8,6 +8,9 @@ module.controller('mApiController', ['$scope', function($scope) {
 	
 	$scope.labs = [];
 	
+	//$scope.lab1SelectedApi = false;
+	//$scope.lab2SelectedApi = false;
+	
 	$scope.addLab = function(cfg) {
 		if (!cfg) {
 			cfg = { "name": "Lab " + ($scope.labs.length + 1), "selectedApi": false, "history":[],"lastCall": { "request": "", "response": "" } };
@@ -42,18 +45,17 @@ module.controller('mApiController', ['$scope', function($scope) {
 			//console.log(lab.queryParameters);
 		//}
 		if (methodCfg !== false) {
-			if (methodCfg.hasOwnProperty("queryParameters") && methodCfg.queryParameters.length > 0) { //Method params
+			if (methodCfg.hasOwnProperty("queryParameters")) { //Method params
 				console.log('considering methodCfg.queryParameters:');
 				angular.forEach(methodCfg.queryParameters, function(paramCfg, paramName) {
 					console.log('method paramName='+paramName);
 					console.log(paramCfg);
 					data[paramName] = lab.queryParameters[paramName].value;
 				});
+			} else {
+				console.log('no methodCfg.queryParameters?:');
+				console.log(methodCfg);
 			}
-			//} else {
-				//console.log('no methodCfg.queryParameters?:');
-				//console.log(methodCfg);
-			//}
 			angular.forEach(data, function(val, param) { //Construct final parameters for GET
 				paramString += param + '=' + val + '&';
 				console.log('final paramString='+paramString);
@@ -271,7 +273,7 @@ function makeHttpRequest(url, options, callback) {
 		//callback(xhr.responseText, xhr);
 		xhr['_customCallback'] = callback;
 	}
-	if (typeof method === "string" && method.toLowerCase() === 'get') {
+	if (typeof method == "string" && method.toLowerCase() === 'get') {
 		xhr.open('GET', url);
 	} else if (method && method.toLowerCase() === 'post') {
 		//var boundary = '-------------------------------' + Date.now().toString(16);
@@ -291,6 +293,7 @@ function httpRequestDataLoaded() {
 	var segment = segments[segments.length - 2];
 	console.log(segments);
 	console.log(segment);
+	//starWarsAPISchema[segment] = JSON.parse(this.responseText);
 	console.log('httpRequestDataLoaded::');
 	console.log(this);
 	console.log('responseText length:'+this.responseText.length);
@@ -329,8 +332,6 @@ function httpRequestUpdateProgress(evt) {
 	return percentComplete;
 }
 
-
-//SWAPI Pure JS Scrape test
 var swapiSchemaEndpoints = [
 	'http://swapi.co/api/films/schema',
 	'http://swapi.co/api/people/schema',
@@ -366,9 +367,8 @@ function scrapeStarWarsAPI(endpoints, schema) {
 }
 
 function processSchema(schema, options) {
-	//TODO Process Schema from a structure-identifying call
 	var out = {};
-	
+	//if (
 }
 
 function parseSchemaLine(line) {

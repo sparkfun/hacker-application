@@ -13,12 +13,12 @@ if (isset($_POST['api'])) {
 }
 
 if ($api !== FALSE && $api !== '_all') { //Fetch single API
-	include('api_config.' . $api . '.php');
+	include_once('./api/api_config.' . $api . '.php');
 	$return = json_encode($apiConfig);
 } elseif ($api === '_all') { //Fetch all APIs in $apiList
 	$all = array();
 	while(list($i, $apiName) = each($apiList)) {
-		include('api_config.' . $apiName . '.php');
+		include_once('./api/api_config.' . $apiName . '.php');
 		$all[$apiName] = $apiConfig;
 	}
 	$return = json_encode($all);

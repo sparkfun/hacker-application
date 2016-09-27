@@ -22,6 +22,7 @@ $apiConfig = [
 		]
 	],
 	'methods' => [],
+	/* Not returning <script> anymore
 	'responseHandler' => json_encode('function(data, xhr) {
 	var eleSelector = xhr._options.eleSelector || false;
 	var finalData = data;
@@ -35,6 +36,5 @@ $apiConfig = [
 	}
 	return finalData;
 	
-}')
-
+}')*/
 ];

@@ -1,7 +1,8 @@
 <?php
 
 $apiConfig = [
-	'name' => 'NASA Open API',
+	'name' => 'NASA',
+	'description' => 'NASA Open APIs',
 	'baseUrl' => 'https://api.nasa.gov/',
 	'queryMethods' => ['GET'], // [ 'GET', 'POST' ]
 	'queryParameters' => [
@@ -34,11 +35,11 @@ $apiConfig = [
 					'required' => false
 				]
 				
-			],
+			]/*,
 			'responseHandler' => 'function(data, xhr) {
 				console.log(data);
 				console.log(xhr);
-			}'
+			}'*/
 		],
 		'neo/rest/v1/' => [
 			'name' => 'Asteroids - NeoWs',
