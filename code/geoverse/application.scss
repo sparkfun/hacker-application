@@ -1,0 +1,30 @@
+@import 'colors';
+@import 'utils';
+
+.ui-header {
+  .ui-btn-left, .ui-btn-right {
+    top: 4px;
+  }
+}
+
+.ui-bar-a { border: none; }
+
+.ui-bar-a, .ui-btn-active {
+  background: $geogreen;
+  color: $white;
+  text-shadow: 0 1px 1px $nice-grey;
+  @include linear-gradient($geogreen-light, $geogreen-dark);
+}
+
+.ui-focus { @include box-shadow($geogreen); }
+
+.ui-btn-active { border: 1px solid $geogreen; }
+
+.errors {
+  background-color: $richy-red;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+
+  div { padding: 6px 10px; }
+}

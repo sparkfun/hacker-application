@@ -1,0 +1,1 @@
+This index page comes from my website dcdev.org that has information on how to write new homebrew applications for the Dreamcast. Just some simple plain ol html. :)
