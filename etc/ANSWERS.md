@@ -4,11 +4,11 @@
 
 3. Nope, I don't have any vacations or absences planned.
 
-4. Yes I really enjoy dogs! :) I'm used to working in an office where people would bring their dogs and I thought it was a treat. If I had a dog I'm not sure if I would bring them since I think I would worry too much about if they would behave well and distract others haha.
+4. Yes I really enjoy dogs! :) I'm used to working in an office where people would bring their dogs and I thought it was a treat. If I had a dog I'm not sure if I would bring them since I think I would worry too much about them potentially distracting others haha.
 
-5. My main source for tech news right now is https://news.ycombinator.com. I feel like that site does a adequate job of keeping me informed about the newest tools/frameworks and how to get around paywalls! :)
+5. My main source for tech news right now is https://news.ycombinator.com. I feel like that site does an adequate job of keeping me informed about the newest tools/frameworks and how to get around paywalls! :)
 
-6. When I'm not developing, I love to practice the drums and have been doing so since I was 11. Guitar, bass and piano are other instruments I also play. Mixing/producing music is another hobby I'm interested in. I like to go on walks/runs and just be aware of my surroundings. I practice mindfulness meditation and that's a wonderful way to be able to stay calm and break out of repetitive thinking cycles. I recently was into downloading NOAA satellite weather imagry data with a quadrifilar helix antenna I built out of PVC and love just tinkering with odd gadgets even though that still deals with programming! :)
+6. When I'm not developing, I love to practice the drums and have been doing so since I was 11. Guitar, bass and piano are other instruments I also play. Mixing/producing music is another hobby I'm interested in. I like to go on walks/runs and just be aware of my surroundings. I practice mindfulness meditation and that's a wonderful way to be able to stay calm and break out of repetitive thinking cycles. I recently was into downloading NOAA satellite weather imagry data with a quadrifilar helix antenna I built out of PVC and I love just tinkering with odd gadgets even though that still deals with programming! :)
 
 7. Hmmm I'm probably not doing well in this area right now. I listen to lots of forms of music (progressive, jazz, folk, metal, noise-rock, etc.) and I'm getting more into eastern melody writing. It's beautiful when mixed with western influences!
 
@@ -16,7 +16,7 @@
 
    Book reading I'm pretty bad at. I've conditioned myself to just be able to read computer books haha. I did however read one fictional book this year called The Little Prince. Good perspective on observing through a child's eyes.
 
-8. I actually can't think of anything to critique about the site but I would fix this button first hehe :D ![site picture](https://s3.amazonaws.com/kittypizza/Screenshot+from+2016-10-18+21%3A35%3A32.png).
+8. I actually can't think of anything to critique about the site but I would fix the alignment of this button first hehe :D ![site picture](https://s3.amazonaws.com/kittypizza/Screenshot+from+2016-10-18+21%3A35%3A32.png).
 
    I tested on Firefox 49.0 and 49.0.1. 
 
