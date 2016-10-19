@@ -6,6 +6,3 @@ tmp/
 public/assets/
 .DS_Store
 spec/coverage/
-.jhw-cache
-spec/javascripts/fixtures/mobile/**/*
-
