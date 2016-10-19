@@ -4,7 +4,7 @@
 
 3. Nope, I don't have any vacations or absences planned.
 
-4. Yes I really enjoy dogs! :) I'm used to working in an office where people would bring their dogs and I thought it was a treat. If I had a dog I'm not sure if I would bring them since I think I would worry too much about if they would behave well and not distract others haha.
+4. Yes I really enjoy dogs! :) I'm used to working in an office where people would bring their dogs and I thought it was a treat. If I had a dog I'm not sure if I would bring them since I think I would worry too much about if they would behave well and distract others haha.
 
 5. My main source for tech news right now is https://news.ycombinator.com. I feel like that site does and good job of keeping me informed about the newest tools/frameworks and how to get around paywalls! :)
 
