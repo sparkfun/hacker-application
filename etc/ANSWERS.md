@@ -6,7 +6,7 @@
 
 4. Yes I really enjoy dogs! :) I'm used to working in an office where people would bring their dogs and I thought it was a treat. If I had a dog I'm not sure if I would bring them since I think I would worry too much about if they would behave well and not distract others haha.
 
-5. My main source for tech news right now is https://news.ycombinator.com. I feel like that site does and good job keeping me informaed about newest tools/frameworks.
+5. My main source for tech news right now is https://news.ycombinator.com. I feel like that site does and good job of keeping me informed about the newest tools/frameworks and how to get around paywalls! :)
 
 6. When not developing I love to practice the drums and have been doing so since I was 11. I also enjoy trying to get better at mixing/producing music. I like to go on walks and just observe the outside. I practice minfulness meditation and that's a great way to be able to stay calm and break out of repetitive thinking cycles. I recently was into downloading NOAA satellite weather imagry data with a quadrifilar helix antenna I built out of PVC and love just tinkering with odd gadgets even though that still deals with programming! :)
 
