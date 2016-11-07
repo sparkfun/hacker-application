@@ -1,0 +1,7 @@
+Rationale for Lack of Dotfiles
+
+I am comfortable with editing dotfiles; (my current position uses Netbeans, whose .conf file requires a fair amount of adjusting to keep it from backfiring).  
+
+However, most of my Unix experience is in maintaining my clients' servers and/or setting up SEO and password configurations.  Not all my clients give direct server access, and most of my work is in custom-built UX web applications, which require cross-browser compatibility and migratable code. 
+
+I prefer to work in the Mac environment, updating code in editors with .git connectivity for ease of use.  But I'm open to adapt!
