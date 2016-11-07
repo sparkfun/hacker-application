@@ -1,0 +1,26 @@
+Hi, <CLIENT>,
+
+We don't specifically have packages to plug in, as all our sites are customized per client.
+
+As <OURGUY> mentioned, we do, however, have non-table-layout versions of our "<CODEFOLDER>" pages that we can apply to your bootstrap design. 
+
+We can either:
+a.) keep the desktop theme as-is and re-work your mobile theme to a more attractive bootstrap-looking design, or 
+b.) re-do the site theme to conform to a new bootstrap-enabled theme that your staff will provide in HTML form.
+
+Benefits of both:
+a.) benefit: simpler -- we don't scrap all the custom work that has already been done on four different storefront themes for your site, but it can look better for you on mobile (and/or tablet) devices.
+b.) benefit: spiffier -- you can watch the site change as you change your browser's window width, and see how it conforms to different widths, as a true bootstrap layout will. 
+
+Costs of each:
+a.) est. <XX> - <XX> hours
+b.) est. <XX> - <XX> hours
+
+(We can give you a tighter estimate on seeing the bootstrap-based designs.)
+
+(Note: many of your site pages have customizations in them that are not specifically layout-oriented, and those customizations would have to be merged into the non-table-based pages, if we go with option b.)
+
+Let us know how you'd like to proceed!
+
+Thanks,
+-Russ.
