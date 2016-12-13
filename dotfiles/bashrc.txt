@@ -1,0 +1,90 @@
+# This is my sample of my .bashrc
+# I like to create aliases, and a shortcut to go to certain directories.
+# I also define PATH and other environment variables which are needed in development.
+
+
+HOST=`hostname`
+USER=`whoami`
+PS1="[$USER@$HOST]# "
+
+xhost +
+alias log='tail -f  /opt/orclwww/Oracle/Middleware/Oracle_WT1/inst/inst1/diagnostics/logs/OHS/ohs1/ohs1.log'
+alias trut='/net/scr-x86-app-01.us.oracle.com/opt/TRUT/TRUTClient/bin/trut'
+alias javalabtool_4.9.4='cd /net/l3-440-2.central.Sun.COM/export/cde/repository/JLT/javalabtool_4.9.4'
+alias ws='cd /net/l3-440-2.central.Sun.COM/workareas/ts118137/javalabtool_4.9.4/Labtool'
+alias fx='/opt/sfw/lib/firefox/firefox'
+alias sql='cd /net/l3-440-2.central.Sun.COM/workareas/ts118137/javalabtool_4.9.4/sql'
+alias db='cd /net/l3-440-2.central.Sun.COM/workareas/ts118137/javalabtool_4.9.4/Labtool/src/com/sun/labtool/db'
+alias gui='cd /net/l3-440-2.central.Sun.COM/workareas/ts118137/javalabtool_4.9.4/Labtool/src/com/sun/labtool/gui'
+alias merc3='/opt/csw/bin/rdesktop -u ts118137 -p 1sun_DMG! -g 1024x768 -a 16 merc3'
+alias dbvis='/net/l3-440-2.central.sun.com/export/cde/dev/Tools/DbVisualizer-6.0.1/dbvis &'
+alias doors='cd /net/l3-440-2.central.Sun.COM/workareas/ts118137/doors'
+alias siek='cd /net/l3-440-2.central.Sun.COM/workareas/ts118137/keyword/SIEK1.8'
+alias tl='cd /net/l3-440-2.central.Sun.COM/workareas/ts118137/TapeLibrary/usr/'
+alias regtool='cd /net/l3-440-2.central.Sun.COM/workareas/ts118137/RegTool'
+alias nb='/opt/netbeans-6.9.1/bin/netbeans &'
+alias qc='cd /net/l3-440-2.central.Sun.COM/workareas/ts118137/qc'
+
+
+ORACLE_HOME=/opt/oracle/oracle/product/10.2.0/client_1
+export ORACLE_HOME
+PATH=/usr/sbin:/opt/csw/bin:/opt/netbeans-6.9.1/bin:/opt/SUNWsesscs/cli/bin:/usr/local/bin:/usr/ccs/bin:/bin:/opt/Adobe/Reader8/bin:$ORACLE_HOME/bin:/opt/DbVisualizer-5.1.1:/usr/dist/pkgs/devpro,v4.2/5.x-sparc/bin:$ANT_HOME/bin:/opt/jython2.2.1:$PATH:~/bin:
+export PATH
+
+JAVA_HOME=/usr/jdk/latest
+export JAVA_HOME
+ANT_HOME=/opt/apache-ant-1.7.1
+export ANT_HOME
+JYTHON_HOME=/opt/jython2.5.2
+export JYTHON_HOME
+export PATH=$JAVA_HOME/bin:$ANT_HOME/bin:$PATH
+
+umask 002
+
+
+cdws()
+{
+    DIR="/sungrid/Release2.0/dev/opcon/facilities"
+ 
+    if [ $# -ge 1 ]; then
+        DIR=$DIR/$1
+        shift 1
+    fi
+    cd $DIR
+ 
+    if [ $# -gt 0 ]; then
+        DIRS=$(find . -type d -name $1)
+        set -- $DIRS
+ 
+        if [ $# -eq 1 ]; then
+            cd $1
+        else
+            echo "Select one of the following:"
+            for DIR in $* ; do
+                echo "$DIR"
+            done
+        fi
+    fi
+}
+ 
+#
+# Synopsis:
+#       cd within a source tree of a workspace
+# Usage:
+#       cdsrc [<subdir>]
+#
+cdsrc()
+{
+    cdws src $*
+}
+# Usage:
+#       cdtest [<subdir>]
+#
+cdtest()
+{
+    cdws test $*
+}
+export LD_LIBRARY_PATH=/lib/amd64:/usr/ccs/lib:/usr/lib/amd64:/opt/orclwww/Oracle/Middleware/Oracle_WT1/lib:/opt/orclwww/Oracle/Middleware/Oracle_WT1/ohs/lib
+export MANPATH=$MANPATH:/opt/SUNWsesscs/cli/man
+export EDITOR=vi
+

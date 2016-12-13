@@ -1,0 +1,26 @@
+td.suntabactive{
+    background:#507c9a url("./images/bg_titlebar.gif") no-repeat left top;
+    border-right:1px solid #FFF;
+    padding:0px;
+}
+td.suntabactive div{
+    background:url("./images/a2_corner_tr.gif") no-repeat right top;
+    padding:2px 7px 3px 7px;
+}
+.suntabactive_label {
+    color: white;
+    cursor: pointer;
+}
+td.suntab{
+    background:#CCDAE3 url("./images/gradation_header.gif") no-repeat left top;
+    border-right:1px solid #FFF;
+}
+td.suntab div{
+    background:url("./images/top_right_round_corner.gif") no-repeat right top;
+    padding:2px 7px 3px 7px;
+}
+.suntab_label {
+    color: black;
+    cursor: pointer;
+}
+
