@@ -23,3 +23,16 @@ and a short description of your role in each project.
 In lieu of or in addition to code samples please also consider providing writing samples.
 When applying for a more managerial position this is of particular importance as
 clear written communication is critical.
+
+
+*******
+I am submitting a small portion of the tool I developed.  It is an 
+asset management and reservation tool.  The tool can monitor, make a reservation 
+and view and update system information.  You can easily search for available 
+systems.  It was used in the testing organization to share systems.  
+
+The application has Oracle database in the backend and used oci module to 
+connect from PHP.  I was responsible for all GUI development and deployment.
+
+Toshiko Sesselmann
+*******
