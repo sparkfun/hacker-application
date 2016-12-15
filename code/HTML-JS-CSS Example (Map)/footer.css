@@ -1,0 +1,35 @@
+#ku-footer {
+    /*background: #0022b4 url(../images/template-images/ku-footer-bluegrad.gif) top left scroll repeat-x;*/
+    background-color: #0022b4;
+    border-top: 3px solid #e8000d;
+    color: #fff;
+    padding-top: 20px;
+}
+
+#ku-footer li {
+    float: left;
+    margin-right: 1%;
+    width: 32%;
+}
+
+#ku-footer ul, #ku-footer li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 990px) {
+    #ku-footer ul li {
+        float: none;
+        display: inline-block;
+        margin-right: .5rem;
+        text-align: center;
+        width: auto;
+    }
+}
+
+#ioa-statement {
+    clear: both;
+    color: #efefef;
+    font-size: 10px;
+    margin-top: 1rem;
+}

@@ -1,0 +1,97 @@
+/** Header Styles **/
+
+@media print {
+	#header a[href]:after {/* Remove header URLs after link when printing*/
+		content: none !important;
+	}
+}
+
+#header {
+	display: block;
+	position: relative;
+}
+
+#header #header_logo {
+	width: 140px;
+
+	vertical-align: middle;
+}
+
+#header #header-text {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 190px;
+}
+
+#header #title {
+	font-size: 54px;
+}
+
+#header #subtitle {
+	display: inline-block;
+	font-size: 18px;
+	margin-left: 200px;
+}
+
+/* for 980px or less */
+@media screen and ( max-width: 980px ) {
+
+	#wrapper {
+		width: 94%;
+	}
+
+	#header #subtitle {
+		margin-right: 0;
+	}
+}
+
+/* for 800px or less */
+@media screen and ( max-width: 800px ) {
+
+	#header #subtitle {
+		margin: 0;
+		float: right;
+	}
+}
+
+/* for 700px or less */
+@media screen and ( max-width: 700px ) {
+
+	#header #header_logo {
+		width: 90px;
+
+		position: absolute;
+		top: 0;
+	}
+
+	#header #header-text {
+		position: relative;
+		left: 115px;
+	}
+
+	#header #subtitle {
+		float: none;
+		margin: 0;
+	}
+}
+
+/* for 480px or less */
+@media screen and ( max-width: 480px ) {
+
+	#header {
+	}
+
+	#header #header_logo {
+		width: 60px;
+	}
+
+	#header #header-text {
+		left: 85px;
+	}
+
+	#header #title {
+		font-size: 32px;
+	}
+}
