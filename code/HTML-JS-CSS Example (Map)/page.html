@@ -1,0 +1,267 @@
+
+<!doctype html>
+<html lang='en'>
+<head>
+
+	<title>4th Floor</title>
+
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+	<meta name='description' content='Spencer App Link | KU' />
+	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+	<meta name='apple-mobile-web-app-capable' content='yes' />
+
+	<!-- Styles -->
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel='stylesheet' href='font.css' />
+
+	<!-- jQuery UI and page standard css -->
+	<link rel='stylesheet' href='jquery-ui-1.10.4.custom.css' />
+	<link rel='stylesheet' href='footer.css' />
+
+	<link rel='stylesheet' href='page.css' />
+
+	<!--[if lt IE 9]>
+		<script type='text/javascript' src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+		<script type='text/javascript' src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'></script>
+	<![endif]-->
+
+	<!-- Scripts -->
+
+	<!-- Bootstrap and jQuery -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel='stylesheet' href='base.js' />
+
+	<link rel='stylesheet' href='data.js' />
+	<link rel='stylesheet' href='page.js' />
+
+</head>
+
+<body>
+	<a href='#main-container' class='sr-only'>Skip to main content</a>
+
+	<div class='navbar navbar-inverse navbar-ku navbar-fixed-top' role='navigation' style='margin-bottom: 0;'>
+
+		<div class='navbar-header'>
+			<button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.sidebar-collapse'>
+				<span class='sr-only'>Toggle navigation</span>
+				<span class='icon-bar'></span>
+				<span class='icon-bar'></span>
+				<span class='icon-bar'></span>
+			</button>
+			<a class='navbar-brand' href='/~smamobile/'>
+				<span>Spencer App Link</span>
+			</a>
+		</div>
+
+		<div class='navbar-default navbar-static-side' role='navigation'>
+			<div class='sidebar-collapse'>
+
+				<nav>
+					<ul class="nav" id="side-menu">
+			 			<li>
+							<a href="/~smamobile/oai/"><span class="fa fa-search fa-fw"></span> OAI</a>
+						</li>
+
+						<li>
+							<a href="/~smamobile/sync/"><span class="fa fa-refresh fa-fw"></span> Sync</a>
+						</li>
+
+						<li>
+							<a href="/~smamobile/data/exhibitions/"><span class="fa fa-fw"></span> Exhibitions</a>
+						</li>
+
+						<li>
+							<a href="/~smamobile/data/tours/"><span class="fa fa-fw"></span> Tours</a>
+						</li>
+
+						<li>
+							<a href="/~smamobile/data/objects"><span class="fa fa-fw"></span> Objects</a>
+						</li>
+
+						<li>
+							<a href="/~smamobile/data/media"><span class="fa fa-fw"></span> Object Media</a>
+						</li>
+
+						<li>
+							<a href="/~smamobile/data/dimensions"><span class="fa fa-fw"></span> Object Dimensions</a>
+						</li>
+
+						<li>
+							<a href="/~smamobile/data/artists"><span class="fa fa-fw"></span> Artists</a>
+						</li>
+
+						<li>
+							<a href="/~smamobile/location/"><span class="fa fa-location-arrow fa-fw"></span> Location Code</a>
+						</li>
+						<li>
+							<a href="/~smamobile/beacon/"><span class="fa fa-circle-o fa-fw"></span> iBeacons</a>
+						</li>
+						<li>
+							<a href="/~smamobile/beacon/link/"><span class="fa fa-circle-o fa-fw"></span> iBeacon Links</a>
+						</li>
+
+						<li>
+							<a href="/~smamobile/map/"><span class="fa fa-map-marker fa-fw"></span> Maps</a>
+						</li>
+
+						<li>
+							<a href="/~smamobile/socialmedia/"><span class="fa fa-empire fa-fw"></span> Social Media</a>
+						</li>
+
+						<li>
+							<a href="/~smamobile/survey/"><span class="fa fa-question fa-fw"></span> Survey System</a>
+						</li>
+
+						<li>
+							<a href="/~smamobile/data/deletions"><span class="fa fa-trash fa-fw"></span> Deletion History</a>
+						</li>
+
+
+						<li>
+							<a href="#system-nav"><span class="fa fa-cogs fa-fw"></span> System<span class="fa arrow"></span></a>
+
+							<ul class="nav nav-second-level">
+								<li>
+									<a href="/~smamobile/system/users/"><span class="fa fa-users fa-fw"></span> Users</a>
+								</li>
+
+								<li>
+									<a href="/~smamobile/system/schema"><span class="fa fa-database fa-fw"></span> Update Schema
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+
+	<div id='main-container' class='container-fluid' role='main'>
+
+		<noscript>
+			<div class='alert alert-danger'>
+				<div>Please enabled Javascript. This site does not function well without it.</div>
+			</div>
+		</noscript>
+
+		<div id='page-header' class='page-header'>
+			<h2>4th Floor</h2>
+		</div>
+
+		<div class="alert alert-success save-display" style="display: none;">
+			<div class="unsaved" style="display: none;">Click save to keep changes.</div>
+			<div class="save-in-progress" style="display: none;">Saving...</div>
+			<div class="save-complete" style="display: none;">Complete.</div>
+		</div>
+
+		<div class="margin-bottom padding-bottom"> 
+			<a href="/~smamobile/map/" class="btn btn-info pull-left">Back</a> 
+
+			<button id="save-btn" class="btn btn-success pull-right">Save</button>
+		</div>  
+
+		<div id="room-name-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="#modal-title" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="modal-title">Room Name</h4>
+					</div>
+					<div class="modal-body">
+						<div id="room-name-input-group" class="form-group">
+							<label for="room-name-input" class="control-label fade">A name is required for every room.</label>
+
+							<input type="text" id="room-name-input" class="form-control" placeholder="Enter new room name." />
+						</div>
+						<div id="room-identifier-input-group" class="form-group">
+							<label for="room-identifier-input" class="control-label fade">An identifier is required for every room.</label>
+
+							<input type="text" id="room-identifier-input" class="form-control" placeholder="Enter new room identifier." />
+						</div>
+
+						<input type="hidden" id="room-id-input" />
+						<input type="hidden" id="room-index-input" />
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-default" data-dismiss="modal">Close</button>
+						<button class="btn btn-primary" id="set-room-name-button">Set Name</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="app-wrapper">
+
+			<div class="pull-left margin-right text-center">
+				<a href="/~smamobile/assets/maps/map.9.jpeg" target="_blank" class="btn btn-default margin-half-bottom"><span class='fa fa-fw fa-search-plus'></span> Zoom Map</a> 
+
+				<div id="room-list" class="list-group text-left">
+					<div class="list-group-item disabled">
+						Room List
+
+						<div class="pull-right">
+							<button id="add-new-room" class="fa fa-plus-circle"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="canvas-wrapper" class="pull-left">
+				<canvas id="map-canvas" width="500" height="500">
+					Your system does not support the Canvas element.
+				</canvas>
+
+				<canvas id="base-canvas" width="500" height="500">
+					Your system does not support the Canvas element.
+				</canvas>
+
+				<canvas id="edit-canvas" width="500" height="500">
+					Your system does not support the Canvas element.
+				</canvas>
+			</div>
+		</div>
+
+	</div>
+
+	<section id="ku-footer">
+		<div class="container">
+			<div class="row">
+				<section class="col-xs-6 col-md-4 hidden-print">
+					<a href="http://www.ku.edu/"><img src="//www.ku.edu/assets/ku-template/images/ku_sig_logo.png" width="167" height="40" alt="KU signature" title="The University of Kansas"></a>
+				</section>
+				<section class="col-xs-6 col-md-4 text-center">
+					<p><img id="ku_footer_jayhawk" src="//www.ku.edu/assets/ku-template/images/ku_jayhawk.png" width="56" height="50" alt="Jayhawk icon"></p>
+				</section>
+				<section class="col-xs-12 col-md-4 hidden-print">
+					<ul>
+						<li><a href="http://ku.edu/academics/" title="KU Academics">Academics</a></li>
+						<li><a href="http://ku.edu/admissions/" title="KU Admissions">Admissions</a></li>
+						<li><a href="http://www.kualumni.org/" title="Alumni information">Alumni</a></li>
+						<li><a href="http://www.kuathletics.com/" title="KU Athletics">Athletics</a></li>
+						<li><a href="http://www.ku.edu/about/campuses/" title="Campus information for KU">Campuses</a></li>
+						<li><a href="http://www.ku.edu/contact/" title="Contact KU">Contacts</a></li>
+						<li><a href="http://www.kuendowment.org/" title="Give back through KU Endowment">Giving</a></li>
+						<li><a href="http://employment.ku.edu" title="Find employment at KU">Jobs</a></li>
+						<li><a href="http://maps.ku.edu" title="KU Maps">Maps</a></li>
+					</ul>
+				</section>
+			</div>
+			<div class="row">
+				<footer class="col-xs-12 col-md-10 col-md-offset-1 text-center" id="ioa-statement">
+					<p>Code not for re-use. Example code only with permission from the University of Kansas.</p>
+				</footer>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

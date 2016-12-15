@@ -1,0 +1,82 @@
+@font-face {
+	font-family: 'OsakaSansSerifRegular';
+	src:
+		url( '../fonts/osaka-webfont.eot' );
+	src:
+		local( 'â˜º' ),
+		url( '../fonts/osaka-webfont.woff' ) format( 'woff' ),
+		url( '../fonts/osaka-webfont.ttf' ) format( 'truetype' ),
+		url( '../fonts/osaka-webfont.svg' ) format( 'svg' );
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+		font-family: 'fontastiquefontastique';
+		src:
+			url( '../fonts/fontastique-webfont.eot' );
+		src:
+			url( '../fonts/fontastique-webfont.eot?#iefix' ) format( 'embedded-opentype' ),
+			url( '../fonts/fontastique-webfont.woff' ) format( 'woff' ),
+			url( '../fonts/fontastique-webfont.ttf' ) format( 'truetype' ),
+			url( '../fonts/fontastique-webfont.svg#fontastiquefontastique' ) format( 'svg' );
+		font-weight: normal;
+		font-style: normal;
+
+}
+
+/* Fonts */
+
+.naka-font {
+	font-weight: normal;
+	font-style: normal;
+	line-height: normal;
+	font-family: 'OsakaSansSerifRegular', sans-serif;
+}
+
+.naka-font-2 {
+	font-weight: normal;
+	font-style: normal;
+	line-height: normal;
+	font-family: 'fontastiquefontastique', sans-serif;
+}
+
+/* Text Size */
+
+.big {
+	font-size: 110%;
+}
+
+.bigger {
+	font-size: 125%;
+}
+
+.biggest {
+	font-size: 140%;
+}
+
+.small {
+	font-size: 90%;
+}
+
+.smaller {
+	font-size: 75%;
+}
+
+.smallest {
+	font-size: 60%;
+}
+
+/* Text Alignment */
+
+.text-top > * {
+	vertical-align: top;
+}
+
+.text-middle > * {
+	vertical-align: middle;
+}
+
+.text-bottom > * {
+	vertical-align: bottom;
+}
