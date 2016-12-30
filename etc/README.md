@@ -46,3 +46,9 @@ Please answer the following general questions:
 
 
 8. Please critique any of the SparkFun websites. With influence over the SparkFun dev team what would *you* focus on improving?
+
+**These comments are probably more design related than anything. **
+ * **Larger, higher quality photos on the homepage would be a nice selling point.**
+ * **Perhaps a banner that spans full width.**
+
+** I can be more useful in this area if I looked at the code.**
