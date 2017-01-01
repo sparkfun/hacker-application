@@ -1,0 +1,31 @@
+# composer dir
+/app/core/vendor/*
+
+# frontend
+node_modules
+.sass-cache
+
+# source mapping
+*.css.map
+*.js.map
+
+*.log
+*.zip
+*.tar
+*.tar.gz
+*.lock
+*.scssc
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
