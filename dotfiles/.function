@@ -1,0 +1,15 @@
+function gitexport() {
+  git archive --format zip --output "$1.zip" master -0
+}
+
+function makekey() {
+  ssh-keygen -t rsa -b 4096 -C "$1"
+}
+
+function makecert() {
+  openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout $1.key -out $1.crt
+}
+
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \(\1\)/'
+}

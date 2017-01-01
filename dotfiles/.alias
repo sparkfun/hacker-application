@@ -1,0 +1,13 @@
+alias restart="sudo apachectl -k restart";
+alias stop="sudo apachectl -k stop";
+alias start="sudo apachectl -k start";
+alias log="tail -f /usr/local/var/log/apache2/error_log";
+alias conf="open -e /usr/local/etc/apache2/2.4/httpd.conf";
+alias mysqlstart='mysql.server start';
+alias mysqlstop='mysql.server stop';
+alias vhosts='open -e /usr/local/etc/apache2/2.4/extra/httpd-vhosts.conf';
+alias profile='open ~/.profile';
+alias sites='cd ~/sites';
+alias ll="ls -lhA"
+alias wget="wget -c"
+alias myip="curl http://ipecho.net/plain; echo"
