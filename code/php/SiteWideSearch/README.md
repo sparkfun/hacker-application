@@ -1,6 +1,6 @@
 # SiteWideSearch
 
-** Note to Sparkfun: ** This is not actually a repo on GitHub. This functionality was used on multiple projects at my current job and was changed a bit for presentation purposes. I've included this README for the purposes of showing how I would document something like this.
+**Note to Sparkfun:** This is not actually a repo on GitHub. This functionality was used on multiple projects at my current job and was changed a bit for presentation purposes. I've included this README for the purposes of showing how I would document something like this.
 
 ## What is it?
 **SiteWideSearch** is an extension of "TacoWordPress" that allows full-text querying of data from WordPress post types and custom fields. It is designed to work with custom post type fields and allows the developer to configure the ranking system for how the search results are returned.
