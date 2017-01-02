@@ -1,25 +1,6 @@
-We want to see your code. Please include a representative sample of your
-work in this directory.
+# PHP and JS Code from Jasand Pereza
 
-All languages and paradigms are welcome, but we're most interested in
-submissions demonstrating one or more of the following:
+In this directory, you will find examples of PHP and JavaScript code. The PHP code **SiteWideSearch** features search functionality I wrote and used on various projects at my current job. The JavaScript portion contains a few files from a React.js component **AddMany** that has also been used but for pretty much all projects (websites) at my current job. In each folder, you will find a README.md file describing what each of the code does.
 
-  - Clean, secure, object oriented PHP.
-  - Usable, modern, and reasonably standard HTML, CSS, and JavaScript.
-  - Clear, sensible, and consistently formatted code.
-  - Sympathy for the plight of future maintainers.
-
-If you maintain or contribute to any open source projects, please supply links
-and a short description of your role in each project.
-
-**Tips:**
-
- * Avoid excessive amounts of code.
- * Exclude third party utilities and other dependencies like XML libraries or binaries.
- * Your samples will be *read*, not *executed*.
- * Less is more.
- * Select samples that are brief and show off different characteristics of your skill set.
-
-In lieu of or in addition to code samples please also consider providing writing samples.
-When applying for a more managerial position this is of particular importance as
-clear written communication is critical.
+#### My GitHub account
+You're more than welcome to checkout (no phun intended) my GitHub account at https://github.com/jasand-pereza. There you will find the complete project of the AddMany featured in this repository and look at anything else that catches your eye.
