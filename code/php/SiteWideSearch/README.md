@@ -34,7 +34,7 @@ public static function getSearchableFields() {
       // "Post content" is ranked lower due to the number of words that exist in body copy.
       'post_content' => 2,
       'post_title' => 4,
-      // Higher integers rank higher. "post_title" and "post_title" contain less words
+      // Higher integers rank higher. "post_title" and "post_name" contain less words
       // and are more specific and relevant at describing the post.
       'post_name' => 6
     ),
