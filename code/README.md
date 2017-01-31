@@ -23,3 +23,8 @@ and a short description of your role in each project.
 In lieu of or in addition to code samples please also consider providing writing samples.
 When applying for a more managerial position this is of particular importance as
 clear written communication is critical.
+
+A few notes:
+I've included a few samples from a website that I created about 1 year ago. I've also 
+included a mysql utility script that I wrote for loading mysql databases into a dev
+environment.
