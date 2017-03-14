@@ -1,0 +1,134 @@
+Snippets from: https://github.com/Traci7822/alternative_fuel_stations
+
+Colorado Alternative Fuel Stations is a web application to discover alternative fuel stations and their relevant data acquired from data.colorado.gov. It is constructed with a Ruby on Rails back-end to persist and render JSON data to the AngularJS front-end.
+
+HTML Sample:
+      <div class="stationName">
+        <h1>{{station.name}}</h1>
+      </div>
+
+
+      <center>
+        <div class="btn-group">
+          <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Station Information <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a ui-sref="station.hours">Hours</a></li>
+            <li><a ui-sref="station.contact">Contact</a></li>
+            <li><a ui-sref="station.comments">Comments</a></li>
+          </ul>
+        </div>
+      </center>
+
+
+      <div class="station-page">
+        <div class="station-info">
+          <ui-view></ui-view>
+        </div>
+        <div class="stationReturn" >
+          <a ui-sref="stations">Show All Stations</a>
+        </div>
+      </div>
+
+CSS Sample:
+
+      table, th, td {
+        border: 3px solid #E8E7D7;
+        border-collapse: collapse;
+        font-size: 1.25em;
+        margin-left: auto;
+        margin-right: auto;
+        table-layout: fixed;
+      }
+
+      td {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 400px;
+        background-color: rgba(69, 181, 133, 0.35);
+      }
+
+      .table-header {
+        text-align: center;
+        background-color: rgba(2, 103, 127, 0.35);
+      }
+
+      a:link {
+        color: #003636;
+      }
+
+      a:visited {
+        color: #003636;
+      }
+
+      .station-view {
+        padding: 20px;
+      }
+
+      .stationName {
+          margin-top: -100px;
+          position: relative;
+          height: 150px;
+      }
+
+      .stationReturn a:link {
+        color: white;
+      }
+
+      .stationReturn a:visited {
+        color: white;
+      }
+
+      .stationReturn {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 75px;
+      }
+
+      .stationAttributes {
+        text-align: center;
+        padding-top: 250px;
+      }
+
+      .btn {
+        margin-top: 375px;
+      }
+
+      .attribute {
+        padding: 20px;
+        margin-top: 150px;
+        height: 150px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        text-align: center;
+      }
+
+JavaScript/Angular Sample:
+      stationApp.controller('StationProfileController', ['$scope', '$stateParams', 'SelectedStation', 'CommentFactory',             function($scope, $stateParams, SelectedStation, CommentFactory) {
+        var ctrl = this;
+        ctrl.id = $stateParams.id;
+
+        SelectedStation
+          .getStation($stateParams)
+          .then(function (res) {
+            $scope.station = res.data;
+          });
+
+          this.createComment = function() {
+            var comment = {
+              name: form.name.value,
+              email: form.email.value,
+              content: form.content.value
+            }
+            
+            $scope.station.comments.push(comment);
+            form.name.value = "";
+            form.email.value = "";
+            form.content.value = "";
+            return CommentFactory.createComment(comment, ctrl.id)
+          }
+      }]);
