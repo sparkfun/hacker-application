@@ -1,0 +1,38 @@
+Sparkfun Github Code Example
+Doug Van Scoy
+Tuesday, April 5, 2016
+
+Since I am no longer a developer, I am using the following instructions from your Github Readme doc:
+In lieu of or in addition to code samples please also consider providing writing samples. When applying for a more managerial position 
+this is of particular importance as clear written communication is critical
+
+This document serves as my writing sample.
+
+In this document, I will provide:
+1.	 A short write up of once facet of my experience with Agile Software Development
+2.	A small Agile user story example.
+
+
+1.	Agile Experience:
+In my use of the Agile methodologies, I have found that the Agile Coach is a main differentiator in what makes the project a success.
+In an Agile project, it is the Coach who helps every member of the team better understand their role, the processes, and the 
+expectations of them.   This allows the team to grow together and keep on the correct Agile path.   This is especially true in a
+project where Agile is new to many of the team members.   In this case, it is the coach who also drives the Epics, User-story 
+definition, and detailed discussions so that the requirements for the project are well defined.  As the team members learn the 
+processes, they then take over these tasks and the Coach transitions to more of a guiding role.  
+
+2.	User Story example: (this is not meant to be a fully formed User Story, but a brief example)
+
+“As a retail Sparkfun Customer, I want to be able to more easily connect with other customers similar to myself, so that we can 
+share ideas, projects, and products.”
+
+Acceptance Criteria
+1.	A predefined list of Customer types is defined
+a.	List out types (like hobbyist, high school teacher, College professor, Robotics battle dude)
+2.	Each customer must select a type for their profile
+3.	Video tutorials can be tagged with one to many types
+4.	Video tutorials can be filtered by customer type
+5.	Video tutorials can be searched by customer type
+6.	Heavily accessed videos by a customer type group are highlighted for members of that group.
+
+
