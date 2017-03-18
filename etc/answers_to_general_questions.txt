@@ -1,0 +1,51 @@
+Please answer the following general questions:
+
+What is your desired compensation range? (Range meaning the least you're comfortable with to the most you think you're worth.)
+
+90,000 - 125,000 per year
+
+
+
+When can you start?
+
+Within 14 - 30 days, (depending on this application process).  I need to give sufficient notice to my current position, and would like a few days of transition down-time in between, if that is possible.
+
+
+
+Do you have any planned vacations/absences in the next six months that we should know about?
+
+No.
+
+
+
+SparkFun is a dog-friendly environment. Are comfortable working aroung dogs? If you are a dog-owner, would you see yourself bringing dogs to work?
+
+Who doesn't love dogs?  I would bring my dog to work.  We may be getting one soon.
+
+
+
+The active developer keeps up on happenings in the world of development and technology. Where do you you get your news?
+
+Google, The Economist, The Guardian, PHPClasses.org
+
+
+
+The sane developer does things other than writing code. What else occupies your time?
+
+Golf.  Hiking.  Hanging with friends.  
+
+
+
+The worldy developer is in touch with some form of culture (books, music, film, etc.). How do you go about feeding this part of your brain?
+
+Dig the Denver Art Museum.  Play saxophone, ukulele.  Love films, esp. foreign ones, or blockbuster Hollywood.  Like to read when I get a chance.
+
+
+
+Please critique any of the SparkFun websites. With influence over the SparkFun dev team what would you focus on improving?
+
+I'd like to influence the SparkFun Team toward attracting new customers, even those who have never built anything electronic before.  I'd keep some more fun hands-on projects up and running for tours and new visitors.  And I'd update the UX of the main site to be more B-to-C friendly.
+
+I'd show off some of the coolest (or hottest, like flamethrowers) news and stuff up front, on the home page of the main site, while still keeping it easy for repeat users to get to the catalog, classes and such.  The SparkFun site has an excellent catalog, and intriguing listings of classes, tutorials, etc.  
+
+I'd scrap the Google calendar plugin in favor of something simpler for the user to access, unless the list of events on it gets more dense.  (Relatively empty calendars can do more harm than good for image.)
