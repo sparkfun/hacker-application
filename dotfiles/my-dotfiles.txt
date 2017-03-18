@@ -1,0 +1,8 @@
+dotfiles
+
+I am not all that familiar with dotfiles customizations as I learned unix in the old days where you only had a bash shell to use.
+As a result, I prefer to use this as it's what I know. For development, I use a Mac Book Pro to develop in so it has a GUI.
+When I ssh into a unix server, I simply use iTerm. I can edit things using VI as needed or use the bash history to find recent
+commands I tend to use frequently.
+
+Please note that I am open to using dotfiles if there is a sparkfun standard.
