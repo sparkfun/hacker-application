@@ -1,0 +1,1 @@
+For a writing example I included an old paper I wrote for University about a device I built that tells you the current speed limit of the road you're traveling on. Pretty old now but still kind of fun to read about! 
