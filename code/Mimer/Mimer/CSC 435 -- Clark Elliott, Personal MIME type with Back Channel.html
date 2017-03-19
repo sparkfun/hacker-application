@@ -1,0 +1,777 @@
+
+<!-- saved from url=(0067)http://condor.depaul.edu/elliott/435/hw/programs/program-mimer.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>file is: program-mimer.html
+  <title> CSC 435 -- Clark Elliott, Personal MIME type with Back Channel </title>
+
+
+4.1
+<font face="Comic Sans MS" size="1">
+<p>Updates: 
+</p><ol>
+<li> Clarification of java submission files. See Checklist.
+</li></ol>
+<font face="Cambria" size="3">
+
+<center> 
+<h1> Program Three</h1>
+
+<h2> Personal MIME type generation and handler</h2>
+
+</center>
+
+
+<h3> Required: Firefox browser </h3>
+
+Note: post bug reports, and OSX/Linux suggestions to the newsgroup, and I'll make updates here.<p>
+
+</p><h2> Overview: </h2>
+
+Copy and complete the <a href="http://condor.depaul.edu/elliott/435/hw/programs/checklist-mimer.html"> checklist.html </a> file.<p>
+
+In this program we will use the Web to establish <i> back channel </i>
+communication between a server machine and client machine. This powerful
+construct allows us a simple initial interface, with yet unconstrained
+communication between the server and client as a result.</p><p>
+
+Along the way we will also implement synchronous and asynchronous calls,
+read environment variables, create our own personal MIME types, serve that
+MIME type data from our MyWebServer programs, write a client-side handler
+program to handle data of that MIME type, and create our own protocol to
+serialize (marshal) and restore data in XML format sent over the network.</p><p>
+
+
+You will write a simple <i> handler </i> program, called by the browser, to
+handle your personal MIME data on the client. You will associate your own
+handler with the MIME data in the browser by creating an association between
+the MIME type and your program that handles that kind of MIME data. In this
+way you will cause client-side execution of a program to process the data
+returned from the server. This client-side handler program, in turn, will
+marshal the data into XML format and send it back to the server machine
+through a back-channel communication link. Lastly, the server will unmarshal
+the data from XML and restore it to symbolic form under program control. </p><p>
+
+The amount of <i> required </i> programming for this assignment is
+minimal. Additionally, much of the nasty working out of details has been
+done for you. However, your computer will be set up differently from the way
+others' computers are set up, and thus it is not possible to work out <i>
+all </i> the problematic details. In addition, Windows, and Windows Java
+implementations, are notoriously annoying and buggy when it comes to what
+<i> should </i> be very straightforward procedures to make entries in MIME
+tables, set classpaths for compilation and execution, and invoke executable
+programs. Thus, you should <i> expect </i> to run into some difficulties,
+you should <i> expect </i> java, java classpaths, and Windows (if you are
+using it) to act in ways that they should not. There will be no whining
+about this being hard, because we cannot rewrite Windows, and the results of
+this assignment are worth it. You must leave time for some
+experimentation. You should expect to have to look up some solutions on the
+web. I have designed the assignment so that you can see success
+in the pieces of it, individually, even if you cannot get the whole sequence
+working together.</p><p>
+
+This program can be written for OsX and Linux systems as well, and in many
+ways will be easier. Instructions here will be for Windows, but see the
+special tips for your operating system, and share ideas at the newsgroup forum.</p><p>
+
+Grading: The grading for this assignment will be based largely on your
+<strong> write-up </strong> and your <strong> comments </strong>. These can
+be based on the individual parts, even if you do not get them all working
+together. So, substantial credit is still possible.</p><p>
+
+It will be quite satisfying if you are able to get the whole sequence
+of calls working together. However, there are tiny bugs that may frustrate
+you. Each of the steps can also be run manually, so be <i> sure </i> that
+you turn in running code for each of the individual steps, no matter
+what. If you cannot get them all coordinated, say so, but do not give up on
+the rest of the assignment!</p><p>
+
+</p><h2> Discussion: </h2> 
+
+This assignment illustrates several powerful concepts: <ol> <li> Your server
+is initiating <i> call-back </i> processing on the client. While we are
+using a somewhat restricted flavor here, the idea of call-backs, wherein the
+server initiates program execution on the client, is one of the pillars of
+asychronous communication between client and server.<p>
+
+</p></li><li> At the end of this assignment you will have all the basic tools for
+implementing your own MIME type in the real world. This will allow you to
+write client applications (e.g., Windows Programs) that process your own
+kind of data with your own programs, served over the web. This is how, for
+example, RealAudio got started. <i> Powerful tool number one. </i><p>
+
+</p></li><li> You will have all the tools for using the Web as an <i> introduction
+</i> device to open <i> back channel </i> communication between a server and
+a client. In this useful model you use the strong, simple, and
+well-understood search mechanisms of the Web for clients to locate services,
+and then seamlessly open a (possibly proprietary) connection at some other
+agreed-upon endpoints (ports) between the client and server for the real
+processing to take place. <i> Powerful tool number two. </i> <p>
+
+</p></li><li> Many modern platform models include the use of XML as a marshalled form
+of data. This includes Web Services, which many consider to be strategic. At
+the end of the assignment you will have the basic tools for converting data
+stored in symbolic form in memory to a serialized XML format both on
+disk, and also sent over the network, and <strong> restored to symbolic form on the
+other side. </strong> <i> Powerful tool number three. </i><p>
+
+</p></li></ol>
+
+<h2> The assignment steps: </h2> 
+
+<ul> 
+<li> Step One: Return a personal MIME type header (you make it up) from your
+webserver so that it triggers client-side handler
+<ol>
+<li> Install mimer-data.xyz file in your MyWebServer directory.
+</li><li> Modify MyWebServer so that it returns an "application/xyz" MIME header
+for files with type ".xyz"
+</li><li> Write and install your shim.bat script file to run on Windows
+</li><li> Modify browser settings to call shim.bat (with a pause) and parse arg
+one as the temporary data file name
+</li></ol><br>
+
+</li><li> Step Two: Write your Java Handler that reads environment variables, and call it
+from server, through shim.bat
+<ol>
+<li> Create five lines of data on server, put it in a file with extension .xyz
+</li><li> Write the simple client-side java handler program for the .xyz data
+</li><li> Call java from the shim.bat file
+</li><li> Initiate call of client-side java from server on web request of
+.xyz file, through the shim
+</li><li> Display the name of the temp data file
+</li></ol><br>
+
+</li><li> Step Three: Write BCClient Java to serialize data to XML
+
+<ol>
+<li> Install the Xstream jar files in your file system
+</li><li> Create .bat files to compile and to run with Xstream
+</li><li> Write the Java program to write XML output to file
+</li></ol> <br>
+
+</li><li>  Step Four: Create the BackChannel communication between your handler
+and server.
+
+<ol> 
+<li> Add the "admin looper" from your JokeServer to your webserver to
+accept connections at port 2570</li><li> Modify the admin looper so that it reads and displays an XML stream
+</li><li> Modify your BCClient so that it sends the XML stream to server at
+port 2570
+</li><li> Run the server, connect to it with BCClient, and show output
+</li></ol><br> 
+
+</li><li> Step Five: Combine your two Java programs
+<ol> 
+<li> See <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/mimer-call.html"> mimer-call.html </a> for an overview.
+</li><li> Combine BCClient.java and Handler.java into BCHandler.java
+</li><li> Run BCHandler standalone from the shim, pass dummy data file as arg one:<br>
+    &gt; Connect to server, print the contents of a data file.
+</li><li> Call the server from a browser, requesting the data file of that application/xyz MIME
+type, based on file extension of .xyz.<br>
+
+&gt; Load <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/mimer-call.html"> mimer-call.html </a> into
+MyWebServer's root directory by viewing the source and saving.<br>
+&gt; Return five lines of data with personal MIME header application/xyz <br>
+&gt; Call the handler, via the .bat shim, and pass the temporary data file name<br>
+&gt; Serialize the data into XML, write to file (for a local check of XML data) <br>
+&gt; Send the data (as XML) to the server through the back channel<br>
+&gt;  Display the XML data on the server console.<br>
+</li></ol><br>
+
+
+</li><li> Step Six: Optional bragging rights -- NOT required.
+<ol> 
+<li> Modify the client so that it uses the MIME data to configure the
+backchannel communication. E.g., line one might have "server=140.192.1.2
+Port=45362" specifying where the client should connect.
+</li><li> Modify Client and Server to use a very general form of data
+wrt. length, type, and so forth, taking advantage of Xstream's powerful
+marshaling capabilities. (You will have to handle the reading and writing 
+of unspecified data to the backchannel communication socket.)
+</li><li> Modify Client and Server to use Xstream's mapping capabilities to make
+the XML more readable.
+</li><li> The XML has been written to disk. This means that the data is
+persistent, and it is not necessary for the backchannel server to be running
+at the time the BCHandler is running. Instead you can use a persistent
+communication scheme where at a <i> later time </i> the backchannel server
+starts up, notifies a utility program that it is ready for the data, and
+then receives it.
+</li><li> etc.
+</li></ol> 
+</li></ul>
+<p>
+
+<a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/osx-linux.html"> OSX and Linux tips </a></p><p>
+<a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/tips.html"> General tips </a></p><p>
+
+Note: you might also have to fool with different editors, and line-end
+characters to view this / get this to work on / your platform. out.println
+may work differently than out.append, \r\n will be different from \n,
+Wordpad may add or remove linened characters, and so on.</p><p>
+
+
+
+
+</p><h2> Administration: </h2>
+
+
+<ul>
+
+<li> Because there is not much coding to do, this assignment will be
+graded primarily on how well you demonstrate, in your BCHandler.java
+COMMENTS, and in your writeup, how well you understand how
+this set of programs works.<p>
+
+</p></li><li> Submission files: checklist.html, mimer-discussion.html,
+serverlog.txt showing the connections made to the server and display of the
+returned data, and [Handler.java,
+BCClient.java, BCHandler.java, (modified) MyWebServer.java with your
+EXTENSIVE COMMENTS in the java source code for the BCHandler.java file.]<p>
+
+</p></li><li> Copy and complete the <a href="http://condor.depaul.edu/elliott/435/hw/programs/checklist-mimer.html"> checklist.html </a>
+file.<p>
+
+</p></li><li> Most important: Complete mimer-discussion.html which is, essentially, a
+narrative of your progress and work on this assignment. What you did, in
+what order, what worked, what did not, showing how this all fits together,
+and demonstrating not only your good faith efforts, but also your
+understanding of all the details. If you did NOT quite get it all running
+together, you will need bettter documentation, and a longer discussion
+demonstrating that you got all the concepts. I am thinking one page for
+running mimers, and two pages for non-fully-running mimers.<p>
+
+</p></li><li> Submit all your mimer files to D2L before the due date (but we don't
+need BCClient.java or Handler.java because they are combined in BCHandler).
+<p>
+
+
+</p></li><li> NOTE: If you did not get this fully running, carefully describe all the
+good-faith steps that you took in your writeup. For example, you should be
+able to get BCClient.java communicating with your server, standalone. You should
+be able to get Handler.java called by your shim file, standalone. You
+might have some success with the .bat files, but not with the browser. You might
+be able to run the handler, but not able to work out the XML. Each of these
+can be documented as an independent step, and if you want (possibly
+substantial) partial credit, then you must have top-quality
+documentation.<p>
+
+</p></li></ul>
+
+<h2> Overview of how MIME types work on the Web: </h2>
+
+<ul> 
+
+<li> The Web client requests a file with a certain file extension.
+
+</li><li> The server looks at the file extension of the requested file, looks up the
+MIME type, sends the MIME header back to the client, and then sends the
+data.
+
+</li><li> The browser looks at the MIME type, and if it cannot handle it itself,
+looks in a table to see who DOES handle this type of data.
+
+</li><li> The browser then throws out the header, writes the data to a temporary
+file with a throw-away name, calls the handler program as a subprocess, passes
+the name of the temporary file as the first argument to the handler, and
+then reliquishes all responsibility for further handling of the data.
+
+</li><li> The handler program, after being invoked by the browser, looks at its
+first argument, assumes it is a file name, opens the file, reads in the
+data, and processes it (i.e., "handles it") in whatever way it has been
+programmed to process it.
+
+</li><li> So, you need to invent a MIME type, invent a data format, create some
+data, assign a file type to that data and associated MIME type in your
+server, write a handler to handle that kind of data on the client, and associate the
+handler with the MIME type in your browser.
+
+</li></ul>
+
+<h2> Developing steps One through Six </h2>
+
+<h3> Step one: Return personal MIME type header so that it triggers
+client-side handler. </h3> 
+
+<ol> 
+
+<li> Make a suitable work subdirectory in which to run your MyWebServer.
+It is better if this directory is not too deep, because you will be
+copying this directory path many times.
+
+</li><li> Make sure that your MyWebServer program is alive and well. If you
+did not get it fully running you will have to hack at it to at least return
+the specified MIME header and the five lines of data from the file. [Note
+that you can write a much simpler java program, based on InetServer, that
+just ALWAYS returns the specified MIME header and the five lines of data
+directly from the program when a connection is made to port 2540.]
+
+</li><li> Copy the <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/mimer-data.xyz.txt"> mimer-data.xyz </a> file
+and save it to your MyWebServer's root directory as mimer-data.xyz.
+
+</li><li> Copy the <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/shim.bat.txt"> shim.bat </a> file and
+save it to your server's root directory. Run this DOS batch file
+to make sure it works [Windows start | run | cmd |&gt; cd to directory |&gt; shim]
+See, e.g., <a href="http://www.atarimagazines.com/compute/issue137/S20_How_to_write_DOS_bat.php">
+How to write DOS Batch Files </a>, or refer to the web.
+
+</li><li> See "<a href="http://condor.depaul.edu/elliott/435/hw/programs/program-mimer.html#assocmime">Associating your MIME type with a handler</a>" (below) to associate the mime type [Content-Type: application/xyz] with
+shim.bat. This step might take three minutes, or it might take several
+frustrating hours. Be patient. Use the newsgroup. Work carefully.<p>
+
+In my experience Windows sometimes behaves badly on this step. Sometimes it
+seems to cache (??) old copies of handlers (in our case shim.bat) and run
+those instead of the new versions. If this happens to you, then rename
+shim.bat to shim2.bat, and so on, and just re-register the .xyz file type in
+Windows Explorer.</p><p>
+
+You also can use the search function in regedit (the registry editor) for
+"shim.bat". You may end up having to manually change the value for:<br>
+
+MyComputer,HKEY_CURRENT_USER,<br>
+Software,Classes,Applications,shim.bat,shell,open,command<br>
+
+and set it to point to your desired shim.bat file.</p><p>
+
+
+</p></li><li> Note that even though Windows <i> finds </i> your shim.bat file in
+your MyWebServer execution directory, that does not mean that it will start
+execution there. On my system, for example, the browser will always start
+DOS shim files in the desktop directory, no matter where the executable .bat
+file lives. So, use "cd" in your .bat files as needed to navigate to
+the directory where your Java handler lives.
+
+</li><li> See <a href="http://condor.depaul.edu/elliott/435/hw/programs/program-mimer.html#mime-server"> Sending the MIME type data from your
+server </a> (below) to get your server sending back the correct
+application/xyz MIME type.
+
+</li><li> Save the <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/mimer-call.html"> mimer-call.html </a> into your
+MyWebServer root directory.
+
+</li><li> Use the mimer-call.html file to call your server. (Modify it if
+you are using a different extension, such as .xy2.) You should now
+see the associated shim.bat pop up, and display the name of the temporary
+file where the data has been stored. Note that only the first steps of
+those listed in mimer-call.html are going to take place, so far.
+
+</li><li> While the "pause" is in effect you probably can look at your five lines
+of data directly in the temporary file. However, when the .bat file
+finishes, the browser may delete the temporary file.
+
+</li><li> <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/win7.html"> Here </a> is a Windows 7 tip for the shim
+
+</li></ol> 
+
+<h3> Step two: Write a Java program that reads environment variables, and
+call it from server, through shim.bat
+</h3> 
+
+<ol>
+<li> Copy the <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/mimer-data.xyz.txt"> mimer-data.xyz </a> file to
+some temporary file name if you wish, to avoid confusion. We are just going
+to pass the name of this file as an argument.
+
+</li><li> Copy <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/Handler.java.txt"> Handler.java </a> to your development
+directory, or write your own version, and compile it.
+
+</li><li> Uncomment (that is remove the "rem" remark statement from...) the
+appropriate line in shim.bat so that the
+<br>  "java -Dfirstarg=%1 Handler"<br>
+statement will now execute.
+
+</li><li> In a DOS shell, call the shim.bat file, and pass mimer-data.xyz as the
+first argument to it, or the name of the file into which you copied that
+data as the first argument to it. Your Handler should now read, from the
+java.exe environment, the name of the file that you passed to shim.bat,
+which in turn passed it to java.exe through an environment variable. That
+is:
+<pre>
+...&gt; shim mimer-data.xyz
+
+</pre>
+
+Handler.java should display the name of the file on the console, along
+with your data.
+
+</li><li> Start your server, and your browser, and call the server from the
+mimer-call.html page. The browser should now call shim.bat which should then
+call java which in turn loads Handler.class which in turn should display the
+name of the temporary data file in which the browser put the five lines of
+data. <p>
+
+If all is well, you will see output from your Handler.java program displayed
+on the console of the DOS CMD window invoked by your browser. Once you
+clear the pause, of course, the CMD window will go away, and you will no
+longer see your console output.</p><p>
+
+You will also note that the handler writes the <i> name </i> of the
+temporary data file into C:\temp\mimer.output. While the browser-invoked
+version of shim.bat is paused, <i> after </i> Handler.java has run, you
+should look at the contents of the temporary internet file (whose filename is
+written in mimer.output), at least once.
+This is the raw data output returned from your server. Once you press
+enter, and release the pause in the CMD shell, this temporary file may
+disappear.</p><p>
+
+You may find that there are some issues with line-end characters, and so
+forth, present in your raw server data. Additionally, for debugging
+purposes, you may have to manually delete this file, to make sure that your
+server is actually sending new data.</p><p>
+
+I recommend that you also <i> clear your browser cache </i> to make sure that your
+server is actually getting the request, and you will also want to make minor modifications to the data in
+mimer-data.xyz from time to time to verify that the actual data is being
+returned, rather than a cached copy of it. </p><p>
+
+</p></li><li> You may have to play with this important step for a while. Do NOT
+expect that everything is going to work, and that you will be able to
+complete this part of the assignment without some careful thought, some
+Windows hacking, some DOS .bat file hacking, some internet search for
+information, and some time invested. Think
+through your approach carefully. Consider what directories are being used by
+which programs. Review the steps above for getting shim.bat to work. Use the
+newsgroups.<p>
+
+Once you have completed this step, then except for the Java classpath
+mess, the rest is quite straightforward.</p><p>
+
+</p></li><li> Write CAREFUL, EXTENSIVE comments for Handler.java, later to be
+inserted into BCHandler.java and turned in. I gave you the
+program, but expect you to show, through your comments, that you understand
+how it works. That is, treat the program as some kind of essay question,
+where the question is, "Exactly how does this work?" and your answer is
+contained in comments.
+
+</li></ol>
+
+<h3>  Step Three: Write BCClient.java to serialize data to XML  </h3>
+<ol> 
+
+<li> We now leave the server environment for a while, and play with
+the serializing of data into XML.
+
+</li><li> Download <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/xstream-1.2.1.jar"> xstream-1.2.1.jar </a> and <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/xpp3_min-1.1.3.4.O.jar"> mimer/xpp3_min-1.1.3.4.O.jar </a> and
+place them in your jdk/lib/ or jre/lib directory, or your development directory, or in
+some other place where you can find them, and your classpath can find them.
+You can, and should, read all about the Xstream packages at <a href="http://xstream.codehaus.org/"> http://xstream.codehaus.org/ </a>. We
+borrowed these libraries gracefully offered to us so that we do not have
+to write our own marshaling code for XML.
+
+</li><li> Copy the <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/jcxclient.bat.txt"> jcxclient.bat </a> DOS
+batch file into your development directory. Modify it so that it points to
+the .jar files you just downloaded in the previous step.
+
+</li><li> Copy <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/BCClient.java.txt"> BCClient.java </a> to your
+development directory. This will soon become your Back Channel Client
+that will connect back to your server at port 2570.
+
+</li><li> Compile BCClient.java using the jcxclient.bat file. [Stands for
+Java Compile Xstream Client]. You may have to play with this. In particular,
+Java classpaths are often problematic. You might want to see the next step,
+for running BCClient, and see if the alternate classpath method works
+for the compile step. (The alternate is required for java.exe for some
+reason, on my system.) Post suggestions, tips, and questions, at the
+newsgroup.
+
+</li><li> Copy the <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/rxclient.bat.txt"> rxclient.bat </a> DOS batch file
+into your development directory [stands for java run Xstream Client]. Modify
+it so that it points to the .jar files you just downloaded in the previous
+step. Use this batch file to load and run your BCClient.class file.
+
+</li><li>  Once you get a compile, comment out those parts of BCClient that
+require server interaction, and get it to run standalone.
+
+</li><li> Or, you can write your own BCClient.java program from scratch that
+reads in a data file, and writes XML to disk.
+
+</li><li> Check that XML is being written to disk (in the temp directory). You
+can re-route the output from the socket to the console so that you can check
+the output.
+
+</li></ol> 
+
+
+<h3> Step Four: Create the BackChannel communication between your handler
+and server. </h3>
+
+<ol>
+
+<li> Copy the <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/BC-looper-code-snippet.txt"> BC-looper-code-snippet.txt
+</a> Code SNIPPET
+into your MyWebServer program, and arrange to get a compile. This snippet
+is only for handling the XML stream, and you will have to refer to the
+admin looper portion of your own JokeServer to invoke this worker, and
+get the code working within the context of your own program.
+
+</li><li> Re-write this very basic code so that you are comfortable with the
+style, and correct working, of the java. Consider this snippet just a
+set of suggestions.
+
+</li><li> Look at <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/BC-output.txt"> BC-output.txt </a>
+file to get an idea of what the BackChannel console output should look
+like on the Client and Server.
+
+</li><li> Copy the <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/jcx.bat.txt"> jcx.bat </a> DOS
+batch file into your development directory. Modify it so that it points to
+the .jar files you just downloaded in the previous step. Use this to compile
+your Xstream-modified MyWebServer.java program.
+
+</li><li> Uncomment the original BCClient code so that it again communicates with
+the server through a socket. Rewrite this code so that you are comfortable
+with the style.
+
+</li><li> Start your MyWebServer so that it is now also listening for incoming
+XML at the backchannel port 2570. You will need to use the <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/rx.bat.txt"> rx.bat </a> file
+so that MyWebServer knows where to find the runtime libraries for Xstream.
+
+</li><li> Run BCClient (using rxclient.bat) and verify that it correctly
+reads the data file, writes XML to local disk, sends the XML to the
+server, waits synchronously for an acknowledgement that the server received
+the data, and then terminates.  Check that MyWebServer receives the XML data
+on its back channel, displays the XML on the server console, deserializes
+the data back into symbolic form under program control, and displays
+standard string reprentation of the symbolic data on the server console.
+
+</li><li> Write CAREFUL, EXTENSIVE comments for BCClient.java later to be
+inserted into BCHandler.java and turned in, and also for MyWebServer.java
+(the modified portion only), treated as an essay question, as above.
+
+</li><li> Your back channel communication is now complete. Congratulations!
+
+</li></ol> 
+
+<h3>  Step Five: Combine your two Java programs  </h3>
+
+<ol> 
+<li> See <a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/mimer-call.html"> mimer-call.html </a>  for an
+overview.
+
+</li><li> Combine BCClient.java and Handler.java into BCHandler.java  You are
+on your own here. You have to stitch the two programs together.
+
+</li><li> Uncomment statements from shim.bat as needed, and add your own
+as needed.
+
+</li><li> Start MyWebServer. Run BCHandler standalone from shim.bat while passing
+the "local" copy of the mimer-data.xyz file as arg one. Connect to
+MyWebServer, which should still print out copies of the data on the
+server console.
+
+</li><li> Note that mimer-data.xyz happens to be in both the local directory
+of the Client program, and <i> also </i> in the root directory of the
+server, and that both <i> just happen </i> to be the same
+directory. Ordinarily, testing in this way would require two copies of
+the data file, one on each machine.
+
+</li><li> Call the server from a browser, using mimer-call.html, requesting
+mimer-data.xyz. This should cause:
+
+<ol>
+<li> Return five lines of data to be returned with personal MIME header to
+the Browser.
+</li><li> The browser to write out the temporary data file, call shim.bat,
+which calls java.exe, which loads BCHandler.class, which (a) parses the data
+file name from the environment variable passed to it, (b) reads
+the data file into local memory, (c) Serializes the data into XML format,
+(d) Writes the XML to disk, (e) sends the XML through the back channel
+of the server which is listening for it at port 2570
+</li></ol>
+
+</li><li> The server shoudl now display the XML data, and deserialized symbolic
+data, on the server console.
+
+</li><li> Insert the CAREFUL, EXTENSIVE comments you've prepared into
+BCHandler.java. Add header comments at the
+top of BCHandler.java explaining how the whole thing fits together.  I also
+<i> strongly </i> recommend putting in basic comments about how to associate
+the mime type with the file extension in Windows, since you may wish to
+resurect this program in the future, and no longer have access to these
+notes. Treat the program as some kind of essay question, where the question
+is, "Exactly how does this work?" and your answer is contained in comments.
+
+</li><li> Your BackChannel, XML-marshaling, personal MIME-reading, handler
+programs are now complete.
+
+</li></ol> 
+
+Note: We are just using the MyWebServer as the BackChannel endpoint for
+convenience. Of course it would be trivial to start another program
+altogether, on another machine and connect to that instead. In this way we
+have complete flexibility over how our back channel is implemented, what
+protocol is used, which server program receives the connection, and where
+that server is located.<p>
+
+</p><h3> Step Six:  Optional bragging rights -- NOT required </h3>
+
+<ol> 
+<li> In general, you are on your own here. Have fun, and comment well.
+
+</li><li> Please build a standard BCHandler program first, and then use
+BCHandlerB.java and MyWebServerB as the file names for your extended
+version.
+
+</li><li>  Include <strong> Excplicit </strong> instructions on how
+to compile and run your extended version.
+
+</li><li> Include very careful details at the bottom of your checklist.html
+file so that I know what you did.
+
+</li><li> Advertise your work at the newsgroup, so others can benefit from
+your good ideas, and get inspired.
+
+</li><li> Consider starting with using the data file not as data, but as
+run-time configuration. In this way the client actually reads the data,
+and uses it in real time. For example there might not even be a
+mimer-data.xyz file, it is just a dummy to signal to MyWebServer to
+send back a stream telling the client where to connect for service
+at that particular moment.
+
+</li><li> Modify Client and Server to use Xstream's mapping capabilities to make
+the XML more readable.
+
+</li><li> The XML has been written to disk. This means that the data is
+persistent, and it is not necessary for the backchannel server to be running
+at the time the BCHandler is running. Instead you can use a persistent
+communication scheme where at a <i> later time </i> the backchannel server
+starts up, notifies a utility program that it is ready for the data, and
+then receives it.
+
+</li><li> Play with Xstream, which has powerful constructs built in to it.
+
+</li><li> etc.
+
+</li></ol> 
+
+<a name="assocmime">
+<h2> Associating your MIME type with a handler </h2>
+
+[Note: I <strong> STRONGLY </strong> suggest that you do not start out using
+the required .xyz file extension because you might make mistakes along the
+way, and it is possible that undoing something will be much harder than just
+starting over. Instead, use something like .xy1, .xy2, .xy3 and so on
+until everything else is completely done, then, as a last step, install the
+.xyz file extension. Once you figure out how this is done on your system,
+redoing it for a new file extension takes only a minute or two.]<p>
+
+
+
+</p></a><ul><a name="assocmime">
+
+<li> In this example I will use the content type application/xyz, but you
+will substitute your own MIME type as needed.
+
+</li><li> This is ugly under Windows. That is just the way it is. If you use a
+different client machine, or broswer, this will probably be easier, but you
+will have to figure out how to do it.
+
+</li><li> This takes place in several steps. First you have to edit your
+registry, to associate the MIME type with a file extension. Then you have to
+go through windows <i> explorer </i> (NOT internet explorer) to associate
+the file extension with a handler.
+
+</li><li> First, using regedit to edit your Windows registry [start | run |
+regedit], add a content type for application/xyz. You do this by looking at
+other examples in HKEY_CLASSES_ROOT\MIME\Database\Content Type, and then
+copying that format by adding a new type. For example if you have MSWORD
+(Microsoft Word) loaded on your machine, then you will have an entry
+associating application/msword with the file extension ".doc". [Note: you
+can use the EDIT menu button, or you can right-click on the "parent" entry
+then "add" a new key, then on that new key "add" a new string, then right
+click on the string, "Extension", to "modify" by giving it the value ".xyz"]
+
+<pre>Edit / new / key  [application/xyz]
+Edit / new / string / [Extension / .xyz]
+
+This associates a new file extension ".xyz" with the application/xyz MIME type.
+
+</pre>
+
+Note: if you screw up your registry, it is possible that you will have to
+re-install your operating system. But hey, you are a CS graduate student.
+Editing your Windows registry is a skill you will have to develop
+sometime. You can always "exit" from the registry if you are not sure what
+you are doing. Adding a type should not cause problems for your system.
+
+</li><li> Next, start windows <i> explorer </i> (NOT <i> Internet Explorer </i>)
+[start | run | explorer] select Tools / Folder options / file types / New /
+Create New Extension]. Add a
+new file type (in my case "xyz"). Then select "change" and manually
+associate your file type with your handler: change / select program from list /
+browse / [find your shim.bat file]. Your path may look slightly different,
+and it is possible that you are going to have to play with this for a while
+to get it to work. Sorry. This is windows.<p>
+
+
+Note: this step <strong> is ugly </strong> under Windows. You may very well
+have to play with putting the shim.bat file in different locations, with
+different names. Generally, Windows will not let you see what you have
+already done, and you might have to start again. So, my recommendation is
+you start out with, say shim1.bat, shim2.bat and so on. Then, after you
+have everything working, use shim.bat.</p><p>
+
+
+
+</p></li></a><li><a name="assocmime"> You will want to check the Web for tutorials like </a><a href="http://sourcedaddy.com/windows-7/defining-new-mime-type.html"> Win7
+MimeTypes </a> to help with this needlessly difficult step.
+
+
+</li><li> You may wish to play with the DOS commands "assoc" and "ftype". See
+"help ftype" and "help assoc" to get started on this research path. Some
+students have found that the assoc/ftype mechanism works.
+
+</li><li> If you are successful, then when your browser is given a MIME type of,
+in my case application/xyz, it will write the data to a temporary file, and
+pass the name of the temporary file as the first argument to your handler
+program --- in my case shim.bat.
+
+</li><li> If your browser asks you what you would like to do with the program,
+just tell it to open it, and it should select your handler to perform the
+open. When you are ready, unselect the box that says you want the browser
+to ask each time.
+
+</li><li> For example, the console display of the argument passed to the console
+application, giving the name of the temporary file might look something
+like:
+
+<pre>
+arg one is: C:\Documents and Settings\elliott.CSTCIS\Local Settings
+\Temporary Internet Files\Content.IE5\R38F1MYB\420[1].xyz
+
+</pre>
+
+</li><li> In a normal handler.exe application program, the data would be read in,
+and processed directly. We have to use the DOS shim.bat file because there
+are complications in passing the name of the temporary
+data file through java.exe to the application program without using the
+shim. That is, the first argument to java.exe is the name of the java .class
+file that we want to load.
+
+</li></ul>
+
+<a href="http://condor.depaul.edu/elliott/435/hw/programs/mimer/win7.html"> Win7 tips </a><p>
+
+
+<a name="mime-server">
+</a></p><h2><a name="mime-server"> Sending the MIME type data from your server. </a></h2><a name="mime-server">
+
+<ul> 
+
+<li> This is simple. You are already sending MIME types for, e.g.,
+text/html, and text/plain. Now simply add some ascii data files with the
+file extension of, e.g., ".xyz". When the server gets a request for a file
+with the .xyz file extension, send back the MIME type "Content-Type:
+application/xyz", along with the necessary carraige returns, the data, and the correct Content-length
+field. That's it. You are done.
+
+</li><li> To test your handler, you <i> might</i> wish to, first, send back some
+hard-coded data from your server with the correct MIME type, the correct
+length field, and some data. Then, code your server, as above, to return
+arbitrary data from an .xyz file.
+
+</li><li> Make a request for your .xyz file from your browser, and see if you handler gets called. If everything is
+done correctly, your handler will get called.
+
+</li><li> Ta-duh! you have now written a handler program, and called it from your
+server. This means that your <i> server </i> is initiating program action
+back on your client.
+
+</li></ul>
+</a></font></font></body></html>

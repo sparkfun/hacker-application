@@ -1,0 +1,192 @@
+<layout name="Test Layout">
+
+//Commonly used 
+	<basemap value = "51">
+		<trigger key="2" value="1">
+		<trigger key="3" value="2">
+		<trigger key="5" value="3">
+		<trigger key="7" value="4">
+		<trigger key="11" value="5">
+		<trigger key="13" value="6">
+		<trigger key="17" value="7">
+		<trigger key="19" value="8">
+		<trigger key="23" value="9">
+		<trigger key="29" value="0">
+		<trigger key="31" value="+">
+		<trigger key="37" value="-">
+		<trigger key="6" value="=">
+		<trigger key="10" value="*">
+		<trigger key="14" value="/">
+	</basemap>
+
+	<basemap value="69">
+		<trigger key="2" value="&?F01">
+		<trigger key="3" value="&?F02">
+		<trigger key="5" value="&?F03">
+		<trigger key="7" value="&?F04">
+		<trigger key="11" value="&?F05">
+		<trigger key="13" value="&?F06">
+		<trigger key="17" value="&?F07">
+		<trigger key="19" value="&?F08">
+		<trigger key="23" value="&?F09">
+		<trigger key="29" value="&?F10">
+		<trigger key="31" value="&?F11">
+		<trigger key="37" value="&?F12">
+	</basemap>
+	
+	<basemap value="93">
+		<trigger key="2" value=" "> 
+		<trigger key="3" value=".">
+		<trigger key="5" value=",">
+		<trigger key="7" value="?">
+		<trigger key="11" value="!">
+		<trigger key="13" value=";">
+		<trigger key="17" value=":">
+		<trigger key="19" value="'">
+		<trigger key="23" value="&?QUO">
+		<trigger key="29" value="(">
+		<trigger key="31" value=")">
+		<trigger key="37" value="-">
+	</basemap>
+	
+	<basemap value="119">
+		<trigger key="2" value="/">
+		<trigger key="3" value="<">
+		<trigger key="5" value=">">
+		<trigger key="7" value="`">
+		<trigger key="11" value="~">
+		<trigger key="13" value="@">
+		<trigger key="17" value="#">
+		<trigger key="19" value="$">
+		<trigger key="23" value="%">
+		<trigger key="29" value="^">
+		<trigger key="31" value="&">
+		<trigger key="37" value="_">
+	</basemap>
+
+	<basemap value="161">
+		<trigger key="2" value="[">
+		<trigger key="3" value="]">
+		<trigger key="5" value="{">
+		<trigger key="7" value="}">
+		<trigger key="11" value="\">
+		<trigger key="13" value="|">
+		<trigger key="17" value="&?DAR">
+		<trigger key="19" value="&?UAR">
+		<trigger key="23" value="&?LAR">
+		<trigger key="29" value="&?RAR">
+		<trigger key="31" value="&?PGD">
+		<trigger key="37" value="&?PGU">
+	</basemap>
+
+	<basemap value="217">
+		<trigger key="2" value="&?CTR">
+		<trigger key="3" value="&?CLK">
+		<trigger key="5" value="&?TAB">
+		<trigger key="7" value="&?BSP">
+		<trigger key="11" value="&?DEL">
+		<trigger key="13" value="&?HOM">
+		<trigger key="17" value="&?INS">
+		<trigger key="19" value="&?END">
+		<trigger key="23" value="&?SHT">
+		<trigger key="29" value="&?WIN">
+		<trigger key="31" value="">
+		<trigger key="37" value="">
+	</basemap>
+
+	<basemap value="2">
+		<trigger key="3" value=" ">
+		<trigger key="7" value="&?BSP">
+		<trigger key="119" value="&?DEL">
+		<trigger key="17" value=".">
+
+		<trigger key="2" value="t">
+	`	<trigger key="22" value="th">
+		<trigger key="418" value="the">
+		<trigger key="638" value="tha">
+		<trigger key="26" value="ti">
+		<trigger key="494" value="tio">
+		<trigger key="754" value="tis">
+		<trigger key="38" value="te">
+		<trigger key="5" value="s">
+		<trigger key="65" value="se">
+		<trigger key="95" value="sa">
+		<trigger key="145" value="st">
+		<trigger key="5365" value="sth">
+		<trigger key="11" value="o">
+		<trigger key="319" value="on">
+		<trigger key="407" value="or">
+		<trigger key="209" value="of">
+		<trigger key="7733" value="oft">
+		<trigger key="13" value="f">
+		<trigger key="19" value="d">
+		<trigger key="29" value="j">
+		<trigger key="37" value"l">
+	</basemap>
+
+	<basemap value="22">
+		<trigger key="2" value="a">
+		<trigger key="22" value="an">
+		<trigger key="418" value="and">
+		<trigger key="26" value="at">
+		<trigger key="38" value="ar">
+		<trigger key="1406" value="al">
+		<trigger key="5" value="h">
+		<trigger key="65" value="he">
+		<trigger key="95" value="ha">
+		<trigger key="2755" value="has">
+		<trigger key="11" value="c">
+		<trigger key="319" value="co">
+		<trigger key="13" value="y">
+		<trigger key="19" value="w">
+		<trigger key="29" value="g">
+	</basemap>
+
+	<basemap value="26">
+		<trigger key="2" value="i">
+		<trigger key="22" value="in">
+		<trigger key="418" value="ing">
+		<trigger key="26" value="it">
+		<trigger key="38" value="io">
+		<trigger key="1406" value="ion">
+		<trigger key="5" value="m">
+		<trigger key="65" value="me">
+		<trigger key="1885" value="men">
+		<trigger key="11" value="r">
+		<trigger key="319" value="re">
+		<trigger key="209" value="ra">
+		<trigger key="407" value="ro">
+		<trigger key="13" value="p">
+		<trigger key="19" value="b">
+		<trigger key="29" value="v">
+		<trigger key="37" value="k">
+	</basemap>
+	
+	<basemap value="38">
+		<trigger key="3" value=" ">
+		<trigger key="7" value="&?BSP">
+		<trigger key="119" value="&?DEL">
+		<trigger key="17" value=".">
+		<trigger key="2" value="e">
+		<trigger key="22" value="en">
+		<trigger key="418" value="ent">
+		<trigger key="26" value="er">
+		<trigger key="494" value="es">
+		<trigger key="638" value="et">
+		<trigger key="38" value="ed">
+		<trigger key="1406" value="edt">
+		<trigger key="5" value="n">
+		<trigger key="65" value="nt">
+		<trigger key="95" value="nd">
+		<trigger key="2755" value="nde">
+		<trigger key="145" value="nc">
+		<trigger key="5365" value="nce">
+		<trigger key="11" value="q">
+		<trigger key="319" value="qu">
+		<trigger key="13" value="u">
+		<trigger key="19" value="x">
+		<trigger key="29" value="z">
+	</basemap>
+
+
+</layout>

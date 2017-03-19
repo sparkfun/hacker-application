@@ -1,0 +1,11 @@
+<HTML>
+<BODY>
+
+<H3>Step 1</H3>
+<P>
+
+I added the registry entry .xy1 of type application/xy1 and with the string Extension .xyl.  After doing so, I attempted to find Windows Explorer, but found that in Windows 10 (which I've been using for only a few months) found that running "explorer" launches File Explorer and didn't have the options available in the synopsis.  I attempted right clicking on mimer-data.xy1 and selecting "Open With" then navigating to shim.bat and checking the box, "Always use this app to open .xy1 files."  When launching the file, it now successfully runs in shim.bat.  After doing so, I launched MyWebServer and connected to it using Firefox.  After doing so, the page displayed, "One partridge in a pear treeTwo turtle dovesThree French hensFour calling birdsFive golden rings."
+<P>
+I attempted to open mimer-data.xyz, a file for which I haven't established a default application with which it should be opened, and have not setup a MIME type and received the same response.  Looking at the console for MyWebServer, I see that it is sending the data as HTML/text.  I updated MyWebServer to check the file extension of the file it is accessing, and add the correct MIME type to the header if it is of type .xy1.  It is now sending the correct MIME type, but it is not opening shim.bat.  I can't get Windows to allow me to select a .bat file when it asks for a program to run the file, it gives me the option of .xyl defaul, or restricts me to applications with specific file extensions (.exe or .com).  Verified that the registry key for shim.bat is pointing to the correct directory.  Upon further investigation, I realized that the dialog opening when attempting to launch the file in Firefox was not a Windows dialog, but a Firefox dialog.  I found an <a href = "http://kb.mozillazine.org/The_associated_helper_application_does_not_exist">article</a> on mozillazine.org that suggested deleting the file mimeTypes.rdf if the file extension is not listed, and that doing so would allow the file to be generated automatically.  Doing so didn't have any effect.  I then tried manually editing the file which uses XML to associate MIME types to their handlers, but doing so had no effect.
+</BODY>
+</HTML>

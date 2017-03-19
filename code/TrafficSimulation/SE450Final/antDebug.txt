@@ -1,0 +1,358 @@
+Apache Ant(TM) version 1.8.2 compiled on December 20 2010
+Trying the default build file: build.xml
+Buildfile: C:\Users\Sam\Documents\DePaul\SE450\SE450Final\build.xml
+Adding reference: ant.PropertyHelper
+Detected Java version: 1.7 in: C:\Program Files\Java\jdk1.7.0_17\jre
+Detected OS: Windows 8
+Adding reference: ant.ComponentHelper
+Setting ro project property: ant.file -> C:\Users\Sam\Documents\DePaul\SE450\SE450Final\build.xml
+Setting ro project property: ant.file.type -> file
+Adding reference: ant.projectHelper
+Adding reference: ant.parsing.context
+Adding reference: ant.targets
+parsing buildfile C:\Users\Sam\Documents\DePaul\SE450\SE450Final\build.xml with URI = file:/C:/Users/Sam/Documents/DePaul/SE450/SE450Final/build.xml
+Setting ro project property: ant.project.name -> Generic Build File
+Adding reference: Generic Build File
+Setting ro project property: ant.project.default-target -> test
+Setting ro project property: ant.file.Generic Build File -> C:\Users\Sam\Documents\DePaul\SE450\SE450Final\build.xml
+Setting ro project property: ant.file.type.Generic Build File -> file
+Project base dir set to: C:\Users\Sam\Documents\DePaul\SE450\SE450Final
+ +Target: 
+ +Target: initbuild
+ +Target: compile
+ +Target: jar
+ +Target: test
+ +Target: source
+ +Target: snapshot
+ +Target: doc
+ +Target: doc-pub
+ +Target: doc-priv
+ +Target: dist
+ +Target: clean
+ +Target: veryclean
+ +Target: public
+ +Target: solution
+Adding reference: ant.LocalProperties
+parsing buildfile jar:file:/C:/Program%20Files%20(x86)/WinAnt/lib/ant.jar!/org/apache/tools/ant/antlib.xml with URI = jar:file:/C:/Program%20Files%20(x86)/WinAnt/lib/ant.jar!/org/apache/tools/ant/antlib.xml from a zip file
+ [property] Loading C:\Users\Sam\Documents\DePaul\SE450\SE450Final\build.properties
+Setting project property: main.name -> Main
+Setting project property: project.name -> FinalR1
+Setting project property: compiler.args -> -Xlint:unchecked
+Override ignored for property "project.name"
+Override ignored for property "main.name"
+Setting project property: resource.pat -> resources/**/*
+Setting project property: source.version -> 1.7
+Override ignored for property "compiler.args"
+Setting project property: test.pat -> **/*TEST*
+Setting project property: src.app -> src
+Setting project property: src.test -> src
+Setting project property: xtr.dir -> extra
+Setting project property: lib.dir -> lib
+Setting project property: bld.dir -> bin
+Setting project property: bld.app -> bin/classes
+Setting project property: bld.test -> bin/classes
+Setting project property: bld.dep -> bin/dependencies
+Setting project property: bld.doc.pub -> bin/doc-public
+Setting project property: bld.doc.prv -> bin/doc-private
+Setting project property: dst.dir -> bin
+Setting project property: app.jar -> bin/FinalR1
+Setting project property: src.zip -> bin/FinalR1-src
+Setting project property: doc.zip -> bin/FinalR1-doc
+Setting project property: report.dir -> .
+Setting project property: exclude.pat -> **/OLD/**,**/*-*/**,**/*~,**/*.bak
+Setting project property: src.include.pat -> build.*,Build.*,BUILD.*,extra/**/*,src/resources/**/*,src/**/*.java,src/**/*.Java,src/**/*.JAVA,src/**/*.java,src/**/*.Java,src/**/*.JAVA,lib/**/*.jar
+Setting project property: src.exclude.pat -> bin/**,**/OLD/**,**/*-*/**,**/*~,**/*.bak,**/*.class,**/*.zip
+Setting project property: bld.public -> bin/public
+Setting project property: bld.solution.source -> bin/solution
+Setting project property: bld.solution.html -> bin/solution/html
+Setting project property: color.exe -> ..\..\..\util\colorize.pl
+Setting project property: hide.exe -> ..\..\..\util\hidePrivates.pl
+Setting project property: show.exe -> ..\..\..\util\showPrivates.pl
+Setting ro project property: ant.project.invoked-targets -> test
+Attempting to create object of type org.apache.tools.ant.helper.DefaultExecutor
+Adding reference: ant.executor
+Build sequence for target(s) `test' is [initbuild, source, compile, jar, test]
+Complete build sequence is [initbuild, source, compile, jar, test, snapshot, public, doc-pub, clean, veryclean, solution, doc-priv, doc, dist, ]
+
+initbuild:
+     [echo] Type "ant -projecthelp" for help
+     [echo] The following values may be set in the file build.properties:
+     [echo]   project.name   = FinalR1
+     [echo]   main.name      = Main
+     [echo]   resource.pat   = resources/**/*
+     [echo]   source.version = 1.7
+     [echo]   compiler.args  = -Xlint:unchecked
+fileset: Setup scanner in dir C:\Users\Sam\Documents\DePaul\SE450\SE450Final with patternSet{ includes: [build.*, Build.*, BUILD.*, extra/**/*, src/resources/**/*, src/**/*.java, src/**/*.Java, src/**/*.JAVA, src/**/*.java, src/**/*.Java, src/**/*.JAVA, lib/**/*.jar] excludes: [bin/**, **/OLD/**, **/*-*/**, **/*~, **/*.bak, **/*.class, **/*.zip] }
+ [uptodate] build.properties omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1-src.zip is up to date.
+ [uptodate] build.xml omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1-src.zip is up to date.
+ [uptodate] src\car\Car.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1-src.zip is up to date.
+ [uptodate] src\car\CarFactory.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1-src.zip is up to date.
+ [uptodate] src\car\CarObj.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1-src.zip is up to date.
+ [uptodate] src\car\CarObjTEST.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1-src.zip is up to date.
+ [uptodate] src\road\Road.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1-src.zip is up to date.
+ [uptodate] src\road\RoadSet.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1-src.zip is up to date.
+ [uptodate] src\road\RoadSetTEST.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1-src.zip is up to date.
+ [uptodate] src\road\roadSegment.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1-src.zip is up to date.
+ [uptodate] src\road\roadSegmentObj.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1-src.zip is up to date.
+Setting project property: src.uptodate -> true
+ [uptodate] File "C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1-src.zip" is up-to-date.
+    [mkdir] Skipping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin because it already exists.
+    [mkdir] Skipping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes because it already exists.
+    [mkdir] Skipping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes because it already exists.
+    [mkdir] Skipping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\doc-public because it already exists.
+    [mkdir] Skipping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\doc-private because it already exists.
+    [mkdir] Skipping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\dependencies because it already exists.
+    [mkdir] Skipping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin because it already exists.
+Adding reference: class.path.base
+Adding reference: class.path.app
+Adding reference: class.path.test
+   [depend] Adding class info for car.Car
+   [depend] java.lang.Object affects car.Car
+   [depend] car.Car affects car.Car
+   [depend] Adding class info for car.CarFactory
+   [depend] java.lang.Object affects car.CarFactory
+   [depend] car.CarObj affects car.CarFactory
+   [depend] car.CarFactory affects car.CarFactory
+   [depend] Adding class info for car.CarObj
+   [depend] java.lang.Object affects car.CarObj
+   [depend] java.lang.IllegalArgumentException affects car.CarObj
+   [depend] car.Car affects car.CarObj
+   [depend] car.CarObj affects car.CarObj
+   [depend] Adding class info for car.CarObjTEST
+   [depend] java.lang.Object affects car.CarObjTEST
+   [depend] org.junit.Assert affects car.CarObjTEST
+   [depend] car.CarObj affects car.CarObjTEST
+   [depend] car.CarObjTEST affects car.CarObjTEST
+   [depend] car.CarFactory affects car.CarObjTEST
+   [depend] Adding class info for road.Road
+   [depend] java.lang.Object affects road.Road
+   [depend] road.Road affects road.Road
+   [depend] Adding class info for road.roadSegment
+   [depend] java.lang.Object affects road.roadSegment
+   [depend] road.roadSegment affects road.roadSegment
+   [depend] Adding class info for road.roadSegmentObj
+   [depend] java.lang.Object affects road.roadSegmentObj
+   [depend] road.roadSegment affects road.roadSegmentObj
+   [depend] road.roadSegmentObj affects road.roadSegmentObj
+   [depend] Adding class info for road.RoadSet
+   [depend] java.lang.Object affects road.RoadSet
+   [depend] road.RoadSet affects road.RoadSet
+   [depend] java.util.ArrayList affects road.RoadSet
+   [depend] road.Road affects road.RoadSet
+   [depend] java.util.AbstractList affects road.RoadSet
+   [depend] Adding class info for road.RoadSetTEST
+   [depend] road.RoadSet affects road.RoadSetTEST
+   [depend] java.lang.Object affects road.RoadSetTEST
+   [depend] org.junit.Assert affects road.RoadSetTEST
+   [depend] road.RoadSetTEST affects road.RoadSetTEST
+   [depend] road.roadSegmentObj affects road.RoadSetTEST
+   [depend] No classpath to check
+fileset: Setup scanner in dir C:\Users\Sam\Documents\DePaul\SE450\SE450Final\src with patternSet{ includes: [] excludes: [] }
+   [depend] Deleted 0 out of date files in 0 seconds
+
+source:
+Skipped because property 'src.uptodate' set.
+
+compile:
+    [javac] C:\Users\Sam\Documents\DePaul\SE450\SE450Final\build.xml:195: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+fileset: Setup scanner in dir C:\Users\Sam\Documents\DePaul\SE450\SE450Final\src with patternSet{ includes: [] excludes: [**/OLD/**, **/*-*/**, **/*~, **/*.bak, **/*TEST*] }
+    [javac] car\Car.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes\car\Car.class is up to date.
+    [javac] car\CarFactory.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes\car\CarFactory.class is up to date.
+    [javac] car\CarObj.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes\car\CarObj.class is up to date.
+    [javac] road\Road.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes\road\Road.class is up to date.
+    [javac] road\RoadSet.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes\road\RoadSet.class is up to date.
+    [javac] road\roadSegment.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes\road\roadSegment.class is up to date.
+    [javac] road\roadSegmentObj.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes\road\roadSegmentObj.class is up to date.
+fileset: Setup scanner in dir C:\Users\Sam\Documents\DePaul\SE450\SE450Final\src with patternSet{ includes: [resources/**/*] excludes: [] }
+     [copy] No sources found.
+     [copy] No sources found.
+
+jar:
+fileset: Setup scanner in dir C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes with patternSet{ includes: [] excludes: [**/OLD/**, **/*-*/**, **/*~, **/*.bak, **/*TEST*] }
+      [jar] car\Car.class omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1.jar:car/Car.class is up to date.
+      [jar] car\CarFactory.class omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1.jar:car/CarFactory.class is up to date.
+      [jar] car\CarObj.class omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1.jar:car/CarObj.class is up to date.
+      [jar] road\Road.class omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1.jar:road/Road.class is up to date.
+      [jar] road\RoadSet.class omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1.jar:road/RoadSet.class is up to date.
+      [jar] road\roadSegment.class omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1.jar:road/roadSegment.class is up to date.
+      [jar] road\roadSegmentObj.class omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1.jar:road/roadSegmentObj.class is up to date.
+      [jar] car omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1.jar:car/ is up to date.
+      [jar] road omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1.jar:road/ is up to date.
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+      [jar] Location: C:\Users\Sam\Documents\DePaul\SE450\SE450Final\build.xml:216: 
+
+test:
+     [echo] Using compilerarg value="-Xlint:unchecked"
+    [javac] C:\Users\Sam\Documents\DePaul\SE450\SE450Final\build.xml:240: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+fileset: Setup scanner in dir C:\Users\Sam\Documents\DePaul\SE450\SE450Final\src with patternSet{ includes: [**/*TEST*] excludes: [**/OLD/**, **/*-*/**, **/*~, **/*.bak] }
+    [javac] car\CarObjTEST.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes\car\CarObjTEST.class is up to date.
+    [javac] road\RoadSetTEST.java omitted as C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes\road\RoadSetTEST.class is up to date.
+    [junit] Couldn't find junit/framework/TestCase.class
+    [junit] Found C:\Program Files (x86)\WinAnt\lib\ant-launcher.jar
+    [junit] Found C:\Program Files (x86)\WinAnt\lib\ant.jar
+    [junit] Found C:\Program Files (x86)\WinAnt\lib\ant-junit.jar
+    [junit] Found C:\Program Files (x86)\WinAnt\lib\ant-junit4.jar
+fileset: Setup scanner in dir C:\Users\Sam\Documents\DePaul\SE450\SE450Final with patternSet{ includes: [lib/**/*.jar] excludes: [] }
+Finding class junit.framework.Test
+Loaded from C:\local\junit\junit.jar junit/framework/Test.class
+Class java.lang.Object loaded from parent loader (parentFirst)
+Class junit.framework.Test loaded from ant loader (parentFirst)
+Finding class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirrorImpl
+Loaded from C:\Program Files (x86)\WinAnt\lib\ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/JUnitTaskMirrorImpl.class
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror loaded from parent loader (parentFirst)
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$SummaryJUnitResultFormatterMirror loaded from parent loader (parentFirst)
+Class java.lang.Throwable loaded from parent loader (parentFirst)
+Finding class junit.framework.AssertionFailedError
+Loaded from C:\local\junit\junit.jar junit/framework/AssertionFailedError.class
+Class java.lang.AssertionError loaded from parent loader (parentFirst)
+Class junit.framework.AssertionFailedError loaded from ant loader (parentFirst)
+Class java.lang.ClassLoader loaded from parent loader (parentFirst)
+Class org.apache.tools.ant.AntClassLoader loaded from parent loader (parentFirst)
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$JUnitTestRunnerMirror loaded from parent loader (parentFirst)
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTask loaded from parent loader (parentFirst)
+fileset: Setup scanner in dir C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes with patternSet{ includes: [**/*TEST*] excludes: [**/*TEST*$*] }
+    [junit] Implicitly adding C:\Program Files (x86)\WinAnt\lib\ant-launcher.jar;C:\Program Files (x86)\WinAnt\lib\ant.jar;C:\Program Files (x86)\WinAnt\lib\ant-junit.jar;C:\Program Files (x86)\WinAnt\lib\ant-junit4.jar to CLASSPATH
+dropping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\%CLASSPATH% from path as it doesn't exist
+dropping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\%CLASSPATH% from path as it doesn't exist
+dropping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\%CLASSPATH% from path as it doesn't exist
+dropping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\%CLASSPATH% from path as it doesn't exist
+    [junit] Executing 'C:\Program Files\Java\jdk1.7.0_17\jre\bin\java.exe' with arguments:
+    [junit] '-classpath'
+    [junit] 'C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes;C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1.jar;C:\Program Files (x86)\WinAnt\lib\ant-launcher.jar;C:\local\junit\junit.jar;C:\Users\Sam\Documents\DePaul\SE450\SE450Final;C:\Program Files (x86)\WinAnt\lib\ant-antlr.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-bcel.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-bsf.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-log4j.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-oro.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-regexp.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-resolver.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-xalan2.jar;C:\Program Files (x86)\WinAnt\lib\ant-commons-logging.jar;C:\Program Files (x86)\WinAnt\lib\ant-commons-net.jar;C:\Program Files (x86)\WinAnt\lib\ant-contrib-1.0b3.jar;C:\Program Files (x86)\WinAnt\lib\ant-jai.jar;C:\Program Files (x86)\WinAnt\lib\ant-javamail.jar;C:\Program Files (x86)\WinAnt\lib\ant-jdepend.jar;C:\Program Files (x86)\WinAnt\lib\ant-jmf.jar;C:\Program Files (x86)\WinAnt\lib\ant-jsch.jar;C:\Program Files (x86)\WinAnt\lib\ant-junit.jar;C:\Program Files (x86)\WinAnt\lib\ant-junit4.jar;C:\Program Files (x86)\WinAnt\lib\ant-netrexx.jar;C:\Program Files (x86)\WinAnt\lib\ant-swing.jar;C:\Program Files (x86)\WinAnt\lib\ant-testutil.jar;C:\Program Files (x86)\WinAnt\lib\ant.jar;C:\Program Files\Java\jdk1.7.0_17\lib\tools.jar'
+    [junit] 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner'
+    [junit] 'car.CarObjTEST'
+    [junit] 'filtertrace=true'
+    [junit] 'haltOnError=false'
+    [junit] 'haltOnFailure=false'
+    [junit] 'showoutput=false'
+    [junit] 'outputtoformatters=true'
+    [junit] 'logfailedtests=true'
+    [junit] 'logtestlistenerevents=false'
+    [junit] 'formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter'
+    [junit] 'crashfile=C:\Users\Sam\Documents\DePaul\SE450\SE450Final\junitvmwatcher6988995954270964948.properties'
+    [junit] 'propsfile=C:\Users\Sam\Documents\DePaul\SE450\SE450Final\junit7600702447244610289.properties'
+    [junit] 
+    [junit] The ' characters around the executable and arguments are
+    [junit] not part of the command.
+dropping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\%CLASSPATH% from path as it doesn't exist
+dropping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\%CLASSPATH% from path as it doesn't exist
+Execute:Java13CommandLauncher: Executing 'C:\Program Files\Java\jdk1.7.0_17\jre\bin\java.exe' with arguments:
+'-classpath'
+'C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes;C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1.jar;C:\Program Files (x86)\WinAnt\lib\ant-launcher.jar;C:\local\junit\junit.jar;C:\Users\Sam\Documents\DePaul\SE450\SE450Final;C:\Program Files (x86)\WinAnt\lib\ant-antlr.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-bcel.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-bsf.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-log4j.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-oro.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-regexp.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-resolver.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-xalan2.jar;C:\Program Files (x86)\WinAnt\lib\ant-commons-logging.jar;C:\Program Files (x86)\WinAnt\lib\ant-commons-net.jar;C:\Program Files (x86)\WinAnt\lib\ant-contrib-1.0b3.jar;C:\Program Files (x86)\WinAnt\lib\ant-jai.jar;C:\Program Files (x86)\WinAnt\lib\ant-javamail.jar;C:\Program Files (x86)\WinAnt\lib\ant-jdepend.jar;C:\Program Files (x86)\WinAnt\lib\ant-jmf.jar;C:\Program Files (x86)\WinAnt\lib\ant-jsch.jar;C:\Program Files (x86)\WinAnt\lib\ant-junit.jar;C:\Program Files (x86)\WinAnt\lib\ant-junit4.jar;C:\Program Files (x86)\WinAnt\lib\ant-netrexx.jar;C:\Program Files (x86)\WinAnt\lib\ant-swing.jar;C:\Program Files (x86)\WinAnt\lib\ant-testutil.jar;C:\Program Files (x86)\WinAnt\lib\ant.jar;C:\Program Files\Java\jdk1.7.0_17\lib\tools.jar'
+'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner'
+'car.CarObjTEST'
+'filtertrace=true'
+'haltOnError=false'
+'haltOnFailure=false'
+'showoutput=false'
+'outputtoformatters=true'
+'logfailedtests=true'
+'logtestlistenerevents=false'
+'formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter'
+'crashfile=C:\Users\Sam\Documents\DePaul\SE450\SE450Final\junitvmwatcher6988995954270964948.properties'
+'propsfile=C:\Users\Sam\Documents\DePaul\SE450\SE450Final\junit7600702447244610289.properties'
+
+The ' characters around the executable and arguments are
+not part of the command.
+    [junit] Testsuite: car.CarObjTEST
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 0.021 sec
+    [junit] 
+    [junit] Testcase: initializationError(car.CarObjTEST):	Caused an ERROR
+    [junit] org/hamcrest/SelfDescribing
+    [junit] java.lang.NoClassDefFoundError: org/hamcrest/SelfDescribing
+    [junit] 	at java.lang.ClassLoader.defineClass1(Native Method)
+    [junit] 	at java.lang.ClassLoader.defineClass(ClassLoader.java:791)
+    [junit] 	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+    [junit] 	at java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+    [junit] 	at java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+    [junit] 	at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+    [junit] 	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+    [junit] 	at java.security.AccessController.doPrivileged(Native Method)
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+    [junit] 	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+    [junit] Caused by: java.lang.ClassNotFoundException: org.hamcrest.SelfDescribing
+    [junit] 	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+    [junit] 	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+    [junit] 	at java.security.AccessController.doPrivileged(Native Method)
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+    [junit] 
+    [junit] 
+Setting project property: failed.tests -> true
+    [junit] Implicitly adding C:\Program Files (x86)\WinAnt\lib\ant-launcher.jar;C:\Program Files (x86)\WinAnt\lib\ant.jar;C:\Program Files (x86)\WinAnt\lib\ant-junit.jar;C:\Program Files (x86)\WinAnt\lib\ant-junit4.jar to CLASSPATH
+dropping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\%CLASSPATH% from path as it doesn't exist
+dropping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\%CLASSPATH% from path as it doesn't exist
+dropping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\%CLASSPATH% from path as it doesn't exist
+dropping C:\Users\Sam\Documents\DePaul\SE450\SE450Final\%CLASSPATH% from path as it doesn't exist
+    [junit] Executing 'C:\Program Files\Java\jdk1.7.0_17\jre\bin\java.exe' with arguments:
+    [junit] '-classpath'
+    [junit] 'C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes;C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1.jar;C:\Program Files (x86)\WinAnt\lib\ant-launcher.jar;C:\local\junit\junit.jar;C:\Users\Sam\Documents\DePaul\SE450\SE450Final;C:\Program Files (x86)\WinAnt\lib\ant-antlr.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-bcel.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-bsf.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-log4j.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-oro.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-regexp.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-resolver.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-xalan2.jar;C:\Program Files (x86)\WinAnt\lib\ant-commons-logging.jar;C:\Program Files (x86)\WinAnt\lib\ant-commons-net.jar;C:\Program Files (x86)\WinAnt\lib\ant-contrib-1.0b3.jar;C:\Program Files (x86)\WinAnt\lib\ant-jai.jar;C:\Program Files (x86)\WinAnt\lib\ant-javamail.jar;C:\Program Files (x86)\WinAnt\lib\ant-jdepend.jar;C:\Program Files (x86)\WinAnt\lib\ant-jmf.jar;C:\Program Files (x86)\WinAnt\lib\ant-jsch.jar;C:\Program Files (x86)\WinAnt\lib\ant-junit.jar;C:\Program Files (x86)\WinAnt\lib\ant-junit4.jar;C:\Program Files (x86)\WinAnt\lib\ant-netrexx.jar;C:\Program Files (x86)\WinAnt\lib\ant-swing.jar;C:\Program Files (x86)\WinAnt\lib\ant-testutil.jar;C:\Program Files (x86)\WinAnt\lib\ant.jar;C:\Program Files\Java\jdk1.7.0_17\lib\tools.jar'
+    [junit] 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner'
+    [junit] 'road.RoadSetTEST'
+    [junit] 'filtertrace=true'
+    [junit] 'haltOnError=false'
+    [junit] 'haltOnFailure=false'
+    [junit] 'showoutput=false'
+    [junit] 'outputtoformatters=true'
+    [junit] 'logfailedtests=true'
+    [junit] 'logtestlistenerevents=false'
+    [junit] 'formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter'
+    [junit] 'crashfile=C:\Users\Sam\Documents\DePaul\SE450\SE450Final\junitvmwatcher8343220043322884043.properties'
+    [junit] 'propsfile=C:\Users\Sam\Documents\DePaul\SE450\SE450Final\junit6367079004385917559.properties'
+    [junit] 
+    [junit] The ' characters around the executable and arguments are
+    [junit] not part of the command.
+Execute:Java13CommandLauncher: Executing 'C:\Program Files\Java\jdk1.7.0_17\jre\bin\java.exe' with arguments:
+'-classpath'
+'C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\classes;C:\Users\Sam\Documents\DePaul\SE450\SE450Final\bin\FinalR1.jar;C:\Program Files (x86)\WinAnt\lib\ant-launcher.jar;C:\local\junit\junit.jar;C:\Users\Sam\Documents\DePaul\SE450\SE450Final;C:\Program Files (x86)\WinAnt\lib\ant-antlr.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-bcel.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-bsf.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-log4j.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-oro.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-regexp.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-resolver.jar;C:\Program Files (x86)\WinAnt\lib\ant-apache-xalan2.jar;C:\Program Files (x86)\WinAnt\lib\ant-commons-logging.jar;C:\Program Files (x86)\WinAnt\lib\ant-commons-net.jar;C:\Program Files (x86)\WinAnt\lib\ant-contrib-1.0b3.jar;C:\Program Files (x86)\WinAnt\lib\ant-jai.jar;C:\Program Files (x86)\WinAnt\lib\ant-javamail.jar;C:\Program Files (x86)\WinAnt\lib\ant-jdepend.jar;C:\Program Files (x86)\WinAnt\lib\ant-jmf.jar;C:\Program Files (x86)\WinAnt\lib\ant-jsch.jar;C:\Program Files (x86)\WinAnt\lib\ant-junit.jar;C:\Program Files (x86)\WinAnt\lib\ant-junit4.jar;C:\Program Files (x86)\WinAnt\lib\ant-netrexx.jar;C:\Program Files (x86)\WinAnt\lib\ant-swing.jar;C:\Program Files (x86)\WinAnt\lib\ant-testutil.jar;C:\Program Files (x86)\WinAnt\lib\ant.jar;C:\Program Files\Java\jdk1.7.0_17\lib\tools.jar'
+'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner'
+'road.RoadSetTEST'
+'filtertrace=true'
+'haltOnError=false'
+'haltOnFailure=false'
+'showoutput=false'
+'outputtoformatters=true'
+'logfailedtests=true'
+'logtestlistenerevents=false'
+'formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter'
+'crashfile=C:\Users\Sam\Documents\DePaul\SE450\SE450Final\junitvmwatcher8343220043322884043.properties'
+'propsfile=C:\Users\Sam\Documents\DePaul\SE450\SE450Final\junit6367079004385917559.properties'
+
+The ' characters around the executable and arguments are
+not part of the command.
+    [junit] Testsuite: road.RoadSetTEST
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 0.021 sec
+    [junit] 
+    [junit] Testcase: initializationError(road.RoadSetTEST):	Caused an ERROR
+    [junit] org/hamcrest/SelfDescribing
+    [junit] java.lang.NoClassDefFoundError: org/hamcrest/SelfDescribing
+    [junit] 	at java.lang.ClassLoader.defineClass1(Native Method)
+    [junit] 	at java.lang.ClassLoader.defineClass(ClassLoader.java:791)
+    [junit] 	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+    [junit] 	at java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+    [junit] 	at java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+    [junit] 	at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+    [junit] 	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+    [junit] 	at java.security.AccessController.doPrivileged(Native Method)
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+    [junit] 	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+    [junit] Caused by: java.lang.ClassNotFoundException: org.hamcrest.SelfDescribing
+    [junit] 	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+    [junit] 	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+    [junit] 	at java.security.AccessController.doPrivileged(Native Method)
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+    [junit] 
+    [junit] 
+Override ignored for property "failed.tests"
+     [fail] failing due to One or more unit tests failed!

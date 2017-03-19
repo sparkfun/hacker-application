@@ -1,0 +1,4 @@
+﻿  WinKeyAdapter.cpp
+WinKeyAdapter.cpp(92): warning C4244: '=': conversion from 'int' to 'WORD', possible loss of data
+  ChopChop.vcxproj -> C:\Users\samth\Documents\Visual Studio 2015\Projects\ChopChop\Debug\ChopChop.exe
+  ChopChop.vcxproj -> C:\Users\samth\Documents\Visual Studio 2015\Projects\ChopChop\Debug\ChopChop.pdb (Full PDB)
