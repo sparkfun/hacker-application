@@ -1,0 +1,67 @@
+<html>
+<head><TITLE> DS435 MIMER CALL page </TITLE></head>
+<BODY> 1.0
+
+<FONT FACE="Cambria" SIZE=3>
+
+<!-- Place this in MyWebServer.java's root directory -->
+
+
+<center> <H1> Mimer call page </H1> </center>
+
+
+<h2> <a href=http://localhost:2540/mimer-data.xyz> mimer-data.xyz </a> </h2>
+<p>
+
+<h2> Pressing on the above link will enact the following: </h2>
+
+<ol> 
+
+<li> MyWebServer, running on localhost:2540, will retrieve the five lines of data
+from mimer-data.xyz.
+<li> MyWebServer will send back the MIME header [Content-Type:
+application/xyz] along with the five lines of data.
+<li> This browser will look up the MIME type and recognize that it has
+a handler, <i> shim.bat</i>, registered to handle this kind of data. (This
+registration was previously performed by editing the Windows Registry, and
+also by associating the .xyz file type through Windows Explorer.)
+
+<li> This browser will write the five lines of data to a temporary file
+somewhere in a windows temporary internet folder.
+
+<li> This browser will call shim.bat, and pass the name of the temporary
+data file to it as argument one.
+
+<li> This browser now considers the data handled, and is done, and will
+likely hang, unless some (not required) provision for, e.g., a multipart
+MIME type is made. Usually the temporary data file will later be removed
+by the browser as a last step.
+
+<li> If the browser asks if you want to "Open" or "Download" the file,
+be sure to uncheck the box, when you are ready, that says "always ask me."
+Otherwise just say you want to open the file.
+
+<li> Shim.bat will be invoked, and passed the name of the temporary data
+file. The "pause" will freeze the DOS script so that you can check the
+status of shim.bat. Press enter to continue.
+
+<li> Shim.bat will call java.exe, which in turn will load <i>
+BCHandler.class </i>
+and pass the name of the data file to it as part of the execution
+environment invoked by shim.bat.
+
+<li> BCHandler will extract the name of the temporary data file from
+an environment variable, open the file, and read in the lines of data,
+placing them in symbolic memory under program control.
+
+<li> BCHandler will write out an XML version of the data (just so we can see
+it working locally), and then send the XML version of the data to
+MyWebServer's back channel looper, which is listening at port 2570.
+
+<li> MyWebServer will display both the XML verion and normal symbolic string
+data version of the five lines of data on the MyWebServer console.
+
+</ul>
+
+
+</BODY></html>
