@@ -1,0 +1,49 @@
+<div class="projectDisplay">
+  <h1>Yoga Flow</h1>
+  <div class="projectDescription">
+    <h3>YogaFlow is a web app to create yoga sequences full of yoga poses. You can add pre-existing poses, create your own, and comment on the sequences. Technologies used include Ruby on Rails, JavaScript and jQuery. </h3>
+  </div>
+
+
+  <div class="projectImages">
+
+    <a target="blank" href="/assets/images/yogaflow1.png"><%= image_tag("yogaflow1.png", :alt => "yogaflow1", :class => "yogaFlowPic project projectItemPic", :id => "yogaflow1") %></a>
+    <a target="blank" href="/assets/images/yogaflow2.png"><%= image_tag("yogaflow2.png", :alt => "yogaflow2", :class => "yogaFlowPic project projectItemPic", :id => "yogaflow2") %></a>
+    <a target="blank" href="/assets/images/yogaflow3.png"><%= image_tag("yogaflow3.png", :alt => "yogaflow3", :class => "yogaFlowPic project projectItemPic", :id => "yogaflow3") %></a>
+    <a target="blank" href="/assets/images/yogaflow4.png"><%= image_tag("yogaflow4.png", :alt => "yogaflow4", :class => "yogaFlowPic project projectItemPic", :id => "yogaflow4") %></a>
+    <a target="blank" href="/assets/images/yogaflow5.png"><%= image_tag("yogaflow5.png", :alt => "yogaflow5", :class => "yogaFlowPic project projectItemPic", :id => "yogaflow5") %></a>
+  </div>
+
+  <h4>Click on a picture to see it full-sized</h4>
+  <h3><a href="https://github.com/Traci7822/yogaflow2" target="_blank">https://github.com/Traci7822/yogaflow2</a></h3>
+
+  <div class="slideshowButtons">
+    <a class="w3-btn-floating w3-display-left" onclick="plusYogaDivs(-1)">&#10094;</a>
+    <a class="w3-btn-floating w3-display-right" onclick="plusYogaDivs(+1)">&#10095;</a>
+  </div>
+
+
+  <div class="projectReturn">
+    <a href="#" class="navItem" id="projects">Return to Projects</a>
+  </div>
+</div>
+
+<script>
+  var yogaSlideIndex = 1;
+  showYogaDivs(yogaSlideIndex);
+
+  function plusYogaDivs(n) {
+    showYogaDivs(yogaSlideIndex += n);
+  }
+
+  function showYogaDivs(n) {
+    var i;
+    var x = document.getElementsByClassName('yogaFlowPic');
+    if (n > x.length) {yogaSlideIndex = 1}
+    if (n < 1) {yogaSlideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[yogaSlideIndex-1].style.display = "block";
+  }
+</script>

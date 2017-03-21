@@ -1,0 +1,7 @@
+1. I can start with two weeks notice to my current employer.
+2. May 5-7 I will be unavailable and I will potentially have a week in August where I will be unavailable. 
+3. I love dogs and have 2 of my own. I would love the opportunity to bring my dogs to work. 
+4. I follow many different tech sites/blogs. Some of them include Sitepoint, Digg, Medium, and Techmeme. 
+5. When I'm not coding I love spending time in nature through camping, hiking, and snowboarding. I also love practicing yoga, reading, and cooking. 
+6. I generally have three books i'm reading at a time, one for knowledge gain (generally programming specific), one for personal growth, and one for enjoyment. I also love watching movies with my family, often documentaries but we love all kinds. I also love to create and will take on artistic projects as desired.
+7. Browsing through the Sparkfun website, the main thing I notice continuously throughout the products, blog, resources, etc.. pages is that there is a ton of information available to be observed on each page. If I had influence over the Dev team, I would focus on creating a site that is slightly more easily digested and seperates out information so as not to clutter the pages. This could mean less postings per page or simply seperating out company information from the bottom of the page. I think that the content is fantastic and lots of relevant information is included so I would probably focus mostly on the aesthetic appeal of the site.  
