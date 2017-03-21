@@ -1,10 +1,10 @@
 Please answer the following general questions:
 
-1. When can you start?
+1. When can you start? 
 
 2. Do you have any planned vacations/absences in the next six months that we should know about?
 
-3. SparkFun is a dog-friendly environment. Are comfortable working aroung dogs? If you are a dog-owner, would you see yourself bringing dogs to work?
+3. SparkFun is a dog-friendly environment. Are comfortable working around dogs? If you are a dog-owner, would you see yourself bringing dogs to work?
 
 4. The active developer keeps up on happenings in the world of development and technology. Where do you you get your news?
 
