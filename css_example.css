@@ -1,0 +1,137 @@
+.poseBuilder {
+  display: none;
+  margin-left: 15px;
+}
+
+body {
+  background: url('yogabackground.jpg') repeat-x 50% 50% fixed;
+  background-size: cover;
+  font-family: Verdana, Geneva, sans-serif;
+  letter-spacing: .9px;
+}
+
+.select_sequence {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FDC72E;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+#select_menu {
+  margin-top: 30px;
+}
+
+#newSequenceLink {
+  text-align: center;
+  font-size: 2em;
+  color: #FDC72E;
+  margin-top: 20%;
+}
+
+a:visited {
+  color: #B98821;
+  }
+
+a:link {
+  color: #B98821;
+}
+
+a:hover {
+  color: #A5280F;
+}
+
+a:active {
+  color: #A5280F;
+}
+
+#user_widget {
+  text-align: center;
+  margin-top: 24%;
+  padding-left: 20px;
+}
+
+
+#welcome {
+  color: #E76D1F;
+}
+
+.sequenceDetails {
+  margin-top: 60px;
+  text-align: center;
+  color: #FDC72E;
+}
+
+#sequenceTitle {
+  font-size: 1.5em;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+#sequenceDifficulty {
+  margin-top: 24%;
+  padding-left: 20px;
+  text-shadow: 2.5px 1.5px black;
+
+}
+
+#newSequenceHeader {
+  margin-top: 60px;
+  text-align: center;
+  color: #FDC72E;
+  h1 {
+    text-shadow:
+      -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px 1px 0 black,
+      1px 1px 0 black;
+  }
+}
+
+#newSequenceForm {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  padding: 10px;
+  font-weight: bold;
+  border: 10px solid gray;
+}
+
+.newSequencePoses {
+  padding: 10px;
+}
+
+#sequencePoses {
+  background: rgba(255, 255, 255, 0.7);
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  font-weight: lighter;
+  font-size: 1.1em;
+  padding-right: 50px;
+  border: 10px solid gray;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+#directions {
+  text-align: center;
+  font-size: 2em;
+  color: #FDC72E;
+  margin-top: 20%;
+  padding-left: 50px;
+}
