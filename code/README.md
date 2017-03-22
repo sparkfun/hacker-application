@@ -23,3 +23,6 @@ and a short description of your role in each project.
 In lieu of or in addition to code samples please also consider providing writing samples.
 When applying for a more managerial position this is of particular importance as
 clear written communication is critical.
+
+
+Here is a instant messaging application I created at Galvanize with a partner as part of a hackathon. It is a lot of code, but I think it shows off many of my skills as a developer. Here is the stack I used: HTML/CSS, Socket.io, Handlebars.js, Node.js, Knex.js, SQL, Express, cookieParser, bcrypt. It can be viewed on my git hub at https://github.com/nickmac23/socketExpress.

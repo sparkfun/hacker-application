@@ -9,3 +9,5 @@ In this directory, please include (at your option) either:
 
   b) A rationale for your lack of same (complete with some description of your
      preferred working environment).
+
+     I have not customized any of my dot files. I use atom as my editor which has many packages to download for customization. I use OhMyZsh for my shell. As for IRC clients, never used one... I am a fan of slack. I don't have any reason why I have not played with dot files, I guess I never felt the need. So many things to learn.
