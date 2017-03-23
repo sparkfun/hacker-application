@@ -1,0 +1,80 @@
+<!-- This file demonstrates an HTML view on a recent app I created called MasterMage.  This view allows the user to
+view somebody else's Magic the Gathering deck and comment on it. The entire website can be seen at https://master-mage-788cb.firebaseapp.com/#/ -->
+
+<div class="row">
+  <h1>{{deck.deck.name}}</h1>
+</div>
+<div class="row">
+  <h3>{{deck.deck.description}}</h3>
+</div>
+<div class="row">
+  <div class="col-xs-4">
+    <img class="vote_img" src="./css/upvote.png" alt="Image Not Found" ng-click="VC.upvote($index)"/>
+  </div>
+  <div class="col-xs-4">
+    <h3>{{deck.votes}}</h3>
+  </div>
+  <div class="col-xs-4">
+    <img class="vote_img" src="./css/downvote.png" alt="Image Not Found" ng-click="VC.downvote($index)"/>
+  </div>
+</div>
+<div class="row">
+  <p ng-click="VC.stats=!VC.stats" class="edit-deck-button"><span ng-hide="VC.stats">Show</span><span ng-show="VC.stats">Hide</span> Legality:</p>
+</div>
+<div ng-show="VC.stats" class="row">
+  <div class="col-xs-4">
+    <p class="edit-deck-button">Total: {{deck.stats.quantity}} cards</p>
+  </div>
+  <div class="col-xs-4">
+    <div class="row" ng-repeat="format in deck.stats.formats">
+      <p class="edit-deck-button">{{format.name}}: <span ng-hide="format.legal">Illegal</span><span ng-show="format.legal">Legal</span></p>
+    </div>
+  </div>
+</div>
+<div ng-repeat="type in deck.stats.types" ng-show="type.quantity > 0">
+  <div class="row">
+    <div class="row">
+      <p class="edit-deck-button">
+        {{type.quantity}} {{type.name}}<span ng-show="type.quantity > 1">s</span>
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-md-4 search" ng-repeat="card in deck.deck.included" ng-show="card.types[0] === type.name">
+        <p ng-mouseenter="VC.showCard([$index])" ng-mouseleave="VC.hideCard()" ng-click="VC.smallCard([$index])">
+          {{card.name}} x {{card.quantity}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <h3>Comments:</h3>
+</div>
+<div class="row" ng-repeat="comment in deck.comments">
+  <div class="row">
+    <h3>{{comment.username}}</h3>
+  </div>
+  <div class="row">
+    <p class="card">
+      {{comment.content}}
+    </p>
+  </div>
+  <div class="row comment-button" ng-show="comment.username===profile.username">
+    <button type="button" name="button">Edit Comment</button>
+    <button type="button" name="button">Delete Comment</button>
+  </div>
+  <form ng-show="VC.editor === $index">
+    <textarea class="comment-description-box" name="name" rows="8" cols="30" ng-model="comment.content"></textarea>
+    <br>
+    <input type="button" value="Edit" ng-click="VC.edit($index)">
+  </form>
+</div>
+<div class="row">
+  <h3 class="edit-deck-button" ng-click="VC.comment()">Add a Comment</h3>
+</div>
+<form ng-show="VC.commentForm">
+  <textarea class="comment-description-box" name="name" rows="8" cols="30" ng-model="VC.newComment"></textarea>
+  <br>
+  <input type="button" value="Submit Comment" ng-click="VC.addComment()">
+  <input type="button" value="Cancel" ng-click="VC.cancel()">
+</form>
