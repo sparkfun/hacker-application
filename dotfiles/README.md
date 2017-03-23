@@ -9,6 +9,7 @@ In this directory, please include (at your option) either:
 
   b) A rationale for your lack of same (complete with some description of your
      preferred working environment).
+     
 ---
 ## My Answer
 
