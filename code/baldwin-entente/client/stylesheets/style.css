@@ -1,0 +1,132 @@
+/* map style */
+html,
+body,
+#mapViewDiv {
+  position: relative;
+  padding: 0;
+  margin-top: 20px;
+  height: 700px;
+}
+
+#mapContainer {
+  height: 750px;
+  width: auto;
+}
+
+.claro .dijitBorderContainer {
+  height: 700px;
+  width: auto;
+}
+
+#search {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  top: 40px;
+  left: 75px;
+}
+
+#profileMap {
+  padding: 1px;
+  border-radius: 5px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+#profileSearch {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  top: 20px;
+  left: 75px;
+}
+
+/* calcite module style on map */
+.calcite-title-main {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+}
+
+.calcite-title-sub {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: lighter;
+  font-size: 100px;
+  letter-spacing: 0.05em;
+}
+
+.calcite-title-divider {
+  color: silver;
+}
+
+/* main style */
+p {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: lighter;
+}
+
+body {
+  background-image: url("/stylesheets/desert-wallpaper.jpg");
+}
+
+/* left div on main page */
+#leftPane {
+  padding: 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+.container-about {
+  background-color: #115F9E;
+}
+
+#title {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-weight: lighter;
+}
+
+a {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+hr.style-four {
+  color: white;
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(211, 211, 211, 0.6);
+}
+
+span #subtitle {
+  margin-top: 4px;
+}
+
+.about {
+  padding-top: 30px;
+}
+
+.btn.btn-default.center-block {
+  width: 100px;
+}
+
+/* icons on main page */
+#hand {
+  margin-right: 30px;
+  margin-left: 20px;
+}
+
+#gestures {
+  margin-left: 30px;
+}
+
+#main-icons {
+  display: inline-block;
+  text-align: center;
+  margin-top: 4em;
+}
