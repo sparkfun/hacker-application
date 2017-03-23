@@ -6,6 +6,12 @@ app.controller('MainController', function($scope, $route, $location, $cookies, m
 
   $scope.user = cookie
 
+  // logout
+  $scope.logout = function() {
+    $cookies.remove('loggedin')
+    $route.reload()
+  }
+
   // populates main page with the meal information from database
   mainService.meals().then(function(returnedMeals) {
     $scope.view.mealsArray = returnedMeals.data
@@ -60,11 +66,5 @@ app.controller('MainController', function($scope, $route, $location, $cookies, m
     }
     $scope.totalTax = taxSum
     $scope.totalCost = sum + taxSum
-  }
-
-  // logout
-  $scope.logout = function() {
-    $cookies.remove('loggedin')
-    $route.reload()
   }
 })
