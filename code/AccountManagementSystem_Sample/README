@@ -1,0 +1,18 @@
+3-22-17
+Author: Michael Bolles
+Visual Studio 2015 Project files
+Language: PHP
+
+This is a demo project designed in PHP as a modular solution to a simple account management system.
+
+-Relevant source code can be found here:
+AccountManagementSystem_Sample\AccountManagementSystem_Sample\AccountManager
+\Account.php
+\AccountManager.php
+\index.php
+\Profile.php
+
+-Additional scripts as syntax reference guides during development include:
+     --These files contain code snippets but are not intended as part of the project solution's build files.
+  DatabaseNotes.php
+  Notes.php
