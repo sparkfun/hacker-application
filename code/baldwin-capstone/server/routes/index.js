@@ -9,7 +9,7 @@ router.get('/', (req, res, next) => {
         .then((meals) => {
             res.json(meals)
         })
-})
+});
 
 router.get('/:id', (req, res, next) => {
     knex('meals')
@@ -19,7 +19,7 @@ router.get('/:id', (req, res, next) => {
         .then((meals) => {
             res.json(meals)
         })
-})
+});
 
 router.put('/', (req, res, next) => {
     let updatedMeal = req.body
@@ -28,11 +28,9 @@ router.put('/', (req, res, next) => {
         .then((meal) => {
             res.json('meal updated with user_id')
         })
-
-})
+});
 
 router.put('/:id', (req, res, next) => {
-
     let updatedPounds = {
         name: req.body.name,
         username: req.body.username,
@@ -45,15 +43,14 @@ router.put('/:id', (req, res, next) => {
         city: req.body.city,
         state: req.body.state,
         zip: req.body.zip
-    }
+    };
 
     knex('restaurants').where('restaurants.id', req.body.id).first()
         .update(updatedPounds, '*')
         .then((restaurant) => {
-            res.json('restaurant pounds updated!')
+            res.json('restaurant pounds updated!');
         })
-
-})
+});
 
 router.post('/', (req, res, next) => {
     knex('meals').insert(req.body, '*')
@@ -61,6 +58,5 @@ router.post('/', (req, res, next) => {
             res.json(results);
         })
 });
-
 
 module.exports = router;
