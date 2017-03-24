@@ -1,0 +1,199 @@
+* {padding:0; margin:0}
+body {font:12px; font-family: "Georgia";}
+#wrapper {padding-top:36px; padding-left: 27px;} /*contenido tdo*/
+/*columna izq*/
+#leftcolumn {
+    float:left;
+    width:279px;
+}
+/*columna derecha*/
+#rightcolumn {float:left; padding-top:36px; }
+
+/*----------------------------------------------------*/
+/* MENU*/
+/*Titulo DA*/
+#leftcolumn #DA{
+    font-family: "Georgia";
+    font-weight:bold !important;
+    font-style: italic;
+    font-size: 24px;
+    color:#666;
+}
+#DA a , #DA a:hover{
+    text-decoration: none;
+    color:#666;
+}
+#linea1{
+    border-top:1px #9C9C9C solid;
+    width:110px;
+    position: relative;
+    top:12px;
+    height: 0px;
+    font-size: 0px;
+}
+#linea2{
+    border-top:1px #9C9C9C solid;
+    width:110px;
+    position: relative;
+    top:110px;
+    height: 0px;
+    font-size: 0px;
+}
+
+#imagen{
+    position: relative;
+     Top: 100px;
+     left:20px
+}
+
+
+/*-------------------------------------------------------*/
+
+/*-----------------------INDEX------------------------*/
+/*Contacto*/
+#contacto{
+    position:absolute;
+    top:530px;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 11px;
+    color:#666;
+    /*color:#9C9C9C;*/
+    line-height: 13pt;
+}
+#contacto span{
+    display: block;
+}
+#contacto span a{
+    text-decoration: none;
+    color: #666;
+}
+#contacto span a:hover{
+    text-decoration: underline !important;
+    color: #666;
+}
+/*-------------------------Proyecto----------------------*/
+/*INFO proyecto*/
+#info{
+    font-family: "Georgia";
+    font-size: 11px;
+    font-weight: normal;
+    position:absolute;
+    top:199px;
+    width:279px;
+    font-style: normal !important;
+    z-index: -1;
+}
+#info span{display: block; line-height: 14px;}
+#info span.t{color:#666; font-style: italic;}
+#info div{ padding-bottom: 8px;}
+
+/*detalles proyecto*/
+#detalles{
+    font-family: "Georgia";
+    font-size: 11px;
+    font-weight: normal;
+    position:absolute;
+    top:410px;
+    width:279px;
+    line-height: 14pt;
+    text-align: justify;
+    z-index: -1;
+}
+
+/* CUADRO DER.*/
+#cuadrado
+{
+    position: absolute;
+    top:36px;
+    left:333px;
+ 
+    min-height:634px;
+    height: 90%;
+    width: 760px;
+    border:1px #9C9C9C solid;
+}
+/*Social*/
+#social{
+    position: absolute;
+    top:0px;
+    right:0px;
+    z-index: 10000;
+}
+#social span{
+    padding-top: 1px;
+    display: block;
+    border-bottom:1px #9C9C9C solid;
+    border-left:1px #9C9C9C solid;
+}
+/*titulo proyecto*/
+#titulop{
+    font-family: "Georgia" !important;
+    font-weight: normal !important;
+    font-style: italic !important;
+    font-size: 14pt !important;
+    color: black !Important;
+    padding-top: 9px;
+    padding-left: 21px;
+    padding-bottom: 5px;
+}
+/*---------------------About us----------------------*/
+
+/*titulo aboutus = titulop*/
+#titulopp{
+    font-family: "Georgia" !important;
+    font-weight: normal !important;
+    font-style: italic !important;
+    font-size: 14pt !important;
+    padding-top: 9px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+/*texto about us*/
+#textocv
+{
+    position: relative;
+    top:40px;
+    font-family: "Georgia" !important;
+    font-weight: normal !important;
+    font-size: 11px !important;
+    padding:0px 20px;
+    line-height: 14pt;
+    text-align: justify;
+}
+#textocv span{
+    display: block;
+}
+#textocv div{
+    padding-bottom: 20px;
+}
+
+#titulop2{
+    font-family: "Georgia" !important;
+    font-weight: normal !important;
+    font-style: italic !important;
+    font-size: 14pt !important;
+    padding-top: 9px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    position: relative;
+    top:100px;
+}
+/*texto about us*/
+#textocv2
+{
+    position: relative;
+    top:140px;
+    font-family: "Georgia" !important;
+    font-weight: normal !important;
+    font-size: 11px !important;
+    padding:0px 20px;
+    line-height: 14pt;
+    text-align: justify;
+}
+#textocv2 span{
+    display: block;
+}
+#textocv2 div{
+    padding-bottom: 20px;
+}

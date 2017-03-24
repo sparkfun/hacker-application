@@ -1,3 +1,5 @@
+**For this section, please read the [Sample Code Walkthrough](https://github.com/adrifloresm/hacker-application/blob/branch_adrianaflores/code/SampleCodeWalkThrough.md) in this repo.**
+
 We want to see your code. Please include a representative sample of your
 work in this directory.
 
