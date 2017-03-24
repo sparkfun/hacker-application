@@ -9,6 +9,7 @@ This is a demo project designed in PHP as a modular solution to a simple account
 AccountManagementSystem_Sample\AccountManagementSystem_Sample\AccountManager
 \Account.php
 \AccountManager.php
+\Database.php
 \index.php
 \Profile.php
 
