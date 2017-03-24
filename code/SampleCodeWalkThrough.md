@@ -137,5 +137,4 @@ In this submission I use Python Pandas, to clean data and respond to the differe
 Please note, the comments used in the previous web development projects were limited, since I was the only developer of the projects. 
 However, when I develop code that will be shared or in a collaborative development, I try to comment as much as possible to make code easy to follow for other developers.
 
-That concludes my submission, SparkFun thank you for the opportunity to share a little more about me and previous projects.  
-    
+That concludes my submission, SparkFun! Thank you for the opportunity to share a little more about me and previous projects.    
