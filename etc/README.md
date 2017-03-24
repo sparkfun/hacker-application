@@ -19,11 +19,11 @@ Please answer the following general questions:
     >I read before bed most nights. As for music, I like to stream Radioparadise through a good set of headphones. I've been turned on to so much music through Radioparadise. I definitely watch a lot of film and shows through streaming services.
 
 7. Please critique any of the SparkFun websites. With influence over the SparkFun dev team what would *you* focus on improving?
-    >It appears that SparkFun as discontinued their newsletter service but left the sign-up form in the DOM. It's a 3rd party, embedded React plugin from HubSpot. The form will gladly submit your email address (and even perform a validation) and give you a sign-up confirmation, but nothing will ever come from it.
+    >It appears that SparkFun might have discontinued their newsletter service but left the sign-up form in the DOM. It's a 3rd party, embedded React plugin from HubSpot. The form will gladly submit your email address (and even perform a validation), but I've yet to receive a newsletter or even an email confirmation.
 
-    >The search bar is under-sold. I dismissed it when I saw where it was but I was pleasantly surprised to see a dropdown populate with items that matched my string as I typed. This if a very useful feature that might deserve better real estate.
+    >The search bar is under-sold. I dismissed it when I saw where it was but then was pleasantly surprised to see a dropdown populate with items that matched my string as I typed. This is a very useful feature that might deserve better real estate.
 
     >My forte is React/Redux, so with influence over the dev team, my focus would be to help transition the stack over to a MERN stack with Redux.
 
-    >By the way, I like the reference to the film Sneakers in the email verification element...
+    >By the way, I like the reference to the film *Sneakers* in the email verification element...
     "...my voice is my passport"
