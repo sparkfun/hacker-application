@@ -284,37 +284,5 @@ class Registration
     }
 }
 
-
-//Account management system in MVC format
-class AccountManager
-{
-	private $account = new Account;
-}
-
-
-class Account
-{
-	public $profile = new Profile();
-    public function GetProfile()
-    {
-        if($profile->IsValid())
-        {
-            //do something...
-        }
-    }
-}
-
-class Profile
-{
-	private $UserName = "";
-    public function IsValid()
-    {
-        return true;
-    }
-}
-
-//Defining an instance:
-$accountMgr = new AccountManager;
-
 //PHP end statement:
 ?>
