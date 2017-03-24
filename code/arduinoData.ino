@@ -1,10 +1,10 @@
 // *********************************************************************
-// The code below is used to convert data readings from Arduino sensors to a format that is friendly for Electric Imp's language, Squirrel, to read from the serial bus before sending to my API.   The code below is a small part of what occurs within the loop segment of the code.
+// The code below is used to convert data readings from Arduino sensors to a format that is friendly for Electric Imp's language, Squirrel, to read from the serial bus before sending to my API.   The code below is a condensed snippet to show personal work.
 // Deployed version:
 // https://dinkydinky.herokuapp.com
 // The full repository can be found at:
 // https://github.com/StephenHanzlik/capstone-let-it-grow
-// This a condensed snippet to show personal work.  Full document:
+//Specific document:
 // https://github.com/StephenHanzlik/capstone-let-it-grow/blob/master/arduino-let-it-grow/arduino-let-it-grow.ino
 // *********************************************************************
 

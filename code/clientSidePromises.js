@@ -35,12 +35,12 @@ Promise.all(allRequests).then(function(results) {
   dailySnowArr[2] = dailySnowObj["BERTHOUD SUMMIT"][5]["Change In Snow Depth (in)"];
   dailySnowArr[3] = dailySnowObj["BEAR LAKE"][5]["Change In Snow Depth (in)"];
 
-  //Convert data in the array to a string and check that a null value has not comeback from the API before rendering to DOM.
+  //Convert data in the array to a string and check that a null value has not come back from the API before rendering to DOM.
   var dailySnowNumArr = [];
   for (var c = 0; c < dailySnowArr.length; c++) {
     if (!isNaN(parseInt(dailySnowArr[c], 10))) {
       dailySnowNumArr.push(parseInt(dailySnowArr[c], 10));
     }
   }
-  //Data can eventually be rendered to the DOM usign jQuery but is excluded here for brevity.
+  //Data can eventually be rendered to the DOM using jQuery but is excluded here for brevity.
 });

@@ -31,11 +31,11 @@ router.post('/', (req, res, next) => {
     //rp() sends a request that is configured by the options passed into it
     rp(options)
       .then(function(data) {
-        //after a promise is returned it has the response data from smssettings and the data that we still wish to post.  Function fn is used to continue with the POST
+        //after a promise is returned it has the response data from smssettings and the data that we still wish to post.  Function fn is used to continue with the POST request
         fn(data, obj);
       })
       .catch(function(err) {
-        // API call failed...
+        // POST request failed
       });
   }
 
