@@ -61,6 +61,9 @@ class Profile
             return "Missing name information.";
     }
 
+    public function GetFirstName(){return $this->firstName;}
+    public function GetLastName(){return $this->lastName;}
+
     public function SetEmailAddress($email)
     {
         if(ValidateEmail($email))
@@ -92,6 +95,7 @@ class Profile
         return true;
     }
 
+    //This is a simple function written to demonstrate basic exception handling and error reporting.
     protected function NullRefErrorMessage($arg)
     {
         echo "Missing $arg.\n";

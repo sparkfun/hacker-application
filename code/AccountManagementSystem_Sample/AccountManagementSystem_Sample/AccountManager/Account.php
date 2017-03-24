@@ -15,7 +15,7 @@ class Account extends Profile
     private $accountNumber;
     private $accessPermissions;
 
-    //simple array of access permission levels available to switch between
+    //simple array of access permission levels available to switch between in lieu of an enum option
     private $enumeratorSupplement = array(0 => "admin", "internal", "customer");
 
     private $orderHistory;
@@ -23,13 +23,13 @@ class Account extends Profile
 
     private $totalAccountBalance;
 
-    function __construct($accountsArray)
+    function __construct($accountsArray, $permissions)
     {
-        //This constructor is loaded with arbitrary data for the purpose of displaying structure.
+        //This constructor is loaded with some arbitrary data for the purpose of displaying structure.
         //In a real world deployment, generic data would not act as a placeholder for these values at any time.
         
         $this->accountNumber = $this->CreateAccountNumber($accountsArray);
-        $this->accessPermissions = $this->enumeratorSupplement[2];  //All new accounts are set at 'customer' permissions by default.
+        $this->accessPermissions = $permissions;  //All new accounts are set at 'customer' permissions by default.
 
         //Incomplete: Order history is currently only a placeholder concept:
             /*
@@ -42,6 +42,7 @@ class Account extends Profile
                                 "orderNumber1" => array("itemsOrderedList", "shippedStatus", "balance"),
                                 "orderNumber2" => array("itemsOrderedList", "shippedStatus", "balance")];
 
+        $this->totalAccountBalance = 0.00;
     }
 
     //Demonstrating inheritance
