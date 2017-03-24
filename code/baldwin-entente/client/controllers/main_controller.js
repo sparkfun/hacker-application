@@ -15,13 +15,13 @@ app.controller('MainController', function(esriLoader, $scope, $routeParams, $loc
     ready(function () {
       parser.parse()
 
-      // function to create map using ESRI
+      // creates the map using ESRI, the response sent back is the map which we then use to initialize
       arcgisUtils.createMap("165ae0e0483648e3994c98be7098f7d9", "mapViewDiv").then(function(response) {
         map = response.map
         initializeMap(map)
       })
 
-      // initalize a new instance of the map after user searches and fires function to show location
+      // initalize map function and new Search object using the map response so map shows correct location and searches corrrect map when user searches
       function initializeMap(map) {
         var search = new Search({
         map: map
