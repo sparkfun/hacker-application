@@ -1,0 +1,134 @@
+/**********************************************************************
+The code below is an example for my usage of css.   It excludes some lines of code that came with Materialze for the parallax effect on my index page.
+Deployed version:
+http://sunshine-daydream.surge.sh/
+The full repository can be found at:
+https://github.com/StephenHanzlik/ghostTowns
+The snippet below starts at line 1 of this document:
+https://github.com/StephenHanzlik/ghostTowns/blob/master/css/style.css
+**********************************************************************/
+
+#subHead {
+  margin-bottom: -10px;
+}
+#backPack {
+  margin-right: 30px;
+  padding-right: 20px;
+  float: left;
+}
+#slopeMap{
+  float: right;
+  margin-top: 40px;
+}
+#caic_fx_map{
+  float: left;
+  margin-top: 40px;
+}
+#myChart {
+  width: 400px;
+  height: 400px;
+}
+.avyImg{
+  height: 54px;
+}
+.angleImg{
+  height: 45px;
+  padding-top: 7px;
+}
+.placeImg{
+  height: 46px;
+  padding-top: 4px;
+}
+.rightIcon{
+  margin-left: 3px;
+}
+.mapsIcons{
+  margin-top: 10px;
+}
+.modal{
+  width: 90%;
+  height: 90%;
+  overflow-y: hidden;
+}
+.avyWarning{
+  color: red;
+  font-weight: 900;
+}
+.placeNav{
+  height: 54px;
+  padding-bottom: 5px;
+  margin-bottom: -24px;
+}
+.mapNav {
+  height: 52px;
+  margin-bottom: -24px;
+  padding-bottom: 5px;
+}
+.avyNav{
+  height: 62px;
+  margin-bottom: -24px;
+}
+.goggsNav{
+  margin-left: 13px;
+}
+.menu{
+  margin: 0px 20px 280px 20px;
+}
+.hatIcon{
+  float: right;
+}
+.shrinkZones{
+  height: 7px;
+}
+.graph{
+  height: 100px;
+}
+.mapParallax{
+  opacity: 0.3;
+}
+.graphCenter{
+  display: flex;
+}
+.mapCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-collapse {
+  color: #26a69a;
+}
+.indexStats{
+  color: black;
+}
+.flexIndexCards{
+  margin-top: 80px;
+}
+.indexIcons{
+  margin-top: 70px;
+}
+
+.parallax-container {
+  min-height: 700px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+    width: 100%;
+}
+.icon-block {
+  padding: 0px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+footer.page-footer {
+  margin: 0;
+}
+p {
+  line-height: 2rem;
+}

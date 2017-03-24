@@ -1,0 +1,45 @@
+<!--*********************************************************************
+The code below is from a form I use to establish the conditions that will trigger text alert messages from my Let It Grow project.   I used Angular for this project hence the ng-submit and ng-model attributes.
+Deployed version:
+https://dinkydinky.herokuapp.com
+The full repository can be found at:
+https://github.com/StephenHanzlik/capstone-let-it-grow
+The snippet below starts at line 44 of this document:
+https://github.com/StephenHanzlik/capstone-let-it-grow/blob/master/public/js/app/smsconfigure.template.html
+********************************************************************* -->
+
+<div class="col-md-8" >
+      <form name="smsSettingForm" novalidate="" ng-submit="$ctrl.smsSettings()" >
+        <div class="form-group row">
+          <div class="col-md-5 col-sm-10">
+            <label for="lightsOnInput" class="col-2 col-form-label" name="lightsOnInput">Lights on at:</label>
+            <input class="form-control" type="time" value="" id="lightsOnInput" name="lightsOnInput" ng-model="$ctrl.smsSettingForm.lightsOnInput">
+          </div>
+          <div class="col-md-5 col-sm-10">
+            <label for="lightsOffInput" class="col-2 col-form-label" name="lightsOffInput">Lights off at:</label>
+            <input class="form-control" type="time" value="" id="lightsOffInput" name="lightsOffInput" ng-model="$ctrl.smsSettingForm.lightsOffInput">
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-10">
+          <label for="min_temp" class="col-2 col-form-label" name="min_temp">Minimum Temperature</label>
+          <input class="form-control" type="text" value="" id="min_temp" name="min_temp" ng-model="$ctrl.smsSettingForm.min_temp">
+        </div>
+        <div class="col-md-5 col-sm-10">
+          <label for="max_temp" class="col-2 col-form-label" name="max_temp">Maximum Temperature</label>
+          <input class="form-control" type="text" value="" id="max_temp" name="max_temp" ng-model="$ctrl.smsSettingForm.max_temp">
+        </div>
+        <div class="col-md-5 col-sm-10">
+          <label for="min_hum" class="col-2 col-form-label" name="min_hum">Minimum Humidity</label>
+          <input class="form-control" type="text" value="" id="min_hum" name="min_hum" ng-model="$ctrl.smsSettingForm.min_hum">
+        </div>
+        <div class="col-md-5 col-sm-10">
+          <label for="max_humid" class="col-2 col-form-label" name="max_humid">Maximum Humidity</label>
+          <input class="form-control" type="text" value="" id="max_humid" name="max_humid" ng-model="$ctrl.smsSettingForm.max_humid">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">
+            Update Settings
+          </button>
+        </div>
+      </form>
+    </div>
