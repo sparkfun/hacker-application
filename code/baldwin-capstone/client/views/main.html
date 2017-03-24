@@ -1,0 +1,68 @@
+<!-- navigation with logo, shopping cart counter/icon, button for cart dropdown and logout button -->
+<nav class="navbar navbar-inverse">
+    <img src="./stylesheets/logo2-hamb.png" class="logo col-xs-12 col-md-8" alt="Leftover Log Logo" />
+    <div class="dropdown navbar-right">
+        <button type="button" class="btn btn-default btn-md dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Shopping Cart [ {{shoppingCart.length}} ]
+        </button>
+        <a href="#/" ng-show="user.id !== null" ng-click="logout()" class="btn btn-default btn-md" role="button">Log Out</a>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <div class="cart">
+                <h2>Shopping Cart</h2>
+                <ul class="panel panel-default" ng-repeat="meal in shoppingCart">
+                    <strong>{{meal.mealName}}</strong>, {{meal.price | currency}} <small>   X</small>
+                </ul>
+                <p><strong>Tax:</strong> {{totalTax | currency}}</p>
+                <p><strong>Total Cost:</strong> {{totalCost | currency}}</p>
+                <button type="button" data-toggle="modal" data-target="#myModal">Checkout</button>
+            </div>
+        </ul>
+    </div>
+</nav>
+
+<!-- stripe credit card modal contained in a directive -->
+<stripe-directive></stripe-directive>
+
+<!-- main text on homepage and video iframe -->
+<div class="jumbotron">
+    <div class="row jumbo-row">
+        <div class="jumbotron-left col-xs-6">
+            <h1>let's save our food,</h1>
+            <h2 class="eachMeal">one leftover at a time.</h2>
+            <div class="row">
+                <p class="works">Delicious food from your local restaurants.
+                    <br> A text message lets you know when it's ready. <strong>Easy.</strong>
+                </p>
+            </div>
+            <a href="#/register" class="btn btn-default login center-block btn-lg">SIGN UP | LOG IN</a>
+            <h2 class="pounds">Pounds of food saved this year: <strong>  {{pounds | number}}</strong></h2>
+        </div>
+        <iframe class="col-xs-6" height="560" src="https://www.youtube.com/embed/i8xwLWb0lLY" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- list of available meals with the ordering button on each -->
+<div class="container">
+    <div class="row main">
+        <div ng-repeat="meal in view.mealsArray | filter: view.search" class="col-xs-12 col-md-4 panel panel-default">
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-body">
+                        <h3><strong>{{meal.mealName}}</strong></h3>
+                        <h4>{{meal.price | currency}}</h4>
+                        <h4><strong>{{meal.name}}</strong></h4>
+                        <p>{{meal.details}}</p>
+                    </div>
+                    <div class="pull-left text-center"><strong>Pick-up:</strong> {{meal.pickup}}
+                        <br> {{meal.dietary}}
+                    </div>
+                    <br>
+                    <div class="panel-footer">
+                        <button class="toOrder btn btn-default" ng-show="meal.user_id == null" ng-click="addItem(meal); updateMeal(meal)">Add To Cart</button>
+                        <button ng-show="meal.user_id !== null" ng-disabled="true">Ordering...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
