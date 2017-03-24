@@ -1,6 +1,6 @@
 Shell (see .zshrc):
 
-I use zsh for my primary shell and atom for my primary text editor.  Zsh comes with a lot of extended functionality and customization over bash.  My usage of it is fairly standard.  I have added the git plugin to better visualize what is happening with git.  I have set atom as my default editor, installed node version manager, and have set up a virtual environment for working with python.
+I use zsh for my primary shell and atom for my primary text editor.  Zsh comes with a lot of extended functionality and customization over bash.  My usage of zsh is fairly standard.  I have added the git plugin to better visualize what is happening with git.  I have set atom as my default editor, installed node version manager, and have set up a virtual environment for working with python.
 
 Editor:
 

@@ -10,7 +10,7 @@ I do not have any planned vacations/absences in the next six months.
 
 3. SparkFun is a dog-friendly environment. Are comfortable working around dogs? If you are a dog-owner, would you see yourself bringing dogs to work?
 
-I am comfortable working around dogs and have a dog of my own.   While not something I would do regularly, I enjoy having the option to bring my dog to work and would likely bring him in on occasion.
+I am comfortable working around dogs and have a dog of my own.  While not something I would do regularly, I enjoy having the option to bring my dog to work and would likely bring him in on occasion.
 
 4. The active developer keeps up on happenings in the world of development and technology. Where do you you get your news?
 
