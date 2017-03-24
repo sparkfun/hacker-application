@@ -22,3 +22,8 @@ Please answer the following general questions:
     >It appears that SparkFun as discontinued their newsletter service but left the sign-up form in the DOM. It's a 3rd party, embedded React plugin from HubSpot. The form will gladly submit your email address (and even perform a validation) and give you a sign-up confirmation, but nothing will ever come from it.
 
     >The search bar is under-sold. I dismissed it when I saw where it was but I was pleasantly surprised to see a dropdown populate with items that matched my string as I typed. This if a very useful feature that might deserve better real estate.
+
+    >My forte is React/Redux, so with influence over the dev team, my focus would be to help transition the stack over to a MERN stack with Redux.
+
+    >By the way, I like the reference to the film Sneakers in the email verification element...
+    "...my voice is my passport"
