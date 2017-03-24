@@ -25,5 +25,5 @@ Please answer the following general questions:
 
     >My forte is React/Redux, so with influence over the dev team, my focus would be to help transition the stack over to a MERN stack with Redux.
 
-    >By the way, I like the reference to the film *Sneakers* in the email verification element...
-    "...my voice is my passport"
+    >By the way, I like the reference to the film *Sneakers* in the email verification element:
+    "...my voice is my passport."
