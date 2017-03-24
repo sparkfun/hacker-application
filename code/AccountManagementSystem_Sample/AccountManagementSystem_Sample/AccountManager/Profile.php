@@ -1,29 +1,37 @@
-
 <?php
 
-//This class holds the basic recursive information about an account holder.
-//Fields are protected to demonstrate encapsulation and inheritance of class member values/functions.
+/**
+ * Profile summary:
+ *
+ * This class holds the basic recursive information about an account holder.
+ * Fields are protected to demonstrate encapsulation and inheritance of class member values/functions.
+ *
+ * @version 1.0
+ * @author michael.bolles
+ */
 
 class Profile
 {
     protected $firstName;
     protected $lastName;
-    protected $userName;    //Defined in child class: Account
+    protected $userName;    //UN and PW, are defined in child class: Account
     protected $password;
+    private $emailAddress;
 
     //Constructor
     function __construct()
     {
-        $this->firstName = "";
-        $this->lastName = "";
-        $this->userName = "";
-        $this->password = "";
+        $this->firstName = "John";
+        $this->lastName = "Smith";
+        $this->userName = "smithj1";
+        $this->password = "qwerty";
+        $this->emailAddress = "smithj1@webtv.com";
     }
 
 
     //Get & Set methods for accessing protected fields of the Profile class:
 
-    protected function SetFirstName($first)
+    public function SetFirstName($first)
     {
         if($first != null)
         {
@@ -33,7 +41,7 @@ class Profile
             $this->NullRefErrorMessage("First Name");
     }
 
-    protected function SetLastName($last)
+    public function SetLastName($last)
     {
         if($last != null)
         {
@@ -43,7 +51,7 @@ class Profile
             $this->NullRefErrorMessage("Last Name");
     }
 
-    protected function GetFullName()
+    public function GetFullName()
     {
         if($this->ValidateName())
         {
@@ -53,8 +61,21 @@ class Profile
             return "Missing name information.";
     }
 
+    public function SetEmailAddress($email)
+    {
+        if(ValidateEmail($email))
+        {
+            $this->emailAddress = $email;
+        }
+    }
 
-    //The following methods are for internal use as maintenance tools:
+    public function GetEmailAddress()
+    {
+        return $this->emailAddress;
+    }
+
+
+    //The following methods are for internal-class use as maintenance tools:
 
     protected function ValidateName()
     {
@@ -62,6 +83,13 @@ class Profile
             return true;
         else
             return false;
+    }
+
+    private function ValidateEmail($email)
+    {
+        //TODO: Add validation check by examining the string against proper email syntax.
+        //Placeholder always return true:
+        return true;
     }
 
     protected function NullRefErrorMessage($arg)

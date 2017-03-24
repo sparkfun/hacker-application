@@ -8,7 +8,7 @@
 
 
 <?php
-include ('AccountManager/AccountManager.php');
+include ('AccountManager.php');
 
 $accountMgr = new AccountManager();
 
