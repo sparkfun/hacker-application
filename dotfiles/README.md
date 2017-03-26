@@ -9,3 +9,9 @@ In this directory, please include (at your option) either:
 
   b) A rationale for your lack of same (complete with some description of your
      preferred working environment).
+
+
+>I added my .bash_profile to this directory. Among other things, this is where
+I customize the appearance of my bash prompt to make it look like this:
+
+![My terminal](./terminal.png?raw=true "Terminal prompt customizations")
