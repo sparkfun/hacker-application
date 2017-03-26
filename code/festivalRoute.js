@@ -1,4 +1,7 @@
 /*
+Drew I. Parker
+26 March 2016
+
 An Express.js routing example. My impetus for using this sample is to share with
 you my knowledge of RESTful API development (with Express.js router) while also
 demonstrating a skill at interacting with SQL databases (MySql).

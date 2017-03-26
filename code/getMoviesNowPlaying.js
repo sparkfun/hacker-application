@@ -1,4 +1,7 @@
 /*
+Drew I. Parker
+26 March 2016
+
 A function that calls The Movie Database (TMDB) and returns an array of objects
 representing movies currently playing in theaters. The API limits the results to 20
 per page.
