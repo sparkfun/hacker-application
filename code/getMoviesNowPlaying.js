@@ -1,20 +1,25 @@
-function getMoviesNowPlaying(page) {
-    /*
-    A function that returns an array of 20 movies now playing in theaters.
-    The Movie Database (TMDB) provides our API. Multiple API calls are made:
-    the initial call gives us an array of 20 movies, and subsequent calls
-    are made for each movie in the list so that more detailed information can be
-    obtained. This function demonstrates how Promise methods can manage the
-    asynchronous nature of javascript.
-    */
+/*
+A function that calls The Movie Database (TMDB) and returns an array of objects
+representing movies currently playing in theaters. The API limits the results to 20
+per page.
+
+About TMDB API: www.themoviedb.org/documentation/api
+
+Ideally, this code sample will demonstrate to the reader the author's
+understanding of jasvascript's asynchronous nature and some tools to manage it
+(Promises). The sample should also convey to the reader the author's comfortableness
+with ES6, which is the "new hotness."
+*/
+
+function getMoviesNowPlaying(page=1) {
     var tmdbKey = `api_key=1f809315a3a8c0a1456dd83615b4d783`;
-    var apiResults = []; // An array to collect the movie objects.
+    var movies = []; // An array to collect the movie objects.
 
     // The following TMDB API url will return 20 movies listed as `now playing`
     // when called. Each movie has several properties, but a few important details
-    // are missing (i.e., Director, rating). These details exist at unique movie
-    // endpoints, so when the results come back, I make a new API call for each
-    // movie in order to collect these details.
+    // are missing (i.e., Director, rating, etc.). These details exist at unique
+    // endpoints (per movie), so when the results come back, I make a new API call
+    // on each movie in order to collect them.
     var url = `https://api.themoviedb.org/3/movie/now_playing?${tmdbKey}&page=${page}`;
     $.getJSON(url).then(nowPlayingResults => {
         // When the call returns, iterate over the results with the Promise.all
@@ -66,13 +71,15 @@ function getMoviesNowPlaying(page) {
                     }
                 }
                 // Push the object to our movie objects array
-                return apiResults.push(movie);
+                return movies.push(movie);
             });
         }));
     })
+    // Return the array of movie objects
     .then(() => {
-        return apiResults;
+        return movies;
     })
+    // Throw any errors
     .catch(error => {
         throw error;
     });
