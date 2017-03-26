@@ -25,7 +25,7 @@ with the Newts, all three of which I would strongly recommend.
 
 ### Please critique any of the SparkFun websites. With influence over the SparkFun dev team what would you focus on improving?
 In my opinion, SparkFun's suite of websites are very professionally done. Perhaps some work could go into helping 
-the code validate according to W3. I have encountered a number of Sparkfun pages that have underscores, which I've understood to be less desirable than hyphens. 
-SparkFun's homepage itself is a bit bulky, and perhaps you could be optimized a touch. (It does appear there are a few inline styles around.) 
-This is most noticeable on mobile devices. Also, I'm really excited about data.sparkfun.com and see much potential for this to grow. I picture organizing 
+the code validate according to W3. I have encountered a number of Sparkfun pages that have underscores, which I've understood to be less desirable than hyphens for SEO purposes. 
+Google does seem to change these all the time, thought. SparkFun's homepage itself is a bit bulky, and perhaps could be optimized a touch. (It does appear there are a few inline styles here and there.) 
+The load speed is most noticeable on mobile devices. On another note, I'm really interested in data.sparkfun.com and see much potential for this to grow. I'd like to organize 
 each of the data streams into categories to give some structure when browsing.
