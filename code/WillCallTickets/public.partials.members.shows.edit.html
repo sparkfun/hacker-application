@@ -1,0 +1,124 @@
+<div class="Modal-backdrop"></div>
+<div ui-view="modal"
+     class="Modal-holder"
+     autoscroll="false">
+  <form name="_form"
+        class="form-horizontal"
+        novalidate
+        ng-submit="submitForm(_form, 'show');">
+    <div class="panel panel-primary panel-modal panel-area">
+      <div class="panel-heading">
+        <h4 class="panel-title col-xs-6">Show Editor</h4>
+      </div>
+      <div class="panel-body" style="padding-top:2em;">
+        <div class="input-controls">
+          <div class="form-group"
+               ng-class="{  'has-error' : _form.f_name.$invalid && _form.f_name.$touched}">
+            <label class="col-xs-3" for="f_name">Name</label>
+            <div class="col-xs-9">
+              <input type="text"
+                     class="form-control"
+                     name="f_name"
+                     ng-model="_form.entity.name"
+                     ng-init="_form.entity.name=view.ContextService.currentShow.name"
+                     ng-minlength="1" ng-max-length="255" ng-required="true">
+            </div>
+          </div>
+          <div class="form-group"
+               ng-class="{  'has-error' : _form.f_venue.$invalid && _form.f_venue.touched}">
+            <label class="col-xs-3" for="f_venue">Venue &amp; Locale</label>
+            <div class="col-xs-9">
+              <input type="text"
+                     class="form-control"
+                     name="f_venue"
+                     ng-init="_form.entity.venue=view.ContextService.currentShow.venue"
+                     ng-model="_form.entity.venue"
+                     ng-minlength="1" ng-max-length="255" ng-required="true">
+            </div>
+          </div>
+          <div class="form-group"
+               ng-class="{  'has-error' : _form.f_description.$invalid && _form.f_description.$touched}">
+            <label class="col-xs-3" for="f_description">Description</label>
+            <div class="col-xs-9">
+              <input type="text"
+                     class="form-control"
+                     name="f_description"
+                     ng-init="_form.entity.description=view.ContextService.currentShow.description"
+                     ng-model="_form.entity.description"
+                     ng-max-length="8192">
+            </div>
+          </div>
+          <div class="form-group"
+               ng-class="{  'has-error' : _form.f_announcedate.$invalid && _form.f_announcedate.$touched}">
+            <label class="col-xs-3" for="f_announcedate">Announce Date</label>
+            <div class="col-xs-9">
+              <div class="dropdown">
+                <a class="dropdown-toggle" id="dropdown2" role="button"
+                   data-toggle="dropdown" data-target="#" href="#">
+                  <div class="input-group">
+                    <input type="text"
+                           class="form-control"
+                           name="f_announcedate"
+                           data-date-time-input="ddd YYYY/MM/DD hh:mm A"
+                           ng-init="_form.entity.announcedate=view.ContextService.currentShow.announcedate"
+                           data-ng-model="_form.entity.announcedate">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                  </div>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                  <datetimepicker data-ng-model="_form.entity.announcedate"
+                                  data-datetimepicker-config="{ dropdownSelector: '#dropdown2' }"/>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--TODO implement end date-->
+          <div class="form-group">
+            <label class="col-xs-3" for="f_active">Active</label>
+            <div class="col-xs-9">
+              <select class="form-control"
+                      ng-options="item as item for item in ['true','false']"
+                      ng-init="_form.entity.active=(view.ContextService.currentShow) ? view.ContextService.currentShow.active.toString() : 'true'"
+                      name="f_active"
+                      ng-model="_form.entity.active">
+              </select>
+            </div>
+          </div>
+        </div><!-- end input controls -->
+        
+        <div ng-show="view.errors && view.errors.length" class="form-errors">
+          The following errors occurred:
+          <div ng-repeat="error in view.errors" class="form-error-msg">
+            {{error}}
+          </div>
+        </div>
+      
+      </div><!-- end panel-body -->
+      <div class="panel-footer form-command row">
+        <div class="col col-xs-5">
+          <button ng-disabled="_form.$invalid"
+                  type="submit"
+                  class="btn btn-sm btn-primary">Save</button>
+          <button ng-click="cancelForm(_form)"
+                  type="button"
+                  class="btn btn-sm btn-primary">Cancel/Close</button>
+          <button ng-click="resetForm(_form);"
+                  type="reset"
+                  class="btn btn-sm btn-primary">Reset</button>
+        </div>
+        <div class=" col-xs-5">
+          <div style="height:30px;line-height:30px;"
+               ng-show="view.getSuccessMessage().trim().length > 0"
+               class="text-success">
+            <strong>{{view.getSuccessMessage()}}</strong>
+          </div>
+        </div>
+        <div class="col col-xs-2 text-right">
+          <button ng-disabled="true"
+                  type="button"
+                  class="btn btn-sm btn-primary pull-right">Sync to Stripe</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

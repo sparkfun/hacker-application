@@ -1,0 +1,140 @@
+
+/* ui.bootstrap fix for empty href */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+/* Main body */
+html {
+  background: url(../images/crowd-shot-for-posters-purple.jpg);
+  background-size: cover;
+}
+
+body {
+  background-color: transparent;
+  color: #666;
+  min-width: 768px;
+}
+
+/* misc */
+.todo {
+  font-weight:bold;
+  color: rgba(112, 10, 255, .25);
+}
+
+/* ERROR MESSAGES */
+.has-error label {
+  color: red;
+}
+.has-error input {
+  border-width: 2px;
+}
+
+.form-errors {
+  border: solid red 1px;
+  border-radius: 3px;
+  background-color: rgba(200,50,50, .3);
+  color: #cc0000;
+  margin-top: 1.6em;
+  padding: 1em;
+  font-size: 1.4em;
+}
+
+.form-error-msg {
+  font-size: .8em;
+  margin-top: .5em;
+}
+
+/* shared panel styles - panel is loaded with child templates */
+.panel-container{
+  background: rgba(255, 255, 255, .8);
+}
+
+.panel-container {
+  margin: 0 2em;
+  padding: 1em;
+}
+
+.panel-signin {
+  font-weight: bold;
+  padding: 2em;
+}
+
+.btn-signin {
+  font-size: 2em;
+}
+
+
+/* Modal styling */
+.Modal-backdrop
+{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.Modal-holder
+{
+  //border:solid red 2px;
+  //position: fixed; // this does not allow scrolling
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  height: 90%;
+  width: 100%;
+  background: transparent;
+  z-index: 2;
+  padding: 30px 15px;
+  font-size:.8em;
+}
+
+@media screen and (min-width: 992px) {
+  .Modal-box {
+    width: 50%;
+    padding: 30px;
+  }
+}
+
+.panel-modal {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1em 2em 2em 2em;
+  overflow: scroll;
+  
+  .panel-heading {
+    padding-bottom: 3em;
+  }
+}
+
+/* override bootstrap hover tables */
+.table-hover {
+  > tbody > tr:hover {
+    background-color: lighten($brand-primary, 10%);
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* sub navigation in contexts */
+.nav.nav-sub-nav {
+  li > a {
+    color: #444;
+    text-shadow: 0 0 1px #222;
+  }
+  li.active > a {
+    color: white;
+  }
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+@import "components/nav";
+@import "components/home";
+@import "components/members";
+@import "components/cart";
+@import "components/catalog";
