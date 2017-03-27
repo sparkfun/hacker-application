@@ -1,0 +1,24 @@
+<!--
+	Author: Mitchell Block
+	Date last modified: March 26th, 2017
+	Simple web decision maker
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Decision Maker</title>
+		<link rel="stylesheet" type="text/css" href="decisionMaker.css">
+		<script src="addOption.js" language="Javascript" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<form method="post" action="decider.php">
+			<div id="listOfOptions">
+				<span>OPTION 1: <input id="individualOption" type="text" name="options[]"><br></span>
+				<span>OPTION 2: <input id="individualOption" type="text" name="options[]"><br></span>
+			</div>
+			<input id="addOptionButton" type="button" value="ADD ANOTHER OPTION" onClick="addOption();"><br>
+			<input id="submitButton" type="submit" value="DECIDE">
+		</form>
+	</body>
+</html>

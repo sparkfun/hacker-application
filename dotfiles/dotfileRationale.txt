@@ -1,0 +1,3 @@
+Author: Mitchell Block
+
+I do not have any dotfiles, as I do not use any technologies that require a great deal of setup and customization. Part of this is due to my lack of experience with such tools and need for extensive use of such tools, however I have made great use of lightweight editors such as Sublime, Atom, and Vim. Lightweight editors are my current preferred method of development since they are easily transferrable between machines, allowing for flexibility with which machine to work on. Instead of spending a decent chunk of time configuring my development environment, it allows for more time to be spent working on what needs to get done. I also highly prefer *nix based operating systems, since I am more familiar with the command line options and keywords.
