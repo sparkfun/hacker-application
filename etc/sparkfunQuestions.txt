@@ -1,0 +1,17 @@
+Author: Mitchell Block
+
+1. I can start immediately.
+
+2. I do not have any planned vacations/absences within the next six months.
+
+3. I am extremely comfortable working around dogs, so long as they are comfortable around someone who will want to pet them, and repeatedly ask them "Who's a good boy?!"
+
+4. I get my news from various sources on the internet, including the compendium of knowledge that is Reddit, all of the infosec people/hackers I follow on Twitter (SwiftOnSecurity, Tavis Ormandy, Mikko Hypponen, Brian Krebs, Dan Kaminsky, etc.), occasionally articles shared through LinkedIn, as well as articles my other programming friends share through social media.
+
+5. I often read, paint, listen to music, go to concerts, spend quality time with friends, attend various Meetup groups, draw, play music, play video games, watch various TV shows/movies/sports, go for walks/hikes, go out to brunch, pick up various other art mediums or crafts, go to sporting events, and generally attempt to find new adventures.
+
+6. To feed the creative side of my brain, I try to read fairly frequently. I will also listen to music, either on the radio or crawling through YouTube to find new artists to listen to. I have been known to sing along to the radio in the car, and will frequently attempt to learn bass lines I find intriguing.
+
+7. Critique: On the Sparkfun home page, the current advertisement for the bladeRFx40 has a hard to see and click link to the product on Chrome if the browser window is smaller than full-screen, but not quite small enough for the screen to transition to a large tablet layout. Also, viewing jobs that a user has applied to under their account only takes the user to the information they submitted, but does not allow access to the job description for the position. Lastly, the floating sidebar of options on the data.sparkfun.com page will scroll with the user sometimes, but will stay static at the top of the page under certain conditions. Overall, the websites have a clean, elegant, consistent design that is easy to navigate and fairly intuitive to use for the average user.
+
+If I had influence over the Sparkfun dev team, I would focus on improving the usability of the websites if required, then focus on making sure the websites function optimally on all device and browser sizes.

@@ -1,0 +1,50 @@
+/*
+ * Author: Mitchell Block
+ * Date last modified: March 26th, 2017
+ * Stylesheet for web decision maker
+ */
+body {
+	text-align: center;
+}
+
+span {
+	height: 50px;
+}
+
+input {
+	font-size: 30px;
+}
+
+#listOfOptions {
+	font-size: 30px;
+	padding-top: 150px;
+	vertical-align: middle;
+}
+
+#individualOption {
+	font-size: 16px;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	padding-right: 20px;
+	vertical-align: middle;
+}
+
+#addOptionButton {
+	color: #f2f2f2;
+	background-color: #65e765;
+	margin-top: 4px;
+	margin-bottom: 8px;
+	padding-right: 12px;
+	padding-left: 12px;
+	border-radius: 5px;
+}
+
+#submitButton {
+	color: #f2f2f2;
+	background-color: #cd0042;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-radius: 5px;
+}
