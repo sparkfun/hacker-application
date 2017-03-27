@@ -10,7 +10,7 @@ class Location {
         $this->state = $state;
         $this->lat = $lat;
         $this->lng - $lng;
-        require_once 'db.php';
+        require_once "db.php";
         $instance = new LocationsDb();
         $response = $instance->create($city, $state, $lat, $lng);
     }

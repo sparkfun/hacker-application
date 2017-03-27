@@ -44,7 +44,7 @@ class LocationsDb extends Db {
 
     public function delete($id) {
         if(!empty($id)) {
-            $result = pg_delete($this->getDbConnection(), 'locations', array('id'=>$id));
+            $result = pg_delete($this->getDbConnection(), "locations", array("id"=>$id));
             return $results;
         }
     }

@@ -3,8 +3,8 @@
 $_ENV["GEOCODE_KEY"] = "AIzaSyBzaYojdccFaRHkouxZK8cYOijBMcYsi1E";
 $_ENV["FORECAST_KEY"] = "963c2a286c46883b606d0962897eeef7";
 
-require_once 'db.php';
-require_once 'model.php';
+require_once "db.php";
+require_once "model.php";
 
 class Controller {
 
@@ -24,19 +24,19 @@ class Controller {
 
     public function addLocation($data) {
         $data = str_replace (" ", "+", $data);
-        $service_url = "https://maps.googleapis.com/maps/api/geocode/json?address=" . $data . "&key=" . $_ENV['GEOCODE_KEY'];
+        $service_url = "https://maps.googleapis.com/maps/api/geocode/json?address=" . $data . "&key=" . $_ENV["GEOCODE_KEY"];
         $curl = curl_init($service_url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         $curl_response = curl_exec($curl);
         if ($curl_response === false) {
             $info = curl_getinfo($curl);
             curl_close($curl);
-            die('error occured during curl exec. Additioanl info: ' . var_export($info));
+            die("error occured during curl exec. Additioanl info: " . var_export($info));
         }
         curl_close($curl);
         $decoded = json_decode($curl_response);
-        if (isset($decoded->response->status) && $decoded->response->status == 'ERROR') {
-            die('error occured: ' . $decoded->response->errormessage);
+        if (isset($decoded->response->status) && $decoded->response->status == "ERROR") {
+            die("error occured: " . $decoded->response->errormessage);
         }
         $results = $decoded->results[0];
         $newLoaction = new Location($results->address_components[0]->long_name, $results->address_components[2]->short_name, $results->geometry->location->lat, $results->geometry->location->lng);
@@ -51,12 +51,12 @@ class Controller {
         if ($curl_response === false) {
             $info = curl_getinfo($curl);
             curl_close($curl);
-            die('error occured during curl exec. Additioanl info: ' . var_export($info));
+            die("error occured during curl exec. Additioanl info: " . var_export($info));
         }
         curl_close($curl);
         $decoded = json_decode($curl_response);
-        if (isset($decoded->response->status) && $decoded->response->status == 'ERROR') {
-            die('error occured: ' . $decoded->response->errormessage);
+        if (isset($decoded->response->status) && $decoded->response->status == "ERROR") {
+            die("error occured: " . $decoded->response->errormessage);
         }
         session_start();
         $_SESSION["conditions"] = array("conditions" => $decoded->currently, "city" => $city, "state" => $state);

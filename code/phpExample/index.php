@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require 'controller.php';
+require "controller.php";
 $controller = new Controller();
 $locations = $controller->showLocations();
 $locationData = pg_fetch_all($locations);
@@ -26,7 +26,7 @@ $locationData = pg_fetch_all($locations);
                 <i class="fa fa-cloud" aria-hidden="true"></i>
                 <h1 class="formItem largeText">Weather App</h1>
                 <form action="requestHandler.php" method="post">
-                    <input type="text" name='address' placeholder="Enter City, State"/>
+                    <input type="text" name="address" placeholder="Enter City, State"/>
                     <input class="btn" type="submit" value="Get Conditions"/>
                 </form>
             </nav>
@@ -38,12 +38,12 @@ $locationData = pg_fetch_all($locations);
                         foreach($locationData as $prop):
                         ?>
                             <div class="locationItem">
-                                <a href="requestHandler.php?findById=<?php echo $prop['id'] ?>">
-                                    <p class="smallText"><?php echo $prop['city'] . "," . $prop['state'] ?></p>
-                                    <a href="requestHandler.php?remove=true&item=<?php echo $prop['id'] ?>">
+                                <a href="requestHandler.php?findById=<?php echo $prop["id"] ?>">
+                                    <p class="smallText"><?php echo $prop["city"] . "," . $prop["state"] ?></p>
+                                    <a href="requestHandler.php?remove=true&item=<?php echo $prop["id"] ?>">
                                         <i class="fa fa-times delete-item" aria-hidden="true"></i>
                                     </a>
-                                    <input type="hidden" name="id" id="id" value="<?php echo $prop['id'] ?>" />
+                                    <input type="hidden" name="id" id="id" value="<?php echo $prop["id"] ?>" />
                                 </a>
                             </div>
                         <?php endforeach; ?>
@@ -54,12 +54,12 @@ $locationData = pg_fetch_all($locations);
                 <div class="locationDetails">
                     <?php if(isset($_SESSION["conditions"])) : ?>
                         <p class="smallText">Current Conditions</p>
-                        <div class='conditons'>
-                            <p class='mediumText'><?php echo "Current weather for: " . $_SESSION["conditions"]["city"] . ", " . $_SESSION["conditions"]["state"]?></p>
-                            <p class='mediumText'><?php echo "Current Temp: " . $_SESSION["conditions"]["conditions"]->apparentTemperature ?></p>
-                            <p class='mediumText'><?php echo "Dew Point: " . $_SESSION["conditions"]["conditions"]->dewPoint ?></p>
-                            <p class='mediumText'><?php echo "Pressure: " . $_SESSION["conditions"]["conditions"]->pressure ?></p>
-                            <p class='mediumText'><?php echo "Wind Speed: " . $_SESSION["conditions"]["conditions"]->windSpeed ?></p>
+                        <div class="conditons">
+                            <p class="mediumText"><?php echo "Current weather for: " . $_SESSION["conditions"]["city"] . ", " . $_SESSION["conditions"]["state"]?></p>
+                            <p class="mediumText"><?php echo "Current Temp: " . $_SESSION["conditions"]["conditions"]->apparentTemperature ?></p>
+                            <p class="mediumText"><?php echo "Dew Point: " . $_SESSION["conditions"]["conditions"]->dewPoint ?></p>
+                            <p class="mediumText"><?php echo "Pressure: " . $_SESSION["conditions"]["conditions"]->pressure ?></p>
+                            <p class="mediumText"><?php echo "Wind Speed: " . $_SESSION["conditions"]["conditions"]->windSpeed ?></p>
                         </div>
                     <?php else : ?>
                         <p class="smallText">No Location Specified</p>

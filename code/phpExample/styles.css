@@ -32,7 +32,7 @@ input {
     letter-spacing: .1em;
 }
 
-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+input::-webkit-input-placeholder {
     color: #fff7ec;
     font-family: 'Rubik', sans-serif;
     margin: .5em 0;
@@ -41,7 +41,7 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     line-height: 1.5em;
     letter-spacing: .1em;
 }
-input::-moz-placeholder { /* Firefox 19+ */
+input::-moz-placeholder {
     color: #fff7ec;
     font-family: 'Rubik', sans-serif;
     margin: .5em 0;
@@ -50,7 +50,7 @@ input::-moz-placeholder { /* Firefox 19+ */
     line-height: 1.5em;
     letter-spacing: .1em;
 }
-input:-ms-input-placeholder { /* IE 10+ */
+input:-ms-input-placeholder {
     color: #fff7ec;
     font-family: 'Rubik', sans-serif;
     margin: .5em 0;
