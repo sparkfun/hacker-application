@@ -1,16 +1,13 @@
-As far as dot files go, I shamelessly use [Paul Irish's dotfiles](https://github.com/paulirish/dotfiles). Most notably, the following alias settings for easier navigation:
+As far as dot files go I keep it pretty simple with a Homebrew setup and a script for displaying my current git branch:
 
 ```
-# Easier navigation: .., ..., ~ and -
-alias ..="cd .."
-alias cd..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
-```
 
-I cannot begin to tell you how nice it is to not type `cd` 4,000 times a day. Of course, there are a multitude of other time-saving goodies within Paul's dotfiles. Another repo I'd suggest checking out is [Addy Osmani's Dotfiles](https://github.com/addyosmani/dotfiles).
+parse_git_branch() {
 
-Further, I've used Total Terminal, but have recently switched to iTerm due to breaking changes brought on by El Capitan's system integrity protection.
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+
+}
+
+````
+
+Part of the reason for the simplified dotfiles is because at my previous job I used Tower to manage Git instead of with the command line.  This was a blessing and a curse, as it allowed an efficient/easy on the eyes way to manage merge conflicts but also promoted command line atrophy, which over the last couple of months I have been forcing myself to not use it.
