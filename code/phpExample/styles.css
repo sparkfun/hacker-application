@@ -1,0 +1,212 @@
+/* Base element styles to add to normalize.css */
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #f5f8fa;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    padding: 0.1em;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff7ec;
+    margin: .5em;
+    color: #fff7ec;
+    text-shadow: 0 0 0 #f2f2f2;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: .1em;
+}
+
+input::-webkit-input-placeholder {
+    color: #fff7ec;
+    font-family: 'Rubik', sans-serif;
+    margin: .5em 0;
+    text-decoration: none;
+    font-size: .8em;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+}
+input::-moz-placeholder {
+    color: #fff7ec;
+    font-family: 'Rubik', sans-serif;
+    margin: .5em 0;
+    text-decoration: none;
+    font-size: .8em;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+}
+input:-ms-input-placeholder {
+    color: #fff7ec;
+    font-family: 'Rubik', sans-serif;
+    margin: .5em 0;
+    text-decoration: none;
+    font-size: .8em;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+}
+input:-moz-placeholder { /* Firefox 18- */
+    color: #fff7ec;
+    font-family: 'Rubik', sans-serif;
+    margin: .5em 0;
+    text-decoration: none;
+    font-size: .8em;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+
+/* Fonts */
+.largeText {
+    font-family: 'Rubik', sans-serif;
+    margin: .5em 0;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: .03em;
+}
+
+.mediumText {
+    font-family: 'Rubik', sans-serif;
+    margin: .5em 0;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-decoration: none;
+    letter-spacing: .05em;
+}
+
+.smallText {
+    font-family: 'Rubik', sans-serif;
+    margin: .5em 0;
+    text-decoration: none;
+    font-size: .8em;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+}
+
+/* Landing */
+.mainContainer {
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: #0d3a59;
+    color: #fff7ec;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.45);
+}
+
+.formItem {
+    flex: 1 1 auto;
+}
+
+.mainContent {
+    display: flex;
+    height: 100%;
+    padding: 1.5em;
+    max-width: 890px;
+    margin: auto;
+}
+
+.locationStream {
+    flex: 0 0 25%;
+    max-width: 25%;
+    background-color: #fff;
+    border: 1px solid #e6ecf0;
+    border-radius: 6px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5em;
+}
+
+.locationItem {
+    border-radius: 6px;
+    position: relative;
+    border: 1px solid #f0576b;
+    background-color: #f0576b;
+    color: #fff;
+    margin-bottom: 1em;
+    cursor: pointer;
+    width: 80%;
+    -webkit-box-shadow: 0px 0px 9px 1px rgba(207,216,223,1);
+    -moz-box-shadow: 0px 0px 9px 1px rgba(207,216,223,1);
+    box-shadow: 0px 0px 9px 1px rgba(207,216,223,1);
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.locationItem a {
+    color: #fff;
+}
+
+.locationItem:hover {
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(207,216,223,1);
+    -moz-box-shadow: 0px 0px 9px 3px rgba(207,216,223,1);
+    box-shadow: 0px 0px 9px 3px rgba(207,216,223,1);
+}
+
+.delete-item {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.locationDetails {
+    position: relative;
+    flex: 0 0 75%;
+    max-width: 75%;
+    background-color: #fff;
+    border: 1px solid #e6ecf0;
+    border-radius: 6px;
+}
+
+.conditons {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid #fff7ec;
+    padding: .5em;
+	color: #fff7ec;
+    text-align: center;
+    cursor: pointer;
+	transition: all .1s ease-in-out;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    color: #0d3a59;
+    background-color: #fff7ec;
+}
+
+.error {
+    color: #f0576b;
+}
+
