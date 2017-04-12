@@ -1,0 +1,11 @@
+Experienced developers, particularly those working in a Unix environment, tend to prefer tools which afford a measure of customization. 
+The standard Unix approach of dotfiles to customize editors, shells, IRC clients, and the like to the developers liking is something 
+we're interested in.
+
+In this directory, please include a rationale for your lack of same (complete with some description of your preferred working environment).
+
+  I believe ".gitignore" is the only dot-file I've ever used. I'm not partial to a Unix environment as many developers are.
+As a game developer, I've found Microsoft Windows to be my preferred platform. With tools such as Unity3D freely available and
+capable of importing custom extensions to meet my needs, I've never had to look elsewhere.
+  Customization can be important though. If a system or tool is not meeting your needs, having the ability to create your own or utilize 
+someone else's existing modification can be an incredible time-saver.

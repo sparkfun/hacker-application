@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>AccountManagementSystem_Sample</Name>
+    <ProjectGuid>816b1639-6291-403e-a5fb-4b46bbb0a686</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>AccountManagementSystem_Sample</AssemblyName>
+    <SpecificPageValue>AccountManager/index.php</SpecificPageValue>
+    <StartAction>SpecificPage</StartAction>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>7.0</RuntimeVersion>
+    <EnvName>PHPDev</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>false</PHPDevAutoPort>
+    <PHPDevPort>12345</PHPDevPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AccountManager\Account.php" />
+    <Compile Include="AccountManager\AccountManager.php" />
+    <Compile Include="AccountManager\index.php" />
+    <Compile Include="DatabaseNotes.php" />
+    <Compile Include="Notes.php" />
+    <Compile Include="AccountManager\Profile.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AccountManager\" />
+    <Folder Include="Database\" />
+  </ItemGroup>
+</Project>
