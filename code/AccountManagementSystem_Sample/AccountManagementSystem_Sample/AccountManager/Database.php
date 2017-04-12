@@ -29,6 +29,10 @@ class Database
         $this->accountTable = $this->CreateNewTable();
     }
 
+    function __destruct()
+    {
+        $this->CloseConnection();
+    }
     //Database connectivity exception handler:
     public function CheckConnection()
     {
@@ -43,8 +47,11 @@ class Database
 
     public function CloseConnection()
     {
-        $this->dbIsConnected = false;
-        $this->databaseConn->Close();
+        if(dbIsConnected == true)
+        {
+            $this->dbIsConnected = false;
+            $this->databaseConn->Close();
+        }
     }
 
     //Designed to generate the table for use with account information only.
