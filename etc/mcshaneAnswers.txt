@@ -1,0 +1,47 @@
+##the follow are my responses to questions from the /etc folder
+
+1. What is your desired compensation range? (Range meaning the least you're comfortable with to the most you think you're worth.)
+ My compensation range is around 115000-140000 a year.
+Compensation is more than just money but salary is a big part. The low end of the range is hard. I had a hard time trying to gauge cost of living in boulder relative to DC, I mostly got DC to Denver, I know Boulder is a little pricier than Denver. When I’m looking at the low end of my acceptable salary range, all of the benefits and perks need to be reviewed, that includes time off, bonuses and contributions to benefits. I’d really need to review the full package to understand the total compensation
+The high end is simple, I think it’s what my current company would pay me if I moved to our Denver office. I’d probably also be able to keep my holidays and 4 weeks of leave. That’s a conservative estimate.
+2. When can you start?
+On the phone Nathan mentioned an April start time. I think that would work well for me. I’m not sure if the beginning of April works. I have a few personal things, not to mention timing at work and moving, the middle of April would be ideal.
+3. Do you have any planned vacations/absences in the next six months that we should know about?
+I have a trip in early April with my wife to Portland, which could complicate the start date.
+My in-laws 50 th wedding anniversary is in August and I’d like to try and make that, that would be in NC.
+Everything else I can be flexible on.
+4. SparkFun is a dog-friendly environment. Are you comfortable working around dogs? If you are a dog-owner, would you see yourself bringing dogs to work?
+I’m 100% comfortable around dogs. My wife is a certified dog trainer and we’ve fostered rescue dogs in the past. We don’t currently have any dogs. If we got one it wouldn’t be a regular fixture in the office, my wife works from home and would probably keep the dog(s) with her.
+ 
+5. The active developer keeps up on happenings in the world of development and technology. Where do you get your news?
+I get my news from a lot of different sources. I’m a firm believer is staying up on current events and read major newspapers, mostly online. I’m a big fan of the NY Times bits blog.
+I’m subscribed to Slashdot. I don’t contribute and the comments section is a disaster but the daily email blast is useful for keeping up with the major technical topics of the day.
+I’m fond of Joel Spolsky and his old Joel on software blog, the wealth of information I’ve gained from his insights is unparalleled, I’m looking for a new source as valuable.
+One neat aspect of my current role is getting to meet with a lot of companies and exploring new products that they have to offer. I’ve had the great pleasure of meeting many cutting edge tech companies in the last year and getting demos about future products.
+ 
+ 6. The sane developer does things other than writing code. What else occupies your time?
+Reading a head to number 7, I’ll try to keep this focused on my work time. A majority of work time is not writing code, it’s spent ensuring people who write code have the tools and freedom they need to create the best solutions for our customers. I’ve spent a lot of time working with my infrastructure team, working to improve our network and visualization system we use to build our new systems.
+Organizational Management is very important to me. I was asked to overhaul my currently companies matrix management system and I found the challenge very rewarding. I’ve been reading up on the best ways to manager knowledge works and I feel very passionately about the topic.
+I spend a lot of time focused on growing the organization, working with our customers to add new projects into our cloud migration pipeline as well as interview talent to join our team. This involves a lot of systems engineering and architecture, two activities I really enjoy.
+ 
+Most recently I’ve been working a mentor, teaching our technical leads and line managers the ropes of managing people and small programs. Thanks to the revamped management system, we have a lot of new managers and we wanted to ensure that we gave those managers all of the resources and tools they would need to succeed, that includes strong mentors.
+ 
+One non-work related activity would be my activities around triathlon. I’m an avid triathlete that enjoys the thrill of racing. I feel it is a nice counter point for the amount of time I stare at computer screens and running meetings.
+ 
+ 
+7. The worldly developer is in touch with some form of culture (books, music, film, etc.). How do you go about feeding this part of your brain?
+ 
+I love traveling; exploring new cities is a major passion of mine. I also have friends all over the world and exploring those countries is high on my to do list.
+I’m a big movie buff, I mentioned how I create film as a hobby. Part of making movies is learning from people who already have. In the past I have been a member of the DC Film Society and the American Film Institute which has it’s east coast head quarters here in Silver Spring Maryland. My current favorite obscure film genre is the modern mumble core. It’s an acquired taste.  
+I’m a big fan of science fiction and I’m slowly working through the works of Vonnegut (intentionally, you only get to experience each of these works for the first time once). I’m also a lifetime member of singularity and co bookstore and borrow a lot of copies of Asimov’s from friend of mine at work.
+I’m a big fan of geek and nerd culture as well, attending local conventions when I can. I participate very actively in the local board game scene and have recently started working with a play-test group for new games.
+ 
+ 
+8. Please critique any of the SparkFun websites. With influence over the SparkFun dev team what would *you* focus on improving?
+I really like the sales side of the web site. Things are laid out well and it’s easy to navigate. I really liked how things I was unfamiliar with, like Actobotics, had a description on top of the section.
+Looks like it might be Elastic Search or Solr, both good choices.
+ 
+The learn page has a good layout. The ‘Above the fold’ half is very clear having all of the section I’d be interested in but I can still see the class and blog information right away.
+I read a lot of articles online, I never see a home, top or back button at the end of the article. If I’ve read something I enjoyed, I want to see more, not just the next or previous article. I’d add the blog breadcrums on the bottom as well. I’m not sure which CMS you are using, I’d guess wordpress, but I’m not extra familiar with CMS’s.
+
+I'm a big fan of simple clean web solutions - this seems to be approach the dev team has taken.  

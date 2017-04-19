@@ -1,0 +1,11 @@
+Explaining the .bashrc file called bashrc_broken
+
+I feel this is a good example of how I would leverage a bashrc file. This was on a closed network, so I grab the important bits. Including, it seems my shots fired in the great emacs v vi war. 
+
+also I realize now that broken is spelled incorrectly, but I find it alittle humerous so I'm leaving it for now, because it sums up how broken that effort was
+
+A sister organization was in a bind recently and had a series of issues on there programs. All of the developers had left the program and they needed a few changes made. I was able to get an account on the system, but my account was created wrong and I had strange permissions. Git didn''t look to be installed correctly but after creating my account the systems people stopped responding to my emails. 
+
+In an effort to help, I used those functions as a work around to ensure it could grab the code and push change while not going a little crazy about the errors I was getting. 
+
+I had to remove a lot of information. Assume that anything in side of brackets <> use to have an IP or a project name best left out. 

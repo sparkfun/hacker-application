@@ -1,0 +1,49 @@
+# .bashrc
+
+# Source global definitions 
+if [ -f /etc/bashrc ]; then 
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+
+#alias
+
+# ls is really ls -l
+alias ls="ls -l"
+
+#gvim
+alias vi="gvim"
+
+
+# functions
+
+# Git function improvements
+# Something is wrong with this server
+# Git is configured incorrectly, 
+# I also have the wrong permissions on the remote server
+# I've emailed the team responsible for managing the box 
+# they have not gotten back to me
+
+# git clone function: allows me to pass in a project name I want to clone to my local system
+gitClone() { git clone -u /apps/git/bin/git-upload-pack ssh://<username>@<server>:22/home/git/dev/$1;" } 
+
+# overloading git pull because of unpack error
+# take one arg project name
+
+gitPull() {
+
+cd /home/<virtualuser>/<projectname>/"$1"/"$1"/;
+git pull --upload-pack /apps/git/bin/git-upload
+
+}
+
+# overloading git push because of recieve pack error
+# takes one arg project name
+
+gitPush() {
+
+cd /home/<virtual user>/<projectname>/"$1"/"$1"/;
+git push --receive-pack /apps/git/bin
+
+}
