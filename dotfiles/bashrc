@@ -1,0 +1,97 @@
+# This is the bashrc config file that I use at school on my terminal account
+export PAGER=less
+export TERM=$TERM
+alias list="ls -latrh --color"  
+alias ls="ls --color"
+alias rm="bin\safe_rm" 
+alias mv="mv -i" 
+alias cp="cp -i" 
+alias vi="vim"
+
+MYSYS="unknown"
+if [ $TERM = "sun" -o $TERM = "dtterm" ] ; then
+  MYSYS="sun-console"
+elif [  `uname` = "Linux" ] ; then
+  MYSYS="linux"
+else
+  MYSYS="sun"
+fi
+	  
+
+## If the system you are on is a Linux system, then use the first
+#  set of variables. Otherwise, use the 2nd set.  
+if [ $MYSYS = "linux" ] ; then
+
+PATH="\
+/usr/local/bin:\
+/usr/local/sbin:\
+/usr/X11R6/bin:\
+/usr/bin:\
+/usr/sbin:\
+/bin:\
+/sbin:\
+/usr/local/matlab/bin:\
+/usr/local/tetex/bin:\
+/usr/local/jre/bin:\
+$HOME/bin"
+MANPATH="\
+/usr/local/man:\
+/usr/local/share/man:\
+/usr/local/tetex/man:\
+/usr/share/man"
+
+else
+
+PATH="\
+/usr/local/bin:\
+/usr/local/sbin:\
+/usr/openwin/bin:\
+/usr/local/SUNWspro:\
+/usr/ccs/bin: \
+/usr/bin:\
+/usr/sbin:\
+/bin:\
+/sbin:\
+/usr/local/matlab/bin:\
+/usr/local/tetex/bin:\
+/usr/local/jre/bin:\
+/usr/local/arm202u/bin:\
+/usr/local/pgsql/bin:\
+$HOME/bin"
+MANPATH="\
+/usr/local/man:\
+/usr/local/share/man:\
+/usr/local/tetex/man:\
+/usr/share/man"
+
+fi
+
+export PATH
+export MANPATH
+
+
+if [ $TERM != "sun" ] ; then
+  export PS1="\[\033[1;34m\]\t\[\033[0;31m\] \u@\h \
+\[\033[1;33m\]\n\w\\[\033[0;36m\] \$\[\033[0;38m\] " 
+else
+  export PS1="\t \u@\h \n\w\\$ "
+fi
+
+## Printer Variables
+if [[ "`/bin/uname -n`" == cetus* ]]; then
+   export PRINTER="cetus"
+elif [[ "`/bin/uname -n`" == hydra* ]]; then
+   export PRINTER="hydra"
+fi
+## To set one printer as your default, comment out the previous
+#  lines and uncomment the line below. Just type in the name of
+#  the printer you want to set, e.g. cl414f or cl224
+#export PRINTER="clxxx"
+		  
+export EDITOR="vim"
+
+source ~/bin/activate
+
+ulimit -c 0
+umask 077
+
