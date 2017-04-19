@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if title and page_tag != 'home' %}{{title}} - {% endif %} Healing Path Animal Wellness, Holistic Veterinary Care</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dr. Jennifer Pearson, DVM">
+    <meta name="keywords" content="Jennifer Pearson, Colorado Springs, holistic, veterinarian, vet, veterinary">
+
+    <!-- Styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/simple_cms.css" rel="stylesheet">
+    <!--<link href="css/bootstrap-wysihtml5.css" rel="stylesheet">-->
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+
+    <style>
+      body {
+        padding-top: 170px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- fav icons -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="home">
+              <img src="img/healing_path_logo_transparent.png" style="padding:0;margin:0" />
+          </a>
+          <div class="nav-collapse">
+            <ul class="nav" style="padding-top:120px;float:right;">
+            {% for item in nav_array.tabs %}
+
+              {% if item.sub_page_count > 0 %}
+                <li class="dropdown">
+                  <a id="drop_{{ item.page_tag }}" href="{{ item.page_tag }}" role="button" class="dropdown-toggle" data-toggle="dropdown">{{ item.page_name }}<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop_{{ item.page_tag }}">
+                    {% for sub_item in attribute(nav_array.sub_nav, item.page_id) %}
+                    <li><a tabindex="-1" href="{{ sub_item.page_tag }}">{{ sub_item.page_name }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              {% else %}
+                <li{% if page_tag == item.page_tag %} class="active"{% endif %}><a href="{{ item.page_tag }}">{{ item.page_name }}</a></li>
+              {% endif %}
+
+            {% endfor %}
+
+            {% if is_admin %}
+               <li><a href="logout">Log Out</a></li>
+            {% endif %}
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      {% for item in alert_array %}
+      <div class="alert alert-{{ item.type }}">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <strong>{{ item.slug }}</strong> {{ item.text|raw }}
+      </div>
+      {% endfor %}
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="span8">
+          <h1>
+            {{title}}
+            {% if is_admin %}
+            <button class="btn btn-primary" onclick="$('.edit_page').show(); return false;">Edit</button>
+            {% endif %}
+          </h1>
+
+          <div>{{content|raw}}</div>
+          <div>{{class_content|raw}}</div>
+        </div>
+        <div class="span4">
+          <div class="simplecms_sidebar">
+
+            <div class="simplecms_sidebar_block">
+              <h4>Address, Phone and Hours</h4>
+              <p><strong>Dr. Jennifer Pearson</strong><br />
+              <i>Healing Path Animal Wellness</i><br />
+              3427 West Colorado Avenue<br />
+              Colorado Springs, CO 80904</p>
+
+              <p>(719) 632-4626</p>
+
+              <table style="width: 100%;">
+                <tr><td>Monday:</td> <td>11:30 am - 7:00 pm</td></tr>
+                <tr><td>Tuesday-Friday:</td> <td>10:00 am - 6:00 pm</td></tr>
+                <tr><td>Saturday mornings:</td> <td>By Appointment</td></tr>
+              </table>
+            </div>
+
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup" class="simplecms_sidebar_block">
+            <form action="http://healingpathvet.us5.list-manage1.com/subscribe/post?u=34a2b8b6c26103e1b99c5a3f7&amp;id=9f337a7753" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <label for="mce-EMAIL"><h4>Subscribe to Our Newsletter</h4></label>
+                    <input type="email" value="" name="EMAIL" class="span3" id="mce-EMAIL" placeholder="email address" required>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+            </form>
+            </div>
+            <!--End mc_embed_signup-->
+
+            <div class="simplecms_sidebar_block">
+              <h4>Healing Path Wellness Blog</h4>
+              Visit the <a href="http://healingpathvet.tumblr.com/" target="_blank">Healing Path Animal Wellness blog</a> for quick tips and info on holistic animal care, behavior and nutrition.
+            </div>
+
+            <div class="simplecms_sidebar_block">
+              <h4>Healing Path on Facebook</h4>
+              Visit our <a href="https://www.facebook.com/HealingPathAnimalWellness" target="_blank">Facebook page and follow us</a>.
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div> <!-- /container -->
+
+    <div class="container" style="text-align:center;padding:20px;">
+      Copyright &copy; 2012, Healing Path Animal Wellness, LLC.  All rights reserved.
+    </div>
+
+    {% if is_admin %}
+    <div class="edit_page" name="edit_page" style="display: none;">
+      <form class="well" method="post">
+        <input type="hidden" name="page_tag" value="{{page_tag}}" />
+        <input type="hidden" name="edit_page" value="1" />
+
+        <label>Navigation Name:</label>
+        <input type="text" class="span7" name="page_name" value="{{page_name}}" />
+        <span class="help-inline"></span>
+
+        <label>Title:</label>
+        <input type="text" class="span7" name="title" value="{{title}}" />
+        <span class="help-inline"></span>
+
+        <label>Content:</label>
+        <textarea class="span7" name="content" cols="60" rows="15" id="page_content">{{content|raw}}</textarea>
+
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn" onclick="$('.edit_page').hide(); return false;">Cancel</button>
+      </form>
+    </div>
+    {% endif %}
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+<!--
+    <script src="js/wysihtml5-0.3.0.min.js"></script>
+    <script src="js/bootstrap-wysihtml5.js"></script>
+    <script>
+      $('#page_content').wysihtml5();
+    </script>
+-->
+     <script type="text/javascript">
+    //<![CDATA[
+        CKEDITOR.replace( 'page_content' );
+    //]]>
+    </script>
+
+  </body>
+</html>

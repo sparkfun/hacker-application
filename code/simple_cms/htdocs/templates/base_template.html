@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple CMS {{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/simple_cms.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="bootstrap/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/cms/">Simple CMS</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+            {% for item in nav_array.tabs %}
+
+              {% if item.sub_page_count > 0 %}
+                <li class="dropdown">
+                  <a id="drop_{{ item.page_tag }}" href="{{ item.page_tag }}" role="button" class="dropdown-toggle" data-toggle="dropdown">{{ item.page_name }}<b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop_{{ item.page_tag }}">
+                    {% for sub_item in attribute(nav_array.sub_nav, item.page_id) %}
+                    <li><a tabindex="-1" href="{{ sub_item.page_tag }}">{{ sub_item.page_name }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              {% else %}
+                <li{% if page_tag == item.page_tag %} class="active"{% endif %}><a href="{{ item.page_tag }}">{{ item.page_name }}</a></li>
+              {% endif %}
+
+            {% endfor %}
+
+            {% if is_admin %}
+               <li><a href="logout">Log Out</a></li>
+            {% endif %}
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      {% for item in alert_array %}
+      <div class="alert alert-{{ item.type }}">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <strong>{{ item.slug }}</strong> {{ item.text|raw }}
+      </div>
+      {% endfor %}
+
+      <h1>{{title}}</h1>
+      {% if is_admin %}
+      <button class="btn btn-primary" onclick="$('.edit_page').show(); return false;">Edit</button>
+      {% endif %}
+
+      <div>{{content|raw}}</div>
+      <div>{{class_content|raw}}</div>
+
+    </div> <!-- /container -->
+
+    {% if is_admin %}
+    <div class="edit_page" name="edit_page" style="display: none;">
+      <form class="well" method="post">
+        <input type="hidden" name="page_tag" value="{{page_tag}}" />
+        <input type="hidden" name="edit_page" value="1" />
+
+        <label>Navigation Name:</label>
+        <input type="text" class="span7" name="page_name" value="{{page_name}}" />
+        <span class="help-inline"></span>
+
+        <label>Title:</label>
+        <input type="text" class="span7" name="title" value="{{title}}" />
+        <span class="help-inline"></span>
+
+        <label>Content:</label>
+        <textarea class="span7" name="content" cols="60" rows="15" id="page_content">{{content|raw}}</textarea>
+
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn" onclick="$('.edit_page').hide(); return false;">Cancel</button>
+      </form>
+    </div>
+    {% endif %}
+
+    <div class="container">
+      footer
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap-transition.js"></script>
+    <script src="bootstrap/js/bootstrap-alert.js"></script>
+    <script src="bootstrap/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="bootstrap/js/bootstrap-tab.js"></script>
+    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="bootstrap/js/bootstrap-popover.js"></script>
+    <script src="bootstrap/js/bootstrap-button.js"></script>
+    <script src="bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>

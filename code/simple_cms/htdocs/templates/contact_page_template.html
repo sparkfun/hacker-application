@@ -1,0 +1,17 @@
+<form method="post" class="well">
+   <img alt="Our dog Simon says hello!" src="http://healingpathvet.com/test/img/pictures/simon_says_hello.jpg" style="width: 300px; height: 289px; border-width: 5px; border-style: solid; margin: 10px; float:right" />
+
+    <label>Your Name:</label>
+    <input type="text" class="span3" name="contact_name" placeholder="your name..." value="{{ contact_name }}" />
+    <span class="help-inline"></span>
+
+    <label>Your Email:</label>
+    <input type="text" class="span3" name="contact_email" placeholder="you@email.com" value="{{ contact_email }}" />
+    <span class="help-inline"></span>
+
+    <label>Message:</label>
+    <textarea class="span3" name="contact_message" cols="60" rows="8">{{ contact_message }}</textarea>
+
+    <br />
+    <button type="submit" class="btn">Submit</button>
+</form>
