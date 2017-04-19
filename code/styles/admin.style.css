@@ -1,0 +1,167 @@
+/* HireStarts Administration Dashboard Stylesheet */
+/*            Designed by Tyler Bailey           */
+
+/* Nav */
+.admin_nav {
+	font-size: 1em;
+	height: 60px;
+}
+.admin_nav ul li {
+	display: inline;
+	list-style-type: none;
+}
+.admin_nav li { margin-left: 10px; }
+.admin_nav a {
+	color: #39C;
+	font-weight: bold;
+	text-decoration: none;
+}
+.admin_nav a:hover { text-decoration: underline; }
+
+#top_container {
+	width: 100%;
+	height: 250px;
+	display: block;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+/* Message Board */
+.admin_message {
+	font-size: 1.2em;
+	color: #333;
+	font-weight: bold;
+	background-color: #F8F8F8;
+	height: 250px;
+	width: 55%;
+	border: 1px solid #333;
+	padding: 10px;
+	margin-right: 22px;
+	float: left;
+}
+
+label.message_label {
+	font-size: .9em;
+	font-weight: normal;
+}
+.message_field {
+	width: 310px;
+	padding: 3px;
+	display: inline;
+}
+
+.message_viewer {
+	border-top: 1px solid #333;
+	margin-top: 8px;
+	padding-top: 8px;
+}
+
+p.a_messages {
+	font-size: 1em;
+	margin-top: 10px;
+}
+
+span.date {
+	font-size: .7em;
+	font-weight: bold;
+}
+span.message {
+	font-size: .8em;
+	font-weight: normal;
+}
+span.poster {
+	font-size: .8em;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* User Stats */
+.user_stats {
+	min-height: 250px;
+	width: 30%;
+	padding-left: 8px;
+	border-left: 1px solid #333;
+	float: right;
+}
+
+span.title {
+	font-weight: bold;
+	color: #333;
+	font-size: 1em;
+}
+span.stat_title {
+	font-weight: bold;
+	color: #333;
+	font-size: .9em;
+}
+
+.user_stats ul li { list-style-type: none; }
+.user_stats li { margin-top: 8px; }
+
+/* Google Analytics */
+.go_analytics{
+	min-height: 200px;
+	width: 100%;
+	padding: 10px;
+	margin-top: 15px;
+}
+
+#page-analtyics {
+  clear: left;
+}
+
+#page-analtyics .metric {
+	background: #fefefe; /* Old browsers */
+    background: -moz-linear-gradient(top, #fefefe 0%, #f2f3f2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#f2f3f2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fefefe 0%,#f2f3f2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fefefe 0%,#f2f3f2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fefefe 0%,#f2f3f2 100%); /* IE10+ */
+    background: linear-gradient(top, #fefefe 0%,#f2f3f2 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f2f3f2',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #ccc;
+	float: left;
+	font-size: 12px;
+	margin: -4px 0 1em -1px;
+	padding: 10px;
+	width: 105px;
+}
+
+#page-analtyics .metric:hover {
+  background: #fff;
+  border-bottom-color: #b1b1b1;
+}
+
+#page-analtyics .metric .legend {
+  background-color: #058DC7;
+  border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  font-size: 0;
+  margin-right: 5px;
+  padding: 10px 5px 0;
+}
+
+#page-analtyics .metric strong {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#page-analtyics .range {
+  color: #686868;
+  font-size: 11px;
+  margin-bottom: 7px;
+  width: 100%;
+}
+
+/* Members Page */
+table.user_table {
+	width: 100%;
+}
+.user_table tr { border-bottom: 1px solid #333; }
+.user_table td { padding: 10px; }
+td.userIMG { float: left; }
+.user_actions { 
+	text-align: right;
+	float: right;
+}

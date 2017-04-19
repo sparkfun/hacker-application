@@ -1,0 +1,152 @@
+######################################
+##
+## @author  		Tyler Bailey
+## @version 		File: htaccess.txt 2013-02-04 19:42:52Z Tyler Bailey $
+######################################
+
+#################################################################
+#						Website Performace 						#
+#################################################################
+
+# Disable indexing of folders
+Options -Indexes
+Options +FollowSymlinks
+
+# Deactivate compression for buggy browsers
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+
+# Set header information for proxies
+Header append Vary User-Agent
+
+# Gzip Files
+<IfModule mod_gzip.c>
+    mod_gzip_on       Yes
+    mod_gzip_dechunk  Yes
+    mod_gzip_item_include file      \.(html?|txt|css|js|php|pl)$
+    mod_gzip_item_include handler   ^cgi-script$
+    mod_gzip_item_include mime      ^text/.*
+    mod_gzip_item_include mime      ^application/x-javascript.*
+    mod_gzip_item_exclude mime      ^image/.*
+    mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</IfModule>
+
+# Compress PHP Files uzing Z-lib
+<IfModule mod_php5.c>
+	php_value zlib.output_compression 16386
+</IfModule>
+
+# Deflate Files
+<ifModule mod_deflate.c>
+ 	AddOutputFilterByType DEFLATE text/html text/xml text/css text/plain
+ 	AddOutputFilterByType DEFLATE image/svg+xml application/xhtml+xml application/xml
+ 	AddOutputFilterByType DEFLATE application/rdf+xml application/rss+xml application/atom+xml
+ 	AddOutputFilterByType DEFLATE text/javascript application/javascript application/x-javascript application/json
+	AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-otf
+	AddOutputFilterByType DEFLATE font/truetype font/opentype
+</ifModule>
+
+#################################################################
+#						Website URL Rewrites 					#
+#################################################################
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	# Full path to your site
+	#RewriteBase /
+	
+	# Rewrite all requests to include www. for CloudFlare -- ONLY WHEN CLOUDFLARE IS ACTIVE
+	#RewriteCond %{HTTP_HOST} ^beta.hirestarts.com$ [NC]
+	#RewriteCond %{SERVER_PORT} ^80$
+	#RewriteRule ^(.*)$ http://www.beta.hirestarts.com/$1 [R=301,L]
+
+	# Rewrite all php files	   
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.php -f
+    RewriteRule ^(.*)$ $1.php
+	
+	# Rewrite the user profile pages
+	RewriteRule ^user/([a-zA-Z0-9_-]+)/?$ profile.php?user=$1 [L]
+	
+	# Rewrite the company profile pages
+	RewriteRule ^company/([a-zA-Z0-9_-]+)/?$ employer.php?user=$1 [L]
+	
+	# Rewrite the blog post pages
+	RewriteRule ^post/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ entry.php?id=$1?t=$2 [L]
+	
+	# Rewrite the job listing pages
+	RewriteRule ^job/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ listing.php?id=$1?t=$2 [L]
+	
+	# Rewrite blog categories
+	RewriteRule ^blog/cat/([0-9]+)/([a-zA-Z0-9_-]+)/?$ blog.php?cat=$1?n=$2 [L]
+	
+	# Rewrite job categories
+	RewriteRule ^opportunities/([0-9]+)/([a-zA-Z0-9_-]+)/?$ opportunities.php?ind=$1?t=$2 [L]
+	
+
+</IfModule>
+
+#################################################################
+#						Website Security 						#
+#################################################################
+
+# Block users from viewing this .htaccess file
+<FILES .htaccess>
+	order allow,deny 
+	deny from all
+</FILES>
+
+# proc/self/environ? no way!
+RewriteCond %{QUERY_STRING} proc/self/environ [OR]	 
+
+# Block out any script trying to set a mosConfig value through the URL
+RewriteCond %{QUERY_STRING} mosConfig_[a-zA-Z_]{1,21}(=|\%3D) [OR]	
+ 
+# Block out any script trying to base64_encode crap to send via URL
+RewriteCond %{QUERY_STRING} base64_encode.*(.*) [OR]	 
+
+# Block out any script that includes a <script> tag in URL
+RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]	
+ 
+# Block out any script trying to set a PHP GLOBALS variable via URL
+RewriteCond %{QUERY_STRING} GLOBALS(=|[|\%[0-9A-Z]{0,2}) [OR]
+	 
+# Block out any script trying to modify a _REQUEST variable via URL
+RewriteCond %{QUERY_STRING} _REQUEST(=|[|\%[0-9A-Z]{0,2})
+	 
+# Send all blocked request to homepage with 403 Forbidden error!
+RewriteRule ^(.*)$ index.php [F,L]
+
+
+#################################################################
+#						Error Documents   						#
+#################################################################
+
+#BAD_REQUEST
+ErrorDocument 400 /400.html
+ 
+#UNAUTHORIZED
+ErrorDocument 401 /401.html
+ 
+#FORBIDDEN
+ErrorDocument 403 /403.html
+ 
+#NOT_FOUND
+ErrorDocument 404 /404.html
+ 
+#METHOD_NOT_ALLOWED
+ErrorDocument 405 /405.html
+ 
+#REQUEST_TIME_OUT
+ErrorDocument 408 /408.html
+ 
+#UNSUPPORTED_MEDIA_TYPE
+ErrorDocument 415 /415.html
+ 
+#INTERNAL_SERVER_ERROR
+ErrorDocument 500 /500.html
+ 
+#BAD_GATEWAY
+ErrorDocument 502 /502.html

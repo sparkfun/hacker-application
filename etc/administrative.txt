@@ -1,0 +1,32 @@
+What is your desired compensation range? (Range meaning the least you're comfortable with to the most you think you're worth.)
+	- My desired compensation range would be between $40,000 - $60,000 a year. 
+
+When can you start?
+	- Though I graduated from school in December, I am finishing up one class which ends April 28th. So my earliest start date would be May 1st, 2013.
+
+Do you have any planned vacations/absences in the next six months that we should know about?	
+	- Nothing planned as of right now. I am very reliable when it comes to requesting time off and I am always sure to do so in a very timely manner.
+
+Do you have any problem with dogs?
+	- I absolutely LOVE dogs! And all animals for that matter!
+
+Please describe one of the greatest costumes you've ever attempted, Halloween or otherwise.
+	- I attempted to be Woody from Toy Story a couple years back. I made a large ring to tape to my back for the pull string and even wrote 
+	"Andy" on the bottom of my boot! I have also dressed up as a big Budweiser can, but that wasn't nearly as creative as being Woody.
+
+The active developer keeps up on happenings in the world of development. Where do you you get your news?
+	- I really love Tech Crunch, Smashing Magazine, and TreeHouse. I follow all three news sources on a daily basis.
+
+The sane developer does things besides write code. What occupies your time?
+	- I am huge into extreme sports. I LOVE snowboarding and skateboarding in my free time. Of course video games are also a hobby of mine. 
+	When I'm not programming, snowboarding, or skateboarding I can usually be found at a local bar with some good friends having a drink or two.
+
+The worldy developer is in touch with some form of culture (books, movies, music, what have you). How do you go about feeding this part of your brain?
+	- Well, as I have previously stated in my application I am actually a Film major at Western Michigan University. I love watching movies. Music is a huge part of my life as well. It's what keeps me moving through a rough day. I also enjoy reading a good book here and there. I haven't finished too many novels, but I always start and get at least half way through!
+	
+	
+**SIDE NOTE**
+
+	The application I posted in the 'code' directory is a beta version of a professional social network that I co-founded in 2011. That code is the live code running at http://beta.hirestarts.com. There is currently a network running at www.hirestarts.com, but it is an old version that I did not develop. 
+	
+	I look forward to hearing from you guys!

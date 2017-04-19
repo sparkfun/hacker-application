@@ -1,0 +1,46 @@
+/* HireStarts Beta Styles - Temporary File */
+
+.beta_header {
+	width: 100%;
+	text-align: center;
+	font-size: 4em;
+	color: #39C;
+	margin-top: 100px;
+}
+.beta_signup {
+	width: 50%;
+	float: right;
+	margin: 50px auto;
+	text-align: center;
+	color: #39C;
+}
+.beta_text_med { font-size: 2em; }
+.small { font-size: 1em; color: #39C; }
+.beta_text_lrg { font-size: 45px; }
+.beta_form { margin-top: 30px; }
+input.betaEmail {
+	width: 400px;
+	height: 30px;
+	font-size: 18px;
+	line-height: 18px;
+}
+footer.beta {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.video iframe {
+	max-width: 450px; 
+	max-height: 271px;
+}
+
+@media only screen and (max-device-width: 800px) {
+	.beta_signup {
+		width: 100%;
+		display: block;
+	}
+	.video iframe {
+		display: none;
+	}
+}
