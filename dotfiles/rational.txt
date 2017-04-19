@@ -1,0 +1,3 @@
+The reason I do not leverage dotfiles is because most linux based systems (debian, some redhat) I generally have the system running on a different machine so most of the time I'm using SSH to access and modify the OS.
+
+Also along with using SSH, I teach staff how to access and use linux commands and I do not want to skew or conflict their knowledge by teaching them custom short cuts.  I do understand the benefit of a customized interface but havent had the opportunity to leverage it.

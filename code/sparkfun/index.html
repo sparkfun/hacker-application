@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sparkfun's Resume Challenge</title>
+<link href="style/main.css" rel="stylesheet" type="text/css" />
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+//Prepare Document
+$(document).ready(function(){
+//When Key is down clear div
+  $(".searchbox").keydown(function(){
+	$(".results").html("");
+  });
+ //When key up pull json and generate HTML
+  $(".searchbox").keyup(function(){
+	var strHTML ="<table class=\"tableresults\"><tr><th class=\"tdv\">Value 1</th><th class=\"tdv\">Value 2</th><th class=\"tdv\">Value 3</th><th class=\"tdv\">Halves of Words Together</th></tr>";
+	var searchval = "pull.php?search=" + $(".searchbox").val();
+//Run JSON
+	$.getJSON(searchval, function(result){
+		$.each (result, function(i, field){
+//Populate Array
+		var arrValues = new Array();
+			arrValues[0] = field.value1;
+			arrValues[1] = field.value2;
+			arrValues[2] = field.value3;
+			var strAll = "";
+//Substring values and alternate between beginning and last half
+			for (var i=0; i<arrValues.length; i++){
+				if (i % 2 === 0){
+					strAll += arrValues[i].substring(0,Math.round(arrValues[i].length/2));
+
+				}else{
+					strAll += arrValues[i].substring(Math.round(arrValues[i].length/2), arrValues[i].length);
+					}				
+				}
+//Generate table part 2
+			strHTML += "<tr><td class=\"tdv\">" + field.value1 + "</td>" + "<td class=\"tdv\">" + field.value2 + "</td>" + "<td class=\"tdv\">" + field.value3 + "</td><td class=\"tdv\">" + strAll + "</td></tr>";
+			});
+		strHTML += "</table>";
+//Append all HTML to DIV
+		$(".results").append(strHTML);
+	});
+
+  });  
+});
+</script>
+
+
+</head>
+
+<body>
+<div class="wrapper">
+	<h1>Search...</h1><br />
+	<br />
+	<div class="menu"><div class="menuitem"><a href="inputs.html">Input Data</a></div><div class="menuitem"><a href="index.html">Refresh</a></div></div>
+    <div class="input">
+		<form>
+			<input class="searchbox" type="text" name="search" onfocus="if(this.value == 'Start your search here') { this.value = ''; }" value="Start your search here"/>
+		</form>
+    </div><br />
+    <div class="results" name="results">Results will appear here once you search.</div>
+</div>
+</body>
+</html>
