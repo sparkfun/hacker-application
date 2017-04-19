@@ -1,0 +1,147 @@
+/* Just some random CSS for the same site as the JS and PHP. Pretty standard stuff, though I am nit picky about keeping it organized */
+
+/* CSS Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Fonts */
+
+@font-face {
+	font-family: 'TodayShopMedium';
+	src: url('../fonts/todayshopmedium.eot');
+	src: url('../fonts/todayshopmedium.eot') format('embedded-opentype'),
+		 url('../fonts/todayshopmedium.woff') format('woff'),
+		 url('../fonts/todayshopmedium.ttf') format('truetype'),
+		 url('../fonts/todayshopmedium.svg#TodaySHOPMediumRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Overall Layout */
+#header_container,
+#about_container,
+#sites_container,
+#quote_title_container,
+#quote_container,
+#contac_container {
+	width: 100%;
+	text-align: center;
+}
+
+#about,
+#quote,
+#contact_form,
+#footer {
+	margin: 0 auto;
+	text-align: left;
+	width: 1024px;
+}
+
+#header_container {
+	height: 300px;
+	padding-top: 200px;
+	background: #3267a4;
+}
+
+#gears {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#about_container {
+	height: 460px;
+	background: url(../img/bg_s.png) repeat-x 0 0 #fdfdfd;
+}
+
+#about {
+	height: 460px;
+	background: url(../img/gear_about.png) no-repeat center bottom;
+}
+
+#sites_container {
+	height: 480px;
+	padding-top: 50px;
+	background: #275893;
+	overflow: hidden;
+}
+
+#sites_container h1 {
+	width: 408px;
+	height: 72px;
+	text-indent: -9999px;
+	margin: 0 auto;
+	background: url(../img/text.png) no-repeat 0 -170px;
+}
+
+#quote_title_container {
+	height: 120px;
+	padding-top: 80px;
+	background: url(../img/bg_s.png) repeat-x 0 -460px #fafafa;
+}
+
+#quote_title_container h1 {
+	width: 372px;
+	height: 61px;
+	text-indent: -9999px;
+	margin: 0 auto;
+	background: url(../img/text.png) no-repeat 0 -260px;
+}
+
+#quote_container {
+	height: 450px;
+	padding: 60px 0;
+	background: #04254e;
+}
+
+#quote { height: 500px; }
+
+#contact_container {
+	height: 320px;
+	padding: 50px 0;
+	background: url(../img/bg_s.png) repeat-x 0 -660px #c7c8c9;
+}
+
+#contact_form {
+	height: 320px;
+	text-align: center;
+}
+
+#footer_container {
+	height: 60px;
+	padding-top: 50px;
+	background: #031832;
+}
+
+#footer ul {
+	float: left;
+	margin-left: 30px;
+}
+
+#footer ul li {
+	list-style-type: none;
+	display: inline;
+	margin-right: 25px;
+}
+
+#footer ul li a {
+	font-size: 16pt;
+	color: #386eab;
+	font-family: 'TodayShopMedium', 'Arial Black', Helvetica, Arial, san-serif;
+	text-decoration: none;
+} 
+
+#footer ul li a:hover {
+	color: #4786ce;
+}
+
+#footer p {
+	float: right;
+	margin-right: 60px;
+	font-size: 16pt;
+	color: #093264;
+	font-family: 'TodayShopMedium', 'Arial Black', Helvetica, Arial, san-serif;
+}
+
+.hide { display: none; }
+.clear { clear: both; }
