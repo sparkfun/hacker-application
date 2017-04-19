@@ -1,0 +1,25 @@
+#F12 = next
+#F11 = prev
+#F10 = new window
+#F9 = kill this window
+#F8 = rename this window
+#F7 = detach
+
+bindkey -k F1 prev
+bindkey -k F2 next
+bindkey -k k9 kill
+bindkey -k k; screen
+bindkey -k k8 title
+bindkey -k k7 detach
+
+startup_message off
+defscrollback 10000
+
+# Window list at the bottom.
+hardstatus alwayslastline
+hardstatus string "%-w%{= BW}%50>%n %t%{-}%+w%<"
+
+# From Stephen Shirley
+# Don't block command output if the terminal stops responding
+# (like if the ssh connection times out for example).
+nonblock on
