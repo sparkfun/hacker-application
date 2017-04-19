@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<HomeSearchConfig>
+	<Cities>
+		<City>
+			Apex
+		</City>
+	</Cities>
+	<Cities>
+		<City>
+			Cary
+		</City>
+	</Cities>
+	<Cities>
+		<City>
+			Chapel Hill
+		</City>
+	</Cities>
+	<Cities>
+		<City>
+			Clayton
+		</City>
+	</Cities>
+	<Cities>
+		<City>
+			Durham
+		</City>
+	</Cities>
+	<Cities>
+		<City>
+			Fuquay-Varina
+		</City>
+	</Cities>
+	<Cities>
+		<City>
+			Holly Springs
+		</City>
+	</Cities>
+	<Cities>
+		<City>
+			Garner
+		</City>
+	</Cities>
+	<Cities>
+		<City>
+			Knightdale
+		</City>
+	</Cities>
+	<Cities>
+		<City>
+			Morrisville
+		</City>
+	</Cities>
+	<Cities>
+		<City>
+			Raleigh
+		</City>
+	</Cities>
+	<Cities>
+		<City>
+			Research Triangle Park
+		</City>
+	</Cities>
+	<Cities>
+		<City>
+			Wake Forest
+		</City>
+	</Cities>
+	<Cities>
+		<City>
+			Willow Springs
+		</City>
+	</Cities>
+</HomeSearchConfig>

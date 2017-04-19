@@ -1,0 +1,25 @@
+/* Copyright Dynarch.com, 2003-2004.  All Rights Reserved. */
+
+@import url("hmenu.css");
+
+/* horizontal parts */
+
+div.dynarch-horiz-menu table,
+div.dynarch-popup-menu table { font-family: "trebuchet ms",verdana,sans-serif; }
+div.dynarch-horiz-menu { background: url("img/aqua/normal-bg.png"); color: #000; border-color: #4d627f; }
+div.dynarch-horiz-menu table tr td.hover { background: url("img/aqua/hover-bg.png"); color: #000; }
+div.dynarch-horiz-menu table tr td.active { background: url("img/aqua/active-bg.png"); color: #fff; }
+div.dynarch-horiz-menu table tr td.separator { width: 7px; }
+div.dynarch-horiz-menu table tr td.separator div { border-left-color: #9d98bf; border-right: none; margin: 3px 3px; }
+
+/* vertical parts */
+
+div.dynarch-popup-menu div.a { background: url("img/aqua/right-bg.png") repeat-y 100% 0%; padding: 4px 0px; }
+div.dynarch-popup-menu div.b { background: url("img/aqua/left-bg.png") repeat-y 0% 0%; }
+div.dynarch-popup-menu { padding: 0px; border: 1px solid #4d627f; color: #000; background: url("img/aqua/normal-bg.png"); }
+div.dynarch-popup-menu tr.separator td div { margin: 4px 5px; background-color: #adb2cf; }
+div.dynarch-popup-menu tr.item td.icon { padding-left: 5px; }
+div.dynarch-popup-menu tr.item td.end { padding-right: 5px; }
+div.dynarch-popup-menu tr.item.hover { background: url("img/aqua/hover-bg.png"); color: #000; }
+div.dynarch-popup-menu tr.item.active { background: url("img/aqua/active-bg.png"); color: #fff; }
+div.dynarch-popup-menu tr.disabled td.label { color: #a2a2af; }

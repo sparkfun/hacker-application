@@ -1,0 +1,679 @@
+* {
+	font-family: Tahoma;
+	font-size: medium;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-image: url(/graphics/vert-grad-blue.jpg);
+	background-repeat: repeat-x;
+}
+
+dd {
+	font-size: 90%;
+	padding-left: 25px;
+}
+
+div.jobsDesc {
+	border: 1px solid #C0C0C0;
+	margin: 10px 0px 20px 0px;
+	padding: 15px 10px;
+	width: 95%;
+	width: 90%;
+}
+
+div.TickerStyle {
+	color: #FF0000;
+	font-family: monospace;
+	font-size: 80%;
+	font-weight: bolder;
+	margin: 40px 0px 0px 10px;
+	padding: 3px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	width: 90%;
+}
+
+dl.custFirst dd {
+	background: url(/graphics/dd_arrow.gif) no-repeat 0px 2px;
+	color: #C0C0C0;
+	margin-left: 15px;
+	padding-left: 15px;
+}
+
+dl.custFirst dt {
+	font-weight: bold;
+}
+
+dl.hotDeals a {
+	font-family: "Comic Sans MS";
+}
+
+dl.hotDeals dd {
+	background-image: none;
+	color: #FF0000;
+	font-family: "Comic Sans MS";
+	font-size: 90%;
+	font-weight: bold;
+	margin-left: 0px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	text-decoration: underline;
+}
+
+dl.hotDeals dt {
+	font-family: "Comic Sans MS";
+	font-size: 85%;
+	padding: 5px;
+}
+
+dt {
+	font-size: 90%;
+	padding: 10px;
+}
+
+em {
+	font-size: 100%;
+	font-style: italic;
+}
+
+fieldset {
+	border: 1px solid #C0C0C0;
+	margin: 20px 0px 0px 0px;
+	padding: 0px 10px;
+	width: 95%;
+}
+
+fieldset.menu {
+	display: block;
+	margin: 20px 0px 20px 0px;
+}
+
+fieldset.photoGroup {
+	border: 1px solid #C0C0C0;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 10px;
+	width: 96%;
+}
+
+fieldset.photoGroup {
+	font-size: 95% !important;
+	font-style: oblique;
+}
+
+fieldset.storeDetails {
+	font-size: 120%;
+	padding: 0px;
+}
+
+fieldset.storeDetails li {
+	font-size: 110%;
+	list-style-type: square;
+	margin-left: 35px;
+}
+
+fieldset.storeDetails p {
+	padding: 0px 0px 0px 10px;
+}
+
+fieldset.storeDetails table {
+	margin: 0px !important;
+	padding: 0px;
+	width: 100%;
+}
+
+fieldset.storeDetails td {
+	font-size: 110%;
+	padding: 0px;
+}
+
+fieldset.storeDetails ul {
+	margin: 10px 0px 10px 0px;
+}
+
+h1 {
+	font-family: "Times New Roman";
+	font-size: 150%;
+	font-variant: small-caps;
+	letter-spacing: -1px;
+	margin: 15px 0px 5px 0px;
+}
+
+h2 {
+	font-family: "Times New Roman";
+	font-size: 130%;
+	font-variant: small-caps;
+	letter-spacing: -1px;
+	margin: 20px 0px 20px 0px;
+}
+
+h2.subheading {
+	color: #A8A8A8;
+	font-family: "Times New Roman";
+	font-size: 120%;
+	font-style: oblique;
+	font-variant: normal;
+	letter-spacing: -1px;
+	margin: 5px 0px 10px 3px;
+}
+
+h3 {
+	font-family: "Times New Roman";
+	font-size: 115%;
+	font-variant: small-caps;
+	letter-spacing: -1px;
+	margin: 10px 0px 10px 0px;
+}
+
+h4 {
+	font-family: "Times New Roman";
+	font-size: 90%;
+	font-variant: small-caps;
+	letter-spacing: 0px;
+	margin: 5px 0px 5px 0px;
+	text-decoration: underline;
+}
+
+hr.newsBreak {
+	border: 1px dotted;
+	margin: 20px 20px;
+}
+
+legend {
+	color: #000080;
+	font-family: "Times New Roman" !important;
+	font-size: 140%;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+li {
+	font-size: 11px;
+}
+
+p {
+	font-size: 80%;
+	line-height: 150%;
+	margin: 10px 0px 10px 0px;
+}
+
+p.clickPhoto {
+	font-size: 75%;
+	font-style: italic;
+	margin: 0px 0px 3px 0px;
+	padding: 0px;
+}
+
+p.reportDownload {
+	background: url(/graphics/pdf.jpg) no-repeat top left;
+	height: 90px;
+	margin-left: 0px;
+	padding-left: 90px;
+	padding-top: 5px;
+}
+
+p.specialDeals {
+	font-family: "Comic Sans MS";
+	font-size: 105%;
+}
+
+p.specialDeals u {
+	color: #F00000;
+	font-family: "Comic Sans MS";
+	font-size: 110%;
+}
+
+strong {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+table.photoGallery {
+	margin: 0px;
+	padding: 0px;
+}
+
+table.photoGallery td {
+	padding: 2px;
+}
+
+table.photoGallery td a {
+	border: 1px solid #000000;
+}
+
+table.photoGallery td img {
+	border: 2px solid #FFFFFF;
+}
+
+table.photoGallery td p {
+	font-size: 80% !important;
+	font-style: oblique;
+}
+
+table.storePhotos {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+ul {
+	list-style: none;
+}
+
+ul.awards {
+	margin-left: 30px;
+}
+
+ul.awards li {
+	font-size: 110%;
+	list-style: square;
+	margin: 10px 0px;
+}
+
+ul.consumerGas {
+	margin-left: 25px;
+}
+
+ul.consumerGas li {
+	list-style: square;
+	margin: 10px 0px;
+}
+
+ul.holidays {
+	margin-left: 25px;
+}
+
+ul.jobDuties {
+	margin-left: 25px;
+}
+
+ul.jobDuties li {
+	list-style: square;
+}
+
+ul.menu {
+	margin-left: 35px;
+}
+
+ul.menu li {
+	font-size: 105%;
+	font-style: oblique;
+	list-style-type: square;
+	padding: 2px;
+}
+
+ul.winners {
+	margin-left: 30px;
+}
+
+ul.winners li {
+	font-size: 95%;
+	list-style: square;
+	margin: 10px 0px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.float-left {
+	float: left;
+	padding: 5px 20px 10px 0px;
+}
+
+.float-right {
+	float: right;
+	padding: 0px 0px 10px 20px;
+}
+
+#body {
+	background-color: #FFFFFF;
+	background-image: url(/graphics/header.jpg);
+	background-position: top left;
+	background-repeat: no-repeat;
+	border: 1px solid #000000;
+	margin: auto;
+	width: 780px;
+}
+
+#Coupons .couponText {
+	width: 55%;
+}
+
+#Coupons td p {
+	font-family: "Comic Sans MS", Arial;
+	font-size: 90%;
+}
+
+#Coupons td p a {
+	font-family: "Comic Sans MS", Arial;
+	font-size: 90%;
+}
+
+#foods-beverages li {
+	list-style: disc inside;
+}
+
+#foods-beverages td {
+	padding: 10px;
+	width: 70%;
+}
+
+#foods-beverages td.product-image {
+	width: 150px;
+}
+
+#footer {
+	background-color: #C0C0C0;
+	clear: both;
+	width: 100%;
+}
+
+#footer a {
+	font-size: 90%;
+}
+
+#footer a:visited {
+	color: #FFFFFF;
+}
+
+#footer p {
+	color: #FFFFFF;
+	font-size: 95%;
+	font-style: oblique;
+	padding: 5px;
+}
+
+#footer td.footerLeft {
+	width: 60%;
+}
+
+#footer ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+#footer ul li {
+	color: #FFFFFF;
+	display: inline;
+	font-size: 95%;
+	padding: 0px;
+}
+
+#header {
+	height: 180px;
+	width: 100%;
+}
+
+#left {
+	background-color: #FFFFFF;
+	float: left;
+	width: 440px;
+}
+
+#leftSection {
+	border: 1px solid #C0C0C0;
+	margin: 10px;
+	padding: 10px;
+	width: 435px;
+}
+
+#leftSection table {
+	margin-top: 25px;
+}
+
+#leftSection table h2 {
+	color: #F20000;
+	font-size: 160%;
+	font-weight: bold;
+	letter-spacing: -2px;
+	text-decoration: underline;
+}
+
+#leftSection table li {
+	padding-left: 4px;
+}
+
+#leftSection table p,li {
+	color: #464646;
+	font-size: 88%;
+}
+
+#leftSection table td {
+	padding: 8px;
+	vertical-align: top;
+}
+
+#leftSection table td.leftCol {
+	border-right: 1px dotted #000000;
+	width: 50%;
+}
+
+#leftSection table td.leftCol li {
+	font-family: "Comic Sans MS";
+	list-style: disc inside none;
+}
+
+#leftSection table td.leftCol p {
+	font-family: "Comic Sans MS";
+	font-size: 85%;
+}
+
+#leftSection table td.leftCol p a {
+	font-family: "Comic Sans MS";
+}
+
+#leftSection table td.leftCol strong, u {
+	font-family: "Comic Sans MS";
+}
+
+#leftSection table ul {
+	margin-top: 5px;
+}
+
+#logo {
+	float: left;
+	margin: 0px 0px 0px 20px;
+}
+
+#piccadillyMenu {
+	margin: 10px 0px 10px 0px;
+}
+
+#piccadillyMenu td {
+	font-size: 85%;
+}
+
+#piccadillyMenu th {
+	font-size: 110%;
+	font-style: oblique;
+	text-align: left;
+}
+
+#piccadillyMenu tr td {
+	border-bottom: 1px solid #C0C0C0;
+}
+
+#priNav {
+	float: right;
+	margin: 0px 5px 20px 0px;
+	padding: 6px 2px 0px 0px;
+	width: 280px;
+}
+
+#priNav .foods {
+	background-image: url(/graphics/foods-mark.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #B0C4DE;
+	font-family: "Times New Roman";
+	height: 150px;
+	margin: 0px 0px 1px 0px;
+	padding: 0px 4px 6px 4px;
+}
+
+#priNav .fuel {
+	background-image: url(/graphics/fuel-mark.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #B0C4DE;
+	margin: 0px 0px 1px 0px;
+	padding: 0px 4px 6px 4px;
+}
+
+#priNav .jobs {
+	background-image: url(/graphics/employment-mark.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #B0C4DE;
+	margin: 0px 0px 1px 0px;
+	padding: 0px 4px 6px 4px;
+}
+
+#priNav .press {
+	background-image: url(/graphics/press-mark.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #B0C4DE;
+	margin: 0px 0px 1px 0px;
+	padding: 0px 4px 6px 4px;
+}
+
+#priNav .stopnsave {
+	background-image: url(/graphics/stopnsave-mark.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #B0C4DE;
+	margin: 0px 0px 1px 0px;
+	padding: 0px 4px 6px 4px;
+}
+
+#priNav .stopnsave h2 {
+	background: url(/graphics/pointer.gif) no-repeat 10px 15px;
+	margin: 0px 0px 0px 0px;
+	padding-top: 5px;
+}
+
+#priNav .stopnsave img {
+	margin: 0px;
+	vertical-align: -5px -5px;
+}
+
+#priNav .stores {
+	background-image: url(/graphics/stores-mark.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #B0C4DE;
+	height: 125px;
+	margin: 0px 0px 1px 0px;
+	padding: 0px 4px 6px 4px;
+}
+
+#priNav .top {
+	background-color: #00008B;
+	background-image: url(/graphics/top-cap.jpg);
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 46px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#priNav h2 {
+	background: url(/graphics/pointer.gif) no-repeat 10px 15px;
+	font-size: 130%;
+	font-weight: normal;
+	letter-spacing: -1px;
+	line-height: 25px;
+	margin: 0px 0px 10px 0px;
+	padding: 7px 0px 6px 20px;
+}
+
+#priNav h2 a {
+	color: #000000;
+	font-family: "Times New Roman" !important;
+	font-size: 115%;
+	font-weight: bold;
+}
+
+#priNav h2 a:hover {
+	color: #FF0000;
+	font-family: "Times New Roman" !important;
+	font-size: 115%;
+	font-weight: bold;
+}
+
+#priNav li {
+	font-size: 80%;
+	line-height: 13px;
+	padding: 2px 4px 2px 8px;
+}
+
+#priNav li a {
+	color: #000000;
+	font-family: "Times New Roman" !important;
+	font-size: 100%;
+	font-weight: normal;
+	line-height: 13px;
+}
+
+#priNav li a:hover {
+	color: #FF0000;
+	font-family: "Times New Roman" !important;
+	font-size: 100%;
+	font-weight: normal;
+	line-height: 13px;
+}
+
+#priNav ul {
+	padding: 0px 0px 10px 20px;
+}
+
+#right {
+	background-color: #FFFFFF;
+	float: right;
+	width: 298px;
+}
+
+#storePhotos {
+	border: 1px solid #DCDCDC;
+}
+
+#stores {
+	border-collapse: collapse;
+	margin: 5px 0px 10px 0px;
+	width: 100%;
+}
+
+#stores td {
+	font-size: 90%;
+}
+
+#stores td a {
+	font-size: 90%;
+}
+
+#stores td,th {
+	padding-left: 8px;
+}
+
+#stores th {
+	color: #000080;
+	font-size: 90%;
+	text-align: left;
+}
+
+#stores thead th {
+	color: #000080;
+	font-size: 135%;
+	font-variant: small-caps;
+	padding: 5px 0px 20px 8px;
+}
+
+#stores tr.alt td {
+	background-color: #D6DFE8;
+}
+
+#Tabs {
+	margin: 86px 0px 0px 250px;
+}

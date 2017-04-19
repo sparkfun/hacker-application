@@ -1,0 +1,58 @@
+/* Copyright Dynarch.com, 2003-2004.  All Rights Reserved. */
+
+/* Import the main layout file.  Several layouts are predefined:
+
+   - hmenu.css          -- standard 2D layout
+   - hmenu-extended.css -- facilitates skins like "Office XP" menus
+   - hmenu-3d.css       -- facilitates 3D skins suitable for Win98-like menus
+
+   Please note that the URL that you specify in the @import clause is relative
+   to the path of this file itself.  Since skin-sample.css is located in the same
+   directory as hmenu.css, we can include it directly as "hmenu.css".  If you plan
+   to put your custom skins in another directory, then you would need to include
+   for instance: "/hmenu/hmenu.css", assuming that "/hmenu/" is the path to your
+   DynarchMenu installation, accessible from your server's document root.
+*/
+
+@import url("hmenu-3d.css");
+
+/****************************************************
+   (1) THE MAIN MENU BAR
+*****************************************************/
+
+/* horizontal parts */
+
+/* SET MENU BACKGROUND COLOR HERE */
+  /* This is a DIV, container of the horizontal menu bar.
+     Please note that if you customize fonts here, the setting will most likely
+     be lost in Internet Explorer because tables don't inherit fonts.  Therefore,
+     we would better customize fonts in the "table" children. */
+div.dynarch-horiz-menu { background-color: #D2DDF7; color: ButtonText; border-color: ButtonFace; border-width: 0px;}
+
+/* SET MAIN MENU FONT COLOR & SIZE HERE!! */
+div.dynarch-horiz-menu table td { 
+color: #000000; 
+font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif; /* set a custom font */
+}
+
+div.dynarch-horiz-menu table tr td.hover { border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight; }
+div.dynarch-horiz-menu table tr td.active { border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow; }
+div.dynarch-horiz-menu table tr td.separator div { border-left-color: ButtonShadow; border-right-color: ButtonHighlight; }
+
+
+/****************************************************
+   (2) THE POPUP MENUS
+*****************************************************/
+/* vertical parts */
+
+div.dynarch-popup-menu { border-color: ButtonShadow #000 #000 ButtonShadow; background-color: ButtonFace; color: ButtonText; }
+div.dynarch-popup-menu div.d { border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight; }
+div.dynarch-popup-menu tr.separator td div { border-color: ButtonShadow; background-color: ButtonHighlight; }
+div.dynarch-popup-menu tr.item.hover, div.dynarch-popup-menu tr.item.active { background-color: Highlight; color: HighlightText; }
+div.dynarch-popup-menu tr.item.hover td.icon, div.dynarch-popup-menu tr.item.active td.icon { background-color: Highlight; }
+div.dynarch-popup-menu tr.disabled td.label { color: GrayText; }
+
+div.dynarch-popup-menu table {
+  /* This table contains popup menu items.  It's a good place to configure fonts. */
+	font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif; /* set a custom font */
+}

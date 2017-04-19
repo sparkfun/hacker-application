@@ -1,0 +1,3 @@
+C:\Users\Sean\Documents\Visual Studio Projects\IDXUpdate\bin\Debug\IDXUpdate.exe.config
+C:\Users\Sean\Documents\Visual Studio Projects\IDXUpdate\obj\Debug\IDXUpdate.exe
+C:\Users\Sean\Documents\Visual Studio Projects\IDXUpdate\obj\Debug\IDXUpdate.pdb

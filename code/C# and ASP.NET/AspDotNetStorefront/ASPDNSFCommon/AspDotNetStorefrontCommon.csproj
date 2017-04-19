@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65E8266F-BD0A-4C2A-B7DE-13AEE9DF0FAE}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>AspDotNetStorefrontCommon</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AspDotNetStorefrontCommon</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspDotNetStorefrontEncrypt">
+      <Name>AspDotNetStorefrontEncrypt</Name>
+      <HintPath>..\ASPDNSFEncrypt\bin\Debug\AspDotNetStorefrontEncrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="CMPCDotNet">
+      <Name>CMPCDotNet</Name>
+      <HintPath>CMPCDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cardinal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomCart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomerSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBXml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DescriptionFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DownloadManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMailTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrorXRefGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Localization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Poll.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProductDescriptionFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProductImageGallery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProductSpecFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ratings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReceiptTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RTShipping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShippingTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShoppingCart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Topic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WindowsRegistry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XmlCommon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XmlPackage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="bin\Debug\AspDotNetStorefrontCommon.dll" />
+    <Content Include="bin\Debug\AspDotNetStorefrontCommon.pdb" />
+    <Content Include="bin\Release\AspDotNetStorefront31Common.dll" />
+    <Content Include="bin\Release\CMPCDotNet.dll" />
+    <Content Include="bin\Release\Symmetric.dll" />
+    <Content Include="CMPCDotNet.dll" />
+    <Content Include="obj\Debug\AspDotNetStorefrontCommon.dll" />
+    <Content Include="obj\Debug\AspDotNetStorefrontCommon.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Debug\temp\" />
+    <Folder Include="obj\Release\TempPE\" />
+    <Folder Include="obj\Release\temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

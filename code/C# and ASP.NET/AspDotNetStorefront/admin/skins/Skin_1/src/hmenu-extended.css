@@ -1,0 +1,32 @@
+/* Copyright Dynarch.com, 2003-2005.  All Rights Reserved. */
+/* DynarchMenu layout file */
+
+@import url("hmenu.css");
+
+/* Additional styles for an "extended" look&feel (maybe similar to
+menus in Microsoft Office XP where hovered/active items have a thin
+border outline) */
+
+/* vertical parts */
+
+div.dynarch-popup-menu { padding: 0; }
+div.dynarch-popup-menu div.d div.c div.b div.a { padding: 2px; }
+div.dynarch-popup-menu table { border-collapse: separate; }
+div.dynarch-popup-menu tr.item td.icon { padding: 1px; }
+div.dynarch-popup-menu tr.item td.label { padding: 1px 20px 1px 3px; }
+div.dynarch-popup-menu tr.item td.end { width: 11px; padding: 1px; }
+div.dynarch-popup-menu tr.item.hover td.icon, div.dynarch-popup-menu tr.item.active td.icon {
+  border-style: solid;
+  border-width: 1px 0px 1px 1px;
+  padding: 0px 1px 0px 0px;
+}
+div.dynarch-popup-menu tr.item.hover td.label, div.dynarch-popup-menu tr.item.active td.label {
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  padding: 0px 20px 0px 3px;
+}
+div.dynarch-popup-menu tr.item.hover td.end, div.dynarch-popup-menu tr.item.active td.end {
+  border-style: solid;
+  border-width: 1px 1px 1px 0px;
+  padding: 0px 0px 0px 1px;
+}

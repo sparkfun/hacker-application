@@ -1,0 +1,32 @@
+DynArch.com license agreement
+------------------------------
+
+  LICENSEE is Discovery Productions, Inc.
+
+  LIBRARY is JS Calendar (also known as "The Coolest DHTML Calendar"),
+             version 0.9.5 or later
+
+This license agreement grants LICENSEE the explicit right to use the JS
+Calendar library/script version 0.9.5 or later (Library) for integration and
+distribution with software, applications and development tools/libraries
+developed by licensee for commercial distribution and use.
+
+The integration may include the Library in full or partial, as is or
+modified by the licensee.  The Library itself, nor the main functionality
+of the library can not be the main nor major functionality of the final
+product, in other words, the final product can not be based on the
+library, the library must be used as an add-on or
+acccessibility/user-input tool for calendar control functionality in the
+final product.
+
+Whenever the library is served to an end user, the original copyright
+notice and source should be mentioned, this also applies when partially
+used, the notice should be in a comment-type for the language in use, an
+example of such a notice:
+
+      Copyright Mihai Bazon, 2002-2004 | http://dynarch.com/mishoo/
+
+This applies to all files and code in the Library. The library consists
+of multiple files, all under this license, including the main Javascript
+library, language files, stylesheet (CSS) themes and the meta and
+presentation hypertext (HTML).

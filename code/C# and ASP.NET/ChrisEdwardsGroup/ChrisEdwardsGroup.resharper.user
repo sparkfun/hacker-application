@@ -1,0 +1,50 @@
+<Configuration>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:int">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:string">
+      <Item value="Trim" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.ListItem">
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.UI.WebControls.DropDownList">
+      <Item value="SelectedItem" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <EditorManager>
+    <RecentFiles>
+      <File id="871CBC78-9489-458A-A329-0892AA9E0375/f:HomeWorth.cs" caret="14219" scrollPosition="" />
+      <File id="871CBC78-9489-458A-A329-0892AA9E0375/f:HomeValueEstimate.cs" caret="608" scrollPosition="" />
+      <File id="871CBC78-9489-458A-A329-0892AA9E0375/f:HomeSearch.cs" caret="22259" scrollPosition="" />
+      <File id="871CBC78-9489-458A-A329-0892AA9E0375/f:EmailAFriend.cs" caret="0" scrollPosition="" />
+      <File id="871CBC78-9489-458A-A329-0892AA9E0375/f:Footer.cs" caret="207" scrollPosition="" />
+      <File id="871CBC78-9489-458A-A329-0892AA9E0375/f:AgentReferral.cs" caret="310" scrollPosition="" />
+      <File id="871CBC78-9489-458A-A329-0892AA9E0375/f:Contact.cs" caret="6559" scrollPosition="0|0" />
+      <File id="UNDEFINED_UNIQUE_NAME_Miscellaneous Files/f:ContactForm.cs" caret="4932" scrollPosition="0|154" />
+      <File id="871CBC78-9489-458A-A329-0892AA9E0375/f:Main.cs" caret="3225" scrollPosition="0|118" />
+      <File id="871CBC78-9489-458A-A329-0892AA9E0375/f:UserControlMain.cs" caret="2299" scrollPosition="0|54" />
+      <File id="871CBC78-9489-458A-A329-0892AA9E0375/f:Global.asax.cs" caret="322" scrollPosition="0|0" />
+    </RecentFiles>
+  </EditorManager>
+  <FileStructureView>
+    <AutoScrollToSource>False</AutoScrollToSource>
+    <TrackCaretLocation>False</TrackCaretLocation>
+  </FileStructureView>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <ReFormatCode>
+    <ReorderMembers>False</ReorderMembers>
+    <OptimizeUsings>False</OptimizeUsings>
+    <RemoveRedundantThis>False</RemoveRedundantThis>
+    <ShortenReferences>False</ShortenReferences>
+  </ReFormatCode>
+  <SharedSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </SharedSolutionDisabledTemplatesManager>
+  <UserSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </UserSolutionDisabledTemplatesManager>
+</Configuration>

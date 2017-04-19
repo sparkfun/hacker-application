@@ -1,0 +1,6 @@
+<Assemblies Version="14">
+  <Assembly Name="mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Cache="1917a781-bfb0-4fdd-8d7f-029239714653.ReflectionCache" Timestamp="632255021420000000" />
+  <Assembly Name="System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Cache="402695ef-0bc8-4196-b154-ae8bda166080.ReflectionCache" Timestamp="632255022760000000" />
+  <Assembly Name="System.Data, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Cache="ad1b016d-2cf8-4c38-8d51-84e997801427.ReflectionCache" Timestamp="632255023200000000" />
+  <Assembly Name="System.Xml, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Cache="c008eca2-1570-44db-be3e-c364a71bfe7e.ReflectionCache" Timestamp="632255021400000000" />
+</Assemblies>

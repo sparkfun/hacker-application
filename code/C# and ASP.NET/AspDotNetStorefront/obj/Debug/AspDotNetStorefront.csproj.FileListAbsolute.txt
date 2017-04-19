@@ -1,0 +1,2 @@
+C:\Users\Sean\Documents\Visual Studio Projects\AspDotNetStorefront\bin\Debug\AspDotNetStorefront.exe.config
+C:\Users\Sean\Documents\GitHub\hacker-application\code\C# and ASP.NET\AspDotNetStorefront\bin\Debug\AspDotNetStorefront.exe.config

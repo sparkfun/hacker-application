@@ -1,0 +1,9 @@
+SCC = This is a source code control file
+
+[AccessDataUpgrader.sln]
+SCC_Aux_Path = http://homestar/VaultService|Main:1
+SCC_Project_Name = $/AccessDataUpgrader
+
+[AccessDataUpgrader.csproj]
+SCC_Aux_Path = http://homestar/VaultService|Main:1
+SCC_Project_Name = $/AccessDataUpgrader

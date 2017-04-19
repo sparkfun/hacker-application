@@ -1,0 +1,3 @@
+C:\Users\Sean\Documents\Visual Studio Projects\CRENConversion\CRENConversion\bin\Debug\CRENConversion.exe.config
+C:\Users\Sean\Documents\Visual Studio Projects\CRENConversion\CRENConversion\obj\Debug\CRENConversion.exe
+C:\Users\Sean\Documents\Visual Studio Projects\CRENConversion\CRENConversion\obj\Debug\CRENConversion.pdb

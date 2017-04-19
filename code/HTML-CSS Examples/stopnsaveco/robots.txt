@@ -1,0 +1,6 @@
+# For domain: http://www.toddalanlifecoach.com/
+
+User-agent: *
+Disallow: /aspnet_client/
+Disallow: /bin/
+Disallow: /includes/

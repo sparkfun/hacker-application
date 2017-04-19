@@ -1,0 +1,73 @@
+/* Copyright Dynarch.com, 2003-2005.  All Rights Reserved. */
+/* DynarchMenu layout file */
+
+/* basic layout style for DynarchMenu; no colors are defined in this */
+
+/* horizontal parts */
+
+div.dynarch-horiz-menu {
+/*  white-space: nowrap; */
+  padding: 0px 3px;
+  border: 1px solid;
+  cursor: default;
+}
+div.dynarch-horiz-menu table, div.dynarch-popup-menu table { font: 11px tahoma,verdana,sans-serif; }
+div.dynarch-popup-menu table { border-collapse: collapse; }
+div.dynarch-horiz-menu table tr td.item { padding: 3px 10px; }
+div.dynarch-horiz-menu table tr td.item img { vertical-align: middle; }
+div.dynarch-horiz-menu table tr td.separator { width: 6px; }
+div.dynarch-horiz-menu table tr td.separator div {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  margin: 2px;
+  height: 14px;
+  overflow: hidden;
+}
+
+div.dynarch-horiz-menu td.disabled, div.dynarch-horiz-menu td.disabled table td { color: #aca899; }
+div.dynarch-horiz-menu td.disabled img { -moz-opacity: 0.4; filter: alpha(opacity=40); }
+
+/* vertical parts */
+
+div.dynarch-popup-menu {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border: 1px solid;
+  padding: 1px;
+  cursor: default;
+  z-index: 1000;
+}
+div.dynarch-popup-base-menu { position: static; }
+div.dynarch-popup-menu tr.item td.icon img,
+div.dynarch-popup-menu tr.item td.icon div { width: 18px; height: 18px; }
+div.dynarch-popup-menu tr.item td.icon { padding: 0px 1px; height: 18px; width: 18px; }
+div.dynarch-popup-menu tr.item td.label { padding: 1px 15px 1px 3px; /* white-space: nowrap; */}
+div.dynarch-popup-menu tr.item td.arrow { width: 11px; }
+div.dynarch-popup-menu tr.item td.arrow div { width: 11px; background: transparent url("img/rarrow.gif") no-repeat 0% 50%; }
+div.dynarch-popup-menu tr.hover td.arrow div,
+div.dynarch-popup-menu tr.active td.arrow div { background: transparent url("img/rarrow-hover.gif") no-repeat 0% 50%; }
+
+div.dynarch-popup-menu tr.separator td div {
+  margin: 2px;
+  height: 1px;
+  line-height: 1px;
+  font-size: 1px;
+  border: none;
+}
+div.dynarch-popup-menu tr.disabled td.label { color: #aca899; }
+div.dynarch-popup-menu tr.disabled td.icon img { -moz-opacity: 0.4; filter: alpha(opacity=40); }
+
+/* shadows */
+
+div.dynarch-menu-shadow, img.dynarch-menu-shadow, div.div.dynarch-IE6-shadow { z-index: 990; position: absolute; }
+div.dynarch-menu-shadow { background-color: #555; -moz-opacity: 0.6; filter: alpha(opacity=60); }
+
+/* hider */
+iframe#dynarch-menu-hider { z-index: 980; }
+
+/* toolbars */
+
+div.dynarch-menu-toolbar table tr td.item {
+  padding: 2px 3px;
+}

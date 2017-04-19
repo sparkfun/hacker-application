@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD//HTML 4.01 Transitional//EN"> 
+<html>
+<head>
+<base target="content">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="en">
+<title>AspDotNetStorefront Admin For Store: %SITE_NAME%</title>
+<link rel="stylesheet" href="skins/skin_%SKINID%/style.css" type="text/css">
+<script type="text/javascript">
+     _dynarch_menu_url = "skins/skin_%SKINID%/";
+</script>
+<style type="text/css"> @import url("skins/skin_%SKINID%/src/skin-aspdnsf.css"); </style>
+<script type="text/javascript" src="skins/skin_%SKINID%/src/hmenu.js"></script>
+</head>
+<body rightmargin="0" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF" onload="DynarchMenu.setup('menu', { electric: 10 });">
+<!-- PAGE INVOCATION: '%INVOCATION%' -->
+
+
+<script type="text/javascript">
+
+/***********************************************
+* IFrame SSI script II- © Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
+* Visit DynamicDrive.com for hundreds of original DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+
+//Input the IDs of the IFRAMES you wish to dynamically resize to match its content height:
+//Separate each ID with a comma. Examples: ["myframe1", "myframe2"] or ["myframe"] or [] for none:
+var iframeids=["content"]
+
+//Should script hide iframe from browsers that don't support this script (non IE5+/NS6+ browsers. Recommended):
+var iframehide="no"
+
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids[i])
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+var tempobj=document.all? document.all[iframeids[i]] : document.getElementById(iframeids[i])
+tempobj.style.display="block"
+}
+}
+}
+
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight; 
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}
+}
+}
+
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller
+
+</script>
+
+
+<!-- header -->
+<div align="left">
+<table width="100%" height="68" cellpadding="0" cellspacing="0" border="0" background="skins/skin_1/images/gradient.jpg">
+	<tr><td colspan="2" height="5"></td></tr>
+	<tr>
+		<td align="left" valign="middle">&nbsp;<font class="SiteTitle"><b><a target="_top" href="default.aspx">AspDotNetStorefront Admin For</a>: <a href="../" target="_blank">%SITE_NAME%</a></b></font></td>
+		<td align="right" valign="middle"></td>
+	</tr>
+	<tr><td height="25" valign="middle">
+		<img src="images/spacer.gif" width="6" height="1"><span class="username">%USERNAME%&nbsp;&nbsp;<a class="username" target="_top" href="%SIGNINOUT_LINK%">%SIGNINOUT_TEXT%</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_top" href="default.aspx">Refresh Menu</a>
+	</td>
+<td align="right">
+<form style="margin: 0px;" name="SearchFormTop" action="search.aspx" method="GET">Search: <input name="SearchTerm" size="20">&nbsp;<INPUT type="submit" name="submit" value="GO">&nbsp;&nbsp;</form>
+	</td>
+	</tr>
+	<tr height="23">
+		<td colspan="2"><table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tr>
+		<td style="border-width: 1px; border-style: none;" align="left" valign="middle" colspan="2"  width="100%" height="23" bgcolor="#FFFFFF"><ul id="menu" style="visibility: block; display:none;">
+      <li><a target="_top" href="default.aspx">Home</a></li>
+	  %MANUFACTURER_MENU%
+	  %CATEGORY_MENU%
+	  %SECTION_MENU%
+	  <li>
+	  	<a target="content" href="products.aspx">Products</a>
+		<ul>
+			<li><a target="content" href="products.aspx">Edit Products</a></li>
+			<li><a target="content" href="producttypes.aspx">Add/Edit Product Types</a></li>
+			<li><a target="content" href="prices.aspx">Edit/Update Prices</a></li>
+			<li><a target="content" href="saleprices.aspx">Show Products On Sale</a></li>
+		</ul>
+	  </li>
+	  <li>
+	  	<a target="content" href="affiliates.aspx">Affiliates</a>
+		<ul>
+			<li><a target="content" href="affiliates.aspx">Search</a></li>
+			<li><a target="content" href="lat_signup.aspx">Add New</a></li>
+			<li><a target="content" href="lat_findcard.aspx">Find Who Belongs To Card</a></li>
+			<li><a target="content" href="lat_pendingrequests.aspx">Pending Card Requests</a></li>
+			<li><a target="content" href="affiliates.aspx?beginswith=%&balance=25.00">Pending Payouts</a></li>
+			<li><a target="content" href="lat_topperformers.aspx">Top Performers</a></li>
+			<li><a target="content" href="lat_recalc.aspx">Recalculate Commissions</a></li>
+		</ul>
+	  </li>
+	  <li>
+	  	<a target="content" href="appconfig.aspx">Misc</a>
+		<ul>
+			<li><a target="content" href="wizard.aspx">Run Config Wizard</a></li>
+			<li><a target="content" href="appconfig.aspx">AppConfig Parameters</a></li>
+			<li><a target="content" href="topics.aspx">Topics</a></li>
+			<li><a target="content" href="customers.aspx">Manage Customers</a></li>
+			<li><a target="content" href="affiliates.aspx">Affiliates</a></li>
+			<li><a target="content" href="orderoptions.aspx">Order Options</a></li>
+			<li><a target="content" href="coupons.aspx">Coupons</a></li>
+			<li><a target="content" href="quantitydiscounts.aspx">Quantity Discounts</a></li>
+			<li><a target="content" href="salesprompts.aspx">Sales Prompts</a></li>
+			<li><a target="content" href="localesettings.aspx">Locales (Multi-Lingual)</a></li>
+			<li>Images
+				<ul>
+					<li><a target="content" href="images.aspx">Upload Images</a></li>
+					<li><a target="content" href="galleries.aspx">Galleries</a></li>
+				</ul>
+			</li>
+			<li>Feeds
+				<ul>
+					<li><a target="content" href="froogle.aspx">Froogle Feed</a></li>
+					<li><a target="content" href="pricegrabber.aspx">PriceGrabber Feed</a></li>
+				</ul>
+			</li>
+			<li>More
+				<ul>
+					<li><a target="content" href="polls.aspx">Manage Polls</a></li>
+					<li><a target="content" href="manageratings.aspx">Manage Ratings</a></li>
+					<li><a target="content" href="staff.aspx">Edit Staff</a></li>
+					<li><a target="content" href="mailingmgr.aspx">Mailing Mgr</a></li>
+					<li><a target="content" href="partners.aspx">Edit Partners</a></li>
+					<li><a target="content" href="creditcards.aspx">Credit Card Types</a></li>
+					<li><a target="content" href="resetsqllog.aspx">Reset SQL Log</a></li>
+				    <li><a target="content" href="storewide.aspx">Storewide</a></li>
+				</ul>
+			</li>
+			<li>Track Expenses
+				<ul>
+				<li><a target="content" href="expensecategories.aspx">Expense Categories</a></li>
+				<li><a target="content" href="expenses.aspx">Expenses</a></li>
+				</ul>
+			</li>
+		</ul>
+	  </li>
+	  <li><a target="content" href="orders.aspx?IsNew=1">Orders</a>
+		<ul>
+			<li><a target="content" href="orders.aspx?IsNew=1">View/Manage Orders</a></li>
+			<li><a target="content" href="offlineorder.aspx">Enter Offline Order</a></li>
+			<li>Reports
+				<ul>
+				  <li><a target="content" href="rpt_customers.aspx">Customer Reports</a></li>
+				  <li><a target="content" href="rpt_orders.aspx">Order Reports</a></li>											   
+				  <li><a target="content" href="rpt_expenses.aspx">Expense Reports</a></li>
+				  <li><a target="content" href="rpt_stats.aspx">Summary Stats</a></li>
+				  <li><a target="content" href="rpt_emails.aspx">Customer EMails</a></li>
+				</ul>
+			</li>
+		</ul>
+		</li>
+	  <li>Taxes
+		<ul>
+			<li><a target="content" href="taxrates.aspx">Tax Rates By State</a></li>
+			<li><a target="content" href="taxzips.aspx">Tax Rates By Zipcode</a></li>
+			<li><a target="content" href="states.aspx">Edit States</a></li>
+			<li><a target="content" href="countries.aspx">Edit Countries</a></li>
+		</ul>
+		</li>
+	  <li>
+	  	<a target="content" href="shipping.aspx">Shipping</a>
+		<ul>
+			<li><a target="content" href="shippingmethods.aspx">Shipping Methods</a></li>
+			<li><a target="content" href="shippingzones.aspx">Shipping Zones</a></li>
+			<li><a target="content" href="shipping.aspx">Shipping Rate Tables</a></li>
+			<li><a target="content" href="fedexmeterrequest.aspx">Get FedEx Meter</a></li>
+		</ul>
+	  </li>
+	  <li><a target="content" href="news.aspx">News</a></li>
+	  <li>
+	  	<a target="content" href="customers.aspx">Users</a>
+		<ul>
+			<li><a target="content" href="customerlevels.aspx">Customer Levels</a></li>
+			<li><a target="content" href="users.aspx">Admin Users</a></li>
+			<li><a target="content" href="recurring.aspx">Recurring Shipments - Due Today</a></li>
+			<li><a target="content" href="recurring.aspx?show=all">Recurring Shipments - All Pending</a></li>
+		</ul>
+	  </li>
+	  </ul>
+		</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+</div>
+<!-- end header -->
+
+<!-- content -->
+<table width="100%">
+<tr><td width="200">
+<iframe id="toc" name="toc" src="toc.aspx" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" style="overflow:visible; width:200px; height:50000px;"></iframe>
+</td><td>
+<iframe id="content" name="content" src="splash.aspx" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" style="overflow:visible; width:100%; height:50000px;"></iframe>
+</td></tr>
+</table>
+<!-- end content -->
+
+<!-- footer -->
+<div align="left">
+<table width="100%" height="24" cellpadding="0" cellspacing="0" border="0" background="skins/skin_%SKINID%/images/gradient.jpg">
+<tr valign="middle">
+<td height="24">&nbsp;&#169;1995-2005 AspDotNetStorefront.com. All rights reserved.&nbsp;</td>
+<td width="128" height="24"><a href="http://www.aspdotnetstorefront.com" target="_blank"><i><font color="white"><b>AspDotNetStorefront</b></font></i></a>&nbsp;&nbsp;</td>
+</tr>
+</table>
+</div>
+<!-- end footer -->
+
+</body>
+</html>

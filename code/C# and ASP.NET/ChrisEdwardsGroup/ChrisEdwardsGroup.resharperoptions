@@ -1,0 +1,41 @@
+<Configuration>
+  <CompletionStatisticsManager />
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean />
+  </SettingsComponent>
+  <RecentFilesTracker>
+    <RecentFilesTracker>
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\Contact.cs" offset="113" line="-1" column="-1" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\BrowseSingleFamilyHome.cs" offset="136" line="-1" column="-1" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\Global.asax.cs" offset="0" line="-1" column="-1" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\UserControlMain.cs" offset="0" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\SingleFamilyHome.cs" offset="0" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\RelocationPacket.cs" offset="0" line="-1" column="-1" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\PhotoDetails.cs" offset="0" line="-1" column="-1" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\Main.cs" offset="0" line="114" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\HowMuchSell.cs" offset="662" line="-1" column="-1" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\HowMuchAsking.cs" offset="664" line="-1" column="-1" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\HomeWorth.cs" offset="0" line="-1" column="-1" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\HomeSearch.cs" offset="0" line="-1" column="-1" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\Footer.cs" offset="0" line="-1" column="-1" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\FeaturedPropertyControl.cs" offset="0" line="-1" column="-1" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\ContactAboutListing.cs" offset="127" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\Website\EmailAFriend.cs" offset="4534" line="126" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\ListManage\Main.cs" offset="162" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\ListManage\TopLogin.cs" offset="691" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\ListManage\SearchResidentialByMLS.cs" offset="174" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\ListManage\ManageTours.cs" offset="139" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\ListManage\ManageResidential.cs" offset="192" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\ListManage\ManagePictures.cs" offset="222" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\ListManage\Login.cs" offset="778" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\ListManage\Global.asax.cs" offset="1282" line="35" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\ListManage\DatabaseStats.cs" offset="7339" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\ListManage\BrowseResidential.cs" offset="477" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\ListManage\AddResidential.cs" offset="192" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\ListManage\AddCity.cs" offset="161" line="0" column="0" />
+      <TrackedFile location="C:\Documents and Settings\Sean\My Documents\Visual Studio Projects\ChrisEdwardsGroup\ListManage\AddAgent.cs" offset="161" line="0" column="0" />
+    </RecentFilesTracker>
+  </RecentFilesTracker>
+</Configuration>

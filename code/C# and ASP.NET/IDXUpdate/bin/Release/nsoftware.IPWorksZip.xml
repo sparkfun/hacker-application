@@ -1,0 +1,521 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>nsoftware.IPWorksZip</name>
+    </assembly>
+    <members>
+        <member name="T:nsoftware.core.j2cs.ByteBuffer">
+            <summary>
+            Provides functions for storing and appending large byte array in memory
+            </summary>
+        </member>
+        <member name="F:nsoftware.core.Inflater.CPLEXT">
+            Extra bits for literal codes 257..285
+        </member>
+        <member name="F:nsoftware.core.Inflater.CPDIST">
+            Copy offsets for distance codes 0..29
+        </member>
+        <member name="F:nsoftware.core.Inflater.CPDEXT">
+            Extra bits for distance codes
+        </member>
+        <member name="T:nsoftware.IPWorksZip.AspxcompressorApplyFilterEventArgs">
+            <summary>Event arguments for the ApplyFilter event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Aspxcompressor.Config(System.String)">
+            <summary>Sets or retrieves a component configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Aspxcompressor.InstallFilter">
+            <summary>Installs a compression filter in the current HTTP application.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Aspxcompressor.OnApplyFilter">
+            <summary>Fired just before the compression filter is applied.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Aspxcompressor.Browser">
+            <summary>The client browser making the request.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Aspxcompressor.BrowserAcceptsDeflate">
+            <summary>Whether the browser accepts data compressed with deflate .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Aspxcompressor.BrowserAcceptsGzip">
+            <summary>Whether the browser accepts data compressed with gzip .</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Aspxcompressor.CompressionFormat">
+            <summary>The compression format to use.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Aspxcompressor.CompressionLevel">
+            <summary>The compression level to use, from 1 to 6.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.GzipBeginFileEventArgs">
+            <summary>Event arguments for the BeginFile event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.GzipEndFileEventArgs">
+            <summary>Event arguments for the EndFile event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.GzipErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.GzipOverwriteEventArgs">
+            <summary>Event arguments for the Overwrite event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.GzipProgressEventArgs">
+            <summary>Event arguments for the Progress event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Gzip.Config(System.String)">
+            <summary>Sets or retrieves a component configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Gzip.Abort">
+            <summary>Aborts the current operation.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Gzip.Compress">
+            <summary>Creates the compressed gzip archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Gzip.Extract">
+            <summary>Extracts the compressed file from the gzip archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Gzip.Scan">
+            <summary>Scans the compressed archive.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Gzip.OnBeginFile">
+            <summary>Fired before a file is processed.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Gzip.OnEndFile">
+            <summary>Fired after a file is processed.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Gzip.OnError">
+            <summary>Information about non-fatal errors.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Gzip.OnOverwrite">
+            <summary>Fired whenever a file exists and may be overwritten.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Gzip.OnProgress">
+            <summary>Fired as progress is made.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Gzip.ArchiveFile">
+            <summary>The name of the zip, gzip, tar, or jar archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Gzip.CompressionLevel">
+            <summary>The compression level to use.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Gzip.EnableStreaming">
+            <summary>Whether or not to enable streaming.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Gzip.FileCompressedDate">
+            <summary>The date and time of the compressed file, as stored within the gzip archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Gzip.FileCompressedName">
+            <summary>Filename, as stored inside of the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Gzip.FileDecompressedName">
+            <summary>File name to decompress to, or compress from.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.JarErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.JarOverwriteEventArgs">
+            <summary>Event arguments for the Overwrite event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.JarProgressEventArgs">
+            <summary>Event arguments for the Progress event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.JarBeginFileEventArgs">
+            <summary>Event arguments for the BeginFile event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.JarEndFileEventArgs">
+            <summary>Event arguments for the EndFile event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Jar.Config(System.String)">
+            <summary>Sets or retrieves a component configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Jar.Abort">
+            <summary>Aborts the current operation.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Jar.Append(System.String,System.String)">
+            <summary>Adds a file to an existing archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Jar.Compress">
+            <summary>Creates the compressed archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Jar.Extract(System.String)">
+            <summary>Extracts a single file, directory, or group of files, from the archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Jar.ExtractAll">
+            <summary>Extracts all files from the compressed archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Jar.IncludeFiles(System.String)">
+            <summary>Specifies that the indicated files should be added to the archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Jar.Scan">
+            <summary>Scans the compressed archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Jar.Reset">
+            <summary>Resets the component.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Jar.Delete(System.String)">
+            <summary>Deletes one or more files from an existing archive.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Jar.OnError">
+            <summary>Information about non-fatal errors.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Jar.OnOverwrite">
+            <summary>Fired whenever a file exists and may be overwritten.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Jar.OnProgress">
+            <summary>Fired as progress is made.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Jar.OnBeginFile">
+            <summary>Fired before each file is processed.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Jar.OnEndFile">
+            <summary>Fired after each file is processed.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Jar.ArchiveFile">
+            <summary>The name of the zip, gzip, tar, or jar archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Jar.ExtractToPath">
+            <summary>A base path to decompress to.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Jar.ExcludedFiles">
+            <summary>A list of files to exclude.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Jar.FileCompressedName">
+            <summary>Array of filenames, as stored inside of the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Jar.FileCompressedSize">
+            <summary>The compressed size of the entry.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Jar.FileCompressedDate">
+            <summary>The date and time of the entry, as stored within the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Jar.FileDecompressedName">
+            <summary>Array of filenames, as stored outside of the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Jar.FileDecompressedSize">
+            <summary>The decompressed size of the file.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Jar.OverwriteFiles">
+            <summary>Whether or not to overwrite files.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Jar.RecurseSubdirectories">
+            <summary>Whether or not to recurse into subdirectories.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Jar.CompressionLevel">
+            <summary>The compression level to use.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Jar.EnableStreaming">
+            <summary>Whether or not to enable streaming.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Jar.FileCount">
+            <summary>The number of entries in the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Jar.ManifestFile">
+            <summary>The name of the manifest file.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Jar.FileCompressedNameIndexer">
+            <summary>Indexer for FileCompressedName.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Jar.FileCompressedSizeIndexer">
+            <summary>Indexer for FileCompressedSize.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Jar.FileCompressedDateIndexer">
+            <summary>Indexer for FileCompressedDate.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Jar.FileDecompressedNameIndexer">
+            <summary>Indexer for FileDecompressedName.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Jar.FileDecompressedSizeIndexer">
+            <summary>Indexer for FileDecompressedSize.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.TarErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.TarOverwriteEventArgs">
+            <summary>Event arguments for the Overwrite event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.TarProgressEventArgs">
+            <summary>Event arguments for the Progress event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.TarBeginFileEventArgs">
+            <summary>Event arguments for the BeginFile event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.TarEndFileEventArgs">
+            <summary>Event arguments for the EndFile event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Tar.Config(System.String)">
+            <summary>Sets or retrieves a component configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Tar.Abort">
+            <summary>Aborts the current operation.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Tar.Append(System.String,System.String)">
+            <summary>Adds a file to an existing archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Tar.Compress">
+            <summary>Creates the compressed archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Tar.Delete(System.String)">
+            <summary>Deletes one or more files from an existing archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Tar.Extract(System.String)">
+            <summary>Extracts a single file, directory, or group of files, from the archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Tar.ExtractAll">
+            <summary>Extracts all files from the compressed archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Tar.IncludeFiles(System.String)">
+            <summary>Specifies that the indicated files should be added to the archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Tar.Scan">
+            <summary>Scans the compressed archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Tar.Reset">
+            <summary>Resets the component.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Tar.OnError">
+            <summary>Information about non-fatal errors.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Tar.OnOverwrite">
+            <summary>Fired whenever a file exists and may be overwritten.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Tar.OnProgress">
+            <summary>Fired as progress is made.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Tar.OnBeginFile">
+            <summary>Fired before each file is processed.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Tar.OnEndFile">
+            <summary>Fired after each file is processed.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Tar.ArchiveFile">
+            <summary>The name of the zip, gzip, tar, or jar archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Tar.ExcludedFiles">
+            <summary>A list of files to exclude.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Tar.ExtractToPath">
+            <summary>A base path to decompress to.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Tar.FileCompressedName">
+            <summary>Array of filenames, as stored inside of the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Tar.FileCompressedSize">
+            <summary>The compressed size of the entry.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Tar.FileCompressedDate">
+            <summary>The date and time of the entry, as stored within the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Tar.FileDecompressedName">
+            <summary>Array of filenames, as stored outside of the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Tar.FileDecompressedSize">
+            <summary>The decompressed size of the file.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Tar.FileCount">
+            <summary>The number of entries in the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Tar.OverwriteFiles">
+            <summary>Whether or not to overwrite files.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Tar.RecurseSubdirectories">
+            <summary>Whether or not to recurse into subdirectories.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Tar.EnableStreaming">
+            <summary>Whether or not to enable streaming.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Tar.FilePermissions">
+            <summary>The file permissions, as stored within the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Tar.UseGzipCompression">
+            <summary>Whether or not to use gzip compression.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Tar.FileCompressedNameIndexer">
+            <summary>Indexer for FileCompressedName.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Tar.FileCompressedSizeIndexer">
+            <summary>Indexer for FileCompressedSize.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Tar.FileCompressedDateIndexer">
+            <summary>Indexer for FileCompressedDate.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Tar.FileDecompressedNameIndexer">
+            <summary>Indexer for FileDecompressedName.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Tar.FileDecompressedSizeIndexer">
+            <summary>Indexer for FileDecompressedSize.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Tar.FilePermissionsIndexer">
+            <summary>Indexer for FilePermissions.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.ZipErrorEventArgs">
+            <summary>Event arguments for the Error event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.ZipOverwriteEventArgs">
+            <summary>Event arguments for the Overwrite event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.ZipProgressEventArgs">
+            <summary>Event arguments for the Progress event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.ZipBeginFileEventArgs">
+            <summary>Event arguments for the BeginFile event.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.ZipEndFileEventArgs">
+            <summary>Event arguments for the EndFile event.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zip.Config(System.String)">
+            <summary>Sets or retrieves a component configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zip.Abort">
+            <summary>Aborts the current operation.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zip.Append(System.String,System.String)">
+            <summary>Adds a file to an existing archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zip.Compress">
+            <summary>Creates the compressed archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zip.Delete(System.String)">
+            <summary>Deletes one or more files from an existing archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zip.Extract(System.String)">
+            <summary>Extracts a single file, directory, or group of files, from the archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zip.ExtractAll">
+            <summary>Extracts all files from the compressed archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zip.IncludeFiles(System.String)">
+            <summary>Specifies that the indicated files should be added to the archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zip.Scan">
+            <summary>Scans the compressed archive.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zip.Reset">
+            <summary>Resets the component.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Zip.OnError">
+            <summary>Information about non-fatal errors.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Zip.OnOverwrite">
+            <summary>Fired whenever a file exists and may be overwritten.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Zip.OnProgress">
+            <summary>Fired as progress is made.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Zip.OnBeginFile">
+            <summary>Fired before each file is processed.</summary>
+        </member>
+        <member name="E:nsoftware.IPWorksZip.Zip.OnEndFile">
+            <summary>Fired after each file is processed.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.ArchiveFile">
+            <summary>The name of the zip, gzip, tar, or jar archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.ExcludedFiles">
+            <summary>A list of files to exclude.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.ExtractToPath">
+            <summary>A base path to decompress to.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.FileCompressedName">
+            <summary>Array of filenames, as stored inside of the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.FileCompressedSize">
+            <summary>The compressed size of the entry.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.FileCompressedDate">
+            <summary>The date and time of the entry, as stored within the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.FileDecompressedName">
+            <summary>Array of filenames, as stored outside of the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.FileDecompressedSize">
+            <summary>The decompressed size of the file.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.FileCount">
+            <summary>The number of entries in the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.OverwriteFiles">
+            <summary>Whether or not to overwrite files.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.RecurseSubdirectories">
+            <summary>Whether or not to recurse into subdirectories.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.CompressionLevel">
+            <summary>The compression level to use.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.EnableStreaming">
+            <summary>Whether or not to enable streaming.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.FileAttributes">
+            <summary>The file attributes, as stored within the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.FileComment">
+            <summary>The file comment, as stored within the archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.Password">
+            <summary>A password for the zip archive.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zip.ZipComment">
+            <summary>The comment for the entire zip file.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Zip.FileCompressedNameIndexer">
+            <summary>Indexer for FileCompressedName.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Zip.FileCompressedSizeIndexer">
+            <summary>Indexer for FileCompressedSize.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Zip.FileCompressedDateIndexer">
+            <summary>Indexer for FileCompressedDate.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Zip.FileDecompressedNameIndexer">
+            <summary>Indexer for FileDecompressedName.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Zip.FileDecompressedSizeIndexer">
+            <summary>Indexer for FileDecompressedSize.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Zip.FileAttributesIndexer">
+            <summary>Indexer for FileAttributes.</summary>
+        </member>
+        <member name="T:nsoftware.IPWorksZip.Zip.FileCommentIndexer">
+            <summary>Indexer for FileComment.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zipstream.Config(System.String)">
+            <summary>Sets or retrieves a component configuration setting .</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zipstream.CompressData(System.Byte[])">
+            <summary>Compresses a byte array.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zipstream.DecompressData(System.Byte[])">
+            <summary>Deompresses a byte array.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zipstream.GetCompressionStream(System.IO.Stream)">
+            <summary>Creates an output stream used to write compressed data.</summary>
+        </member>
+        <member name="M:nsoftware.IPWorksZip.Zipstream.GetDecompressionStream(System.IO.Stream)">
+            <summary>Creates an input stream used to read data from a compressed stream.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zipstream.CloseBaseStream">
+            <summary>Whether or not to close the underlying stream.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zipstream.CompressionLevel">
+            <summary>The compression level to use.</summary>
+        </member>
+        <member name="P:nsoftware.IPWorksZip.Zipstream.StreamFormat">
+            <summary>The stream format to use.</summary>
+        </member>
+        <member name="F:nsoftware.core.FAbout.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:nsoftware.core.FAbout.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:nsoftware.core.FAbout.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>
